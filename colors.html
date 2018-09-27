@@ -1,0 +1,85 @@
+---
+layout: default
+title: Color palette
+permalink: /colors
+description: "Our color palette consists of neutral, white and blue.
+These colors are used as variants in all classes of eFrolic,
+that is, as a second class after the main one to personalize elements."
+---
+
+<h2 class="code-title">{{ page.title }}</h2>
+<p>{{ page.description }}</p>
+<hr class="hr">
+<div class="container-white">
+<h3 class="code-title">Use</h3>
+<p>After a main class, example: <strong class="code">e-btn</strong> apply the desired color in lowercase letters.</p>
+<p><strong class="e-s danger code">Required:</strong> <strong>
+    A main class of eFrolic.</strong></p>
+<p><strong class="e-s warning code">Warning:</strong> <strong>
+    Some components are not compatible with all colors.</strong></p>
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn primary">Color</a>
+{% endhighlight %}
+<br>
+<div class="e-cols">
+  <div class="e-col-6 centered e-alert primary">
+    <p class="size-5 e-s primary"><br> Primary / #1da1f2 <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert success">
+    <p class="size-5 e-s success"><br> Success / #4fd69c <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert danger">
+    <p class="size-5 e-s danger"><br> Danger / #f75676 <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert warning">
+    <p class="size-5 e-s warning"><br> Warning / #ffdd57 <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert sky">
+    <p class="size-5 e-s sky"><br> Sky / #54c7ec <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert purple">
+    <p class="size-5 e-s purple"><br> Purple / #5e72e4 <br><br></p>
+  </div>
+</div>
+</div>
+<div class="container-white">
+<h4 class="code-title">Colors gradient.</h4>
+<hr class="hr">
+<div class="e-cols">
+  <div class="e-col-6 centered e-alert blue-gradient">
+    <p class="size-5" style="color:white;"><br> Blue-gradient <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert inst-gradient">
+    <p class="size-5" style="color:white;"><br> Inst-gradient <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert purple-gradient">
+    <p class="size-5" style="color:white;"><br> purple-gradient <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert green-gradient">
+    <p class="size-5" style="color:white;"><br> Green-gradient <br><br></p>
+  </div>
+</div><br>
+<h4 class="code-title">Colors between black and white.</h4>
+<hr class="hr">
+<div class="e-cols">
+  <div class="e-col-6 centered e-alert transparent">
+    <p class="size-5" style="color:gray;"><br> Transparent <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert">
+    <p class="size-5" style="color:gray;"><br> Default <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert gray">
+    <p class="size-5" style="color:white;"><br> Gray <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert white">
+    <p class="size-5" style="color:gray;"><br> White <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert dark">
+    <p class="size-5" style="color:white;"><br> Dark <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert black">
+    <p class="size-5" style="color:white;"><br> Black <br><br></p>
+  </div>
+</div>
+</div>
