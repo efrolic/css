@@ -1,0 +1,73 @@
+%centered{
+  display                         : flex;
+  flex-wrap                       : wrap;
+  justify-content                 : center;
+  align-items                     : center;
+  vertical-align                  : middle;
+}
+.e-container {
+  margin-left                     : auto;
+  margin-right                    : auto;
+  padding                         : 0;
+  width                           : 90%;
+  @include desktop-plus{
+  width                           : 80%;
+  }
+  &-fluid{
+    width                         : 100%;
+  }
+  &.centered{
+    @extend %centered;
+ }
+}
+.e-cols {
+   display                        : flex;
+   flex                           : 0 1 auto;
+   flex-direction                 : row;
+   margin                         : 0 auto;
+   flex-wrap                      : wrap;
+   &.no-gap{
+   & [class*="e-col"]{
+        padding                   : 0 !important;
+    }
+  }
+  &.centered{
+    @extend %centered;
+ }
+}
+
+@mixin col($e-col){
+  width                           : percentage($e-col / 12);
+}
+  [class*="e-col"] {
+    width                         : 100%;
+    padding                       : .75rem;
+    padding-top                   : 0;
+    flex                          : 0 0 auto;
+    margin                        : 0 auto;
+    &.centered{
+      @extend %centered;
+   }
+   &.between{
+     @extend %centered;
+     justify-content              : space-between;
+ }
+  }
+/* Desktop */
+@media only screen and (min-width: 1024px){
+  .e-col{
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
+
+    @for $i from 1 through 12{
+      &-#{$i}{
+        @include col($i);
+      }
+    }
+  }
+}

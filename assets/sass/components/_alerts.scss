@@ -1,0 +1,50 @@
+.e-alert {
+  padding         : 1.25rem 2.5rem 1.25rem 1.25rem;
+  background-color: $default;
+  border-radius   : 4px;
+  position        : relative;
+  letter-spacing  : 0.2px;
+  vertical-align  : middle;
+  font-size       : 0.9rem;
+  font-family     : inherit;
+  text-shadow     : none;
+  box-shadow      : rgba(0, 0, 0, 0.080) 0 3px 1px -2px, rgba(0, 0, 0, 0.080) 0 2px 2px 0px, rgba(0, 0, 0, 0.080) 0 1px 5px 0;
+
+  &.snack {
+    border-radius          : 20px;
+    border-top-right-radius: 0;
+  }
+
+  & > .e-icon {
+    font-size     : 1.20rem;
+    vertical-align: middle;
+    margin-right  : 5px;
+  }
+
+  & > .e-sweep {
+    position      : absolute;
+    right         : 0.5rem;
+    top           : 0.5rem;
+    padding       : 2px 8px;
+    text-align    : center;
+    cursor        : pointer;
+    font-size     : 15px;
+    vertical-align: middle;
+    color         : rgba(0,0,0,0.4);
+
+    &:focus {
+      outline: solid 2.2px lighten(rgba(0,0,0,0.2),30%);
+    }
+  }
+
+  & > a:not(.e-btn) {
+    text-decoration: underline;
+  }
+}
+
+.alert-footer {
+  @extend .note-footer;
+  margin-top: 10px;
+  background: transparent;
+  padding   : 10px 0 0;
+}

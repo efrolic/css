@@ -1,0 +1,205 @@
+%eNimed {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+
+.eFade, .ePull, .eSlide, .eRight, .eUp{
+    @extend %eNimed;
+}
+@-webkit-keyframes eUp {
+from {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+
+to {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+}
+
+@keyframes eUp {
+from {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+
+to {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+}
+
+.eUp {
+-webkit-animation-name: eUp;
+animation-name: eUp;
+}
+@-webkit-keyframes eRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes eRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.eRight {
+  -webkit-animation-name: eRight;
+  animation-name: eRight;
+}
+@-webkit-keyframes eSlide {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes eSlide {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.eSlide {
+	-webkit-animation-duration: .4s;
+	animation-duration: .4s;
+  -webkit-animation-name: eSlide;
+  animation-name: eSlide;
+}
+
+@-webkit-keyframes eFade {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes eFade {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
+.eFade {
+	-webkit-animation-name: eFade;
+	animation-name: eFade
+}
+@-webkit-keyframes ePull {
+	from {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+	50% {
+		-webkit-transform: scale3d(1.05, 1.05, 1.05);
+		transform: scale3d(1.05, 1.05, 1.05)
+	}
+	to {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+
+@keyframes ePull {
+	from {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+	50% {
+		-webkit-transform: scale3d(1.05, 1.05, 1.05);
+		transform: scale3d(1.05, 1.05, 1.05)
+	}
+	to {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+
+.ePull {
+	-webkit-animation-name: ePull;
+	animation-name: ePull
+}
+%waves {
+	position                              : relative;
+	overflow                              : hidden;
+	transform                             : translate3d(0, 0, 0);
+}
+
+%waves:after {
+	content                               : "";
+	display                               : block;
+	position                              : absolute;
+	width                                 : 100%;
+	height                                : 100%;
+	top                                   : 0;
+	left                                  : 0;
+	pointer-events                        : none;
+	background-image                      : radial-gradient(circle, white 10%, transparent 0.01%);
+	background-repeat                     : no-repeat;
+	background-position                   : 50%;
+	transform                             : scale(10, 10);
+	opacity                               : 0;
+	transition                            : transform .5s, opacity 1s
+}
+%waves:active:after {
+	transform                             : scale(0, 0);
+	opacity                               : .3;
+	transition                            : 0s
+}
+%waves-dark{
+	@extend %waves;
+}
+%waves-dark:after{
+		background-image                    : radial-gradient(circle, rgba(0, 0, 0, 0.5) 10%, transparent 10.01%);
+}
+%waves-dark:active:after {
+	opacity                               : .1;
+}
+.e-waves-dark{
+	@extend %waves-dark;
+}
+.e-waves {
+@extend %waves;
+}

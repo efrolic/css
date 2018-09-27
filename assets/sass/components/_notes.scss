@@ -1,0 +1,51 @@
+.e-note{
+background-color: $default;
+border-radius: 4px;
+overflow: hidden;
+position: relative;
+letter-spacing: .2px;
+& > .note-header > .e-sweep{
+    position: relative;
+    padding: 0px 6px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    vertical-align:middle;
+    color: rgba(0,0,0,0.4);
+    &:focus{
+      outline                             : solid 2.2px lighten(rgba(0,0,0,0.2),10%);
+   }
+}
+&.block{
+  border-left: solid 5px transparent;
+}
+&.lighten{
+  & > .note-body,.note-footer{
+    background: white !important;
+  }
+  box-shadow:rgba(0, 0, 0, 0.080) 0px 3px 1px -2px, rgba(0, 0, 0, 0.080) 0px 2px 2px 0px, rgba(0, 0, 0, 0.080) 0px 1px 5px 0px;
+}
+}
+.note-header{
+  padding: .55em;
+  color:white !important;
+  font-weight: bold;
+  display: flex;
+  justify-content:space-between;
+  font-size:1.10rem;
+}
+.note-body{
+padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+background: rgba(255,255,255,.95);
+color:rgba(0,0,0,0.8) !important;
+font-family:inherit;
+font-weight: normal !important;
+}
+.note-footer{
+  justify-content: flex-end;
+  display:flex;
+  flex-wrap:wrap;
+  padding:15px 10px;
+  background: rgba(255,255,255,.97);
+  border-top:solid 1px rgba(0,0,0,0.1);
+}

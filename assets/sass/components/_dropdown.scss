@@ -1,0 +1,75 @@
+  .e-dropdown{
+    display                               : inline-block;
+    position                              : relative;
+    padding                               : .5rem 1.25rem;
+    background                            : $default;
+    color                                 : rgba(0,0,0,0.7);
+    white-space                           : nowrap;
+    justify-content                       : center;
+    align-items                           : center;
+    text-align                            : center;
+    vertical-align                        : baseline;
+    margin                                : .3rem;
+    border-radius                         : .25rem;
+    cursor                                : pointer;
+    font-size                             : .90rem;
+    overflow                              : visible;
+    width                                 : auto;
+    &:after{
+      	background-image: none;
+    }
+  }
+.drop-items{
+@extend .eFade;
+display                               : none;
+position                              : absolute;
+min-width                             : 12rem;
+background                            : white !important;
+z-index                               : 10000;
+width                                 : 100% auto;
+margin                                : 0;
+left                                  : 5px;
+top: 100%;
+overflow                              : visible;
+box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+padding                               : 10px 7px;
+border-radius: .6rem;
+&  .drop-item{
+  text-align                          : left;
+  overflow                            : hidden;
+  padding                             : 10px 15px;
+  background                          : white;
+  display                             : block;
+  position                            : relative;
+  margin                              : 0;
+  background                          : transparent;
+  width                               : 100%;
+  color                               : rgba(0,0,0,0.6) !important;
+  text-shadow                         : none !important;
+  font-weight: normal;
+  border-radius:3px;
+  transition: box-shadow .18s ease-out, background .18s ease-out, color .18s ease-out;
+  &:hover{
+  background                          : $default;
+  color                               : $primary !important;
+  }}
+  & .e-btn{
+    margin-left: 0;
+  }
+}
+.drop-items:before {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 16px;
+    width: 16px;
+    left: 20px;
+    position: absolute;
+    bottom: 100%;
+    transform: rotate(-45deg) translateY(1rem);
+    z-index: -5;
+    border-radius: .2rem;
+}
+  .e-dropdown:hover .drop-items{
+  display                             : block;
+}
