@@ -1,0 +1,165 @@
+[
+  
+    {
+      "title"    : "e-note",
+      "bio" : "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated",
+      "category" : "Class",
+      "url"      : "guide/#e-note"
+    } ,
+  
+    {
+      "title"    : "e-nav",
+      "bio" : "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.",
+      "category" : "Class",
+      "url"      : "guide/#e-nav"
+    } ,
+  
+    {
+      "title"    : "e-face",
+      "bio" : "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated",
+      "category" : "Class",
+      "url"      : "guide/#e-face"
+    } ,
+  
+    {
+      "title"    : "e-col",
+      "bio" : "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated",
+      "category" : "Class",
+      "url"      : "guide/#e-col"
+    } ,
+  
+    {
+      "title"    : "e-btn",
+      "bio" : "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated",
+      "category" : "Class",
+      "url"      : "guide/#e-btn"
+    } ,
+  
+    {
+      "title"    : "e-alert",
+      "bio" : "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated",
+      "category" : "Class",
+      "url"      : "guide/#e-alert"
+    } 
+  ,
+  {
+    "title"    : "Start",
+    "bio" : "description",
+    "category" : "Get started",
+    "url"      : "/start"
+  },
+  {
+    "title"    : "Modular",
+    "bio" : "description",
+    "category" : "Download",
+    "url"      : "/modular"
+  },
+  {
+    "title"    : "Color palette",
+    "bio" : "Our color palette consists of neutral, white and blue. These colors are used as variants in all classes of eFrolic, that is, as a second class after the main one to personalize elements.",
+    "category" : "Assistants",
+    "url"      : "/colors"
+  },
+  {
+    "title"    : "Class Guide",
+    "bio" : "description",
+    "category" : "Assistants",
+    "url"      : "/guide"
+  },
+  {
+    "title"    : "Container",
+    "bio" : "description",
+    "category" : "Layout",
+    "url"      : "/container"
+  },
+  {
+    "title"    : "System Grid",
+    "bio" : "description",
+    "category" : "Layout",
+    "url"      : "/grid"
+  },
+  {
+    "title"    : "Face",
+    "bio" : "description",
+    "category" : "Layout",
+    "url"      : "/face"
+  },
+  {
+    "title"    : "Media object",
+    "bio" : "description",
+    "category" : "Layout",
+    "url"      : "/media-object"
+  },
+  {
+    "title"    : "Section",
+    "bio" : "description",
+    "category" : "Layout",
+    "url"      : "/section"
+  },
+  {
+    "title"    : "Footer",
+    "bio" : "description",
+    "category" : "Layout",
+    "url"      : "/footer"
+  },
+  {
+    "title"    : "Navbars",
+    "bio" : "description",
+    "category" : "Components",
+    "url"      : "/navbars"
+  },
+  {
+    "title"    : "SideNav",
+    "bio" : "description",
+    "category" : "Components",
+    "url"      : "/sidenav"
+  },
+  {
+    "title"    : "Buttons Previews",
+    "bio" : "description",
+    "category" : "Elements",
+    "url"      : "/buttons-previews"
+  },
+  {
+    "title"    : "Start Buttons",
+    "bio" : "description",
+    "category" : "Elements",
+    "url"      : "/buttons"
+  },
+  {
+    "title"    : "Social Buttons",
+    "bio" : "description",
+    "category" : "Elements",
+    "url"      : "/social-buttons"
+  },
+  {
+    "title"    : "Notes previews",
+    "bio" : "description",
+    "category" : "Elements",
+    "url"      : "/notes-previews"
+  },
+  {
+    "title"    : "Start Notes",
+    "bio" : "description",
+    "category" : "Elements",
+    "url"      : "/notes"
+  },
+  {
+    "title"    : "Alerts previews",
+    "bio" : "description",
+    "category" : "Elements",
+    "url"      : "/alerts-previews"
+  },
+  {
+    "title"    : "Alerts",
+    "bio" : "description",
+    "category" : "Elements",
+    "url"      : "/alerts"
+  },
+  {
+    "title"    : "Cards",
+    "bio" : "description",
+    "category" : "Components",
+    "url"      : "/cards"
+  }
+]

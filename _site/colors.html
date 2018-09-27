@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color palette</title>
+  <meta name="description" content="Our color palette consists of neutral, white and blue. These colors are used as variants in all classes of eFrolic, that is, as a second class after the main one to personalize elements.">
+
+  <link rel="stylesheet" href="/assets/css/efroli.css?v=201809270859">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=201809270859">
+  <link rel="stylesheet" href="/assets/css/syntax.css?v=201809270859">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script type="text/javascript" src="/assets/js/main.js?v=201809270859"></script>
+</head>
+
+  <body class="eFade bg" ontouchstart>
+        <style media="screen">
+      @media only screen and (min-width:1024px) {
+      body {
+        padding-top: 80px;
+      }
+      .bg {
+        background: linear-gradient(rgba(247, 248, 249, .5), rgba(255, 255, 255, .5)),
+        url(https://firebasestorage.googleapis.com/v0/b/efrolic-bf2a0.appspot.com/o/icons-background.svg?alt=media&token=60c717fe-dd46-4bbe-a9d2-3c454d0b73c0);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    </style>
+    <nav class="e-nav white eFroli">
+<label for="e-menu" class="e-btn circle inverted gray no-shadow no-desktop text-btn"><i class="fas fa-th"></i></label>
+<a href="/"><img src="/assets/images/efrolic-brand.png" style="margin-left: -15px;width:100px;max-width:120px !important;"/></a>
+<a class="e-btn circle inverted gray no-desktop text-btn" onclick="showNav()"><i class="fas fa-bars"></i></a>
+<input type="checkbox" id="e-menu">
+<div class="e-menu">
+  <i class="e-distribution"></i>
+  <a href="/guide" class="e-menu-item "><i class="fas fa-book danger"></i> Guide</a>
+  <i class="e-separator"></i>
+  <a href="/helpers" class="e-menu-item "><i class="fas fa-question-circle purple"></i> Classes helpers</a>
+  <i class="e-separator"></i>
+  <div class="e-dropdown"><i class="fas fa-plus success"></i> More <i class="fas fa-angle-down"></i>
+   <div class="drop-items">
+       <a href="/made" class="drop-item "><i class="fas fa-trademark success"></i> Made with eFrolic</a>
+       <a href="/js" class="drop-item "><i class="fab fa-js-square warning"></i> Components made with Js</a>
+       <a href="/colors" class="drop-item active"><i class="fas fa-palette danger"></i> Colors</a>
+       <a href="/background" class="drop-item "><i class="far fa-images sky"></i> Background</a>
+       <a href="/animations" class="drop-item "><i class="fas fa-car-crash purple"></i> Animations</a>
+       <a href="/author" class="drop-item "><i class="fas fa-user-astronaut primary"></i> About the Author</a>
+       <hr>
+       <a href="/themes" class="e-btn inverted primary"><i class="fas fa-star warning"></i> Themes</a>
+       <a href="/donate" class="e-btn inverted purple"><i class="fas fa-heart danger"></i> Donate</a>
+   </div>
+   </div>
+  <a href="/modular" class="e-btn anime inverted danger"><i class="fas fa-tasks"></i> Modular</a>
+  <a href="/buttons" class="e-btn anime primary"><i class="fas fa-box"></i> Download</a>
+</div>
+</nav>
+
+<nav class="e-nav-aside myNav" style="background:rgb(253, 253, 253);">
+  <div class="e-face" style="background:transparent;">
+    <div class="face-body centered">
+<div class="e-container">
+  <a href="/"><img src="/assets/images/efrolic-brand.png" style="margin-left: -15px;width:100px;max-width:120px !important;"/></a>
+</div>
+    </div>
+  </div>
+      <li class=""><a href="/start"><i class="fas fa-play danger"></i>Quick start</a></li>
+      <li class=""><a href="/modular"><i class="fas fa-tasks danger"></i> Modular</a></li>
+      <li class="active"><a href="/colors"><i class="fas fa-palette danger"></i> Colors</a></li>
+      <li class=""><a href="/guide"><i class="fas fa-book danger"></i> Class guide</a></li>
+      <p class="e-label"><strong>Layaout</strong><p>
+      <li class=""><a href="/container"><i class="fas fa-box-open sky"></i> Container</a></li>
+      <li class=""><a href="/grid"><i class="fas fa-th sky"></i> Grid</a></li>
+      <li class=""><a href="/face"><i class="fas fa-id-card-alt sky"></i> Face</a></li>
+      <li class=""><a href="/media-object"><i class="fas fa-object-ungroup sky"></i> Media object</a></li>
+      <li class=""><a href="/section"><i class="fas fa-columns sky"></i> Section</a></li>
+      <li class=""><a href="/footer"><i class="fas fa-vector-square sky"></i> Footer</a></li>
+      <p class="e-label"><strong>Navigations</strong><p>
+      <li class=""><a href="/navbars"><i class="fas fa-bars primary"></i> Navbars</a></li>
+      <li class=""><a href="/sidenav"><i class="fas fa-grip-vertical sky"></i> SideNav</a></li>
+      <p class="e-label"><strong>Buttons</strong><p>
+      <li class=""><a href="/previews-buttons"><i class="fas fa-desktop purple"></i> Buttons previews</a></li>
+      <li class=""><a href="/buttons"><i class="far fa-circle purple"></i> Buttons</a></li>
+      <li class=""><a href="/social-buttons"><i class="far fa-dot-circle purple"></i> Buttons Social</a></li>
+      <p class="e-label"><strong>Utilities</strong><p>
+      <li class=""><a href="/previews-notes"><i class="fas fa-desktop warning"></i> Notes previews</a></li>
+      <li class=""><a href="/notes"><i class="fas fa-comment-alt warning"></i> Notes</a></li>
+      <li class=""><a href="/previews-alerts"><i class="fas fa-desktop primary"></i> Alerts previews</a></li>
+      <li class=""><a href="/alerts"><i class="far fa-clone primary"></i> Alerts</a></li>
+      <li class=""><a href="/cards"><i class="far fa-id-card danger"></i> Cards</a></li>
+      <li class=""><a href="/banners"><i class="fas fa-band-aid orange"></i> Banners</a></li>
+      <p class="e-label"><strong>Explore</strong><p>
+      <li class=""><a href="/animations"><i class="fas fa-car-crash success"></i> Animations</a></li>
+      <li class=""><a href="/background"><i class="far fa-images"></i> Background Image</a></li>
+      <li class=""><a href="/images"><i class="fas fa-image danger"></i> Images</a></li>
+      <li class=""><a href="/jumbotron"><i class="far fa-address-card purple"></i> Jumbotron</a></li>
+      <li class=""><a href="/form"><i class="fab fa-wpforms purple"></i> Form</a></li>
+      <li class=""><a href="/modal"><i class="far fa-window-maximize dark"></i> Modal</a></li>
+      <p class="e-label"><strong>Utilities</strong><p>
+      <li class=""><a href="/icons"><i class="far fa-laugh-wink success"></i> Icons</a></li>
+      <li class=""><a href="/typography"><i class="fas fa-laptop-code gray"></i> Typography</a></li>
+</nav>
+
+    <div class="e-container-fluid aside btn">
+      <div class="e-cols">
+        <div class="e-col-10 container-search">
+          <i class="fas fa-search search-icon"></i>
+          <input class="search" type="text" id="search-input" placeholder="Search a class...">
+          <div class="results-container" id="results-container"></div>
+        </div>
+      </div>
+      <div class="e-cols">
+        <div class="e-col-10">
+          <h2 class="code-title">Color palette</h2>
+<p>Our color palette consists of neutral, white and blue. These colors are used as variants in all classes of eFrolic, that is, as a second class after the main one to personalize elements.</p>
+<hr class="hr">
+<div class="container-white">
+<h3 class="code-title">Use</h3>
+<p>After a main class, example: <strong class="code">e-btn</strong> apply the desired color in lowercase letters.</p>
+<p><strong class="e-s danger code">Required:</strong> <strong>
+    A main class of eFrolic.</strong></p>
+<p><strong class="e-s warning code">Warning:</strong> <strong>
+    Some components are not compatible with all colors.</strong></p>
+<!-- Code -->
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"e-btn primary"</span><span class="nt">&gt;</span>Color<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+<br>
+<div class="e-cols">
+  <div class="e-col-6 centered e-alert primary">
+    <p class="size-5 e-s primary"><br> Primary / #1da1f2 <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert success">
+    <p class="size-5 e-s success"><br> Success / #4fd69c <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert danger">
+    <p class="size-5 e-s danger"><br> Danger / #f75676 <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert warning">
+    <p class="size-5 e-s warning"><br> Warning / #ffdd57 <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert sky">
+    <p class="size-5 e-s sky"><br> Sky / #54c7ec <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert purple">
+    <p class="size-5 e-s purple"><br> Purple / #5e72e4 <br><br></p>
+  </div>
+</div>
+</div>
+<div class="container-white">
+<h4 class="code-title">Colors gradient.</h4>
+<hr class="hr">
+<div class="e-cols">
+  <div class="e-col-6 centered e-alert blue-gradient">
+    <p class="size-5" style="color:white;"><br> Blue-gradient <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert inst-gradient">
+    <p class="size-5" style="color:white;"><br> Inst-gradient <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert purple-gradient">
+    <p class="size-5" style="color:white;"><br> purple-gradient <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert green-gradient">
+    <p class="size-5" style="color:white;"><br> Green-gradient <br><br></p>
+  </div>
+</div><br>
+<h4 class="code-title">Colors between black and white.</h4>
+<hr class="hr">
+<div class="e-cols">
+  <div class="e-col-6 centered e-alert transparent">
+    <p class="size-5" style="color:gray;"><br> Transparent <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert">
+    <p class="size-5" style="color:gray;"><br> Default <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert gray">
+    <p class="size-5" style="color:white;"><br> Gray <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert white">
+    <p class="size-5" style="color:gray;"><br> White <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert dark">
+    <p class="size-5" style="color:white;"><br> Dark <br><br></p>
+  </div>
+  <div class="e-col-6 centered e-alert black">
+    <p class="size-5" style="color:white;"><br> Black <br><br></p>
+  </div>
+</div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+    <script type="text/javascript">
+var sjs = SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  limit: ("4"),
+  searchResultTemplate: '<div class="search-container-item"><a href="{url}" class="content-search-title size-5"><i class="fas fa-search success"></i>{title}</a>&nbsp;&nbsp;<span class="code danger" style="font-size:13px;font-weight:bold;">{category}</span><a href="{url}"><p class="content-search-text">{bio}</p></a></div>',
+  noResultsText: '<p class="found"><i class="far fa-grin-beam-sweat danger"></i> No result found! <a style="font-size:13px;color:#1da1f2;" href="/guide">Consult the guide or navigation.</a></p>',
+  json: '/search.json'
+});
+
+    </script>
+
+  </body>
+</html>
