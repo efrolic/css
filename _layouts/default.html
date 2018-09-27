@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  {% include global/head.html %}
+
+  <body class="eFade bg" ontouchstart>
+    <style media="screen">
+      @media only screen and (min-width:1024px) {
+      body {
+        padding-top: 80px;
+      }
+      .bg {
+        background: linear-gradient(rgba(247, 248, 249, .5), rgba(255, 255, 255, .5)),
+        url(https://firebasestorage.googleapis.com/v0/b/efrolic-bf2a0.appspot.com/o/icons-background.svg?alt=media&token=60c717fe-dd46-4bbe-a9d2-3c454d0b73c0);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    </style>
+    {% include global/header.html %}
+    <div class="e-container-fluid aside btn">
+      <div class="e-cols">
+        <div class="e-col-10 container-search">
+          <i class="fas fa-search search-icon"></i>
+          <input class="search" type="text" id="search-input" placeholder="Search a class...">
+          <div class="results-container" id="results-container"></div>
+        </div>
+      </div>
+      <div class="e-cols">
+        <div class="e-col-10">
+          {{ content }}
+
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+    <script type="text/javascript">
+var sjs = SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  limit: ("4"),
+  searchResultTemplate: '<div class="search-container-item"><a href="{url}" class="content-search-title size-5"><i class="fas fa-search success"></i>{title}</a>&nbsp;&nbsp;<span class="code danger" style="font-size:13px;font-weight:bold;">{category}</span><a href="{url}"><p class="content-search-text">{bio}</p></a></div>',
+  noResultsText: '<p class="found"><i class="far fa-grin-beam-sweat danger"></i> No result found! <a style="font-size:13px;color:#1da1f2;" href="/guide">Consult the guide or navigation.</a></p>',
+  json: '/search.json'
+});
+
+    </script>
+  </body>
+
+</html>

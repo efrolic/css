@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  {% include global/head.html %}
+
+  <body class="eFade" ontouchstart="ontouchstart">
+
+    <main class="e-face e-fullscreen main">
+
+      <nav class="e-nav no-bg">
+        <a href="/" class="e-logo ePull"><img src="./assets/images/efrolic-brand.png" style="margin-left:5px;width:120px;max-width:120px !important;"/></a>
+        <i class="e-distribution"></i>
+        <a href="{{ site.url }}/buttons" class="e-btn {{ site.button }} plus no-mobile">
+          <i class="fas fa-box"></i>
+          Download</a>
+        <a href="{{ site.url }}/buttons" class="e-btn {{ site.button }} no-desktop">
+          <i class="fas fa-box"></i>
+          Download</a>
+      </nav>
+
+      <section class="face-body centered">
+        <div class="face-item mi-item" style="text-shadow:none;">
+          <img class="eSlide" src="{{ site.url }}/assets/images/efrolic-developer.png" style="max-width:370px !important;" alt="{{ site.title }}">
+          <p class="info-frolic eSlide" style="color:{{ site.text_color }};">
+            {% if page.description %}{{ page.description }}
+            {% else %}{{site.description}}
+            {% endif %}
+          </p>
+          <a href="{{ site.url }}/start" class="eUp e-btn plus {{ site.button }}">
+            <b>Get started</b>
+          </a>
+          <a href="{{ site.url }}/face" class="eUp e-btn plus {{ site.button_secondary }}">
+            <b>Documentation</b>
+          </a>
+          <!-- Code del elemento -->
+          <div class="eUp e-alert dark" style="text-align:left;">
+            <i class="fas fa-code e-icon"></i>
+            npm install efrolic
+          </div>
+        </div>
+        <div class="e-col no-mobile"></div>
+      </section>
+    </main>
+
+    <section id="section" class="e-container centered e-fullscreen bg">
+      <div class="e-cols">
+        <div class="e-col-4 e-alert white">
+          <h3 class="e-title" style="color:#{{ site.title_color }};">Css / GitHub</h3><br>
+          <p style="color:{{ site.text_color }};">
+            Copy-paste the stylesheet
+            <strong class="code">&lt;link></strong>
+            into your
+            <strong class="code">&lt;head></strong>
+            before all other stylesheets to load our CSS.</p>
+<!-- Code -->
+{% highlight html %}
+ <link rel="stylesheet" href="https://efraperalta.github.io/eFrolic/index.html#/">
+ <!-- Font awesome icons -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+{% endhighlight %}
+        </div>
+        <div class="e-col-3 e-alert white">
+          <h3 class="e-title" style="color:#{{ site.title_color }};">Get started</h3><br>
+          <p style="color:{{ site.text_color }};">Get started with eFrolic, a simple and functional framework for creating responsive sites on mobile devices. Use one of the following ways to start using.</p>
+          <!-- Code -->
+          <div class="e-alert dark" style="text-align:left;">
+            <i class="fas fa-code e-icon"></i>
+            npm install frolic
+          </div>
+        </div>
+        <div class="e-col-4 e-alert white">
+          <h3 class="e-title" style="color:#{{ site.title_color }};">Css / CDN</h3><br>
+          <p style="color:{{ site.text_color }};">
+            Copy-paste the stylesheet
+            <strong class="code">&lt;link></strong>
+            into your
+            <strong class="code">&lt;head></strong>
+            before all other stylesheets to load our CSS.</p>
+<!-- Code -->
+{% highlight html %}
+  <link rel="stylesheet" href="https://efraperalta.github.io/eFrolic/index.html#/">
+  <!-- Font awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+{% endhighlight %}
+        </div>
+      </div>
+    </section>
+
+    <section class="e-container centered e-fullscreen bg">
+      <div class="e-cols">
+        <div class="e-col-3">
+          <div class="e-alert hov primary">
+            <a class="e-sweep">
+              <i class="far fa-clone"></i>
+            </a>
+            <h4>
+              <strong>Modular</strong>
+            </h4>
+            <strong>
+              Use only what you need.
+            </strong>All modules are divided, in each section You have a modular download button.
+          </div>
+        </div>
+        <div class="e-col-3">
+          <div class="e-alert hov sky">
+            <a class="e-sweep">
+              <i class="far fa-heart"></i>
+            </a>
+            <h4>
+              <strong>Super easy</strong>
+            </h4>
+            eFrolic is a framework with simple classes so using it is as easy as remembering that everything has an e- front.
+          </div>
+        </div>
+        <div class="e-col-3">
+          <div class="e-alert hov sky">
+            <a class="e-sweep">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </a>
+            <h4>
+              <strong>Free</strong>
+            </h4>
+            All content is free and on github, there are no Premium, VIP or PRO sections everything you find is yours!
+          </div>
+        </div>
+        <div class="e-col-3">
+          <div class="e-alert hov primary">
+            <a class="e-sweep">
+              <i class="fas fa-code"></i>
+            </a>
+            <h4>
+              <strong>No JScript</strong>
+            </h4>
+            It does not use JavaScript, everything is pure CSS so it is integrated in any JS environment. Angular, React, Vue among others.
+          </div>
+        </div>
+        <hr>
+        <div class="e-col">
+          <h2 style="color:#{{ site.title_color }};text-align:center;">Work with your favorite tools and languages.</h2>
+          <p class="size-5" style="color:{{ site.text_color }};text-align:center;">This framework is pure CSS so it can be integrated in any environment.</p>
+        </div>
+        <hr>
+        <div class="e-col">
+          <div class="e-alert hov danger" style="text-align:center;">
+            <i class="fab fa-angular e-title"></i>
+            <h4>
+              <strong>Angular</strong>
+            </h4>
+          </div>
+        </div>
+        <div class="e-col">
+          <div class="e-alert hov sky" style="text-align:center;">
+            <i class="fab fa-react e-title"></i>
+            <h4>
+              <strong>React</strong>
+            </h4>
+          </div>
+        </div>
+        <div class="e-col">
+          <div class="e-alert hov success" style="text-align:center;">
+            <i class="fab fa-vuejs e-title"></i>
+            <h4>
+              <strong>Vue</strong>
+            </h4>
+          </div>
+        </div>
+        <div class="e-col">
+          <div class="e-alert hov warning" style="text-align:center;">
+            <i class="fab fa-js-square e-title"></i>
+            <h4>
+              <strong>JavaScript</strong>
+            </h4>
+          </div>
+        </div>
+        <div class="e-col">
+          <div class="e-alert hov danger" style="text-align:center;">
+            <i class="fab fa-ember" style="font-size:5.8rem;"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="e-container centered e-fullscreen bg">
+      <div class="e-cols">
+        <div class="e-col-5">
+          <h3 class="e-title" style="color:#{{ site.title_color }};">Easy lessons to learn</h3><br>
+          <p class="size-4" style="color:{{ site.text_color }};">We use simple classes to make it easy to remember and relate to the elements. Let's see, who does not remember this; use an e- in front of all classes, it's that simple. ¡A main class and abundant variations!</p>
+          <p>
+            <strong class="code">e-btn</strong>
+          </p>
+          <a class="e-btn danger">Button</a>
+          <a class="e-btn success">Button</a>
+          <a class="e-btn warning">Button</a>
+          <a class="e-btn sky">Button</a>
+        </div>
+        <div class="e-col-4" style="text-align:center;">
+          <p>
+            <strong class="code">e-btn outlined</strong>
+          </p>
+          <a class="e-btn outlined plus danger">Button</a>
+          <p>
+            <strong class="code">e-btn circle</strong>
+          </p>
+          <a class="e-btn circle primary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="e-btn circle sky">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="e-btn circle danger">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+          <br>
+          <a class="e-btn success">
+            <i class="fab fa-spotify"></i>
+            Spotify</a>
+          <a class="e-btn purple">
+            <i class="fab fa-twitch"></i>
+            Twitch</a>
+          <a class="e-btn danger">
+            <i class="fab fa-pinterest-p"></i>interest</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="e-container centered e-fullscreen" style="background:#f9f9f9;">
+      <div class="e-cols">
+        <div class="e-col-8">
+          <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">Fullscreen and centered containers</h3>
+          <hr>
+          <p class="size-5" style="color:{{ site.text_color }};text-align:center;">
+            All the children of this container will be centered vertically.
+          </p>
+        </div>
+        <div class="e-cols" style="text-align:center;"></div>
+      </div>
+    </section>
+    <section class="e-container centered e-fullscreen bg">
+      <div class="e-cols">
+        <div class="e-col-8">
+          <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">Simple grid system</h3>
+          <hr>
+          <p class="size-5" style="color:{{ site.text_color }};text-align:center;">
+            The grid system is quite simple and objective, always based on mobile first, that is why the grid is designed in mobile from the beginning and there is only one type. Very simple to learn since you only need a container of columns and the automatic
+            columns or with a defined size, these will be adjusted depending on the size of the viewport.
+          </p>
+        </div>
+        <hr>
+        <div class="e-cols" style="text-align:center;">
+          <div class="e-col">
+            <div class="e-alert sky">
+              <strong>Auto</strong>
+            </div>
+          </div>
+          <div class="e-col">
+            <div class="e-alert warning">
+              <strong>Auto</strong>
+            </div>
+          </div>
+          <div class="e-col">
+            <div class="e-alert success">
+              <strong>Auto</strong>
+            </div>
+          </div>
+          <div class="e-col">
+            <div class="e-alert dark">
+              <strong>Auto</strong>
+            </div>
+          </div>
+        </div>
+        <div class="e-cols" style="text-align:center;">
+          <div class="e-col-3">
+            <div class="e-alert purple">
+              <strong>e-col-3</strong>
+            </div>
+          </div>
+          <div class="e-col-6">
+            <div class="e-alert primary">
+              <strong>e-col-6</strong>
+            </div>
+          </div>
+          <div class="e-col-3">
+            <div class="e-alert danger">
+              <strong>e-col-3</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>
