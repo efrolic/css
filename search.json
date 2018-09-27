@@ -7,127 +7,127 @@ layout: null
       "title"    : "{{ post.title | escape }}",
       "bio" : "{{ post.bio | strip_html | strip_newlines | escape }}",
       "category" : "Class",
-      "url"      : "{{ site.baseurl }}guide/#{{ post.title }}"
+      "url"      : "{{ site.url }}/guide/#{{ post.title }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %},
   {
     "title"    : "Start",
     "bio" : "description",
     "category" : "Get started",
-    "url"      : "/start"
+    "url"      : "{{ site.url }}/start"
   },
   {
     "title"    : "Modular",
     "bio" : "description",
     "category" : "Download",
-    "url"      : "/modular"
+    "url"      : "{{ site.url }}/modular"
   },
   {
     "title"    : "Color palette",
     "bio" : "Our color palette consists of neutral, white and blue. These colors are used as variants in all classes of eFrolic, that is, as a second class after the main one to personalize elements.",
     "category" : "Assistants",
-    "url"      : "/colors"
+    "url"      : "{{ site.url }}/colors"
   },
   {
     "title"    : "Class Guide",
     "bio" : "description",
     "category" : "Assistants",
-    "url"      : "/guide"
+    "url"      : "{{ site.url }}/guide"
   },
   {
     "title"    : "Container",
     "bio" : "description",
     "category" : "Layout",
-    "url"      : "/container"
+    "url"      : "{{ site.url }}/container"
   },
   {
     "title"    : "System Grid",
     "bio" : "description",
     "category" : "Layout",
-    "url"      : "/grid"
+    "url"      : "{{ site.url }}/grid"
   },
   {
     "title"    : "Face",
     "bio" : "description",
     "category" : "Layout",
-    "url"      : "/face"
+    "url"      : "{{ site.url }}/face"
   },
   {
     "title"    : "Media object",
     "bio" : "description",
     "category" : "Layout",
-    "url"      : "/media-object"
+    "url"      : "{{ site.url }}/media-object"
   },
   {
     "title"    : "Section",
     "bio" : "description",
     "category" : "Layout",
-    "url"      : "/section"
+    "url"      : "{{ site.url }}/section"
   },
   {
     "title"    : "Footer",
     "bio" : "description",
     "category" : "Layout",
-    "url"      : "/footer"
+    "url"      : "{{ site.url }}/footer"
   },
   {
     "title"    : "Navbars",
     "bio" : "description",
     "category" : "Components",
-    "url"      : "/navbars"
+    "url"      : "{{ site.url }}/navbars"
   },
   {
     "title"    : "SideNav",
     "bio" : "description",
     "category" : "Components",
-    "url"      : "/sidenav"
+    "url"      : "{{ site.url }}/sidenav"
   },
   {
     "title"    : "Buttons Previews",
     "bio" : "description",
     "category" : "Elements",
-    "url"      : "/buttons-previews"
+    "url"      : "{{ site.url }}/buttons-previews"
   },
   {
     "title"    : "Start Buttons",
     "bio" : "description",
     "category" : "Elements",
-    "url"      : "/buttons"
+    "url"      : "{{ site.url }}/buttons"
   },
   {
     "title"    : "Social Buttons",
     "bio" : "description",
     "category" : "Elements",
-    "url"      : "/social-buttons"
+    "url"      : "{{ site.url }}/social-buttons"
   },
   {
     "title"    : "Notes previews",
     "bio" : "description",
     "category" : "Elements",
-    "url"      : "/notes-previews"
+    "url"      : "{{ site.url }}/notes-previews"
   },
   {
     "title"    : "Start Notes",
     "bio" : "description",
     "category" : "Elements",
-    "url"      : "/notes"
+    "url"      : "{{ site.url }}/notes"
   },
   {
     "title"    : "Alerts previews",
     "bio" : "description",
     "category" : "Elements",
-    "url"      : "/alerts-previews"
+    "url"      : "{{ site.url }}/alerts-previews"
   },
   {
     "title"    : "Alerts",
     "bio" : "description",
     "category" : "Elements",
-    "url"      : "/alerts"
+    "url"      : "{{ site.url }}/alerts"
   },
   {
     "title"    : "Cards",
     "bio" : "description",
     "category" : "Components",
-    "url"      : "/cards"
+    "url"      : "{{ site.url }}/cards"
   }
 ]
