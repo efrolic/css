@@ -1,0 +1,57 @@
+---
+layout: base
+permalink: /navbars/f
+---
+
+<nav class="e-nav white">
+  <h6>Logo</h6>
+  <label for="e-menu" class="e-btn no-shadow no-desktop"><i class="fas fa-bars"></i></label>
+  <input type="checkbox" id="e-menu">
+  <div class="e-menu">
+    <a class="e-btn small outlined success">Log in</a>
+    <a class="e-btn small success">Sing up</a>
+    <i class="e-distribution"></i>
+    <a class="e-menu-item"><i class="fa fa-home danger"></i> Home</a>
+    <a class="e-menu-item"><i class="fa fa-users primary"></i> Friends</a>
+    <a class="e-menu-item"><i class="fa fa-umbrella warning"></i> Contacts</a>
+    <div class="e-dropdown">More <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a>
+        <hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<br>
+<div class="e-col-8">
+  {% highlight html %}
+  <nav class="e-nav white">
+    <h6>Logo</h6>
+    <label for="e-menu" class="e-btn no-shadow no-desktop"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="e-menu">
+    <div class="e-menu">
+      <a class="e-btn small outlined success">Log in</a>
+      <a class="e-btn small success">Sing up</a>
+      <i class="e-distribution"></i>
+      <a class="e-menu-item"><i class="fa fa-home danger"></i> Home</a>
+      <a class="e-menu-item"><i class="fa fa-users primary"></i> Friends</a>
+      <a class="e-menu-item"><i class="fa fa-umbrella warning"></i> Contacts</a>
+      <div class="e-dropdown">More <i class="fas fa-angle-down"></i>
+        <div class="drop-items">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a>
+          <hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  {% endhighlight %}
+  <a href="/navbars" class="e-btn fullwidth {{site.button}}"><i class="fas fa-undo"></i> Back </a>
+</div>
