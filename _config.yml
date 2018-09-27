@@ -1,0 +1,24 @@
+# title del head
+title: "eFrolic | It is a CSS Only framework"
+
+# description
+description: "It is a CSS only framework, which without using javascript is interactive and animated.
+ This framework is based on being modular and simple to develop web interfaces focused on mobile devices."
+
+# Config theme
+button: anime primary
+button_secondary: anime inverted primary
+button_optional: anime primary
+button_header: anime inverted danger
+text_color: rgba(0, 0, 0, .5)
+bg_color: white
+title_color: 1da1f2
+
+# Page default
+lang: en
+ref: hello
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude: ['node_modules', 'gulpfile.js', 'package-lock.json', 'Gemfile', 'Gemfile.lock', 'feed.xml']
