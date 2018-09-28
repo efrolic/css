@@ -6,7 +6,21 @@
   background: #f75676;
   color: white;
 }
+.logo{
+  margin-left:5px;
+  width:120px;
+  max-width:150px !important;
+}
 
+@media only screen and (min-width:768px){
+  .logo{
+    width:140px;
+  }
+}
+.docs-brand{
+width:110px;
+margin-left:-15px;
+}
 .ho {
   box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
 }
@@ -17,6 +31,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.bg-2 {
+  background: linear-gradient(rgba(247, 248, 249, .5), rgba(247, 248, 249,.5)),
+  url(https://firebasestorage.googleapis.com/v0/b/efrolic-bf2a0.appspot.com/o/icons-background.svg?alt=media&token=60c717fe-dd46-4bbe-a9d2-3c454d0b73c0);
+  background-size: cover;
+  background-position: center;
 }
 
 .main {
@@ -461,7 +481,7 @@ hr {
 }
 
 .container-white{
-  border-radius: 5px;
+  border-radius: 15px;
   background: white;
   padding:10px 20px;
   padding-bottom: 15px;

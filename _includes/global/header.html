@@ -1,15 +1,15 @@
 <nav class="e-nav white eFroli">
 <label for="e-menu" class="e-btn circle inverted gray no-shadow no-desktop text-btn"><i class="fas fa-th"></i></label>
-<a href="{{ site.url }}"><img src="{{ site.url }}/assets/images/efrolic-brand.png" style="margin-left: -15px;width:100px;max-width:120px !important;"/></a>
+<a href="{{ site.url }}" class="logo docs-brand"><img src="{{ site.url }}/assets/images/eFrolic.png" alt="{{site.title}}"/></a>
 <a class="e-btn circle inverted gray no-desktop text-btn" onclick="showNav()"><i class="fas fa-bars"></i></a>
 <input type="checkbox" id="e-menu">
 <div class="e-menu">
+    <a href="#" class="e-btn circle inverted"><i class="fab fa-github"></i></a>
+  <a href="{{ site.url }}/documentation" class="e-btn plane inverted primary small"><i class="fas fa-chalkboard-teacher danger"></i> View Docs</a>
   <i class="e-distribution"></i>
-  <a href="{{ site.url }}/guide" class="e-menu-item {% if page.permalink == '/guide' %}active{% endif %}"><i class="fas fa-book danger"></i> Guide</a>
+  <a href="{{ site.url }}/helpers" class="e-menu-item {% if page.permalink == '/helpers' %}active{% endif %}"><i class="fas fa-question-circle warning"></i> Classes helpers</a>
   <i class="e-separator"></i>
-  <a href="{{ site.url }}/helpers" class="e-menu-item {% if page.permalink == '/helpers' %}active{% endif %}"><i class="fas fa-question-circle purple"></i> Classes helpers</a>
-  <i class="e-separator"></i>
-  <div class="e-dropdown"><i class="fas fa-plus success"></i> More <i class="fas fa-angle-down"></i>
+  <div class="e-dropdown"><i class="fas fa-box-open purple"></i> More <i class="fas fa-angle-down"></i>
    <div class="drop-items">
        <a href="{{ site.url }}/made" class="drop-item {% if page.permalink == '/made' %}active{% endif %}"><i class="fas fa-trademark success"></i> Made with eFrolic</a>
        <a href="{{ site.url }}/js" class="drop-item {% if page.permalink == '/made-js' %}active{% endif %}"><i class="fab fa-js-square warning"></i> Components made with Js</a>
@@ -27,18 +27,17 @@
 </div>
 </nav>
 
-<nav class="e-nav-aside myNav" style="background:rgb(253, 253, 253);">
+<nav class="e-nav-aside myNav" style="background:rgb(253, 254, 253);">
   <div class="e-face" style="background:transparent;">
     <div class="face-body centered">
 <div class="e-container">
-  <a href="{{ site.url }}"><img src="{{ site.url }}/assets/images/efrolic-brand.png" style="margin-left: -15px;width:100px;max-width:120px !important;"/></a>
+  <a href="{{ site.url }}" class="logo docs-brand"><img style="width:110px;" src="{{ site.url }}/assets/images/eFrolic.png" alt="{{site.title}}"/></a>
 </div>
     </div>
   </div>
       <li class="{% if page.permalink == '/start' %}active{% endif %}"><a href="{{ site.url }}/start"><i class="fas fa-play danger"></i>Quick start</a></li>
       <li class="{% if page.permalink == '/modular' %}active{% endif %}"><a href="{{ site.url }}/modular"><i class="fas fa-tasks danger"></i> Modular</a></li>
       <li class="{% if page.permalink == '/colors' %}active{% endif %}"><a href="{{ site.url }}/colors"><i class="fas fa-palette danger"></i> Colors</a></li>
-      <li class="{% if page.permalink == '/guide' %}active{% endif %}"><a href="{{ site.url }}/guide"><i class="fas fa-book danger"></i> Class guide</a></li>
       <p class="e-label"><strong>Layaout</strong><p>
       <li class="{% if page.permalink == '/container' %}active{% endif %}"><a href="{{ site.url }}/container"><i class="fas fa-box-open sky"></i> Container</a></li>
       <li class="{% if page.permalink == '/grid' %}active{% endif %}"><a href="{{ site.url }}/grid"><i class="fas fa-th sky"></i> Grid</a></li>
@@ -50,7 +49,7 @@
       <li class="{% if page.permalink == '/navbars' %}active{% endif %}"><a href="{{ site.url }}/navbars"><i class="fas fa-bars primary"></i> Navbars</a></li>
       <li class="{% if page.permalink == '/sidenav' %}active{% endif %}"><a href="{{ site.url }}/sidenav"><i class="fas fa-grip-vertical sky"></i> SideNav</a></li>
       <p class="e-label"><strong>Buttons</strong><p>
-      <li class="{% if page.permalink == '/buttons-previews' %}active{% endif %}"><a href="{{ site.url }}/previews-buttons"><i class="fas fa-desktop purple"></i> Buttons previews</a></li>
+      <li class="{% if page.permalink == '/buttons-previews' %}active{% endif %}"><a href="{{ site.url }}/buttons-previews"><i class="fas fa-desktop purple"></i> Buttons previews</a></li>
       <li class="{% if page.permalink == '/buttons' %}active{% endif %}"><a href="{{ site.url }}/buttons"><i class="far fa-circle purple"></i> Buttons</a></li>
       <li class="{% if page.permalink == '/social-buttons' %}active{% endif %}"><a href="{{ site.url }}/social-buttons"><i class="far fa-dot-circle purple"></i> Buttons Social</a></li>
       <p class="e-label"><strong>Utilities</strong><p>

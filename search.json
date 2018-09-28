@@ -6,13 +6,16 @@ layout: null
     {
       "title"    : "{{ post.title | escape }}",
       "bio" : "{{ post.bio | strip_html | strip_newlines | escape }}",
-      "category" : "Class",
+      "category" : "{{post.tag}}",
       "url"      : "{{ site.url }}{{ post.url }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %},
+
+  {"__Comentario": "--------------INFO DE LOS COMPONENTES DE NAVEGACION---------------"},
+
   {
     "title"    : "Start",
-    "bio" : "description",
+    "bio" : "Get started with eFrolic, a simple and functional framework for creating responsive sites on mobile devices. Use one of the following ways to start using.",
     "category" : "Get started",
     "url"      : "{{ site.url }}/start"
   },
@@ -27,12 +30,6 @@ layout: null
     "bio" : "Our color palette consists of neutral, white and blue. These colors are used as variants in all classes of eFrolic, that is, as a second class after the main one to personalize elements.",
     "category" : "Assistants",
     "url"      : "{{ site.url }}/colors"
-  },
-  {
-    "title"    : "Class Guide",
-    "bio" : "description",
-    "category" : "Assistants",
-    "url"      : "{{ site.url }}/guide"
   },
   {
     "title"    : "Container",
@@ -72,7 +69,7 @@ layout: null
   },
   {
     "title"    : "Navbars",
-    "bio" : "description",
+    "bio" : "The navigation is a main component for our design, it is the element with which our users are guided, you have different options in colors, sizes and states. They are easy to customize, take a look and create your own navbar.",
     "category" : "Components",
     "url"      : "{{ site.url }}/navbars"
   },
@@ -83,51 +80,80 @@ layout: null
     "url"      : "{{ site.url }}/sidenav"
   },
   {
-    "title"    : "Buttons Previews",
-    "bio" : "description",
+    "title"    : "Previews Buttons",
+    "bio" : "This is a preview of all the buttons you can create just by adding classes. Press start to find the documentation of how to use.",
     "category" : "Elements",
     "url"      : "{{ site.url }}/buttons-previews"
   },
   {
-    "title"    : "Start Buttons",
-    "bio" : "description",
+    "title"    : "Buttons",
+    "bio" : "{{ page.description }}",
     "category" : "Elements",
     "url"      : "{{ site.url }}/buttons"
   },
   {
     "title"    : "Social Buttons",
-    "bio" : "description",
+    "bio" : "{{ page.description }}",
     "category" : "Elements",
     "url"      : "{{ site.url }}/social-buttons"
   },
   {
     "title"    : "Notes previews",
-    "bio" : "description",
+    "bio" : "{{ page.description }}",
     "category" : "Elements",
     "url"      : "{{ site.url }}/notes-previews"
   },
   {
-    "title"    : "Start Notes",
-    "bio" : "description",
+    "title"    : "Notes",
+    "bio" : "{{ page.description }}",
     "category" : "Elements",
     "url"      : "{{ site.url }}/notes"
   },
   {
     "title"    : "Alerts previews",
-    "bio" : "description",
+    "bio" : "{{ page.description }}",
     "category" : "Elements",
     "url"      : "{{ site.url }}/alerts-previews"
   },
   {
     "title"    : "Alerts",
-    "bio" : "description",
+    "bio" : "{{ page.description }}",
     "category" : "Elements",
     "url"      : "{{ site.url }}/alerts"
   },
   {
     "title"    : "Cards",
-    "bio" : "description",
+    "bio" : "{{ page.description }}",
     "category" : "Components",
     "url"      : "{{ site.url }}/cards"
+  },
+
+
+  {"__Comentario": "---------INFO DE LAS CLASES------------"},
+
+
+  {
+    "title"    : "e-face",
+    "bio" : "description",
+    "category" : "Class",
+    "url"      : "{{ site.url }}/face"
+  },
+  {
+    "title"    : "e-nav",
+    "bio" : "description",
+    "category" : "Class",
+    "url"      : "{{ site.url }}/navbars"
+  },
+  {
+    "title"    : "e-alert",
+    "bio" : "description",
+    "category" : "Class",
+    "url"      : "{{ site.url }}/alert"
+  },
+  {
+    "title"    : "e-container",
+    "bio" : "description",
+    "category" : "Class",
+    "url"      : "{{ site.url }}/container"
   }
 ]

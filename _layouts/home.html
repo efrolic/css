@@ -5,7 +5,7 @@ layout: base
     <main class="e-face e-fullscreen main">
 
       <nav class="e-nav no-bg">
-        <a href="{{ site.url }}" class="e-logo ePull"><img src="./assets/images/efrolic-brand.png" style="margin-left:5px;width:120px;max-width:120px !important;"/></a>
+        <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/assets/images/eFrolic.png" alt="{{site.title}}"/></a>
         <i class="e-distribution"></i>
         <a href="{{ site.url }}/buttons" class="e-btn {{ site.button }} plus no-mobile">
           <i class="fas fa-box"></i>
@@ -17,7 +17,7 @@ layout: base
 
       <section class="face-body centered">
         <div class="face-item mi-item" style="text-shadow:none;">
-          <img class="eSlide" src="{{ site.url }}/assets/images/efrolic-developer.png" style="max-width:370px !important;" alt="{{ site.title }}">
+          <img class="eSlide" src="{{ site.url }}/assets/images/efrolic-developer.png" style="max-width:370px !important;" alt="{{ site.description }}">
           <p class="info-frolic eSlide" style="color:{{ site.text_color }};">
             {% if page.description %}{{ page.description }}
             {% else %}{{site.description}}
@@ -39,9 +39,9 @@ layout: base
       </section>
     </main>
 
-    <section id="section" class="e-container centered e-fullscreen bg">
+    <section id="section" class="e-container centered e-fullscreen bg-2">
       <div class="e-cols">
-        <div class="e-col-4 e-alert white">
+        <div class="e-col-4 container-white">
           <h3 class="e-title" style="color:#{{ site.title_color }};">Css / GitHub</h3><br>
           <p style="color:{{ site.text_color }};">
             Copy-paste the stylesheet
@@ -56,7 +56,7 @@ layout: base
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 {% endhighlight %}
         </div>
-        <div class="e-col-3 e-alert white">
+        <div class="e-col-3 container-white">
           <h3 class="e-title" style="color:#{{ site.title_color }};">Get started</h3><br>
           <p style="color:{{ site.text_color }};">Get started with eFrolic, a simple and functional framework for creating responsive sites on mobile devices. Use one of the following ways to start using.</p>
           <!-- Code -->
@@ -65,7 +65,7 @@ layout: base
             npm install frolic
           </div>
         </div>
-        <div class="e-col-4 e-alert white">
+        <div class="e-col-4 container-white">
           <h3 class="e-title" style="color:#{{ site.title_color }};">Css / CDN</h3><br>
           <p style="color:{{ site.text_color }};">
             Copy-paste the stylesheet
@@ -177,7 +177,7 @@ layout: base
       </div>
     </section>
 
-    <section class="e-container centered e-fullscreen bg">
+    <section class="e-container centered e-fullscreen bg-2">
       <div class="e-cols">
         <div class="e-col-5">
           <h3 class="e-title" style="color:#{{ site.title_color }};">Easy lessons to learn</h3><br>
