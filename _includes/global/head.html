@@ -1,10 +1,29 @@
 <head>
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %} | {{site.subtitle}}</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="152x152" href="{{site.url}}/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{site.url}}/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{site.url}}/assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="{{site.url}}/assets/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="{{site.url}}/assets/images/favicon/safari-pinned-tab.svg" color="#1da1f2">
+
+
+  <!-- Meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}</title>
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="rgb(29, 161, 242)">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}"/>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://www.lunixhair.com/img/previ.jpg"/>
 
+  <!-- Links -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="stylesheet" href="{{ site.url }}/assets/css/efroli.css?v={{ site.time | date: "%Y%m%d%H%M" }}">
   <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css?v={{ site.time | date: "%Y%m%d%H%M" }}">
   <link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css?v={{ site.time | date: "%Y%m%d%H%M" }}">

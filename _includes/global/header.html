@@ -4,7 +4,7 @@
 <a class="e-btn circle inverted gray no-desktop text-btn" onclick="showNav()"><i class="fas fa-bars"></i></a>
 <input type="checkbox" id="e-menu">
 <div class="e-menu">
-    <a href="#" class="e-btn circle inverted"><i class="fab fa-github"></i></a>
+  <a href="#" class="e-btn circle inverted"><i class="fab fa-github"></i></a>
   <a href="{{ site.url }}/documentation" class="e-btn plane inverted primary small"><i class="fas fa-chalkboard-teacher danger"></i> View Docs</a>
   <i class="e-distribution"></i>
   <a href="{{ site.url }}/helpers" class="e-menu-item {% if page.permalink == '/helpers' %}active{% endif %}"><i class="far fa-bookmark success"></i> News</a>
@@ -42,7 +42,7 @@
       <li class="{% if page.permalink == '/colors' %}active{% endif %}"><a href="{{ site.url }}/colors"><i class="fas fa-download"></i> Download</a></li>
       <li class="{% if page.permalink == '/templates' %}active{% endif %}"><a href="{{ site.url }}/templates"><i class="fas fa-star warning"></i> Templates</a></li>
       <li class="{% if page.permalink == '/colors' %}active{% endif %}"><a href="{{ site.url }}/colors"><i class="fas fa-palette danger"></i> Colors</a></li>
-      <li class="{% if page.permalink == '/news' %}active{% endif %}"><a href="{{ site.url }}/news"><i class="far fa-bookmark success"></i> News</a></li>
+      <li class="{% if page.permalink == '/news' %}active{% endif %}"><a href="{{ site.url }}/news"><i class="far fa-bookmark success"></i> See the new</a></li>
       <p class="e-label"><strong>Layaout</strong></p>
       <li class="{% if page.permalink == '/container' %}active{% endif %}"><a href="{{ site.url }}/container"><i class="fas fa-box-open sky"></i> Container</a></li>
       <li class="{% if page.permalink == '/grid' %}active{% endif %}"><a href="{{ site.url }}/grid"><i class="fas fa-th sky"></i> Grid</a></li>
@@ -71,6 +71,11 @@
       <li class="{% if page.permalink == '/modal' %}active{% endif %}"><a href="{{ site.url }}/modal"><i class="far fa-window-maximize dark"></i> Modal</a></li>
       <li class="{% if page.permalink == '/icons' %}active{% endif %}"><a href="{{ site.url }}/icons"><i class="far fa-laugh-wink success"></i> Icons</a></li>
       <li class="{% if page.permalink == '/typography' %}active{% endif %}"><a href="{{ site.url }}/typography"><i class="fas fa-laptop-code gray"></i> Typography</a></li>
+      <p class="e-label"><strong>About</strong></p>
+      <li class="{% if page.permalink == '/typography' %}active{% endif %}"><a href="{{ site.url }}/about"><i class="fas fa-user-astronaut danger"></i> About the Author</a></li>
+      <li><a href="https://www.facebook.com/eFrolicss/" target="_blank"><i class="fab fa-facebook-square purple"></i> Facebook</a></li>
+      <li><a href="" target="_blank"><i class="fab fa-github-alt"></i> GitHub</a></li>
+
       <div class="e-col centered">
         <hr>
         <p>&copy; 2018 <strong>eFrolic.</strong><br>
