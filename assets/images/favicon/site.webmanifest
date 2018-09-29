@@ -3,7 +3,7 @@
     "short_name": "eFrolic",
     "icons": [
         {
-            "src": "/assets/favicon/android-chrome-144x144.png",
+            "src": "/assets/images/favicon/android-chrome-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         }
