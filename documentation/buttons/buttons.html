@@ -1,0 +1,769 @@
+---
+layout: default
+title: Buttons
+description: "The buttons are one of the most essential elements of our design,
+is the element with which most users interact, and for this reason we have diversities
+of options of the classic buttons, in different colors, sizes and states. They are easy to customize,
+you just need to see some examples and create your own ideas just by putting some classes."
+permalink: /buttons
+---
+
+<h3 class="code-title">{{page.title}}</h3>
+<p class="desc">{{page.description}}</p>
+<hr class="hr">
+<div class="container-white">
+<h3 class="code-title">Use</h3>
+<p>The <strong class="code">.e-btn</strong> class can be used in the following tags:</p>
+<p><strong class="code">&lt;a class="e-btn"&gt;</strong> anchor links.</p>
+<p><strong class="code">&lt;button class="e-btn"&gt;</strong> Buttons by default.</p>
+<p><strong class="code">&lt;input type="submit" class="e-btn"&gt;</strong> Inputs of type submit.</p><br>
+<div class="targe-code">
+<h4>Observations</h4>
+<p>There are global classes that apply to all buttons after the main class.<br></p>
+</div>
+<p>After the main class, Example.: <strong class="code">e-btn any</strong></p>
+</div>
+<div class="container-white">
+<h4 class="code-title">Sizes</h4>
+<p>Add class <strong class="code">small</strong> or <strong class="code">plus</strong>
+to give your buttons a smaller or larger size <b>(Apply to all)</b>.
+</p>
+<p>Examples:</p>
+<a class="e-btn small primary">Small</a>
+<a class="e-btn primary">Normal</a>
+<a class="e-btn plus primary">Plus</a>
+{% highlight html %}
+<a class="e-btn small">Small</a>
+<a class="e-btn">Normal</a>
+<a class="e-btn plus">Plus</a>{% endhighlight %}
+</div>
+<!-- Implement btn float del elemento -->
+<div class="container-white">
+<h4 class="code-title">Floating buttons</h4>
+<p>Add class <strong class="code">float-left</strong> o <strong class="code">float-right</strong>
+
+to float a button to the right or left. These buttons are fixed on the screen. <b>(Apply to all)</b>.
+</p>
+<p>Examples:</p>
+<a href="{{site.url}}/demo-float" target="_blank" class="e-btn {{site.button_optional}}">Live View</a>
+{% highlight html %}
+<a class="e-btn circle float-right"><i class="fas fa-plus"></i></a>{% endhighlight %}
+</div>
+
+<!-- Implement btn float del elemento -->
+<div class="container-white">
+<h4 class="code-title">Waves effect</h4>
+<p>All buttons by default already have the waves effect.</p>
+<p>Examples: <b>Click.</b></p>
+<a class="e-btn primary">Button</a>
+<a class="e-btn circle primary">E</a>
+<a class="e-btn outlined primary">Button</a>
+</div>
+
+<!-- Implement btn Full del elemento -->
+<div class="container-white">
+<h4 class="code-title">Fullwidth Buttons</h4>
+<p>Add class <strong class="code">fullwidth</strong> to occupy 100% of width. <b>(Does not apply in e-btn circle)</b>.</p>
+<p>Examples:</p>
+<a class="e-btn plane primary shadow e-waves plus fullwidth">fullwidth</a>
+<a class="e-btn plane blue-gradient shadow e-waves fullwidth">fullwidth</a>
+<!-- Code del elemento -->
+{% highlight html %}
+<a class="e-btn fullwidth">fullwidth</a>
+<a class="e-btn fullwidth">fullwidth</a>{% endhighlight %}
+</div>
+<article class="e-note block success">
+<div class="note-body">
+<h3 class="code-title">Main Classes</h3>
+These are the 7 kinds of buttons and each share the same properties.
+<p><strong class="code">.e-btn</strong></p>
+<p><strong class="code">.e-btn circle</strong></p>
+<p><strong class="code">.e-btn anime</strong></p>
+<p><strong class="code">.e-btn plane</strong></p>
+<p><strong class="code">.e-btn rounded</strong></p>
+<p><strong class="code">.e-btn inverted</strong></p>
+<p><strong class="code">.e-btn outlined</strong></p>
+</div>
+</article><br>
+
+
+<div class="e-note danger visual">
+<div class="note-header">
+Oh oh! we observe your screen is small,
+we recommend using a larger monitor for the correct visualization of some elements.
+</div>
+<div class="note-body">
+This page looks small, because it has shrunk the browser or its smaller size device.
+</div>
+</div><br>
+<style>
+.visual {
+display: none;
+}
+
+@media screen and (min-width:1024px) {
+.visual {
+display: block;
+}
+}
+
+@media screen and (min-width:1280px) {
+.visual {
+display: none;
+}
+}
+
+</style>
+
+
+<div class="container-white">
+<h3 class="code-title">Basic buttons</h3>
+<p>11 buttons of predefined styles.</p>
+<p>You can modify these buttons using the references above.</p>
+<p><strong class="code">Available:</strong> <strong>
+resize, float, fullwidth and animate.</strong></p>
+<div class="e-cols no-gap">
+<div class="e-col"><br>
+<a class="e-btn">Default</a>
+<a class="e-btn white">White</a>
+<a class="e-btn gray">Gray</a>
+<a class="e-btn dark">Dark</a>
+<a class="e-btn black">Black</a>
+<a class="e-btn primary">Primary</a>
+<a class="e-btn success">Success</a>
+<a class="e-btn warning">Warning</a>
+<a class="e-btn sky">Info</a>
+<a class="e-btn danger">Danger</a>
+<a class="e-btn purple">Purple</a>
+<p><strong>No-shadow</strong></p>
+<a class="e-btn danger no-shadow">Danger</a>
+<a class="e-btn success no-shadow">Success</a>
+<a class="e-btn purple no-shadow">Purple</a>
+</div>
+<div class="e-col">
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn">Default</a>
+<a class="e-btn white">White</a>
+<a class="e-btn gray">Gray</a>
+<a class="e-btn dark">Dark</a>
+<a class="e-btn black">Black</a>
+<a class="e-btn primary">Primary</a>
+<a class="e-btn success">Success</a>
+<a class="e-btn warning">Warning</a>
+<a class="e-btn sky">Info</a>
+<a class="e-btn danger">Danger</a>
+<a class="e-btn purple">Purple</a>
+
+<!-- No-shadow -->
+<a class="e-btn danger no-shadow">Danger</a>
+{% endhighlight %}
+
+</div>
+</div>
+</div>
+
+
+
+<div class="container-white">
+
+<h3 class="code-title">Anime Buttons</h3>
+<p>You can modify these buttons using the references above.</p>
+<p><strong class="code">Available:</strong> <strong>
+resize, float, fullwidth and animate.</strong></p>
+<div class="e-cols no-gap">
+<div class="e-col">
+<a class="e-btn anime primary">Primary</a>
+<a class="e-btn anime success">Success</a>
+<a class="e-btn anime warning">Warning</a>
+<a class="e-btn anime danger">Danger</a>
+<br><br>
+<a class="e-btn anime purple">Purple</a>
+<a class="e-btn anime sky">Info</a>
+<a class="e-btn anime white">White</a>
+<a class="e-btn anime gray">Gray</a>
+<a class="e-btn anime dark">Dark</a>
+<p><strong>Inverted</strong></p>
+<a class="e-btn anime inverted primary">Primary</a>
+<a class="e-btn anime inverted success">Success</a>
+<a class="e-btn anime inverted purple">Purple</a>
+<a class="e-btn anime inverted danger">Danger</a>
+<a class="e-btn anime inverted sky">Info</a>
+<a class="e-btn anime inverted warning">Warning</a>
+<a class="e-btn anime inverted gray">Gray</a>
+<a class="e-btn anime inverted dark">Dark</a>
+</div>
+<div class="e-col">
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn anime primary">Primary</a>
+<a class="e-btn anime success">Success</a>
+<a class="e-btn anime warning">Warning</a>
+<a class="e-btn anime danger">Danger</a>
+<a class="e-btn anime purple">Purple</a>
+<a class="e-btn anime sky">Info</a>
+<a class="e-btn anime white">White</a>
+<a class="e-btn anime gray">Gray</a>
+<a class="e-btn anime dark">Dark</a>
+
+<!-- Inverted -->
+<a class="e-btn anime inverted primary">Primary</a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+
+<div class="container-white">
+<h3 class="code-title">Outlined Buttons</h3>
+<p>You can modify these buttons using the references above.</p>
+<p><strong class="code">Available:</strong> <strong>
+resize, float and animate.</strong></p>
+
+<p><b>Does not include gradient colors.</b></p>
+<div class="e-cols no-gap">
+<div class="e-col">
+<a class="e-btn outlined primary">Primary</a>
+<!-- Success button -->
+<a class="e-btn outlined success">Success</a>
+<!-- Warning button -->
+<a class="e-btn outlined warning">Warning</a>
+<!-- Sky button -->
+<a class="e-btn outlined sky">Info</a>
+<!-- Danger button -->
+<a class="e-btn outlined danger">Danger</a>
+<!-- Gray button -->
+<a class="e-btn outlined gray">Gray</a>
+<!-- Dark button -->
+<a class="e-btn outlined dark">Dark</a>
+<!-- Purple button -->
+<a class="e-btn outlined purple">Purple</a>
+<p><strong>No-shadow</strong></p>
+<a class="e-btn outlined no-shadow success">Success</a>
+<a class="e-btn outlined no-shadow sky">Info</a>
+<a class="e-btn outlined no-shadow danger">Danger</a>
+<a class="e-btn outlined no-shadow gray">Gray</a>
+<a class="e-btn outlined no-shadow dark">Dark</a>
+<a class="e-btn outlined no-shadow purple">Purple</a>
+<a class="e-btn outlined no-shadow warning">Warning</a>
+</div>
+<div class="e-col">
+{% highlight html %}
+<a class="e-btn outlined primary">Primary</a>
+<a class="e-btn outlined success">Success</a>
+<a class="e-btn outlined warning">Warning</a>
+<a class="e-btn outlined sky">Info</a>
+<a class="e-btn outlined danger">Danger</a>
+<a class="e-btn outlined gray">Gray</a>
+<a class="e-btn outlined dark">Dark</a>
+<a class="e-btn outlined purple">Purple</a>
+
+<!-- No-shadow -->
+<a class="e-btn outlined no-shadow sky">Info</a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+<div class="container-white">
+<!-- Botones outlined -->
+<h3 class="code-title">Outlined Rounded Buttons</h3>
+<p>You can modify these buttons using the references above.</p>
+<p><strong class="code">Available:</strong> <strong>
+resize, float and animate.</strong></p>
+<p><b>Does not include gradient colors.</b></p>
+<div class="e-cols no-gap">
+<div class="e-col">
+<a class="e-btn outlined rounded primary">Primary</a>
+<a class="e-btn outlined rounded success">Success</a>
+<a class="e-btn outlined rounded warning">Warning</a>
+<a class="e-btn outlined rounded sky">Info</a>
+<a class="e-btn outlined rounded danger">Danger</a>
+<a class="e-btn outlined rounded gray">Gray</a>
+<a class="e-btn outlined rounded dark">Dark</a>
+<a class="e-btn outlined rounded purple">Purple</a>
+<p><strong>No-shadow</strong></p>
+<a class="e-btn outlined rounded no-shadow primary">Primary</a>
+<a class="e-btn outlined rounded no-shadow success">Success</a>
+<a class="e-btn outlined rounded no-shadow danger">Danger</a>
+<a class="e-btn outlined rounded no-shadow purple">Purple</a>
+<a class="e-btn outlined rounded no-shadow warning">Warning</a>
+<a class="e-btn outlined rounded no-shadow sky">Info</a>
+</div>
+<div class="e-col">
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn outlined rounded primary">Primary</a>
+<a class="e-btn outlined rounded success">Success</a>
+<a class="e-btn outlined rounded warning">Warning</a>
+<a class="e-btn outlined rounded sky">Info</a>
+<a class="e-btn outlined rounded danger">Danger</a>
+<a class="e-btn outlined rounded gray">Gray</a>
+<a class="e-btn outlined rounded dark">Dark</a>
+<a class="e-btn outlined rounded purple">Purple</a>
+
+<!-- No-shadow -->
+<a class="e-btn outlined rounded no-shadow sky">
+Info
+</a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+<div class="container-white">
+<!-- Botones outlined -->
+<h3 class="code-title">Outlined Plane Buttons</h3>
+<p>You can modify these buttons using the references above.</p>
+<p><strong class="code">Available:</strong> <strong>
+resize, float and animate.</strong></p>
+<p><b>Does not include gradient colors.</b></p>
+<div class="e-cols no-gap">
+<div class="e-col">
+<a class="e-btn outlined plane primary">Primary</a>
+<a class="e-btn outlined plane success">Success</a>
+<a class="e-btn outlined plane warning">Warning</a>
+<a class="e-btn outlined plane sky">Info</a>
+<a class="e-btn outlined plane danger">Danger</a>
+<a class="e-btn outlined plane gray">Gray</a>
+<a class="e-btn outlined plane dark">Dark</a>
+<a class="e-btn outlined plane purple">Purple</a>
+<p><strong>No-shadow</strong></p>
+<a class="e-btn outlined plane no-shadow primary">Primary</a>
+<a class="e-btn outlined plane no-shadow success">Success</a>
+<a class="e-btn outlined plane no-shadow warning">Warning</a>
+</div>
+<div class="e-col">
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn outlined plane primary">Primary</a>
+<a class="e-btn outlined plane success">Success</a>
+<a class="e-btn outlined plane warning">Warning</a>
+<a class="e-btn outlined plane sky">Info</a>
+<a class="e-btn outlined plane danger">Danger</a>
+<a class="e-btn outlined plane gray">Gray</a>
+<a class="e-btn outlined plane dark">Dark</a>
+<a class="e-btn outlined plane purple">Purple</a>
+
+<!-- No-shadow -->
+<a class="e-btn outlined plane no-shadow success">Success</a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+<div class="container-white">
+<!-- Botones Inverted -->
+<h3 class="code-title">Inverted Buttons</h3>
+<p>You can modify these buttons using the references above.</p>
+<p><strong class="code">Available:</strong> <strong>
+resize, float and animate.</strong></p>
+<p><b>Does not include gradient colors.</b></p>
+<div class="e-cols no-gap">
+<div class="e-col">
+<a class="e-btn inverted">Default</a>
+<a class="e-btn inverted primary">Primary</a>
+<a class="e-btn inverted success">Success</a>
+<a class="e-btn inverted warning">Warning</a>
+<a class="e-btn inverted sky">Info</a>
+<a class="e-btn inverted danger">Danger</a>
+<a class="e-btn inverted gray">Gray</a>
+<a class="e-btn inverted dark">Dark</a>
+<a class="e-btn inverted purple">Purple</a>
+<p><strong>Inverted Plane</strong></p>
+<a class="e-btn inverted plane">Default</a>
+<a class="e-btn inverted plane primary">Primary</a>
+<a class="e-btn inverted plane success">Success</a>
+<a class="e-btn inverted plane warning">Warning</a>
+<a class="e-btn inverted plane sky">Info</a>
+<a class="e-btn inverted plane danger">Danger</a>
+<a class="e-btn inverted plane gray">Gray</a>
+<a class="e-btn inverted plane dark">Dark</a>
+<a class="e-btn inverted plane purple">Purple</a>
+<br>
+<p><strong>Transparent Buttons</strong></p>
+<div class="e-col-11 e-alert primary">
+<a class="e-btn outlined transparent no-shadow">Button</a>
+<a class="e-btn outlined rounded transparent no-shadow">Button</a>
+<a class="e-btn outlined transparent">Button</a>
+<a class="e-btn outlined plane transparent no-shadow">Button</a>
+<br>
+<a class="e-btn outlined transparent small no-shadow">Button</a>
+<a class="e-btn outlined rounded  small transparent no-shadow">Button</a>
+<a class="e-btn outlined plane transparent small no-shadow">Button</a>
+</div>
+</div>
+<div class="e-col">
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn inverted">Default</a>
+<a class="e-btn inverted primary">Primary</a>
+<a class="e-btn inverted success">Success</a>
+<a class="e-btn inverted warning">Warning</a>
+<a class="e-btn inverted sky">Info</a>
+<a class="e-btn inverted danger">Danger</a>
+<a class="e-btn inverted gray">Gray</a>
+<a class="e-btn inverted dark">Dark</a>
+<a class="e-btn inverted purple">Purple</a>
+
+<!-- Inverted Plane -->
+<a class="e-btn inverted plane sky">Button</a>
+<a class="e-btn inverted plane danger">Butto</a>
+
+<!-- Transparent Buttons -->
+<a class="e-btn outlined transparent no-shadow">Info</a>
+<a class="e-btn outlined plane transparent no-shadow">
+Button
+</a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+
+<!-- Botones Plane -->
+<div class="container-white">
+<h3 class="code-title">Plane Buttons</h3>
+<p>You can modify these buttons using the references above.</p>
+<p><strong class="code">Available:</strong> <strong>
+resize, float, fullwidth and animate.</strong></p>
+<div class="e-cols no-gap">
+<div class="e-col">
+<a class="e-btn plane primary">Primary</a>
+<a class="e-btn plane success">Success</a>
+<a class="e-btn plane danger">Danger</a>
+<a class="e-btn plane warning">Warning</a>
+<br><br>
+<a class="e-btn plane purple">Purple</a>
+<a class="e-btn plane blue-gradient">Button</a>
+<a class="e-btn plane green-gradient">Button</a>
+<a class="e-btn plane purple-gradient">Button</a>
+<p><strong>No-shadow</strong></p>
+<a class="e-btn plane no-shadow success">Success</a>
+<a class="e-btn plane no-shadow danger">Danger</a>
+<a class="e-btn plane no-shadow warning">Warning</a>
+<p><strong>Inverted</strong></p>
+<a class="e-btn plane inverted  warning">Warning</a>
+<a class="e-btn plane inverted  success">Success</a>
+<a class="e-btn plane inverted  danger">Danger</a>
+<a class="e-btn plane inverted purple">Purple</a>
+</div>
+<div class="e-col">
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn plane primary">Primary</a>
+<a class="e-btn plane success">Success</a>
+<a class="e-btn plane danger">Danger</a>
+<a class="e-btn plane warning">Warning</a>
+
+<a class="e-btn plane purple">Purple</a>
+<a class="e-btn plane blue-gradient">Button</a>
+<a class="e-btn plane green-gradient">Button</a>
+<a class="e-btn plane purple-gradient">Button</a>
+
+<!-- No-shadow -->
+<a class="e-btn plane no-shadow success">Success</a>
+
+<!-- Inverted -->
+<a class="e-btn plane inverted success">Success</a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+
+<!-- Botones Rounded -->
+<div class="container-white">
+<h3 class="code-title">Rounded Buttons</h3>
+<p>You can modify these buttons using the references above.</p>
+<p><strong class="code">Available:</strong> <strong>
+resize, float, fullwidth and animate.</strong></p>
+<div class="e-cols no-gap">
+<div class="e-col">
+<a class="e-btn rounded primary">Primary</a>
+<a class="e-btn rounded white">White</a>
+<a class="e-btn rounded success">Success</a>
+<a class="e-btn rounded warning">Warning</a>
+<a class="e-btn rounded sky">Info</a>
+<a class="e-btn rounded danger">Danger</a>
+<a class="e-btn rounded gray">Gray</a>
+<a class="e-btn rounded dark">Dark</a>
+<a class="e-btn rounded purple">Purple</a>
+<p><strong>No-shadow</strong></p>
+<a class="e-btn rounded no-shadow sky">Info</a>
+<a class="e-btn rounded no-shadow danger">Danger</a>
+<a class="e-btn rounded no-shadow success">Success</a>
+<a class="e-btn rounded no-shadow warning">Warning</a>
+<a class="e-btn rounded no-shadow purple">Purple</a>
+<a class="e-btn rounded no-shadow primary">Primary</a>
+</div>
+<div class="e-col">
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn rounded primary">Primary</a>
+<a class="e-btn rounded white">White</a>->
+<a class="e-btn rounded success">Success</a>
+<a class="e-btn rounded warning">Warning</a>
+<a class="e-btn rounded sky">Info</a>
+<a class="e-btn rounded danger">Danger</a>
+<a class="e-btn rounded gray">Gray</a>
+<a class="e-btn rounded dark">Dark</a>
+<a class="e-btn rounded purple">Purple</a>
+
+<!-- No-shadow -->
+<a class="e-btn rounded no-shadow sky">Info</a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+<!-- Botones Rounded -->
+<div class="container-white">
+<h3 class="code-title">Hamburgers / Menu icon</h3>
+<p>You can modify these buttons using the references above.</p>
+<p><strong class="code">Available:</strong> <strong>
+resize, float, fullwidth and animate.</strong></p>
+<p><strong class="e-s danger code">Required:</strong> <strong>
+Font awesome icons</strong></p>
+<div class="e-cols no-gap">
+<div class="e-col">
+<a class="e-btn"><i class="fas fa-bars"></i></a>
+<a class="e-btn white"><i class="fas fa-bars"></i></a>
+<a class="e-btn gray"><i class="fas fa-bars"></i></a>
+<a class="e-btn dark"><i class="fas fa-bars"></i></a>
+<a class="e-btn black"><i class="fas fa-bars"></i></a>
+<a class="e-btn primary"><i class="fas fa-bars"></i></a>
+<a class="e-btn success"><i class="fas fa-bars"></i></a>
+<a class="e-btn danger"><i class="fas fa-bars"></i></a>
+<a class="e-btn warning"><i class="fas fa-bars"></i></a>
+<a class="e-btn sky"><i class="fas fa-bars"></i></a>
+<a class="e-btn purple"><i class="fas fa-bars"></i></a>
+<a class="e-btn inverted"><i class="fas fa-bars"></i></a>
+<a class="e-btn inverted black"><i class="fas fa-bars"></i></a>
+<a class="e-btn inverted primary"><i class="fas fa-bars"></i></a>
+<a class="e-btn inverted success"><i class="fas fa-bars"></i></a>
+<a class="e-btn inverted danger"><i class="fas fa-bars"></i></a>
+<a class="e-btn inverted warning"><i class="fas fa-bars"></i></a>
+<a class="e-btn inverted sky"><i class="fas fa-bars"></i></a>
+<a class="e-btn inverted purple"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle white"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle dark"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle primary"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle success"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle danger"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle warning"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle sky"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle purple"><i class="fas fa-bars"></i></a>
+<a class="e-btn outlined"><i class="fas fa-bars"></i></a>
+<a class="e-btn outlined black"><i class="fas fa-bars"></i></a>
+<a class="e-btn outlined primary"><i class="fas fa-bars"></i></a>
+<a class="e-btn outlined success"><i class="fas fa-bars"></i></a>
+<a class="e-btn outlined danger"><i class="fas fa-bars"></i></a>
+<a class="e-btn outlined warning"><i class="fas fa-bars"></i></a>
+<a class="e-btn outlined sky"><i class="fas fa-bars"></i></a>
+<a class="e-btn outlined purple"><i class="fas fa-bars"></i></a>
+<a class="e-btn anime"><i class="fas fa-bars"></i></a>
+<a class="e-btn anime dark"><i class="fas fa-bars"></i></a>
+<a class="e-btn anime primary"><i class="fas fa-bars"></i></a>
+<a class="e-btn anime success"><i class="fas fa-bars"></i></a>
+<a class="e-btn anime danger"><i class="fas fa-bars"></i></a>
+<a class="e-btn anime warning"><i class="fas fa-bars"></i></a>
+<a class="e-btn anime sky"><i class="fas fa-bars"></i></a>
+<a class="e-btn anime purple"><i class="fas fa-bars"></i></a>
+<a class="e-btn plane inverted"><i class="fas fa-bars"></i></a>
+<a class="e-btn plane inverted dark"><i class="fas fa-bars"></i></a>
+<a class="e-btn plane inverted primary"><i class="fas fa-bars"></i></a>
+<a class="e-btn plane inverted success"><i class="fas fa-bars"></i></a>
+<a class="e-btn plane inverted danger"><i class="fas fa-bars"></i></a>
+<a class="e-btn plane inverted warning"><i class="fas fa-bars"></i></a>
+<a class="e-btn plane inverted sky"><i class="fas fa-bars"></i></a>
+<a class="e-btn plane inverted purple"><i class="fas fa-bars"></i></a>
+<h6 class="code-title">No shadow</h6>
+<a class="e-btn no-shadow "><i class="fas fa-bars"></i></a>
+<a class="e-btn  no-shadow white"><i class="fas fa-bars"></i></a>
+<a class="e-btn  no-shadow dark"><i class="fas fa-bars"></i></a>
+<a class="e-btn  no-shadow primary"><i class="fas fa-bars"></i></a>
+</div>
+<div class="e-col">
+{% highlight html %}
+<!-- Basic -->
+<a class="e-btn"><i class="fas fa-bars"></i></a>
+<a class="e-btn danger"><i class="fas fa-bars"></i></a>
+<a class="e-btn purple"><i class="fas fa-bars"></i></a>
+
+<!-- Inverted -->
+<a class="e-btn inverted danger"><i class="fas fa-bars"></i></a>
+<a class="e-btn inverted primary"><i class="fas fa-bars"></i></a>
+<a class="e-btn inverted purple"><i class="fas fa-bars"></i></a>
+<!-- Circle -->
+<a class="e-btn circle"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle primary"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle danger"><i class="fas fa-bars"></i></a>
+<!--outlined -->
+<a class="e-btn outlined"><i class="fas fa-bars"></i></a>
+<a class="e-btn outlined sky"><i class="fas fa-bars"></i></a>
+<a class="e-btn outlined danger"><i class="fas fa-bars"></i></a>
+<!-- Anime -->
+<a class="e-btn anime"><i class="fas fa-bars"></i></a>
+<a class="e-btn anime purple"><i class="fas fa-bars"></i></a>
+<a class="e-btn anime success"><i class="fas fa-bars"></i></a>
+<!-- plane inverted -->
+<a class="e-btn plane inverted"><i class="fas fa-bars"></i></a>
+<a class="e-btn plane inverted sky"><i class="fas fa-bars"></i></a>
+<a class="e-btn plane inverted purple"><i class="fas fa-bars"></i></a>
+
+<!-- No shadow -->
+<a class="e-btn no-shadow"><i class="fas fa-bars"></i></a>
+<a class="e-btn primary no-shadow"><i class="fas fa-bars"></i></a>
+<a class="e-btn success no-shadow"><i class="fas fa-bars"></i></a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+
+<!-- Botones Circle -->
+<div class="container-white">
+<h3 class="code-title">Circle Buttons</h3>
+<p>You can modify these buttons using the references above.</p>
+<p><strong class="code">Available:</strong> <strong>
+resize, float and animate.</strong></p>
+<p><b>Does not include fullwidth.</b></p>
+<div class="e-cols no-gap">
+<div class="e-col-12">
+<a class="e-btn circle white"><i class="fas fa-plus"></i></a>
+<a class="e-btn circle gray"><i class="fa fa-users"></i></a>
+<a class="e-btn circle dark"><i class="fa fa-users"></i></a>
+<a class="e-btn circle black"><i class="fas fa-plus"></i></a>
+<a class="e-btn circle"><i class="fa fa-users"></i></a>
+<a class="e-btn circle success"><i class="fas fa-user-plus"></i></a>
+<a class="e-btn circle danger"><i class="fas fa-user-plus"></i></a>
+<a class="e-btn circle warning"><i class="fa fa-users"></i></a>
+<a class="e-btn circle sky"><i class="fa fa-users"></i></a>
+<a class="e-btn circle purple"><i class="fas fa-plus"></i></a>
+<a class="e-btn circle green-gradient"><i class="fa fa-users"></i></a>
+<a class="e-btn circle purple-gradient"><i class="fas fa-user-plus"></i></a>
+<a class="e-btn circle blue-gradient"><i class="fa fa-users"></i></a>
+<p><strong>No-shadow</strong></p>
+<a class="e-btn circle no-shadow success"><i class="fas fa-user-plus"></i></a>
+<a class="e-btn circle no-shadow danger"><i class="fas fa-user-plus"></i></a>
+<a class="e-btn circle no-shadow purple-gradient"><i class="fas fa-user-plus"></i></a>
+<p><strong>Inverted</strong></p>
+<div class="e-alert no-shadow">
+<a class="e-btn circle inverted primary"><i class="fas fa-user-plus"></i></a>
+<a class="e-btn circle inverted success"><i class="fas fa-user-plus"></i></a>
+<a class="e-btn circle inverted danger"><i class="fas fa-user-plus"></i></a>
+<a class="e-btn circle inverted warning"><i class="fa fa-users"></i></a>
+<a class="e-btn circle inverted sky"><i class="fa fa-users"></i></a>
+<a class="e-btn circle inverted purple"><i class="fas fa-plus"></i></a>
+</div>
+</div>
+<div class="e-col">
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn circle white"><i class="fas fa-plus"></i></a>
+
+<a class="e-btn circle gray"><i class="fa fa-users"></i></a>
+
+<a class="e-btn circle dark"><i class="fa fa-users"></i></a>
+
+<a class="e-btn circle black"><i class="fas fa-plus"></i></a>
+
+<a class="e-btn circle"><i class="fa fa-users"></i></a>
+
+<a class="e-btn circle success"><i class="fas fa-user-plus"></i></a>
+
+<a class="e-btn circle danger"><i class="fas fa-user-plus"></i></a>
+
+<a class="e-btn circle warning"><i class="fa fa-users"></i></a>
+
+<a class="e-btn circle sky"><i class="fa fa-users"></i></a>
+
+<a class="e-btn circle purple"><i class="fas fa-plus"></i></a>
+
+<a class="e-btn circle green-gradient"><i class="fa fa-users"></i></a>
+
+<a class="e-btn circle purple-gradient"><i class="fas fa-user-plus"></i></a>
+
+<a class="e-btn circle blue-gradient"><i class="fa fa-users"></i></a>
+
+<!-- No-shadow -->
+<a class="e-btn circle no-shadow success"><i class="fas fa-user-plus"></i></a>
+
+<!-- Inverted -->
+<a class="e-btn circle inverted primary"><i class="fas fa-user-plus"></i></a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+<!-- Botones Circle -->
+<div class="container-white">
+<h3 class="code-title">Gradient colors</h3>
+<div class="e-cols">
+<div class="e-col">
+<br>
+<a class="e-btn plane purple-gradient"><i class="fa fa-users"></i> Users</a>
+<a class="e-btn plane green-gradient"><i class="fas fa-plus"></i></a>
+<a class="e-btn plane blue-gradient"><i class="fa fa-users"></i></a>
+<a class="e-btn anime green-gradient plus fullwidth">Add users <i class="fas fa-user-plus"></i></a>
+</div>
+<div class="e-col">
+<br>
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn purple-gradient"><i class="fa fa-users"></i> Users</a>
+<a class="e-btn green-gradient"><i class="fas fa-plus"></i></a>
+<a class="e-btn blue-gradient"><i class="fa fa-users"></i></a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+
+<div class="container-white">
+<h3 class="code-title">Sizes</h3>
+<div class="e-cols no-gap">
+<div class="e-col">
+<a class="e-btn circle small primary">P</a>
+<a class="e-btn circle primary">P</a>
+<a class="e-btn circle plus primary">P</a><br>
+<a class="e-btn small primary">Primary</a>
+<a class="e-btn primary">Primary</a>
+<a class="e-btn plus primary">Primary</a><br>
+<a class="e-btn inverted small primary">Primary</a>
+<a class="e-btn inverted primary">Primary</a>
+<a class="e-btn inverted plus primary">Primary</a><br>
+<a class="e-btn anime small primary">Primary</a>
+<a class="e-btn anime primary">Primary</a>
+<a class="e-btn anime plus primary">Primary</a><br>
+<a class="e-btn outlined small primary">Primary</a>
+<a class="e-btn outlined primary">Primary</a>
+<a class="e-btn outlined plus primary">Primary</a><br>
+<a class="e-btn rounded small primary">Primary</a>
+<a class="e-btn rounded primary">Primary</a>
+<a class="e-btn rounded plus primary">Primary</a><br>
+<a class="e-btn plane small primary">Primary</a>
+<a class="e-btn plane primary">Primary</a>
+<a class="e-btn plane plus primary">Primary</a><br>
+</div>
+<div class="e-col">
+<!-- Code -->
+{% highlight html %}
+<a class="e-btn circle small primary">P</a>
+<a class="e-btn circle primary">P</a>
+<a class="e-btn circle plus primary">P</a>
+<a class="e-btn small primary">Primary</a>
+<a class="e-btn primary">Primary</a>
+<a class="e-btn plus primary">Primary</a><br>
+<a class="e-btn inverted small primary">Primary</a>
+<a class="e-btn inverted primary">Primary</a>
+<a class="e-btn inverted plus primary">Primary</a>
+<a class="e-btn anime small primary">Primary</a>
+<a class="e-btn anime primary">Primary</a>
+<a class="e-btn anime plus primary">Primary</a><br>
+<a class="e-btn outlined small primary">Primary</a>
+<a class="e-btn outlined primary">Primary</a>
+<a class="e-btn outlined plus primary">Primary</a>
+<a class="e-btn rounded small primary">Primary</a>
+<a class="e-btn rounded primary">Primary</a>
+<a class="e-btn rounded plus primary">Primary</a>
+<a class="e-btn plane small primary">Primary</a>
+<a class="e-btn plane primary">Primary</a>
+<a class="e-btn plane plus primary">Primary</a>
+{% endhighlight %}
+</div>
+</div>
+</div>
+</div>
