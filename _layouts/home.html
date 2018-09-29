@@ -29,17 +29,12 @@ layout: base
           <a href="{{ site.url }}/face" class="eUp e-btn plus {{ site.button_secondary }}">
             <b>Documentation</b>
           </a>
-          <!-- Code del elemento -->
-          <div class="eUp e-alert dark" style="text-align:left;">
-            <i class="fas fa-code e-icon"></i>
-            npm install efrolic
-          </div>
         </div>
         <div class="e-col no-mobile"></div>
       </section>
     </main>
 
-    <section id="section" class="e-container centered e-fullscreen bg-2">
+    <section class="e-container centered e-fullscreen bg-2">
       <div class="e-cols">
         <div class="e-col-4 container-white">
           <h3 class="e-title" style="color:#{{ site.title_color }};">Css / GitHub</h3><br>
@@ -51,19 +46,15 @@ layout: base
             before all other stylesheets to load our CSS.</p>
 <!-- Code -->
 {% highlight html %}
- <link rel="stylesheet" href="https://efraperalta.github.io/eFrolic/index.html#/">
+ <link rel="stylesheet" href="{{ page.css_github }}">
  <!-- Font awesome icons -->
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+ <link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
 {% endhighlight %}
         </div>
         <div class="e-col-3 container-white">
           <h3 class="e-title" style="color:#{{ site.title_color }};">Get started</h3><br>
           <p style="color:{{ site.text_color }};">Get started with eFrolic, a simple and functional framework for creating responsive sites on mobile devices. Use one of the following ways to start using.</p>
-          <!-- Code -->
-          <div class="e-alert dark" style="text-align:left;">
-            <i class="fas fa-code e-icon"></i>
-            npm install frolic
-          </div>
+          <a href="{{site.url}}/start/#template" class="e-btn fullwidth plus {{ site.button }}">Template</a>
         </div>
         <div class="e-col-4 container-white">
           <h3 class="e-title" style="color:#{{ site.title_color }};">Css / CDN</h3><br>
@@ -75,9 +66,9 @@ layout: base
             before all other stylesheets to load our CSS.</p>
 <!-- Code -->
 {% highlight html %}
-  <link rel="stylesheet" href="https://efraperalta.github.io/eFrolic/index.html#/">
+  <link rel="stylesheet" href="{{ page.css_cdn }}">
   <!-- Font awesome icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
 {% endhighlight %}
         </div>
       </div>

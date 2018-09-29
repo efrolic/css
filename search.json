@@ -83,43 +83,43 @@ layout: null
   {
     "title"    : "Previews Buttons",
     "bio" : "This is a preview of all the buttons you can create just by adding classes. Press start to find the documentation of how to use.",
-    "category" : "Elements",
+    "category" : "Preview",
     "url"      : "{{ site.url }}/buttons-previews"
   },
   {
     "title"    : "Buttons",
-    "bio" : "{{ page.description }}",
-    "category" : "Elements",
+    "bio" : "The buttons are one of the most essential elements of our design, is the element with which most users interact, and for this reason we have diversities of options of the classic buttons, in different colors, sizes and states. They are easy to customize, you just need to see some examples and create your own ideas just by putting some classes.",
+    "category" : "Components",
     "url"      : "{{ site.url }}/buttons"
   },
   {
     "title"    : "Social Buttons",
-    "bio" : "{{ page.description }}",
-    "category" : "Elements",
+    "bio" : "The buttons of social networks are important elements to share information about our site, it is the way to link with your visitors, observe the great variety of classic buttons, in different colors, sizes and states. These are some of the many social buttons that you can create with the font-awesome icons.",
+    "category" : "Components",
     "url"      : "{{ site.url }}/social-buttons"
   },
   {
     "title"    : "Notes previews",
     "bio" : "{{ page.description }}",
-    "category" : "Elements",
+    "category" : "Preview",
     "url"      : "{{ site.url }}/notes-previews"
   },
   {
     "title"    : "Notes",
     "bio" : "{{ page.description }}",
-    "category" : "Elements",
+    "category" : "Components",
     "url"      : "{{ site.url }}/notes"
   },
   {
     "title"    : "Alerts previews",
     "bio" : "{{ page.description }}",
-    "category" : "Elements",
+    "category" : "Preview",
     "url"      : "{{ site.url }}/alerts-previews"
   },
   {
     "title"    : "Alerts",
     "bio" : "{{ page.description }}",
-    "category" : "Elements",
+    "category" : "Components",
     "url"      : "{{ site.url }}/alerts"
   },
   {
