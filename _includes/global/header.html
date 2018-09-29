@@ -7,9 +7,10 @@
     <a href="#" class="e-btn circle inverted"><i class="fab fa-github"></i></a>
   <a href="{{ site.url }}/documentation" class="e-btn plane inverted primary small"><i class="fas fa-chalkboard-teacher danger"></i> View Docs</a>
   <i class="e-distribution"></i>
-  <a href="{{ site.url }}/helpers" class="e-menu-item {% if page.permalink == '/helpers' %}active{% endif %}"><i class="fas fa-question-circle warning"></i> Classes helpers</a>
+  <a href="{{ site.url }}/helpers" class="e-menu-item {% if page.permalink == '/helpers' %}active{% endif %}"><i class="far fa-bookmark success"></i> News</a>
+  <a href="{{ site.url }}/helpers" class="e-menu-item {% if page.permalink == '/helpers' %}active{% endif %}"><i class="fas fa-ambulance danger"></i> Classes helpers</a>
   <i class="e-separator"></i>
-  <div class="e-dropdown"><i class="fas fa-box-open purple"></i> More <i class="fas fa-angle-down"></i>
+  <div class="e-dropdown"><i class="fas fa-code purple"></i> More <i class="fas fa-angle-down"></i>
    <div class="drop-items">
        <a href="{{ site.url }}/made" class="drop-item {% if page.permalink == '/made' %}active{% endif %}"><i class="fas fa-trademark success"></i> Made with eFrolic</a>
        <a href="{{ site.url }}/js" class="drop-item {% if page.permalink == '/made-js' %}active{% endif %}"><i class="fab fa-js-square warning"></i> Components made with Js</a>
@@ -35,38 +36,45 @@
 </div>
     </div>
   </div>
+  <br>
+      <p class="e-label"><strong>Get started</strong></p>
       <li class="{% if page.permalink == '/start' %}active{% endif %}"><a href="{{ site.url }}/start"><i class="fas fa-play danger"></i>Quick start</a></li>
-      <li class="{% if page.permalink == '/modular' %}active{% endif %}"><a href="{{ site.url }}/modular"><i class="fas fa-tasks danger"></i> Modular</a></li>
+      <li class="{% if page.permalink == '/colors' %}active{% endif %}"><a href="{{ site.url }}/colors"><i class="fas fa-download"></i> Download</a></li>
+      <li class="{% if page.permalink == '/templates' %}active{% endif %}"><a href="{{ site.url }}/templates"><i class="fas fa-star warning"></i> Templates</a></li>
       <li class="{% if page.permalink == '/colors' %}active{% endif %}"><a href="{{ site.url }}/colors"><i class="fas fa-palette danger"></i> Colors</a></li>
-      <p class="e-label"><strong>Layaout</strong><p>
+      <li class="{% if page.permalink == '/news' %}active{% endif %}"><a href="{{ site.url }}/news"><i class="far fa-bookmark success"></i> News</a></li>
+      <p class="e-label"><strong>Layaout</strong></p>
       <li class="{% if page.permalink == '/container' %}active{% endif %}"><a href="{{ site.url }}/container"><i class="fas fa-box-open sky"></i> Container</a></li>
       <li class="{% if page.permalink == '/grid' %}active{% endif %}"><a href="{{ site.url }}/grid"><i class="fas fa-th sky"></i> Grid</a></li>
       <li class="{% if page.permalink == '/face' %}active{% endif %}"><a href="{{ site.url }}/face"><i class="fas fa-id-card-alt sky"></i> Face</a></li>
       <li class="{% if page.permalink == '/media-object' %}active{% endif %}"><a href="{{ site.url }}/media-object"><i class="fas fa-object-ungroup sky"></i> Media object</a></li>
       <li class="{% if page.permalink == '/section' %}active{% endif %}"><a href="{{ site.url }}/section"><i class="fas fa-columns sky"></i> Section</a></li>
       <li class="{% if page.permalink == '/footer' %}active{% endif %}"><a href="{{ site.url }}/footer"><i class="fas fa-vector-square sky"></i> Footer</a></li>
-      <p class="e-label"><strong>Navigations</strong><p>
+      <p class="e-label"><strong>Components</strong></p>
       <li class="{% if page.permalink == '/navbars' %}active{% endif %}"><a href="{{ site.url }}/navbars"><i class="fas fa-bars primary"></i> Navbars</a></li>
       <li class="{% if page.permalink == '/sidenav' %}active{% endif %}"><a href="{{ site.url }}/sidenav"><i class="fas fa-grip-vertical sky"></i> SideNav</a></li>
-      <p class="e-label"><strong>Buttons</strong><p>
       <li class="{% if page.permalink == '/buttons-previews' %}active{% endif %}"><a href="{{ site.url }}/buttons-previews"><i class="fas fa-desktop purple"></i> Buttons previews</a></li>
       <li class="{% if page.permalink == '/buttons' %}active{% endif %}"><a href="{{ site.url }}/buttons"><i class="far fa-circle purple"></i> Buttons</a></li>
       <li class="{% if page.permalink == '/social-buttons' %}active{% endif %}"><a href="{{ site.url }}/social-buttons"><i class="far fa-dot-circle purple"></i> Buttons Social</a></li>
-      <p class="e-label"><strong>Utilities</strong><p>
       <li class="{% if page.permalink == '/notes-previews' %}active{% endif %}"><a href="{{ site.url }}/previews-notes"><i class="fas fa-desktop warning"></i> Notes previews</a></li>
       <li class="{% if page.permalink == '/notes' %}active{% endif %}"><a href="{{ site.url }}/notes"><i class="fas fa-comment-alt warning"></i> Notes</a></li>
       <li class="{% if page.permalink == '/alerts-previews' %}active{% endif %}"><a href="{{ site.url }}/previews-alerts"><i class="fas fa-desktop primary"></i> Alerts previews</a></li>
       <li class="{% if page.permalink == '/alerts' %}active{% endif %}"><a href="{{ site.url }}/alerts"><i class="far fa-clone primary"></i> Alerts</a></li>
       <li class="{% if page.permalink == '/cards' %}active{% endif %}"><a href="{{ site.url }}/cards"><i class="far fa-id-card danger"></i> Cards</a></li>
       <li class="{% if page.permalink == '/banners' %}active{% endif %}"><a href="{{ site.url }}/banners"><i class="fas fa-band-aid orange"></i> Banners</a></li>
-      <p class="e-label"><strong>Explore</strong><p>
+      <li class="{% if page.permalink == '/form' %}active{% endif %}"><a href="{{ site.url }}/form"><i class="fab fa-wpforms purple"></i> Form</a></li>
+      <p class="e-label"><strong>Utilities</strong></p>
       <li class="{% if page.permalink == '/animations' %}active{% endif %}"><a href="{{ site.url }}/animations"><i class="fas fa-car-crash success"></i> Animations</a></li>
       <li class="{% if page.permalink == '/background' %}active{% endif %}"><a href="{{ site.url }}/background"><i class="far fa-images"></i> Background Image</a></li>
       <li class="{% if page.permalink == '/images' %}active{% endif %}"><a href="{{ site.url }}/images"><i class="fas fa-image danger"></i> Images</a></li>
-      <li class="{% if page.permalink == '/jumbotron' %}active{% endif %}"><a href="{{ site.url }}/jumbotron"><i class="far fa-address-card purple"></i> Jumbotron</a></li>
-      <li class="{% if page.permalink == '/form' %}active{% endif %}"><a href="{{ site.url }}/form"><i class="fab fa-wpforms purple"></i> Form</a></li>
+      <li class="{% if page.permalink == '/shadows' %}active{% endif %}"><a href="{{ site.url }}/shadows"><i class="fas fa-highlighter purple"></i> Shadows</a></li>
       <li class="{% if page.permalink == '/modal' %}active{% endif %}"><a href="{{ site.url }}/modal"><i class="far fa-window-maximize dark"></i> Modal</a></li>
-      <p class="e-label"><strong>Utilities</strong><p>
       <li class="{% if page.permalink == '/icons' %}active{% endif %}"><a href="{{ site.url }}/icons"><i class="far fa-laugh-wink success"></i> Icons</a></li>
       <li class="{% if page.permalink == '/typography' %}active{% endif %}"><a href="{{ site.url }}/typography"><i class="fas fa-laptop-code gray"></i> Typography</a></li>
+      <div class="e-col centered">
+        <hr>
+        <p>&copy; 2018 <strong>eFrolic.</strong><br>
+        Website content licensed: <br>
+        <a href="{{site.url}}">CC BY-NC-SA 4.0</a></p>
+      </div>
 </nav>
