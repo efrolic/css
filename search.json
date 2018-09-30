@@ -100,13 +100,13 @@ layout: null
   },
   {
     "title"    : "Notes previews",
-    "bio" : "{{ page.description }}",
+    "bio" : "This is a preview of all the notes you can create by simply adding classes. Press start to find documentation on how to use it.",
     "category" : "Preview",
     "url"      : "{{ site.url }}/notes-previews"
   },
   {
     "title"    : "Notes",
-    "bio" : "{{ page.description }}",
+    "bio" : "The notes inform the users about a pending task, the states of the system and the actions of the user or for what you believe you can use them, they can contain critical information, require decisions or involve multiple tasks. ",
     "category" : "Components",
     "url"      : "{{ site.url }}/notes"
   },
