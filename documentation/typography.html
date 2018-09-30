@@ -1,0 +1,126 @@
+---
+layout: default
+
+permalink: /typography
+
+title: Typography
+
+description: "This is the documentation and examples of general typography.
+We add our configurations to provide different sizes among other options."
+---
+
+<h3 class="code-title">{{ page.title }}</h3>
+<p class="desc">{{ page.description }}</p>
+<hr class="hr">
+<div class="container-white">
+  <h4 class="code-title">Headings</h4>
+  <p>All HTML headings, &lt;h1> through &lt;h6>, are available.</p>
+  <hr class="hr">
+  <div class="e-cols centered">
+    <div class="e-col-12">
+      <h1>h1. Heading</h1>
+      <h2>h2. Heading</h2>
+      <h3>h3. Heading</h3>
+      <h4>h4. Heading</h4>
+      <h5>h5. Heading</h5>
+      <h6>h6. Heading</h6>
+    </div>
+    <div class="e-col-12">
+      {% highlight html %}
+      <h1>h1. heading</h1>
+      <h2>h2. heading</h2>
+      <h3>h3. heading</h3>
+      <h4>h4. heading</h4>
+      <h5>h5. heading</h5>
+      <h6>h6. heading</h6>
+{% endhighlight %}
+    </div>
+  </div>
+</div>
+
+<div class="container-white">
+  <h4 class="code-title">Sizes-x</h4>
+  <p>Use the header size-x to stand out, use these screen headers for larger titles and introductions to your page.</p>
+  <hr class="hr">
+  <div class="e-cols centered">
+    <div class="e-col">
+      <h1 class="size-plus">Plus. Heading</h1>
+      <h1 class="size-1">h1. Heading</h1>
+      <h2 class="size-2">h2. Heading</h2>
+      <h3 class="size-3">h3. Heading</h3>
+      <h4 class="size-4">h4. Heading</h4>
+      <h5 class="size-5">h5. Heading</h5>
+      <h6 class="size-6">h6. Heading</h6>
+    </div>
+    <div class="e-col">
+      {% highlight html %}
+      <h1 class="size-plus">Plus. Heading</h1>
+
+      <h1 class="size-1">h1. Heading</h1>
+
+      <h2 class="size-2">h2. Heading</h2>
+
+      <h3 class="size-3">h3. Heading</h3>
+
+      <h4 class="size-4">h4. Heading</h4>
+
+      <h5 class="size-5">h5. Heading</h5>
+
+      <h6 class="size-6">h6. Heading</h6>
+      {% endhighlight %}
+    </div>
+  </div>
+</div>
+
+<div class="container-white">
+  <h4 class="code-title">Title and subtitle</h4>
+  <p>Add titles to your containers easily with our custom classes.</p>
+  <hr class="hr">
+  <div class="e-cols centered">
+    <div class="e-col">
+      <h1 class="e-title">This is the title</h1>
+      <h2 class="e-subtitle">I am subtitle</h2>
+      <h1 class="e-title size-1">This is the title</h1>
+      <h2 class="e-subtitle size-5">I am subtitle</h2>
+    </div>
+    <div class="e-col">
+      {% highlight html %}
+      <h1 class="e-title">Title</h1>
+      <h2 class="e-subtitle">Subtitle</h2>
+
+      <!-- or -->
+
+      <h1 class="e-title size-1">Title</h1>
+      <h2 class="e-subtitle size-5">Subtitle</h2>
+      {% endhighlight %}
+    </div>
+  </div>
+</div>
+
+
+<div class="container-white">
+  <h4 class="code-title">Blockquote</h4>
+  <p>Recommended use to quote blocks of content from another source within your website.</p>
+  <hr class="hr">
+  <div class="e-cols centered">
+    <div class="e-col">
+      <blockquote class="e-blockquote">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </blockquote>
+      <blockquote class="e-blockquote">
+        <p class="size-3">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+      </blockquote>
+    </div>
+    <div class="e-col">
+      {% highlight html %}
+      <blockquote class="e-blockquote">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </blockquote>
+
+      <blockquote class="e-blockquote">
+        <p class="size-3">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+      </blockquote>
+      {% endhighlight %}
+    </div>
+  </div>
+</div>

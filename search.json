@@ -128,6 +128,12 @@ layout: null
     "category" : "Components",
     "url"      : "{{ site.url }}/cards"
   },
+  {
+    "title"    : "Typography",
+    "bio" : "This is the documentation and examples of general typography. We add our configurations to provide different sizes among other options.",
+    "category" : "Utilities",
+    "url"      : "{{ site.url }}/typography"
+  },
 
 
   {"__Comentario": "---------INFO DE LAS CLASES------------"},
