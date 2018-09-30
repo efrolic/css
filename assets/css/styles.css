@@ -8,17 +8,17 @@
 }
 .logo{
   margin-left:5px;
-  width:120px;
-  max-width:150px !important;
+  width:100px;
+  max-width:140px !important;
 }
 
 @media only screen and (min-width:768px){
   .logo{
-    width:140px;
+    width:110px;
   }
 }
 .docs-brand{
-width:110px;
+width:90px;
 margin-left:-15px;
 }
 .ho {
