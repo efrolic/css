@@ -1,6 +1,6 @@
 <nav class="e-nav white eFroli">
 <label for="e-menu" class="e-btn circle inverted gray no-shadow no-desktop text-btn"><i class="fas fa-th"></i></label>
-<a href="{{ site.url }}" class="logo docs-brand"><img src="{{ site.url }}/assets/images/eFrolic.png" alt="{{site.title}}"/></a>
+<a href="{{ site.url }}" class="logo docs-brand"><img src="{{ site.url }}/assets/images/eFrolic-brand.png" alt="{{site.title}}"/></a>
 <a class="e-btn circle inverted gray no-desktop text-btn" onclick="showNav()"><i class="fas fa-bars"></i></a>
 <input type="checkbox" id="e-menu">
 <div class="e-menu">
@@ -31,7 +31,7 @@
   <div class="e-face" style="background:transparent;">
     <div class="face-body centered">
 <div class="e-container">
-  <a href="{{ site.url }}" class="logo docs-brand"><img style="width:110px;" src="{{ site.url }}/assets/images/eFrolic.png" alt="{{site.title}}"/></a>
+  <a href="{{ site.url }}" class="logo docs-brand"><img style="width:110px;" src="{{ site.url }}/assets/images/eFrolic-brand.png" alt="{{site.title}}"/></a>
 </div>
     </div>
   </div>
@@ -57,7 +57,7 @@
       <li class="{% if page.permalink == '/social-buttons' %}active{% endif %}"><a href="{{ site.url }}/social-buttons"><i class="far fa-dot-circle purple"></i> Buttons Social</a></li>
       <li class="{% if page.permalink == '/notes-previews' %}active{% endif %}"><a href="{{ site.url }}/notes-previews"><i class="fas fa-desktop warning"></i> Notes previews</a></li>
       <li class="{% if page.permalink == '/notes' %}active{% endif %}"><a href="{{ site.url }}/notes"><i class="fas fa-comment-alt warning"></i> Notes</a></li>
-      <li class="{% if page.permalink == '/alerts-previews' %}active{% endif %}"><a href="{{ site.url }}/previews-alerts"><i class="fas fa-desktop primary"></i> Alerts previews</a></li>
+      <li class="{% if page.permalink == '/alerts-previews' %}active{% endif %}"><a href="{{ site.url }}/alerts-previews"><i class="fas fa-desktop primary"></i> Alerts previews</a></li>
       <li class="{% if page.permalink == '/alerts' %}active{% endif %}"><a href="{{ site.url }}/alerts"><i class="far fa-clone primary"></i> Alerts</a></li>
       <li class="{% if page.permalink == '/cards' %}active{% endif %}"><a href="{{ site.url }}/cards"><i class="far fa-id-card danger"></i> Cards</a></li>
       <li class="{% if page.permalink == '/banners' %}active{% endif %}"><a href="{{ site.url }}/banners"><i class="fas fa-band-aid orange"></i> Banners</a></li>
@@ -72,7 +72,7 @@
       <li class="{% if page.permalink == '/typography' %}active{% endif %}"><a href="{{ site.url }}/typography"><i class="fas fa-laptop-code gray"></i> Typography</a></li>
       <p class="e-label"><strong>About</strong></p>
       <li class="{% if page.permalink == '/typography' %}active{% endif %}"><a href="{{ site.url }}/about"><i class="fas fa-user-astronaut danger"></i> About the Author</a></li>
-      <li><a href="#" target="_blank"><i class="fab fa-twitter sky"></i> Twitter</a></li>
+      <li><a href="{{site.twitter}}" target="_blank"><i class="fab fa-twitter sky"></i> Twitter</a></li>
       <li><a href="#" target="_blank"><i class="fab fa-github-alt"></i> GitHub</a></li>
 
       <div class="e-col centered">

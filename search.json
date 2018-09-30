@@ -112,7 +112,7 @@ layout: null
   },
   {
     "title"    : "Alerts previews",
-    "bio" : "{{ page.description }}",
+    "bio" : "This is a preview of all the alerts that you can create by simply adding classes. Press start to find documentation of how to use.",
     "category" : "Preview",
     "url"      : "{{ site.url }}/alerts-previews"
   },

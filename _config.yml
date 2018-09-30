@@ -6,6 +6,9 @@ subtitle: "It is the party of developers, simple and modern."
 description: "It is a CSS framework, which without using javascript is interactive and animated.
 This framework is based on being modular and simple to develop web interfaces focused on mobile devices."
 
+# twitter
+twitter: "https://twitter.com/e_frolic"
+
 # Config theme
 button: anime primary
 button_secondary: anime inverted primary

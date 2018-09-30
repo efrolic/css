@@ -21,6 +21,13 @@
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:type" content="website">
   <meta property="og:image" content="{{site.url}}/assets/images/efrolic-developer.png"/>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@e_frolic">
+  <meta name="twitter:creator" content="@e_frolic">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %} | {{site.subtitle}}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
+  <meta name="twitter:image" content="{{site.url}}/assets/images/efrolic-developer.png">
 
   <!-- Links -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
