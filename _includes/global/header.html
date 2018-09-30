@@ -1,11 +1,11 @@
 <nav class="e-nav white eFroli">
-<label for="e-menu" class="e-btn circle inverted gray no-shadow no-desktop text-btn"><i class="fas fa-th"></i></label>
+<label for="e-menu" class="e-btn circle small inverted gray no-shadow no-desktop text-btn"><i class="fas fa-th"></i></label>
 <a href="{{ site.url }}" class="logo docs-brand"><img src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}}"/></a>
-<a class="e-btn circle inverted gray no-desktop text-btn" onclick="showNav()"><i class="fas fa-bars"></i></a>
+<a class="e-btn circle small inverted gray no-desktop text-btn" onclick="showNav()"><i class="fas fa-bars"></i></a>
 <input type="checkbox" id="e-menu">
 <div class="e-menu">
   <a href="#" class="e-btn circle inverted"><i class="fab fa-github"></i></a>
-  <a href="{{ site.url }}/documentation" class="e-btn plane inverted primary small"><i class="fas fa-chalkboard-teacher danger"></i> View Docs</a>
+  <a href="{{ site.url }}/documentation" class="e-btn plane inverted primary small no-mobile"><i class="fas fa-chalkboard-teacher danger"></i> View Docs</a>
   <i class="e-distribution"></i>
   <a href="{{ site.url }}/helpers" class="e-menu-item {% if page.permalink == '/helpers' %}active{% endif %}"><i class="far fa-bookmark success"></i> News</a>
   <a href="{{ site.url }}/helpers" class="e-menu-item {% if page.permalink == '/helpers' %}active{% endif %}"><i class="fas fa-ambulance danger"></i> Helpers</a>
@@ -77,8 +77,12 @@
 
       <div class="e-col centered">
         <hr>
-        <p>&copy; 2018 <strong>eFrolic.</strong><br>
+        <p>&copy; 2018 <strong>eFrolic</strong>
+        by Efrain Peralta is licensed under a: <br><br>
+        Code licensed:
+        <a rel="license" class="licensed" target="_blank" href="https://opensource.org/licenses/mit-license.php">MIT</a> <br>
         Website content licensed: <br>
-        <a href="{{site.url}}">CC BY-NC-SA 4.0</a></p>
+        <a rel="license" class="licensed" target="_blank" href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported (CC BY 3.0)</a></p>
+
       </div>
 </nav>

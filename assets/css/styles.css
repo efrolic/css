@@ -90,7 +90,7 @@ margin-left:-15px;
   -webkit-box-shadow: none;
   box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.05);
   border-bottom: solid .5px rgba(0, 0, 0, 0.1);
-  min-height: 80px;
+  min-height: 70px;
   margin-bottom: 1.25rem;
   z-index: 10000;
   font-weight: bold;
@@ -334,7 +334,15 @@ hr {
   z-index: 100000;
 }
 
-
+.licensed{
+  color:gray;
+  font-weight: bold;
+  font-size: 12px;
+}
+.licensed:hover{
+  color:#1da1f2;
+  text-decoration: underline;
+}
 
 .search {
   width: 100%;
