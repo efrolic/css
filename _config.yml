@@ -24,6 +24,6 @@ ref: hello
 
 # Build settings
 markdown: kramdown
-url: https://efraperalta.github.io/eFrolic-jekyll
+url: https://efraperalta.github.io/eFrolic
 permalink: pretty
 exclude: ['node_modules', 'gulpfile.js', 'package-lock.json', 'Gemfile', 'Gemfile.lock', 'feed.xml']
