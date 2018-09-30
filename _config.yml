@@ -9,7 +9,7 @@ This framework is based on being modular and simple to develop web interfaces fo
 # twitter
 twitter: "https://twitter.com/e_frolic"
 
-# Config theme
+# Config
 button: anime primary
 button_secondary: anime inverted primary
 button_optional: anime inverted danger
