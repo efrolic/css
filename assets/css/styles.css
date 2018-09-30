@@ -415,9 +415,12 @@ hr {
 .content-search-title{
   color:#1da1f2;
   margin-left: 10px;
+  font-size: 18px;
+  font-weight: 700;
 }
 .content-search-title i {
   margin-right: 7px;
+  font-size: 20px;
 }
 .content-search-title:hover{
   color:#f75676;
@@ -428,6 +431,8 @@ hr {
   margin:0;
   padding: 0;
   margin-left: 10px;
+  font-size: 15px;
+  letter-spacing: .1px;
 }
 .found{
   font-size: 1.10rem;
