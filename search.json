@@ -134,6 +134,12 @@ layout: null
     "category" : "Utilities",
     "url"      : "{{ site.url }}/typography"
   },
+  {
+    "title"    : "Shadows",
+    "bio" : "Add shadows to your elements by applying one of the 6 kinds of shadows available, easy to use just apply the class and a number or just apply shadow. In total there are 8 shading options where you can cancel the shadows or add the one you want.",
+    "category" : "Utilities",
+    "url"      : "{{ site.url }}/shadows"
+  },
 
 
   {"__Comentario": "---------INFO DE LAS CLASES------------"},

@@ -1,0 +1,29 @@
+* {
+  &.shadow {
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075)!important;
+
+    &-6 {
+      box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08) !important;
+    }
+
+    &-5 {
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
+    }
+
+    &-4 {
+      box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    }
+
+    &-3 {
+      box-shadow: 0 3rem 3rem -1rem rgba(10,10,10,.2) !important;
+    }
+
+    &-2 {
+      box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2) !important;
+    }
+
+    &-1 {
+      box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24) !important;
+    }
+  }
+}
