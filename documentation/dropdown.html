@@ -1,0 +1,556 @@
+---
+
+layout: default
+
+permalink: /dropdown
+
+title: Dropdown
+
+description: "
+The famous drop-down options are contextual overlays that can be toggled to display lists of links and more.
+We use hover to activate the visibility of these elements.
+They are super easy to create and customize with excellent colors and spectacular shadows."
+
+---
+
+<h3 class="code-title">{{page.title}}</h3>
+<p class="desc">{{page.description}}</p>
+<hr class="hr">
+<div class="container-white">
+<h4 class="code-title">Use</h4>
+<div class="e-note block success">
+  <div class="note-body">
+    <p><strong class="code">e-dropdown</strong> This is the main container.</p>
+    <p><strong class="code">drop-right</strong> Add the class <strong>drop-right</strong> to have a drop-down menu aligned to the right.</p>
+    <p><strong class="code">drop-items</strong> This is the drop-down menu, hidden by default.</p>
+    <p><strong class="code">drop-item</strong> each item in the drop-down menu, which can be a <strong>(a)</strong> or a <strong>(div)</strong></p>
+    <p><strong class="code">hr</strong> use the <strong>hr</strong> to separate the drop-down elements.</p>
+    <p><strong class="code">inverted</strong> invierte los colores del elemento <strong>(drop-item)</strong> utilizado el color como fondo.</p>
+  </div>
+</div>
+<hr class="hr">
+<h5 class="code-title">Default</h5><br>
+<div class="e-cols">
+  <div class="e-col">
+    <div class="e-dropdown">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items shadow-6">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+  <div class="e-col">
+{% highlight html %}
+    <div class="e-dropdown">
+      Dropdown
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+{% endhighlight %}
+  </div>
+</div>
+<div class="e-cols">
+<div class="e-col">
+<h5 class="code-title">Drop-right</h5><br>
+</div>
+  <div class="e-col">
+    <div class="e-dropdown drop-right shadow">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items shadow-6">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+  <div class="e-col-6">
+  {% highlight html %}
+  <div class="e-dropdown drop-right">
+    Dropdown
+    <div class="drop-items">
+      <a class="drop-item">Documents</a>
+      <a class="drop-item">Settings</a>
+      <a class="drop-item">Support</a>
+      <a class="drop-item">Sing up</a>
+    </div>
+  </div>
+  {% endhighlight %}
+  </div>
+  <p>Add the class <strong class="code e- warning">drop-right</strong> to have a drop-down menu aligned to the right.</p>
+</div>
+</div>
+
+
+<div class="container-white">
+  <h4 class="code-title">Use beautiful colors</h4>
+  <p>Use the beautiful colors that are included in almost all the elements and hover over your items to see the changes.</p>
+  <hr class="hr">
+<div class="e-cols">
+    <div class="e-col">
+      <div class="e-dropdown primary">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown success">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown danger">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown warning">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown sky">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown purple">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+<div class="e-col">
+    <div class="e-dropdown dark">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+  <div class="e-col">
+    <div class="e-dropdown gray">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+  <div class="e-col">
+    <div class="e-dropdown black">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+  <div class="e-col">
+    <div class="e-dropdown white shadow">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="e-col-12">
+    {% highlight html %}
+    <div class="e-dropdown primary"><!-- Your color -->
+      Dropdown <!--i class="fas fa-angle-down"></i> Optional icon -->
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+    {% endhighlight %}
+  </div><br><br>
+  <div class="e-col-12">
+  <h4 class="code-title">Inverted</h4>
+  <p>Add the class <strong>(inverted)</strong> to change the background color to the class color,
+     that is if you add <strong>(inverted danger)</strong>
+ your <strong>(drop-item)</strong> when hovering over them you will have a background color <strong>(danger)</strong> and white text.</p>
+  <hr class="hr">
+  </div>
+  <div class="e-col">
+    <div class="e-dropdown inverted primary">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+  <div class="e-col">
+    <div class="e-dropdown inverted success">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+  <div class="e-col">
+    <div class="e-dropdown inverted danger">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item active">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+  <div class="e-col">
+    <div class="e-dropdown inverted warning">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item active">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+  <div class="e-col">
+    <div class="e-dropdown inverted sky">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item active">Documentation</a>
+        <a class="drop-item">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+  <div class="e-col">
+    <div class="e-dropdown inverted purple">Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item active">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a><hr>
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+  </div>
+<div class="e-col">
+  <div class="e-dropdown inverted dark">Dropdown <i class="fas fa-angle-down"></i>
+    <div class="drop-items">
+      <a class="drop-item">Documents</a>
+      <a class="drop-item">Settings</a>
+      <a class="drop-item">Documentation</a>
+      <a class="drop-item">Support</a><hr>
+      <a class="drop-item active">Sing up</a>
+    </div>
+  </div>
+</div>
+<div class="e-col">
+  <div class="e-dropdown inverted gray">Dropdown <i class="fas fa-angle-down"></i>
+    <div class="drop-items">
+      <a class="drop-item">Documents</a>
+      <a class="drop-item active">Settings</a>
+      <a class="drop-item">Documentation</a>
+      <a class="drop-item">Support</a><hr>
+      <a class="drop-item">Sing up</a>
+    </div>
+  </div>
+</div>
+<div class="e-col">
+  <div class="e-dropdown inverted black">Dropdown <i class="fas fa-angle-down"></i>
+    <div class="drop-items">
+      <a class="drop-item">Documents</a>
+      <a class="drop-item">Settings</a>
+      <a class="drop-item">Documentation</a>
+      <a class="drop-item active">Support</a><hr>
+      <a class="drop-item">Sing up</a>
+    </div>
+  </div>
+</div>
+
+<div class="e-col-12">
+  {% highlight html %}
+  <div class="e-dropdown inverted danger"><!-- Here -->
+    Dropdown
+    <div class="drop-items">
+      <a class="drop-item">Documents</a>
+      <a class="drop-item">Settings</a>
+      <a class="drop-item">Documentation</a>
+      <a class="drop-item active">Support</a>
+      <hr><!-- here is the hr -->
+      <a class="drop-item">Sing up</a>
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+</div>
+<h5 class="code-title">Other ways to add</h5>
+<p>It can affect the dropdown from a higher container and obtain the same or better result. Example:
+Adding a dropdown to a navigation container like <strong>(e-nav).</strong></p>
+<hr class="hr">
+<nav class="e-nav danger inverted">
+  <h6>Logo</h6>
+  <a class="e-btn transparent no-shadow no-desktop"><i class="fas fa-bars"></i></a>
+  <div class="e-menu">
+    <i class="e-distribution"></i>
+    <div class="e-dropdown">
+      Dropdown <i class="fas fa-angle-down"></i>
+      <div class="drop-items shadow-4">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item active">Support</a>
+        <hr><!-- here is the hr -->
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+    <a class="e-menu-item">Item</a>
+    <a class="e-menu-item">Item</a>
+  </div>
+</nav>
+<hr>
+<p>In the previous example we use the classes in the main container that is a navigation (e-nav)
+the dropdown element behaves differently and is affected from the classes of <strong>(e-nav).</strong></p>
+ {% highlight html %}
+ <nav class="e-nav danger inverted"><!-- Here are the classes -->
+   <div class="e-menu">
+
+     <div class="e-dropdown"><!-- here the drop -->
+       Dropdown
+       <div class="drop-items shadow-4">
+         <a class="drop-item">Documents</a>
+         <a class="drop-item">Settings</a>
+         <a class="drop-item">Documentation</a>
+         <a class="drop-item active">Support</a>
+       </div>
+     </div>
+
+   </div>
+ </nav>
+  {% endhighlight %}
+</div>
+
+
+
+<div class="container-white">
+  <h4 class="code-title">Let's add beautiful shadows</h4>
+  <p>Use the fabulous shadows to highlight the <strong>(drop-items)</strong> even more, choose the one that best suits your project with 8 predetermined options.
+  <br><br>You can add the shadows to the element <strong>(drop-items)</strong> and equally to <strong>(e-dropdown)</strong> to give better styles.</p>
+  <a class="e-btn small inverted danger" href="{{site.url}}/shadows">Check the shadows here</a>
+  <hr class="hr">
+<div class="e-cols">
+    <div class="e-col">
+      <div class="e-dropdown primary shadow-6">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items shadow-1">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown success shadow-5">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items shadow-2">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown danger inverted shadow-5">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items shadow-3">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown warning inverted shadow">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items shadow-4">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown sky shadow-6">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items shadow-6">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown purple shadow">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items shadow-3">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="drop-item">Sing up</a>
+        </div>
+      </div>
+    </div>
+  <div class="e-col-12">
+    {% highlight html %}
+    <div class="e-dropdown primary"><!-- Your optional shadow -->
+      Dropdown
+      <div class="drop-items shadow-3"><!-- Your shadow -->
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <a class="drop-item">Documentation</a>
+        <a class="drop-item">Support</a>
+        <hr><!-- here is the hr -->
+        <a class="drop-item">Sing up</a>
+      </div>
+    </div>
+    {% endhighlight %}
+  </div>
+</div>
+
+
+</div>
+
+
+
+<div class="container-white">
+  <h4 class="code-title">Add any content and it will grow</h4>
+  <p>You can add child elements such as <strong>(a)</strong> or <strong>(div)</strong> the class <strong>(drop-item)</strong> but even better to add buttons outside this class or notes or alerts among others.
+  <hr class="hr">
+<div class="e-cols">
+    <div class="e-col">
+      <div class="e-dropdown primary shadow-6">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items shadow-1">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="e-btn inverted fullwidth primary">Button</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown success shadow-5">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items shadow-2">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <a class="drop-item">Documentation</a>
+          <a class="drop-item">Support</a><hr>
+          <a class="e-btn rounded success">Button</a>
+          <a class="e-btn rounded success">Button</a>
+        </div>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-dropdown danger inverted shadow-5">Dropdown <i class="fas fa-angle-down"></i>
+        <div class="drop-items shadow-3">
+          <a class="drop-item">Documents</a>
+          <a class="drop-item">Settings</a>
+          <div class="e-col">
+            <p>This Lorem ipsum dolor</p>
+           </div>
+          <a class="drop-item active">Support</a>
+          <a class="drop-item">Contacts</a><hr>
+          <a class="e-btn plane inverted danger">Button</a>
+          <a class="e-btn plane inverted danger">Button</a>
+        </div>
+      </div>
+    </div>
+
+  <div class="e-col-12">
+    {% highlight html %}
+    <div class="e-dropdown sky">Dropdown
+      <div class="drop-items">
+        <a class="drop-item">Documents</a>
+        <a class="drop-item">Settings</a>
+        <div class="e-col">
+          <p>This Lorem ipsum dolor</p>
+         </div>
+        <a class="drop-item active">Support</a>
+        <a class="drop-item">Contacts</a>
+        <hr><!-- here is the hr -->
+        <a class="e-btn plane inverted danger">Button</a>
+        <a class="e-btn plane inverted danger">Button</a>
+      </div>
+    </div>
+{% endhighlight %}
+  </div>
+</div>
+
+
+</div>

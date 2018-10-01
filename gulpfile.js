@@ -1,7 +1,9 @@
 const gulp = require('gulp'),
       sass = require('gulp-sass'),
       autoprefixer = require('gulp-autoprefixer'),
-      cssmin = require('gulp-cssmin');
+      cssmin = require('gulp-cssmin'),
+      browserSync = require('browser-sync').create();
+
 
 const data = {
   css: './assets/css',
@@ -16,6 +18,12 @@ gulp.task('sass', ()=> {
     .pipe(gulp.dest(data.css));
 });
 
+gulp.task('browser-sync', ()=> {
+    browserSync.init({
+        proxy: "http://localhost:4000/"
+    });
+});
+
 gulp.task('cssmin', ()=> {
     gulp.src('./assets/css/efroli.css')
         .pipe(cssmin())
@@ -26,9 +34,12 @@ gulp.task('cssmin', ()=> {
         .pipe(gulp.dest(data.css));
 });
 
+const route = (['./**/*.html', './assets/css/*.css', './*.json', './assets/js/*.js']);
+
 gulp.task('watch', ()=> {
-  gulp.watch([data.scss], ['sass']);
+  gulp.watch([data.scss], ['sass']).on('change', browserSync.reload);
   gulp.watch(['./assets/css/efroli.css'], ['cssmin']);
+  gulp.watch([route]).on('change', browserSync.reload);
 });
 
-gulp.task('default', ['watch', 'sass', 'cssmin']);
+gulp.task('default', ['watch', 'sass', 'cssmin', 'browser-sync']);

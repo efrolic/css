@@ -1,294 +1,414 @@
 /* Color de Fuente del texto por default */
-$e-font-color:rgba(0,0,0,.6) !default;
-/* Colors */
-$default                :        #f7f8f9;
-$success                :        #4fd69c;
-$warning                :        #ffdd57;
-$primary                :        #1da1f2;
-$danger                 :        #f75676;
-$purple                 :        #5e72e4;
-$sky                    :        #54c7ec;
-$gray                   :        #6c757d;
-$dark                   :        #343a40;
-$white                  :        #ffffff !default;
-$black                  :        #000000;
-$purple-gradient        :        linear-gradient(40deg,#ff6ec4,$purple);
-$blue-gradient          :        linear-gradient(40deg,#45cafc,#303f9f);
-$green-gradient         :        linear-gradient(40deg,#00C9FF,#92FE9D);
-$inst-gradient          :        radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+$e-font-color: rgba(0,0,0,.6) !default; /* Colors */
+$default: #f7f8f9;
+$success: #4fd69c;
+$warning: #ffdd57;
+$primary: #1da1f2;
+$danger: #f75676;
+$purple: #5e72e4;
+$sky: #54c7ec;
+$gray: #6c757d;
+$dark: #343a40;
+$white: #ffffff !default;
+$black: #000000;
+$purple-gradient: linear-gradient(40deg,#ff6ec4,$purple);
+$blue-gradient: linear-gradient(40deg,#45cafc,#303f9f);
+$green-gradient: linear-gradient(40deg,#00C9FF,#92FE9D);
+$inst-gradient: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+$colors: (
+  "success": $success,
+  "danger" : $danger,
+  "primary": $primary,
+  "purple" : $purple,
+  "sky"    : $sky,
+  "gray"   : $gray,
+  "black"  : $black,
+  "dark"   : $dark
+);
 
-$colors: ("success": $success,"danger": $danger,"primary": $primary,
-"purple":$purple, "sky":$sky,"gray":$gray,"black":$black,
-"dark":$dark);
+%dark-color {
+  color: $e-font-color;
 
-%dark-color{
-  color               : $e-font-color;
-  & a:not(.e-btn),.e-label,.e-dropdown{
-    color             : $e-font-color;
+  & a:not(.e-btn),
+  .e-dropdown,
+  .e-label {
+    color: $e-font-color;
   }
 }
-%place-color{
-  color               : $white;
-  & a:not(.e-btn),.e-label,.e-dropdown{
-    color             : $white;
+
+%place-color {
+  color: $white;
+
+  & a:not(.e-btn),
+  .e-dropdown,
+  .e-label {
+    color: $white;
   }
 }
-%e-colors{
 
-  &.white{
-    background                    : $white;
+%e-colors {
+  &.white {
+    background: $white;
     @extend %dark-color;
   }
-  &.warning{
-      background: $warning;
-      @extend %dark-color;
-      & .no-bg{
-        & .e-menu{
-          @media only screen and (max-width: 1023px){
-          & .e-menu-item, & .e-dropdown{
-            &:hover{
-            color                               : darken($warning,10%) !important;
+
+  &.warning {
+    background: $warning;
+    @extend %dark-color;
+
+    & .no-bg {
+      & .e-menu {
+        @media only screen and (max-width: 1023px) {
+          & .e-dropdown,
+          & .e-menu-item {
+            &:hover {
+              color: darken($warning,10%) !important;
             }
           }
-          }
         }
       }
-      & .e-menu{
-        & .drop-item{
-          &:hover{
-          color                               :darken($warning,10%) !important;
-          }
+    }
+
+    & .drop-item {
+      &:hover {
+        color: darken($warning,10%) !important;
+      }
+    }
+
+    &.inverted {
+      & *.drop-item {
+        &:hover {
+          color     : $dark !important;
+          background: $warning !important;
+          @extend .shadow-6;
+        }
+
+        &.active {
+          color     : $dark !important;
+          background: $warning !important;
+          @extend .shadow;
         }
       }
+    }
   }
-  &.transparent{
-    background                    : $white;
-    font-weight                   : bold;
-    color                         : $e-font-color;
-    & a:not(.e-btn),.e-label,.e-dropdown{
-      color             : $e-font-color;
+
+  &.transparent {
+    background : $white;
+    font-weight: bold;
+    color      : $e-font-color;
+
+    & a:not(.e-btn),
+    .e-dropdown,
+    .e-label {
+      color: $e-font-color;
     }
-    @include desktop{
-    background                    : rgba(255,255,255,.1);
-    font-weight                   : normal;
-    color               : $white;
-    & a:not(.e-btn),.e-label,.e-dropdown{
-      color             : $white;
+    @include desktop {
+      background : rgba(255,255,255,.1);
+      font-weight: normal;
+      color      : $white;
+
+      & a:not(.e-btn),
+      .e-dropdown,
+      .e-label {
+        color: $white;
+      }
     }
-  } }
-  &.purple-gradient{
+  }
+
+  &.purple-gradient {
     background: $purple-gradient;
     @extend %place-color;
   }
-  &.blue-gradient{
+
+  &.blue-gradient {
     background: $blue-gradient;
     @extend %place-color;
   }
-  &.green-gradient{
-    background: $green-gradient;
+
+  &.green-gradient {
+    background : $green-gradient;
     font-weight: bold;
     @extend %place-color;
   }
-  &.inst-gradient{
-    background: $inst-gradient;
+
+  &.inst-gradient {
+    background : $inst-gradient;
     font-weight: bold;
     @extend %place-color;
   }
-  @each $name, $pair in $colors{
-      $color: nth($pair, 1);
-      &.#{$name}{
-            background: $color;
-            @extend %place-color;
-              & .no-bg{
-                & .e-menu{
-                  @media only screen and (max-width: 1023px){
-                  & .e-menu-item, & .e-dropdown{
-                    &:hover{
-                    color                               : $color !important;
-                    }
-                  }
-                  }
-                }
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      background: $color;
+      @extend %place-color;
+
+      & .no-bg {
+        & .e-menu {
+          @media only screen and (max-width: 1023px) {
+            & .e-dropdown,
+            & .e-menu-item {
+              &:hover {
+                color: $color !important;
               }
-              & .e-menu{
-                & .drop-item{
-                  &:hover{
-                  color                               : $color !important;
-                  }
-                }
-              }
+            }
+          }
+        }
+      }
+
+      & .drop-item {
+        &:hover {
+          color: $color !important;
+        }
+      }
+
+      &.inverted {
+        & *.drop-item {
+          &:hover {
+            color     : $white !important;
+            background: $color !important;
+            @extend .shadow-6;
+          }
+
+          &.active {
+            color     : $white !important;
+            background: $color !important;
+            @extend .shadow;
+          }
+        }
+      }
+    }
+  }
+
+  &.text-white {
+    color      : $white !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
   }
 }
-&.text-white{
-  color: $white !important;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
- } }
-%hover-colors{
-  &.white{
-    &:hover{
-        background-color: lighten(whitesmoke, 2.5%);
+
+%hover-colors {
+  &.white {
+    &:hover {
+      background-color: lighten(whitesmoke, 2.5%);
     }
-    &:focus{
-        background-color: $white;
-        box-shadow: 0 0 0 2.4px whitesmoke;
+
+    &:focus {
+      background-color: $white;
+      box-shadow      : 0 0 0 2.4px whitesmoke;
     }
   }
-  &.warning{
-  &:hover{
-    background: darken($warning, 3%);
-  }
-  &:focus{
+
+  &.warning {
+    &:hover {
+      background: darken($warning, 3%);
+    }
+
+    &:focus {
       background: darken($warning, 8%);
       box-shadow: 0 0 0 2.4px rgba($warning,.4);
-  }
-  }
-  @each $name, $pair in $colors{
-      $color: nth($pair, 1);
-      &.#{$name}{
-        &:hover{
-            background: darken($color, 3.2%);
-        }
-        &:focus{
-            background: darken($color, 8%);
-            box-shadow: 0 0 0 2.4px rgba($color,.4);
-        }
-  }
-}}
-  [class*="e-"]{
-    @extend %e-colors;
-  }
-
-  i,span{
-    @each $name, $pair in $colors{
-        $color: nth($pair, 1);
-        &.#{$name}{
-          color:$color;
     }
   }
-  &.warning{
-    color:$warning;
-  }}
-  .e-nav-full{
-    &.white{
-      & li{text-shadow:none;
-       }
-    }
-  }
-  %inverted{
-  &.warning{
-    color                         : $warning;
-    & a:not(.e-btn),.e-label,.e-dropdown{
-    color                         : $warning;
-    }
-    &:hover{
-      color                       : $warning;
-      background-image            : radial-gradient(rgba($warning,.045) 100%, transparent 0.01%) !important;
-      & a:not(.e-btn),.e-label,.e-dropdown{
-      color                       : $warning;
-      }}
-    &:focus{
-      border-color                : white;
-    }
-  }
-   @each $name, $pair in $colors{
-      $color                      : nth($pair, 1);
-      &.#{$name}{
-        color                     : $color;
-        & a:not(.e-btn),.e-label,.e-dropdown{
-        color                     : $color;
-        }
-        &:hover{
-          color                   : $color;
-          background-image        : radial-gradient(rgba($color,.045) 100%, transparent 0.01%) !important;
-          & a:not(.e-btn),.e-label,.e-dropdown{
-          color                   : $color;
-          }}
-        &:focus{
-          border-color            : white;
-        }
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
 
-          }}}
-
-            %outlined{
-              &.white{
-                border-color: rgba(0,0,0,0.1);
-              }
-            &.warning{
-              color                             : $warning;
-              border-color                      : $warning;
-              & > a{
-                color                           : $warning;
-              }
-              &:hover,&:focus{
-                background: $warning;
-                color                   : $white;
-                & > a{
-                  color                 : $white;
-              }}
-            }
-             @each $name, $pair in $colors{
-                $color: nth($pair, 1);
-                &.#{$name}{
-                      border-color              : $color;
-                      color                     : $color;
-                      & > a{
-                        color                   : $color;
-                      }
-                      &:hover,&:focus{
-                        background: $color;
-                        color                   : $white;
-                        & > a{
-                        color                 : $white;
-                      }}}}}
-
-
-
-  .e-btn{
-    @extend %hover-colors;
-    &.white{
-      background-color                    : $white !important;
-      text-shadow: none;
-      @extend %dark-color;
-    }
-    &.transparent{
-      background                          : rgba(255,255,255,.1) !important;
-      color                               : $white !important;
-      & > li,a{
-        color                             : $white !important;
-        font-weight: normal;
+    &.#{$name} {
+      &:hover {
+        background: darken($color, 3.2%);
       }
-      @include desktop{
-      background                          : rgba(255,255,255,.1) !important;
-     }
-    }
-    &.outlined{
-      @extend %outlined;
-    }
-    &.inverted{
-      @extend %inverted;
+
+      &:focus {
+        background: darken($color, 8%);
+        box-shadow: 0 0 0 2.4px rgba($color,.4);
+      }
     }
   }
-  .e-nav {
-  &.white{
-    & .e-menu{
-      & .e-menu-item,.e-dropdown{
-        &:hover{
+}
+
+[class*="e-"] {
+  @extend %e-colors;
+}
+
+i,
+span {
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      color: $color;
+    }
+  }
+
+  &.warning {
+    color: $warning;
+  }
+}
+
+.e-nav-full {
+  &.white {
+    & li {
+      text-shadow: none;
+    }
+  }
+}
+
+%inverted {
+  &.warning {
+    color: $warning;
+
+    & a:not(.e-btn),
+    .e-dropdown,
+    .e-label {
+      color: $warning;
+    }
+
+    &:hover {
+      color           : $warning;
+      background-image: radial-gradient(rgba($warning,.045) 100%, transparent 0.01%) !important;
+
+      & a:not(.e-btn),
+      .e-dropdown,
+      .e-label {
+        color: $warning;
+      }
+    }
+
+    &:focus {
+      border-color: white;
+    }
+  }
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      color: $color;
+
+      & a:not(.e-btn),
+      .e-dropdown,
+      .e-label {
+        color: $color;
+      }
+
+      &:hover {
+        color           : $color;
+        background-image: radial-gradient(rgba($color,.045) 100%, transparent 0.01%) !important;
+
+        & a:not(.e-btn),
+        .e-dropdown,
+        .e-label {
+          color: $color;
+        }
+      }
+
+      &:focus {
+        border-color: white;
+      }
+    }
+  }
+}
+
+%outlined {
+  &.white {
+    border-color: rgba(0,0,0,0.1);
+  }
+
+  &.warning {
+    color       : $warning;
+    border-color: $warning;
+
+    & > a {
+      color: $warning;
+    }
+
+    &:focus,
+    &:hover {
+      background: $warning;
+      color     : $white;
+
+      & > a {
+        color: $white;
+      }
+    }
+  }
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      border-color: $color;
+      color       : $color;
+
+      & > a {
+        color: $color;
+      }
+
+      &:focus,
+      &:hover {
+        background: $color;
+        color     : $white;
+
+        & > a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.e-btn {
+  @extend %hover-colors;
+
+  &.white {
+    background-color: $white !important;
+    text-shadow     : none;
+    @extend %dark-color;
+  }
+
+  &.transparent {
+    background: rgba(255,255,255,.1) !important;
+    color     : $white !important;
+
+    & > li,
+    a {
+      color      : $white !important;
+      font-weight: normal;
+    }
+    @include desktop {
+      background: rgba(255,255,255,.1) !important;
+    }
+  }
+
+  &.outlined {
+    @extend %outlined;
+  }
+
+  &.inverted {
+    @extend %inverted;
+  }
+}
+
+.e-nav {
+  &.white {
+    & .e-menu {
+      & .e-menu-item,
+      .e-dropdown {
+        &:hover {
           background: lighten(whitesmoke,.7%);
         }
       }
     }
   }
 }
+
 .e-nav {
-&.transparent{
-  & .e-menu{
-    & .e-menu-item,.e-dropdown{
-      @media only screen and (max-width: 1023px){
-      &:hover{
-        background: lighten(whitesmoke,.7%);
+  &.transparent {
+    & .e-menu {
+      & .e-menu-item,
+      .e-dropdown {
+        @media only screen and (max-width: 1023px) {
+          &:hover {
+            background: lighten(whitesmoke,.7%);
+          }
+        }
       }
-     }
     }
   }
-}
 }

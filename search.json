@@ -140,6 +140,12 @@ layout: null
     "category" : "Utilities",
     "url"      : "{{ site.url }}/shadows"
   },
+  {
+    "title"    : "Dropdown",
+    "bio" : "The famous drop-down options are contextual overlays that can be toggled to display lists of links and more. We use hover to activate the visibility of these elements. They are super easy to create and customize with excellent colors and spectacular shadows.",
+    "category" : "Components",
+    "url"      : "{{ site.url }}/dropdown"
+  },
 
 
   {"__Comentario": "---------INFO DE LAS CLASES------------"},
