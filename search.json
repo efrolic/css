@@ -40,7 +40,7 @@ layout: null
   },
   {
     "title"    : "System Grid",
-    "bio" : "description",
+    "bio" : "We use a standard 12-column grid system. The grid is built with Flexbox technology, totally responsive. It will help you to design your pages in an easy and orderly way, a system of simple and receptive columns.",
     "category" : "Layout",
     "url"      : "{{ site.url }}/grid"
   },
