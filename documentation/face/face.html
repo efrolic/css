@@ -1,0 +1,322 @@
+---
+layout: default
+
+permalink: /face
+
+title: Face
+
+description: "The face is a container to create full-page introductions to make your website elegant,
+  is the first thing you ever see on a website, use this container and take full advantage of your website.
+  <br><br>
+  Highlight the most important first by using one of 25 or more of the models already created or use your mind to create yours."
+
+---
+
+<h2 class="code-title">{{ page.title }}</h2>
+<p class="desc">{{ page.description }}</p>
+<hr class="hr">
+<h5 class="code-title">This is a beautiful face <i class="far fa-grin-hearts danger"></i></h5>
+
+  <main class="e-face e-md-screen bg-c">
+      <nav class="e-nav no-bg">
+       <img src="https://bit.ly/2D7yayE" style="width:90px;height:auto;">
+         <label class="e-btn outlined transparent no-shadow no-desktop"><i class="fas fa-bars"></i></label>
+            <div class="e-menu">
+              <a class="e-menu-item">Home</a>
+              <div class="e-dropdown">About <i class="fas fa-angle-down"></i>
+               <div class="drop-items shadow-4">
+               <a class="drop-item">Employees</a>
+               <a class="drop-item">Company</a>
+               <a class="drop-item">Services</a><hr>
+               <a class="e-btn outlined plane purple">To call</a>
+               <a class="e-btn plane purple">Location</a>
+               </div>
+               </div>
+               <a class="e-menu-item">Stories</a>
+               <i class="e-distribution"></i>
+               <a class="e-menu-item">Portfolio</a>
+               <a class="e-btn inverted purple">GALLERY</a>
+            </div>
+      </nav>
+
+       <section class="face-body centered">
+         <div class="e-container">
+          <h1 style="font-size:50px;">FREEZING STORIES FOR LIFE</h1>
+          <a class="e-btn outlined plane purple plus">PHOTOGRAPHS</a>
+         </div>
+       </section>
+    </main>
+    <br>
+<div class="container-white">
+  <h4 class="code-title">Use</h4>
+       <article class="e-note block success">
+        <div class="note-body">
+          <p><strong class="code">e-face</strong> The main container.</p>
+          <p><strong class="code">face-body</strong> Container where you must put all your content.</p>
+          <p><strong class="code">face-item</strong> Direct children of the container (face-body).</p>
+          <p><strong class="code">no-bg</strong> Remove the background from the navigation (e-nav) and use it for transparency. See example above.</p>
+          <p><strong class="code">centered</strong> Apply (centered) to center the text of the container (face-body)</p>
+          <p><strong class="code">e-sm-screen</strong> Apply (e-sm-screen) to have a small face size</p>
+          <p><strong class="code">e-md-screen</strong> Apply (e-md-screen) to have a medium face size</p>
+          <p><strong class="code">e-fullscreen</strong> Apply (e-fullscreen) to have a fullscreen face size</p>
+        </div>
+      </article><br>
+    <h4 class="code-title">Basic structure</h4>
+  <p>This is the basic structure of the container</p>
+    <!-- Code -->
+{% highlight html %}
+    <main class="e-face">
+      <nav class="e-nav no-bg">...</nav>
+
+      <section class="face-body">
+        <div class="face-item">...</div>
+        <div class="face-item">...</div>
+      </section>
+
+      <div class="...">
+        <!-- this can be your footer -->
+      </div>
+    </main>
+
+    <!-- Or -->
+
+    <main class="e-face">
+      <nav class="e-nav no-bg">...</nav>
+
+      <section class="face-body">
+        <div class="e-container">...</div>
+      </section>
+
+      <div class="...">
+        <!-- this can be your footer -->
+      </div>
+    </main>
+{% endhighlight %}
+</div>
+
+
+<div class="container-white">
+  <h5 class="code-title">Sizes</h5><br>
+<div class="e-cols">
+  <div class="e-col">
+    <article class="e-note lighten sky">
+  <div class="note-header">
+    e-sm-screen
+  </div>
+  <div class="note-body">
+    <p><strong class="code">e-sm-screen</strong> Apply to have a small face size.</p>
+  </div>
+  <div class="note-footer">
+    <a href="{{site.url}}/face/w" target="_blank" class="e-btn inverted primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div>
+</article>
+  </div>
+  <div class="e-col">
+    <article class="e-note lighten sky">
+  <div class="note-header">
+    e-md-screen
+  </div>
+  <div class="note-body">
+    <p><strong class="code">e-md-screen</strong> Apply to have a medium face size</p>
+  </div>
+  <div class="note-footer">
+    <a href="{{site.url}}/face/r" target="_blank" class="e-btn inverted primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div>
+</article>
+  </div>
+  <div class="e-col">
+    <article class="e-note lighten sky">
+  <div class="note-header">
+    e-fullscreen
+  </div>
+  <div class="note-body">
+    <p><strong class="code">e-fullscreen</strong> Apply to have a fullscreen face size</p>
+  </div>
+  <div class="note-footer">
+    <a href="{{site.url}}/face/a" target="_blank" class="e-btn inverted primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div>
+</article>
+  </div>
+</div>
+</div>
+
+<div class="container-white">
+<h4 class="code-title">This is the random face.</h4>
+<p>Each time you reload the page you will get a different background. ¡IT'S A MADNESS!
+&nbsp;<i class="far fa-surprise primary"></i>&nbsp;
+<i class="far fa-grin-wink danger"></i>&nbsp;
+<i class="far fa-grin-stars purple"></i>&nbsp;
+<i class="far fa-grin-alt sky"></i>&nbsp;
+<i class="far fa-laugh-beam purple"></i>
+</p>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2QQiWke" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/e" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+
+<!--Face-->
+<h3 class="code-title">Mixed Faces</h3><br>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2ODSsB5" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/a" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2ODUSzS" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/d" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2MTutwa" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/b" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2O3pgGz" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/k" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2xGNGvm" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/p" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2NuJaL6" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/c" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2xtkfxM" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/f" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2QO1hcY" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/g" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2PQKa9h" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/o" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2MTCn8G" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/j" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2xs76VF" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/m" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2xupUDB" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/q" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2xrni9K" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/i" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2OHpOiC" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/l" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2NYaYXS" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/h" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2QQnVkW" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/n" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+
+
+
+
+<h4 class="code-title">Medium Faces</h4><br>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2PPh0aC" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/r" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2Dh8UWT" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/s" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2QO6yRV" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/u" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2xCF74N" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/v" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2QOlv6n" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/t" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+
+
+<h4 class="code-title">Small Faces</h4><br>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2NvyUlW" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/x" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2DgFLv2" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/w" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2PWIkDZ" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/y" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div><hr>
+</div>
+<div class="e-col-12 centered">
+  <img class="face-shadow" src="https://bit.ly/2Dk8A9G" alt="{{site.title}} {{site.subtitle}}">
+  <div class="e-col-6 centered">
+    <a href="{{site.url}}/face/z" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+  </div>
+</div>
+
+
+
+</div>
