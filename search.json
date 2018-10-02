@@ -12,167 +12,23 @@ layout: null
     } {% unless forloop.last %},{% endunless %}
   {% endfor %},
 
-  {"__Comentario": "--------------INFO DE LOS COMPONENTES DE NAVEGACION---------------"},
+  {% for nav in site.data.navegation %}
+    {
+      "title"    : "{{ nav.name | escape }}",
+      "bio" : "{{ nav.bio | strip_html | strip_newlines | escape }}",
+      "category" : "{{nav.category}}",
+      "url"      : "{{ site.url }}{{ nav.url }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %},
 
-  {
-    "title"    : "Start",
-    "bio" : "Get started with eFrolic, a simple and functional framework for creating responsive sites on mobile devices. Use one of the following ways to start using.",
-    "category" : "Get started",
-    "url"      : "{{ site.url }}/start"
-  },
-  {
-    "title"    : "Modular",
-    "bio" : "description",
-    "category" : "Download",
-    "url"      : "{{ site.url }}/modular"
-  },
-  {
-    "title"    : "Color palette",
-    "bio" : "Our color palette consists of neutral, white and blue. These colors are used as variants in all classes of eFrolic, that is, as a second class after the main one to personalize elements.",
-    "category" : "Assistants",
-    "url"      : "{{ site.url }}/colors"
-  },
-  {
-    "title"    : "Container",
-    "bio" : "description",
-    "category" : "Layout",
-    "url"      : "{{ site.url }}/container"
-  },
-  {
-    "title"    : "System Grid",
-    "bio" : "We use a standard 12-column grid system. The grid is built with Flexbox technology, totally responsive. It will help you to design your pages in an easy and orderly way, a system of simple and receptive columns.",
-    "category" : "Layout",
-    "url"      : "{{ site.url }}/grid"
-  },
-  {
-    "title"    : "Face",
-    "bio" : "The face is a container to create full-page introductions to make your website elegant, is the first thing you ever see on a website, use this container and take full advantage of your website.",
-    "category" : "Layout",
-    "url"      : "{{ site.url }}/face"
-  },
-  {
-    "title"    : "Media object",
-    "bio" : "description",
-    "category" : "Layout",
-    "url"      : "{{ site.url }}/media-object"
-  },
-  {
-    "title"    : "Section",
-    "bio" : "description",
-    "category" : "Layout",
-    "url"      : "{{ site.url }}/section"
-  },
-  {
-    "title"    : "Footer",
-    "bio" : "description",
-    "category" : "Layout",
-    "url"      : "{{ site.url }}/footer"
-  },
-  {
-    "title"    : "Navbars",
-    "bio" : "The navigation is a main component for our design, it is the element with which our users are guided, you have different options in colors, sizes and states. They are easy to customize, take a look and create your own navbar.",
-    "category" : "Components",
-    "url"      : "{{ site.url }}/navbars"
-  },
-  {
-    "title"    : "SideNav",
-    "bio" : "description",
-    "category" : "Components",
-    "url"      : "{{ site.url }}/sidenav"
-  },
-  {
-    "title"    : "Previews Buttons",
-    "bio" : "This is a preview of all the buttons you can create just by adding classes. Press start to find the documentation of how to use.",
-    "category" : "Preview",
-    "url"      : "{{ site.url }}/buttons-previews"
-  },
-  {
-    "title"    : "Buttons",
-    "bio" : "The buttons are one of the most essential elements of our design, is the element with which most users interact, and for this reason we have diversities of options of the classic buttons, in different colors, sizes and states.",
-    "category" : "Components",
-    "url"      : "{{ site.url }}/buttons"
-  },
-  {
-    "title"    : "Social Buttons",
-    "bio" : "The buttons of social networks are important elements to share information about our site, it is the way to link with your visitors, observe the great variety of classic buttons, in different colors, sizes and states.",
-    "category" : "Components",
-    "url"      : "{{ site.url }}/social-buttons"
-  },
-  {
-    "title"    : "Notes previews",
-    "bio" : "This is a preview of all the notes you can create by simply adding classes. Press start to find documentation on how to use it.",
-    "category" : "Preview",
-    "url"      : "{{ site.url }}/notes-previews"
-  },
-  {
-    "title"    : "Notes",
-    "bio" : "The notes inform the users about a pending task, the states of the system and the actions of the user or for what you believe you can use them, they can contain critical information, require decisions or involve multiple tasks. ",
-    "category" : "Components",
-    "url"      : "{{ site.url }}/notes"
-  },
-  {
-    "title"    : "Alerts previews",
-    "bio" : "This is a preview of all the alerts that you can create by simply adding classes. Press start to find documentation of how to use.",
-    "category" : "Preview",
-    "url"      : "{{ site.url }}/alerts-previews"
-  },
-  {
-    "title"    : "Alerts",
-    "bio" : "Alerts or dialogs inform users about a task, system states and user actions, can contain critical information, require decisions or involve multiple tasks.",
-    "category" : "Components",
-    "url"      : "{{ site.url }}/alerts"
-  },
-  {
-    "title"    : "Cards",
-    "bio" : "{{ page.description }}",
-    "category" : "Components",
-    "url"      : "{{ site.url }}/cards"
-  },
-  {
-    "title"    : "Typography",
-    "bio" : "This is the documentation and examples of general typography. We add our configurations to provide different sizes among other options.",
-    "category" : "Utilities",
-    "url"      : "{{ site.url }}/typography"
-  },
-  {
-    "title"    : "Shadows",
-    "bio" : "Add shadows to your elements by applying one of the 6 kinds of shadows available, easy to use just apply the class and a number or just apply shadow. In total there are 8 shading options where you can cancel the shadows or add the one you want.",
-    "category" : "Utilities",
-    "url"      : "{{ site.url }}/shadows"
-  },
-  {
-    "title"    : "Dropdown",
-    "bio" : "The famous drop-down options are contextual overlays that can be toggled to display lists of links and more. We use hover to activate the visibility of these elements. They are super easy to create and customize with excellent colors and spectacular shadows.",
-    "category" : "Components",
-    "url"      : "{{ site.url }}/dropdown"
-  },
+  {% for class in site.data.classes %}
+    {
+      "title"    : "{{ class.name | escape }}",
+      "bio" : "{{ class.bio | strip_html | strip_newlines | escape }}",
+      "category" : "{{class.category}}",
+      "url"      : "{{ site.url }}{{ class.url }}"
 
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
 
-  {"__Comentario": "---------INFO DE LAS CLASES------------"},
-
-
-  {
-    "title"    : "e-face",
-    "bio" : "description",
-    "category" : "Class",
-    "url"      : "{{ site.url }}/face"
-  },
-  {
-    "title"    : "e-nav",
-    "bio" : "description",
-    "category" : "Class",
-    "url"      : "{{ site.url }}/navbars"
-  },
-  {
-    "title"    : "e-alert",
-    "bio" : "description",
-    "category" : "Class",
-    "url"      : "{{ site.url }}/alert"
-  },
-  {
-    "title"    : "e-container",
-    "bio" : "description",
-    "category" : "Class",
-    "url"      : "{{ site.url }}/container"
-  }
 ]
