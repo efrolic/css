@@ -16,18 +16,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="rgb(29, 161, 242)">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
-  <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="{{site.url}}/assets/images/efrolic-developer.png" />
-  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@e_frolic">
   <meta name="twitter:creator" content="@e_frolic">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %} | {{site.subtitle}}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
-  <meta name="twitter:image" content="{{site.url}}/assets/images/efrolic-developer.png">
+  <meta name="twitter:image" content="{{site.url}}/assets/images/efrolic-brand.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %} | {{site.subtitle}}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{site.url}}/assets/images/efrolic-brand.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="660">
+  <meta property="og:image:height" content="183">
 
   <!-- Links -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">

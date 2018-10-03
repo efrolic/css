@@ -2,7 +2,7 @@
   category: Get started
   url: /start
   bio: "Get started with eFrolic, a simple and functional framework for
-  creating responsive sites on mobile devices. Use one of the following ways to start using."
+  creating responsive sites on mobile devices."
 
 - name: Container
   category: Layout
@@ -12,22 +12,19 @@
 - name: Color palette
   category: Assistants
   url: /colors
-  bio: "Our color palette consists of neutral, white and blue.
-  These colors are used as variants in all classes of eFrolic, that is,
-  as a second class after the main one to personalize elements."
+  bio: "Colors are used as variants in all classes of eFrolic,
+  that is, as a second class after the main one to customize elements."
 
 - name: System Grid
   category: Layout
   url: /grid
-  bio: "We use a standard 12-column grid system. The grid is built with Flexbox technology,
-  totally responsive. It will help you to design your pages in an easy and orderly way,
-  a system of simple and receptive columns."
+  bio: "We use a standard 12 column grid system. The network is built with Flexbox technology,
+  totally responsive It will help you design your pages in an easy and orderly manner."
 
 - name: Face
   category: Layout
   url: /face
-  bio: "The face is a container to create full-page introductions to make your website elegant,
-  is the first thing you ever see on a website, use this container and take full advantage of your website."
+  bio: "The face is a container to create full page presentations for your website to be elegant."
 
 - name: Media object
   category: Layout
@@ -47,9 +44,9 @@
 - name: Navbars
   category: Components
   url: /navbars
-  bio: "The navigation is a main component for our design,
-  it is the element with which our users are guided, you have different
-  options in colors, sizes and states. They are easy to customize, take a look and create your own navbar."
+  bio: "Navigation is a main component for our design,
+  It is the element with which our users are guided,
+  you have different options in colors, sizes and states."
 
 - name: SideNav
   category: Components
@@ -59,47 +56,41 @@
 - name: Previews Buttons
   category: Preview
   url: /buttons-previews
-  bio: "This is a preview of all the buttons you can create just by adding classes.
-  Press start to find the documentation of how to use."
+  bio: "This is a preview of all the buttons you can create just by adding classes."
 
 - name: Buttons
   category: Components
   url: /buttons
   bio: "The buttons are one of the most essential elements of our design,
-  is the element with which most users interact, and for this reason we have
-  diversities of options of the classic buttons, in different colors, sizes and states."
+  it is the element with which more users interact."
 
 - name: Social Buttons
   category: Components
   url: /social-buttons
   bio: "The buttons of social networks are important elements to share information about our site,
-  it is the way to link with your visitors, observe the great variety of classic buttons,
-  in different colors, sizes and states."
+  It is the way to link with your visitors."
 
 - name: Notes previews
   category: Preview
   url: /notes-previews
-  bio: "This is a preview of all the notes you can create by simply adding classes.
-  Press start to find documentation on how to use it."
+  bio: "This is a preview of all the notes you can create by simply adding classes."
 
 - name: Notes
   category: Components
   url: /notes
-  bio: "The notes inform the users about a pending task, the states of the system and the actions
-  of the user or for what you believe you can use them, they can contain critical information,
-  require decisions or involve multiple tasks."
+  bio: "They inform users about a pending task, system statuses, and user actions."
 
 - name: Alerts previews
   category: Preview
   url: /alerts-previews
-  bio: "This is a preview of all the alerts that you can create by simply adding classes.
-  Press start to find documentation of how to use."
+  bio: "This is a preview of all the alerts that you can create by simply adding classes."
 
 - name: Alerts
   category: Components
   url: /alerts
-  bio: "Alerts or dialogs inform users about a task, system states and user actions,
-  can contain critical information, require decisions or involve multiple tasks."
+  bio: "Alerts or dialog boxes inform users about a task,
+  the states of the system and the actions of the user,
+  add a little emotional weight to the information"
 
 - name: Cards
   category: Components
@@ -115,13 +106,16 @@
 - name: Shadows
   category: Utilities
   url: /shadows
-  bio: "Add shadows to your elements by applying one of the 6 kinds of shadows available,
-  easy to use just apply the class and a number or just apply shadow.
-  In total there are 8 shading options where you can cancel the shadows or add the one you want."
+  bio: "Add shadows to your elements by applying one of the 8 types of shadows available."
 
 - name: Dropdown
   category: Components
   url: /dropdown
-  bio: "The famous drop-down options are contextual overlays that can be toggled to display
-  lists of links and more. We use hover to activate the visibility of these elements.
-  They are super easy to create and customize with excellent colors and spectacular shadows."
+  bio: "The famous drop-down options are contextual overlays that can be toggled
+  to display lists of links and more."
+
+- name: Tags
+  category: Components
+  url: /tags
+  bio: "The small labels that are everywhere leaving hints of information.
+  Used for counts and labels in blog, categories among others."

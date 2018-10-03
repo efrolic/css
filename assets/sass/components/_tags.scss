@@ -1,0 +1,53 @@
+.e-tag {
+  display       : inline-flex;
+  padding       : 0.25em 0.580em;
+  background    : $default;
+  color         : $e-font-color;
+  font-size     : 80%;
+  letter-spacing: 0.3px;
+  font-weight   : 700;
+  text-align    : center;
+  white-space   : nowrap;
+  vertical-align: middle;
+  border-radius : 0.22rem;
+
+  &.rounded {
+    border-radius: 100px;
+    padding      : 0.25em 0.8em;
+  }
+
+  &.static {
+    font-size: 0.870rem !important;
+  }
+}
+
+.e-tags {
+  @extend %centered;
+  justify-content: flex-start;
+
+  & .e-tag {
+    margin-bottom: 0.5rem;
+    min-height   : 1.8em;
+    line-height  : 1.8em;
+  }
+
+  & .e-tag:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  &.unified {
+    & .e-tag {
+      margin-right: 0;
+    }
+
+    & .e-tag:not(:last-child) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius   : 0;
+    }
+
+    & .e-tag:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius   : 0;
+    }
+  }
+}

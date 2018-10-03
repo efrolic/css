@@ -1,130 +1,147 @@
 .e-btn {
   @extend %waves;
-  display                               : inline-block;
-	position                              : relative;
-  padding                               : .585rem 1.25rem;
-	background                            : $default;
-	color                                 : $e-font-color;
-	white-space                           : nowrap;
-	justify-content                       : center;
-	align-items                           : center;
-	text-align                            : center;
-	vertical-align                        : baseline;
-	font-weight                           : 600;
-	letter-spacing                        : .4px;
-  margin                                : .3rem;
-	border-radius                         : .25rem;
-  cursor                                : pointer;
-  border                                : solid 1px transparent;
-  text-decoration                       : none;
-  list-style                            : none;
-  font-size                             : .90rem;
-  transition: box-shadow .18s ease-out, background .18s ease-out, color .18s ease-out;
-  box-shadow                            : inset 0 1px 0 rgba(255,255,255,0.0125),0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
-  &.float-left{
-    position                            : fixed;
-    bottom                              : 30px;
-    left                                : 30px;
-    z-index                             : 10000;
+  display        : inline-block;
+  position       : relative;
+  padding        : 0.585rem 1.25rem;
+  background     : $default;
+  color          : $e-font-color;
+  white-space    : nowrap;
+  justify-content: center;
+  align-items    : center;
+  text-align     : center;
+  vertical-align : baseline;
+  font-weight    : 600;
+  letter-spacing : 0.4px;
+  margin         : 0.3rem;
+  border-radius  : 0.25rem;
+  cursor         : pointer;
+  border         : solid 1px transparent;
+  text-decoration: none;
+  list-style     : none;
+  font-size      : 0.90rem;
+  transition     : box-shadow 0.18s ease-out, background 0.18s ease-out, color 0.18s ease-out;
+  box-shadow     : inset 0 1px 0 rgba(255,255,255,0.0125),0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
 
+  &.float-left {
+    position: fixed;
+    bottom  : 30px;
+    left    : 30px;
+    z-index : 10000;
   }
-  &.float-right{
-    position                            : fixed;
-    bottom                              : 30px;
-    right                               : 30px;
-    z-index                             : 10000 !important;
+
+  &.float-right {
+    position: fixed;
+    bottom  : 30px;
+    right   : 30px;
+    z-index : 10000 !important;
   }
-	&.small{
-	 padding                             : .3rem .85rem;
-	 font-size                           : 0.85rem;
-	}
-	&.plus{
-		padding                             : .750rem 2rem;
-		font-size                           : 1.125rem;
-	}
-	&.fullwidth{
-		width                               : 100%;
-	}
-  &:hover{
+
+  &.small {
+    padding  : 0.3rem 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  &.plus {
+    padding  : 0.750rem 2rem;
+    font-size: 1.125rem;
+  }
+
+  &.fullwidth {
+    width: 100%;
+  }
+
+  &:hover {
     box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
   }
-	/* Anime Button */
-	&.anime{
-    border:solid 1px rgba(0, 0, 0, 0.1);
-    border-bottom:solid rgba(0, 0, 0,.2);
-    border-top:solid rgba(0, 0, 0, 0.1);
-    border-top-width: .0625rem;
+  /* Anime Button */
+  &.anime {
+    border             : solid 1px rgba(0, 0, 0, 0.1);
+    border-bottom      : solid rgba(0, 0, 0,.2);
+    border-top         : solid rgba(0, 0, 0, 0.1);
+    border-top-width   : 0.0625rem;
     border-bottom-width: calc(.150rem + .0625rem);
-    border-radius:8px;
-    transition: border .1s ease-in;
-    box-shadow:rgba(255, 255, 255, 0.01) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-    &:active,&:focus{
-    border-top-width: calc(.150rem + .0625rem);
-    border-bottom-width: .0625rem;
+    border-radius      : 8px;
+    transition         : border 0.1s ease-in;
+    box-shadow         : rgba(255, 255, 255, 0.01) 0 1px 0 0 inset, rgba(0, 0, 0, 0.05) 0 1px 1px 0;
+
+    &:active,
+    &:focus {
+      border-top-width   : calc(.150rem + .0625rem);
+      border-bottom-width: 0.0625rem;
     }
-    &.small{
+
+    &.small {
       border-radius: 5px;
     }
-	}
-	/* End Anime Button */
+  }
+  /* End Anime Button */
+  /* Circle Button */
+  &.circle {
+    border-radius: 100%;
+    font-size    : $size-icon-circle;
+    border       : none;
+    padding      : 0;
+    line-height  : 56px;
+    width        : 56px;
+    overflow     : hidden;
+    text-align   : center;
+    text-shadow  : 1px 1px 1px rgba(0,0,0,0.2);
 
-	/* Circle Button */
-	&.circle{
-		border-radius                       : 100%;
-	  font-size                           : $size-icon-circle;
-	  border                              : none;
-	  padding                             : 0;
-	  line-height                         : 56px;
-	  width                               : 56px;
-	  overflow                            : hidden;
-	  text-align                          : center;
-	  text-shadow                         : 1px 1px 1px rgba(0,0,0,0.2);
-		&.small{
-	    line-height                       : 45px;
-	    width                             : 45px;
-	    font-size                         : $size-icon-circle - 0.3125rem;
-			padding                           : 0;
-	  }
-	  &.plus{
-	    line-height                       : 71px;
-	    width                             : 71px;
-	    font-size                         : $size-icon-circle + 0.3125rem;
-			padding                           : 0;
-	  }
-	  &.fullwidth{
-	    width                             : 55px;
-	    text-align                        : center;
-	  }
-	}
-	/* End Circle Button */
-	/* Outlined Button */
-	 &.outlined{
-      background                        : white;
-      color                             : $e-font-color;
-      border-color                      : $default;
-      &:hover,&:focus{
-        background                      : $default;
-      }}
+    &.small {
+      line-height: 45px;
+      width      : 45px;
+      font-size  : $size-icon-circle - 0.3125rem;
+      padding    : 0;
+    }
 
-	/* End Outlined Button */
-	&.rounded{
-		border-radius                       : 100px;
-	}
-	&.plane{
-		border-radius                       : 2px;
-		border                              : none;
-	}
-  &.inverted{
-    @extend %waves-dark;
-    background                        : white !important;
-    color                             : $e-font-color;
-    border-color                      : rgba(0,0,0,0.1);
-    box-shadow                        : none;
-    &:hover{
-    background-image                  : radial-gradient(rgba(0,0,0,.019) 100%, transparent 0.01%) !important;
+    &.plus {
+      line-height: 71px;
+      width      : 71px;
+      font-size  : $size-icon-circle + 0.3125rem;
+      padding    : 0;
+    }
+
+    &.fullwidth {
+      width     : 55px;
+      text-align: center;
     }
   }
-  &:focus{
+  /* End Circle Button */
+  /* Outlined Button */
+  &.outlined {
+    background  : white;
+    color       : $e-font-color;
+    border-color: $default;
+
+    &:focus,
+    &:hover {
+      background: $default;
+    }
+  }
+  /* End Outlined Button */
+  &.rounded {
+    border-radius: 100px;
+  }
+
+  &.plane {
+    border-radius: 2px;
+    border       : none;
+  }
+
+  &.inverted {
+    @extend %waves-dark;
+    background  : white !important;
+    color       : $e-font-color;
+    border-color: rgba(0,0,0,0.1);
+    box-shadow  : none;
+
+    &:hover {
+      background-image: radial-gradient(rgba(0,0,0,.019) 100%, transparent 0.01%) !important;
+    }
+  }
+
+  &:focus {
     box-shadow: 0 0 0 2.4px lighten($default,1.8%);
+    outline   : none !important;
   }
 }

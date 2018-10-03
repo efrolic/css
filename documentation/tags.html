@@ -1,0 +1,357 @@
+---
+layout: default
+
+permalink: /tags
+
+title: Tags
+
+description: "The small labels that are everywhere leaving hints of information. Used for counts and labels in blog, categories among others.
+<br><br>
+You want to leave clues, this is what you need!"
+
+---
+
+<h2 class="code-title">{{ page.title }}</h2>
+<p class="desc">{{ page.description }}</p>
+<hr class="hr">
+<div class="container-white">
+  <h5 class="code-title">15 Beautiful colors for tags</h5><br>
+  <div class="e-cols centered">
+    <div class="e-col">
+      <div class="e-tags">
+      <span class="e-tag">Hi, I'm tag</span>
+      <span class="e-tag white">White</span>
+      <span class="e-tag gray">Gray</span>
+      <span class="e-tag dark">Dark</span>
+      <span class="e-tag black">Black</span><hr>
+      <span class="e-tag primary">Primary</span>
+      <span class="e-tag success">Success</span>
+      <span class="e-tag danger">Danger</span>
+      <span class="e-tag warning">Warning</span>
+      <span class="e-tag sky">Sky / info</span>
+      <span class="e-tag purple">Purple</span><hr>
+      <span class="e-tag green-gradient">Green-gradient</span>
+      <span class="e-tag purple-gradient">Purple-gradient</span>
+      <span class="e-tag blue-gradient">Blue-gradient</span>
+      <span class="e-tag inst-gradient">Inst-gradient</span>
+    </div>
+    </div>
+    <div class="e-col">
+{% highlight html %}
+  <span class="e-tag">Hi, I'm tag</span>
+  <span class="e-tag white">White</span>
+  <span class="e-tag gray">Gray</span>
+  <span class="e-tag dark">Dark</span>
+  <span class="e-tag black">Black</span>
+  <span class="e-tag primary">Primary</span>
+  <span class="e-tag success">Success</span>
+  <span class="e-tag danger">Danger</span>
+  <span class="e-tag warning">Warning</span>
+  <span class="e-tag sky">Sky / info</span>
+  <span class="e-tag purple">Purple</span>
+{% endhighlight %}
+    </div>
+  </div>
+</div>
+
+
+<div class="container-white">
+  <h5 class="code-title">Sizes</h5>
+  <p>The tags will grow according to the size of their parent class,
+     they take a proportion in <strong>%</strong> of the size <strong class="code">font-size</strong>
+      of the larger label <br><strong>Example:</strong> <strong class="code">h1</strong>
+  </p>
+  <hr class="hr">
+  <div class="e-cols">
+    <div class="e-col">
+      <h1>Hi, I'm 1.heading <span class="e-tag primary">New</span></h1>
+      <h2>Hi, I'm 2.heading <span class="e-tag success">New</span></h2>
+      <h3>Hi, I'm 3.heading <span class="e-tag danger">New</span></h3>
+      <h4>Hi, I'm 4.heading <span class="e-tag warning">New</span></h4>
+      <h5>Hi, I'm 5.heading <span class="e-tag purple">New</span></h5>
+      <h6>Hi, I'm 6.heading <span class="e-tag">New</span></h6>
+    </div>
+    <div class="e-col-12">
+{% highlight html %}
+<h1>Hi, I'm 1.heading <span class="e-tag">New</span></h1>
+<h2>Hi, I'm 2.heading <span class="e-tag">New</span></h2>
+<h3>Hi, I'm 3.heading <span class="e-tag">New</span></h3>
+<h4>Hi, I'm 4.heading <span class="e-tag">New</span></h4>
+<h5>Hi, I'm 5.heading <span class="e-tag">New</span></h5>
+<h6>Hi, I'm 6.heading <span class="e-tag">New</span></h6>
+{% endhighlight %}
+    </div>
+<div class="e-col">
+  <article class="e-note danger">
+    <div class="note-header">
+      Although if you want a static size.
+    </div>
+    <div class="note-body">
+      Add <strong class="code">static</strong> class to to have an original size tag regardless of the parent class.
+    </div>
+  </article>
+</div>
+<div class="e-col-12">
+    <h1>Hi, I'm 1.heading <span class="e-tag static primary">New</span></h1>
+    <h2>Hi, I'm 2.heading <span class="e-tag static success">New</span></h2>
+    <h3>Hi, I'm 3.heading <span class="e-tag static danger">New</span></h3>
+    <h4>Hi, I'm 4.heading <span class="e-tag static warning">New</span></h4>
+    <h5>Hi, I'm 5.heading <span class="e-tag static purple">New</span></h5>
+    <h6>Hi, I'm 6.heading <span class="e-tag static">New</span></h6>
+</div>
+<div class="e-col-12">
+{% highlight html %}
+<h1>Hi, I'm 1.heading <span class="e-tag static">New</span></h1>
+<h2>Hi, I'm 2.heading <span class="e-tag static">New</span></h2>
+<h3>Hi, I'm 3.heading <span class="e-tag static">New</span></h3>
+<h4>Hi, I'm 4.heading <span class="e-tag static">New</span></h4>
+<h5>Hi, I'm 5.heading <span class="e-tag static">New</span></h5>
+<h6>Hi, I'm 6.heading <span class="e-tag static">New</span></h6>
+{% endhighlight %}
+</div>
+</div>
+</div>
+
+<div class="container-white">
+  <h5 class="code-title">Change of appearances and combinations</h5>
+  <p>If you take a tour of all the components and utilities you
+    can create more elegant and desired appearances with help and utility classes.</p>
+  <hr class="hr">
+  <div class="e-cols centered">
+    <div class="e-col">
+<div class="e-note block danger">
+  <div class="note-body">
+    Add <strong class="code">rounded</strong> class to make a rounded tag.
+  </div>
+</div><br>
+<div class="e-tags">
+  <span class="e-tag rounded">Tag</span>
+  <span class="e-tag rounded primary">Primary</span>
+  <span class="e-tag rounded success">Success</span>
+  <span class="e-tag rounded danger">Danger</span>
+  <span class="e-tag rounded warning">Warning</span>
+  <span class="e-tag rounded purple">Purple</span>
+</div>
+  </div>
+  <div class="e-col">
+{% highlight html %}
+<span class="e-tag rounded">Tag</span>
+<span class="e-tag rounded primary">Primary</span>
+<span class="e-tag rounded success">Success</span>
+<span class="e-tag rounded danger">Danger</span>
+<span class="e-tag rounded warning">Warning</span>
+<span class="e-tag rounded purple">Purple</span>
+{% endhighlight %}
+    </div>
+  </div>
+
+  <div class="e-cols centered">
+    <div class="e-col">
+<div class="e-note block purple">
+  <div class="note-body">
+    Using the beautiful shadows. |
+    Add <strong class="code">shadow</strong>
+  </div>
+</div><br>
+<div class="e-tags">
+  <span class="e-tag shadow rounded white">Tag</span>
+  <span class="e-tag shadow-6 rounded primary">Primary</span>
+  <span class="e-tag shadow-6 rounded success">Success</span>
+  <span class="e-tag shadow-6 rounded danger">Danger</span>
+  <span class="e-tag shadow-6 rounded warning">Warning</span>
+  <span class="e-tag shadow-6 rounded purple">Purple</span>
+  <hr>
+  <span class="e-tag shadow white">Tag</span>
+  <span class="e-tag shadow-6 primary">Primary</span>
+  <span class="e-tag shadow-6 success">Success</span>
+  <span class="e-tag shadow-6 danger">Danger</span>
+  <span class="e-tag shadow-6 warning">Warning</span>
+  <span class="e-tag shadow-6 purple">Purple</span>
+</div>
+  </div>
+  <div class="e-col-6">
+{% highlight html %}
+<span class="e-tag shadow  white">Tag</span>
+<span class="e-tag shadow-6 primary">Primary</span>
+<span class="e-tag shadow-5 success">Success</span>
+<span class="e-tag shadow-4 danger">Danger</span>
+<span class="e-tag shadow-3 warning">Warning</span>
+<span class="e-tag shadow-2 purple">Purple</span>
+{% endhighlight %}
+    </div>
+  </div>
+
+
+  <div class="e-cols centered">
+    <div class="e-col">
+<div class="e-note block success">
+  <div class="note-body">
+    Combining with the buttons
+  </div>
+</div><br>
+<button type="button" class="e-btn primary">
+  Button <span class="e-tag">5</span>
+</button>
+
+<button type="button" class="e-btn danger">
+  Button <span class="e-tag transparent">5</span>
+</button>
+
+<button class="e-btn inverted purple">
+  Button <span class="e-tag purple">5</span>
+</button>
+
+
+  </div>
+  <div class="e-col-6">
+{% highlight html %}
+<button type="button" class="e-btn primary">
+  Button <span class="e-tag">5</span>
+</button>
+
+<button type="button" class="e-btn danger">
+  Button <span class="e-tag transparent">5</span>
+</button>
+
+<a class="e-btn inverted purple">
+  Button <span class="e-tag purple">5</span>
+</a>
+{% endhighlight %}
+    </div>
+  </div>
+</div>
+
+
+<div class="container-white">
+  <h5 class="code-title">Tag list</h5>
+  <p>With the container you can create large lists of tags that are grouped in an orderly manner,
+     useful for classifications, categories, order, blogs among other uses.</p>
+  <p>Use <strong class="code">e-tags</strong></p>
+  <hr class="hr">
+  <div class="e-cols centered">
+    <div class="e-col">
+      <div class="e-tags">
+        <span class="e-tag primary shadow">Tag 1</span>
+        <span class="e-tag primary shadow">Tag 2</span>
+        <span class="e-tag primary shadow">Tag 3</span>
+        <span class="e-tag primary shadow">Tag 4</span>
+        <span class="e-tag primary shadow">Tag 5</span>
+        <span class="e-tag primary shadow">Tag 6</span>
+        <span class="e-tag primary shadow">Tag 7</span>
+        <span class="e-tag primary shadow">Tag 8</span>
+        <span class="e-tag primary shadow">Tag 9</span>
+        <span class="e-tag primary shadow">Tag 10</span>
+        <span class="e-tag primary shadow">Tag 11</span>
+        <span class="e-tag primary shadow">Tag 12</span>
+        <span class="e-tag primary shadow">Tag 13</span>
+        <span class="e-tag primary shadow">Tag 14</span>
+        <span class="e-tag primary shadow">Tag 15</span>
+        <span class="e-tag primary shadow">Tag 16</span>
+        <span class="e-tag primary shadow">Tag 17</span>
+        <span class="e-tag primary shadow">Tag 18</span>
+        <span class="e-tag primary shadow">Tag 19</span>
+        <span class="e-tag primary shadow">Tag 20</span>
+      </div>
+    </div>
+    <div class="e-col-6">
+{% highlight html %}
+<div class="e-tags">
+  <span class="e-tag">Tag 1</span>
+  <span class="e-tag">Tag 2</span>
+  <span class="e-tag">Tag 3</span>
+  <span class="e-tag">Tag 4</span>
+</div>
+{% endhighlight %}
+    </div>
+  </div>
+  <strong class="code e- danger">Tag list unified</strong>
+  <p>Adding the class <strong class="code">unified</strong> the container creates unified tags, creating a label even more elegant and diverse uses.
+    <br><br>
+    Recommended to use two tags per container <strong class="code">e-tags</strong>
+    to give double style even so you can add as many as you create, although they may break.</p>
+    <p>Use <strong class="code">e-tags unified</strong></p>
+  <hr class="hr">
+  <div class="e-cols centered">
+  <div class="e-col-6">
+    <div class="e-cols">
+      <div class="e-col-4">
+        <div class="e-tags unified">
+          <span class="e-tag shadow">hashtag</span>
+          <span class="e-tag success shadow">eFrolic</span>
+        </div>
+      </div>
+      <div class="e-col-4">
+        <div class="e-tags unified">
+          <span class="e-tag shadow fas fa-hashtag"></span>
+          <span class="e-tag purple shadow">eFrolic</span>
+        </div>
+      </div>
+      <div class="e-col-4">
+        <div class="e-tags unified">
+          <span class="e-tag shadow">eFrolic</span>
+          <span class="e-tag shadow sky fas fa-plus">
+          </span>
+        </div>
+      </div>
+      <div class="e-col-4">
+        <div class="e-tags unified">
+          <span class="e-tag shadow danger">Efra Peralta</span>
+          <a class="e-tag shadow fas fa-times"></a>
+        </div>
+      </div>
+      <div class="e-col-4">
+        <div class="e-tags unified">
+          <span class="e-tag shadow dark">npm</span>
+          <span class="e-tag shadow primary">eFrolic</span>
+        </div>
+      </div>
+      <div class="e-col-4">
+        <div class="e-tags unified">
+          <span class="e-tag shadow dark">Version</span>
+          <span class="e-tag shadow success">0.5.7</span>
+        </div>
+      </div>
+      <div class="e-col-12">
+        <div class="e-tags unified">
+          <span class="e-tag shadow dark">Version</span>
+          <span class="e-tag shadow-6 success">0.5.7</span>
+          <span class="e-tag shadow-6 sky">0.5.8</span>
+          <span class="e-tag shadow-6 primary">0.5.9</span>
+          <span class="e-tag shadow-6 purple">0.6.0</span>
+          <span class="e-tag shadow dark">Latest</span>
+        </div>
+      </div>
+      <div class="e-col-12">
+        <div class="e-tags unified">
+          <span class="e-tag shadow-6 gray">Version</span>
+          <span class="e-tag shadow-6">0.5.7</span>
+          <span class="e-tag shadow-6 ">0.5.8</span>
+          <span class="e-tag shadow-6 ">0.5.9</span>
+          <span class="e-tag shadow-6 ">0.6.0</span>
+          <span class="e-tag shadow-6 gray">Latest</span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="e-col-6">
+{% highlight html %}
+<div class="e-tags unified">
+  <span class="e-tag dark">npm</span>
+  <span class="e-tag primary">eFrolic</span>
+</div>
+
+<div class="e-tags unified">
+  <span class="e-tag danger">eFrolic</span>
+  <a class="e-tag fas fa-times"></a>
+</div>
+
+<div class="e-tags unified">
+  <span class="e-tag shadow-6 gray">Version</span>
+  <span class="e-tag shadow-6">0.5.7</span>
+  <span class="e-tag shadow-6 ">0.5.8</span>
+  <span class="e-tag shadow-6 gray">Latest</span>
+</div>
+{% endhighlight %}
+    </div>
+  </div>
+</div>

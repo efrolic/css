@@ -30,8 +30,7 @@ $colors: (
   color: $e-font-color;
 
   & a:not(.e-btn),
-  .e-dropdown,
-  .e-label {
+  .e-dropdown {
     color: $e-font-color;
   }
 }
@@ -40,8 +39,7 @@ $colors: (
   color: $white;
 
   & a:not(.e-btn),
-  .e-dropdown,
-  .e-label {
+  .e-dropdown {
     color: $white;
   }
 }
@@ -98,8 +96,7 @@ $colors: (
     color      : $e-font-color;
 
     & a:not(.e-btn),
-    .e-dropdown,
-    .e-label {
+    .e-dropdown {
       color: $e-font-color;
     }
     @include desktop {
@@ -108,8 +105,7 @@ $colors: (
       color      : $white;
 
       & a:not(.e-btn),
-      .e-dropdown,
-      .e-label {
+      .e-dropdown {
         color: $white;
       }
     }
@@ -256,8 +252,7 @@ span {
     color: $warning;
 
     & a:not(.e-btn),
-    .e-dropdown,
-    .e-label {
+    .e-dropdown {
       color: $warning;
     }
 
@@ -266,8 +261,7 @@ span {
       background-image: radial-gradient(rgba($warning,.045) 100%, transparent 0.01%) !important;
 
       & a:not(.e-btn),
-      .e-dropdown,
-      .e-label {
+      .e-dropdown {
         color: $warning;
       }
     }
@@ -283,8 +277,7 @@ span {
       color: $color;
 
       & a:not(.e-btn),
-      .e-dropdown,
-      .e-label {
+      .e-dropdown {
         color: $color;
       }
 
@@ -293,8 +286,7 @@ span {
         background-image: radial-gradient(rgba($color,.045) 100%, transparent 0.01%) !important;
 
         & a:not(.e-btn),
-        .e-dropdown,
-        .e-label {
+        .e-dropdown {
           color: $color;
         }
       }
