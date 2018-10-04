@@ -393,7 +393,8 @@ the dropdown element behaves differently and is affected from the classes of <st
     <p>Use <strong class="code">e-drops unified</strong></p>
   <hr class="hr">
 <div class="e-cols centered">
-    <div class="e-col centered">
+  <div class="e-col">
+    <div class="e-toolbar">
           <div class="e-drops unified">
             <button class="e-btn">Documentation</button>
           <div class="e-dropdown sky shadow-6"><i class="fas fa-angle-down"></i>
@@ -406,8 +407,6 @@ the dropdown element behaves differently and is affected from the classes of <st
             </div>
           </div>
           </div>
-    </div>
-    <div class="e-col centered">
           <div class="e-drops unified">
           <div class="e-dropdown success inverted shadow">Dropdown <i class="fas fa-angle-down"></i>
             <div class="drop-items shadow-5">
@@ -425,9 +424,7 @@ the dropdown element behaves differently and is affected from the classes of <st
             </div>
           </div>
           </div>
-    </div>
-    <div class="e-col-12 centered">
-          <div class="e-drops unified">
+          <div class="e-drops unified no-mobile">
 
           <div class="e-dropdown shadow">More <i class="fas fa-angle-down"></i>
             <div class="drop-items shadow-6">
@@ -453,12 +450,12 @@ the dropdown element behaves differently and is affected from the classes of <st
               <a class="drop-item">Documentation</a>
             </div>
           </div>
-          </div>
     </div>
     </div>
-
+    </div>
   <div class="e-col-12">
 {% highlight html %}
+<div class="e-toolbar">
 <div class="e-drops unified">
   <div class="e-dropdown">
     More
@@ -477,7 +474,7 @@ the dropdown element behaves differently and is affected from the classes of <st
 
 <!-- With Button -->
   <div class="e-drops unified">
-    <a class="e-btn">Button</a>
+    <button class="e-btn">Button</button>
 
     <div class="e-dropdown sky"><i class="fas fa-angle-down"></i>
       <div class="drop-items">
@@ -485,6 +482,7 @@ the dropdown element behaves differently and is affected from the classes of <st
       </div>
     </div>
   </div>
+</div>
 {% endhighlight %}
   </div>
 </div>
