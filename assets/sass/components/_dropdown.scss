@@ -107,17 +107,6 @@
   }
 }
 @media only screen and (max-width:1024px) {
-  .e-dropdown {
-    &.drop-right {
-      & .drop-items {
-        &:before {
-          left : 20px;
-          right: auto;
-        }
-      }
-    }
-  }
-
   .e-drops,
   .e-nav {
     & .e-dropdown:last-child {
