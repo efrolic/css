@@ -1,0 +1,470 @@
+---
+
+layout: default
+
+permalink: /button-group
+
+title: Buttons Group
+
+description: "Groups a series of buttons that are contained in
+(e-buttons) creating new appearances and styles, recommended use for related buttons."
+
+---
+
+<h3 class="code-title">{{page.title}}</h3>
+<p class="desc">{{page.description}}<br><br>
+Add the container <strong class="code">e-buttons</strong> next to the unified class to obtain impressive and elegant
+button groups.
+<br><br>
+It is recommended to use two or three buttons per container <strong class="code">e-buttons</strong>
+so that they are not so extended, even so you can add as many as you wish, although they may break.
+</p>
+<p>Use <strong class="code">e-buttons unified</strong></p>
+<hr class="hr">
+<div class="container-white">
+<h5 class="code-title">Basic example</h5><br>
+<div class="e-cols centered">
+  <div class="e-col centered">
+    <div class="e-buttons unified">
+      <button class="e-btn primary">Button</button>
+      <button class="e-btn primary">Button</button>
+      <button class="e-btn primary">Button</button>
+    </div>
+  </div>
+  <div class="e-col-6">
+{% highlight html %}
+<div class="e-buttons unified" role="group">
+  <button class="e-btn">Button</button>
+  <button class="e-btn">Button</button>
+  <button class="e-btn">Button</button>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+</div>
+
+
+<div class="container-white">
+<h5 class="code-title">Button toolbar</h5>
+<p class="desc">Combine sets of button groups into button toolbars for more complex components.
+   Use utility classes as needed to space out groups, buttons, and more.</p>
+
+<p>Use <strong class="code">e-toolbar</strong></p><br>
+<div class="e-cols centered">
+  <div class="e-col centered">
+    <div class="e-toolbar">
+    <div class="e-buttons unified">
+      <button class="e-btn primary">1</button>
+      <button class="e-btn primary">2</button>
+      <button class="e-btn primary">3</button>
+      <button class="e-btn primary">4</button>
+    </div>
+    <div class="e-buttons unified">
+      <button class="e-btn primary">5</button>
+      <button class="e-btn primary">6</button>
+      <button class="e-btn primary">7</button>
+    </div>
+    <div class="e-buttons unified">
+      <button class="e-btn primary">8</button>
+    </div>
+   </div>
+   <hr>
+    <div class="e-toolbar">
+    <div class="e-buttons unified">
+      <button class="e-btn anime success">1</button>
+      <button class="e-btn anime success">2</button>
+      <button class="e-btn anime success">3</button>
+      <button class="e-btn anime success">4</button>
+    </div>
+    <div class="e-buttons unified">
+      <button class="e-btn anime success">5</button>
+      <button class="e-btn anime primary">6</button>
+      <button class="e-btn anime success">7</button>
+    </div>
+    <div class="e-buttons unified">
+      <button class="e-btn anime success">8</button>
+    </div>
+   </div>
+<hr>
+    <div class="e-toolbar">
+    <div class="e-buttons unified">
+      <button class="e-btn inverted danger">1</button>
+      <button class="e-btn inverted danger">2</button>
+      <button class="e-btn primary">3</button>
+      <button class="e-btn inverted danger">4</button>
+    </div>
+    <div class="e-buttons unified">
+      <button class="e-btn inverted danger">5</button>
+      <button class="e-btn inverted danger">6</button>
+      <button class="e-btn inverted danger">7</button>
+    </div>
+    <div class="e-buttons unified">
+      <button class="e-btn inverted danger">8</button>
+    </div>
+   </div>
+<hr>
+    <div class="e-toolbar">
+    <div class="e-buttons unified">
+      <button class="e-btn plane danger">1</button>
+      <button class="e-btn plane danger">2</button>
+      <button class="e-btn plane danger">3</button>
+      <button class="e-btn plane danger">4</button>
+    </div>
+    <div class="e-buttons unified">
+      <button class="e-btn plane danger">5</button>
+      <button class="e-btn plane danger">6</button>
+      <button class="e-btn plane danger">7</button>
+    </div>
+    <div class="e-buttons unified">
+      <button class="e-btn plane danger">8</button>
+    </div>
+   </div>
+<hr>
+    <div class="e-toolbar">
+    <div class="e-buttons unified">
+      <button class="e-btn circle small purple-gradient">1</button>
+      <button class="e-btn circle small purple-gradient">2</button>
+      <button class="e-btn circle small purple-gradient">3</button>
+      <button class="e-btn circle small purple-gradient">4</button>
+    </div>
+    <div class="e-buttons unified">
+      <button class="e-btn circle small purple-gradient">5</button>
+      <button class="e-btn circle small purple-gradient">6</button>
+      <button class="e-btn circle small purple-gradient">7</button>
+    </div>
+    <div class="e-buttons unified">
+      <button class="e-btn circle small purple-gradient">8</button>
+    </div>
+   </div>
+ </div>
+<div class="e-col-6">
+{% highlight html %}
+<div class="e-toolbar">
+
+  <div class="e-buttons unified" role="group">
+    <button class="e-btn">1</button>
+    <button class="e-btn">2</button>
+  </div>
+  <div class="e-buttons unified" role="group">
+    <button class="e-btn">3</button>
+    <button class="e-btn">4</button>
+    <button class="e-btn">5</button>
+  </div>
+  <div class="e-buttons unified" role="group">
+    <button class="e-btn">6</button>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+</div>
+
+<div class="container-white">
+<h5 class="code-title">Sizes</h5>
+<p class="desc">You can add the sizes directly to the buttons with
+the sizes that you already know if you come from buttons component.</p>
+<div class="e-cols centered">
+  <div class="e-col centered">
+    <div class="e-buttons unified">
+      <button class="e-btn small primary">Button</button>
+      <button class="e-btn small primary">Button</button>
+      <button class="e-btn small primary">Button</button>
+    </div>
+    <hr>
+    <div class="e-buttons unified">
+      <button class="e-btn primary">Button</button>
+      <button class="e-btn primary">Button</button>
+      <button class="e-btn primary">Button</button>
+    </div>
+    <hr>
+    <div class="e-buttons unified">
+      <button class="e-btn plus primary">Button</button>
+      <button class="e-btn plus primary">Button</button>
+      <button class="e-btn plus primary">Button</button>
+    </div>
+  </div>
+  <div class="e-col-6">
+{% highlight html %}
+<!-- Small -->
+<div class="e-buttons unified">
+  <button class="e-btn small">Button</button>
+  <button class="e-btn small">Button</button>
+</div>
+<!-- Normal -->
+<div class="e-buttons unified">
+  <button class="e-btn">Button</button>
+  <button class="e-btn">Button</button>
+</div>
+<!-- Plus -->
+<div class="e-buttons unified">
+  <button class="e-btn plus">Button</button>
+  <button class="e-btn plus">Button</button>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+</div>
+
+
+
+<div class="container-white">
+<h5 class="code-title">Group of buttons combined</h5>
+<p class="desc">Buttons grouped with other components.</p>
+<div class="e-cols centered">
+  <div class="e-col e-toolbar">
+    <div class="e-buttons unified">
+      <button class="e-btn sky">1</button>
+      <button class="e-btn sky">2</button>
+
+      <div class="e-dropdown shadow-6 sky"> Dropdown <i class="fas fa-chevron-down"></i>
+        <div class="drop-items shadow-3">
+          <a class="drop-item">Service 1</a>
+          <a class="drop-item">Service 2</a>
+          <a class="drop-item">Service 3</a>
+          <hr>
+          <button class="e-btn sky">Button</button>
+          <button class="e-btn sky">Button</button>
+        </div>
+      </div>
+    </div>
+    <div class="e-drops unified">
+  <button class="e-btn">Services</button>
+
+  <div class="e-dropdown shadow-6 success inverted"><i class="fas fa-angle-down"></i>
+    <div class="drop-items shadow-3">
+      <a class="drop-item">Service 1</a>
+      <a class="drop-item">Service 2</a>
+      <a class="drop-item">Service 3</a>
+    </div>
+  </div>
+</div>
+    <div class="e-drops unified">
+  <button class="e-btn dark">Services</button>
+
+  <div class="e-dropdown shadow-6 danger inverted"><i class="fas fa-angle-down"></i>
+    <div class="drop-items shadow-3">
+      <a class="drop-item">Service 1</a>
+      <a class="drop-item">Service 2</a>
+      <a class="drop-item">Service 3</a>
+    </div>
+  </div>
+</div>
+<div class="e-buttons unified">
+  <button class="e-btn dark"><i class="fas fa-code-branch"></i> Fork</button>
+  <button class="e-btn inverted shadow white">2</button>
+  <button class="e-btn success"><i class="fas fa-star warning"></i> Start</button>
+  <button class="e-btn inverted shadow white">2</button>
+</div>
+  </div>
+  <div class="e-col-12">
+{% highlight html %}
+<div class="e-buttons unified">
+  <a class="e-btn">Button</a>
+
+  <div class="e-dropdown sky"> Dropdown
+    <div class="drop-items">
+      <a class="drop-item">Item</a>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+</div>
+
+
+<div class="container-white">
+<h5 class="code-title">Styles</h5>
+<p class="desc">All styles of buttons can be used to create beautiful groups..</p>
+<div class="e-cols no-gap centered ">
+  <div class="e-col">
+    <div class="e-col-12">
+  <h6 class="code-title">Basic</h6>
+  <div class="e-col e-toolbar">
+<div class="e-buttons unified">
+  <button class="e-btn primary">Button</button>
+  <button class="e-btn inverted shadow primary">Button</button>
+</div>
+<div class="e-buttons unified">
+  <button class="e-btn primary">Button</button>
+  <button class="e-btn primary">Button</button>
+  <button class="e-btn primary">Button</button>
+</div>
+  </div>
+      </div>
+    <div class="e-col-12">
+  <h6 class="code-title">Anime</h6>
+  <div class="e-col e-toolbar">
+<div class="e-buttons unified">
+  <button class="e-btn anime primary">Button</button>
+  <button class="e-btn anime inverted shadow primary">Button</button>
+</div>
+<div class="e-buttons unified">
+  <button class="e-btn anime primary">Button</button>
+  <button class="e-btn anime primary">Button</button>
+  <button class="e-btn anime primary">Button</button>
+</div>
+  </div>
+      </div>
+    <div class="e-col-12">
+  <h6 class="code-title">Plane</h6>
+  <div class="e-col e-toolbar">
+<div class="e-buttons unified">
+  <button class="e-btn plane primary">Button</button>
+  <button class="e-btn plane inverted shadow primary">Button</button>
+</div>
+<div class="e-buttons unified">
+  <button class="e-btn plane primary">Button</button>
+  <button class="e-btn plane primary">Button</button>
+  <button class="e-btn plane primary">Button</button>
+</div>
+  </div>
+      </div>
+    <div class="e-col-12">
+  <h6 class="code-title">Outlined</h6>
+  <div class="e-col e-toolbar">
+<div class="e-buttons unified">
+  <button class="e-btn outlined primary">Button</button>
+  <button class="e-btn outlined primary">Button</button>
+</div>
+<div class="e-buttons unified">
+  <button class="e-btn outlined primary">Button</button>
+  <button class="e-btn outlined primary">Button</button>
+  <button class="e-btn outlined primary">Button</button>
+</div>
+  </div>
+      </div>
+    <div class="e-col-12">
+  <h6 class="code-title">Outlined rounded</h6>
+  <div class="e-col e-toolbar">
+<div class="e-buttons unified">
+  <button class="e-btn outlined rounded primary">Button</button>
+  <button class="e-btn outlined rounded primary">Button</button>
+</div>
+<div class="e-buttons unified">
+  <button class="e-btn outlined rounded primary">Button</button>
+  <button class="e-btn outlined rounded primary">Button</button>
+  <button class="e-btn outlined rounded primary">Button</button>
+</div>
+  </div>
+      </div>
+    <div class="e-col-12">
+  <h6 class="code-title">Inverted</h6>
+  <div class="e-col e-toolbar">
+<div class="e-buttons unified">
+  <button class="e-btn inverted primary">Button</button>
+  <button class="e-btn inverted primary">Button</button>
+</div>
+<div class="e-buttons unified">
+  <button class="e-btn inverted primary">Button</button>
+  <button class="e-btn inverted primary">Button</button>
+  <button class="e-btn inverted primary">Button</button>
+</div>
+  </div>
+      </div>
+    <div class="e-col-12">
+  <h6 class="code-title">Circle</h6>
+  <div class="e-col e-toolbar">
+<div class="e-buttons unified">
+  <button class="e-btn circle primary"><i class="fas fa-users"></i></button>
+  <button class="e-btn circle primary"><i class="fas fa-users"></i></button>
+</div>
+<div class="e-buttons unified">
+  <button class="e-btn circle primary"><i class="fas fa-users"></i></button>
+  <button class="e-btn circle primary"><i class="fas fa-plus"></i></button>
+  <button class="e-btn circle primary"><i class="fas fa-users"></i></button>
+</div>
+<div class="e-buttons unified">
+  <button class="e-btn circle primary"><i class="fas fa-users"></i></button>
+</div>
+  </div>
+      </div>
+    </div>
+  <div class="e-col-6">
+{% highlight html %}
+<div class="e-toolbar">
+  <div class="e-buttons unified">
+    <button class="e-btn">Button</button>
+    <button class="e-btn">Button</button>
+  </div>
+  <div class="e-buttons unified">
+    <button class="e-btn anime">Button</button>
+    <button class="e-btn anime">Button</button>
+  </div>
+  <div class="e-buttons unified">
+    <button class="e-btn outlined">Button</button>
+    <button class="e-btn outlined">Button</button>
+  </div>
+  <div class="e-buttons unified">
+    <button class="e-btn rounded">Button</button>
+    <button class="e-btn rounded">Button</button>
+  </div>
+  <div class="e-buttons unified">
+    <button class="e-btn circle">
+      <i class="fas fa-plus"></i>
+    </button>
+    <button class="e-btn circle">
+      <i class="fas fa-users"></i>
+    </button>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+</div>
+
+
+<div class="container-white">
+  <h5 class="code-title">Colors Gradient</h5>
+  <hr class="hr">
+  <div class="e-cols centered">
+    <div class="e-col centered">
+      <div class="e-toolbar">
+        <div class="e-buttons unified">
+          <button class="e-btn rounded green-gradient">Button</button>
+          <button class="e-btn rounded green-gradient">Button</button>
+          <button class="e-btn rounded green-gradient">Button</button>
+        </div>
+        <hr>
+        <div class="e-buttons unified">
+          <button class="e-btn rounded purple-gradient">Button</button>
+          <button class="e-btn rounded purple-gradient">Button</button>
+          <button class="e-btn rounded purple-gradient">Button</button>
+        </div>
+        <hr>
+        <div class="e-buttons unified">
+          <button class="e-btn rounded blue-gradient">Button</button>
+          <button class="e-btn rounded blue-gradient">Button</button>
+          <button class="e-btn rounded blue-gradient">Button</button>
+        </div>
+        <hr>
+        <div class="e-buttons unified">
+          <button class="e-btn rounded danger">Button</button>
+          <button class="e-btn rounded danger">Button</button>
+          <button class="e-btn rounded danger">Button</button>
+        </div>
+      </div>
+    </div>
+    <div class="e-col-6">
+{% highlight html %}
+<div class="e-toolbar">
+  <div class="e-buttons unified">
+    <button class="e-btn green-gradient">
+      Button
+    </button>
+  </div>
+  <div class="e-buttons unified">
+    <button class="e-btn purple-gradient">
+      Button
+    </button>
+  </div>
+  <div class="e-buttons unified">
+    <button class="e-btn blue-gradient">
+      Button
+    </button>
+  </div>
+</div>
+{% endhighlight %}
+    </div>
+  </div>
+</div>

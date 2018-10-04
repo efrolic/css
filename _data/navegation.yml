@@ -119,3 +119,9 @@
   url: /tags
   bio: "The small labels that are everywhere leaving hints of information.
   Used for counts and labels in blog, categories among others."
+
+- name: Buttons Group
+  category: Components
+  url: /button-group
+  bio: "Groups a series of buttons that are contained in (e-buttons)
+  creating new appearances and styles, recommended use for related buttons."
