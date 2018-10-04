@@ -20,34 +20,3 @@
     font-size: 0.870rem !important;
   }
 }
-
-.e-tags {
-  @extend %centered;
-  justify-content: flex-start;
-
-  & .e-tag {
-    margin-bottom: 0.5rem;
-    min-height   : 1.8em;
-    line-height  : 1.8em;
-  }
-
-  & .e-tag:not(:last-child) {
-    margin-right: 0.5rem;
-  }
-
-  &.unified {
-    & .e-tag {
-      margin-right: 0;
-    }
-
-    & .e-tag:not(:last-child) {
-      border-bottom-right-radius: 0;
-      border-top-right-radius   : 0;
-    }
-
-    & .e-tag:not(:first-child) {
-      border-bottom-left-radius: 0;
-      border-top-left-radius   : 0;
-    }
-  }
-}

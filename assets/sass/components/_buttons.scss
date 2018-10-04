@@ -1,10 +1,14 @@
-.e-btn {
+.e-btn:not([disabled]) {
   @extend %waves;
+}
+
+.e-btn {
   display        : inline-block;
   position       : relative;
   padding        : 0.585rem 1.25rem;
   background     : $default;
   color          : $e-font-color;
+  user-select    : none;
   white-space    : nowrap;
   justify-content: center;
   align-items    : center;
@@ -138,6 +142,12 @@
     &:hover {
       background-image: radial-gradient(rgba(0,0,0,.019) 100%, transparent 0.01%) !important;
     }
+  }
+
+  &[disabled] {
+    opacity   : 0.5;
+    cursor    : not-allowed;
+    box-shadow: none !important;
   }
 
   &:focus {

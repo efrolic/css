@@ -92,6 +92,45 @@
   }
 }
 
+.e-drops,
+.e-nav {
+  & .e-dropdown:last-child {
+    & .drop-items {
+      left : auto;
+      right: 5px;
+
+      &:before {
+        left : auto;
+        right: 40px;
+      }
+    }
+  }
+}
+@media only screen and (max-width:1024px) {
+  .e-dropdown {
+    &.drop-right {
+      & .drop-items {
+        &:before {
+          left : 20px;
+          right: auto;
+        }
+      }
+    }
+  }
+
+  .e-drops,
+  .e-nav {
+    & .e-dropdown:last-child {
+      & .drop-items {
+        &:before {
+          left : 20px;
+          right: auto;
+        }
+      }
+    }
+  }
+}
+
 .e-dropdown:hover .drop-items {
   display: block;
 }

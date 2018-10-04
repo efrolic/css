@@ -21,12 +21,25 @@ you just need to see some examples and create your own ideas just by putting som
 <p>The <strong class="code">.e-btn</strong> class can be used in the following tags:</p>
 <p><strong class="code">&lt;a class="e-btn"&gt;</strong> anchor links.</p>
 <p><strong class="code">&lt;button class="e-btn"&gt;</strong> Buttons by default.</p>
-<p><strong class="code">&lt;input type="submit" class="e-btn"&gt;</strong> Inputs of type submit.</p><br>
-<div class="targe-code">
-<h4>Observations</h4>
-<p>There are global classes that apply to all buttons after the main class.<br></p>
+<p><strong class="code">&lt;input type="submit" class="e-btn"&gt;</strong> Inputs of type submit.</p>
+<p><strong class="code">&lt;input type="reset" class="e-btn"&gt;</strong> Inputs of type reset.</p>
+<br>
+<div class="e-cols centered">
+  <div class="e-col centered">
+  <button class="e-btn primary">Link</button>
+  <button class="e-btn primary">Button</button>
+  <input class="e-btn primary" type="submit" value="Submit">
+  <input class="e-btn primary" type="reset" value="Reset">
+  </div>
+  <div class="e-col-6">
+{% highlight html %}
+<a class="e-btn" href="#" role="button">Link</a>
+<button class="e-btn">Button</button>
+<input class="e-btn" type="submit" value="Submit">
+<input class="e-btn" type="reset" value="Reset">
+{% endhighlight %}
+  </div>
 </div>
-<p>After the main class, Example.: <strong class="code">e-btn any</strong></p>
 </div>
 <div class="container-white">
 <h4 class="code-title">Sizes</h4>
@@ -34,9 +47,10 @@ you just need to see some examples and create your own ideas just by putting som
 to give your buttons a smaller or larger size <b>(Apply to all)</b>.
 </p>
 <p>Examples:</p>
-<a class="e-btn small primary">Small</a>
-<a class="e-btn primary">Normal</a>
-<a class="e-btn plus primary">Plus</a>
+<button class="e-btn small primary">Small</button>
+<button class="e-btn primary">Normal</button>
+<button class="e-btn plus primary">Plus</button>
+<br><br>
 {% highlight html %}
 <a class="e-btn small">Small</a>
 <a class="e-btn">Normal</a>
@@ -62,9 +76,9 @@ to float a button to the right or left. These buttons are fixed on the screen. <
 <h4 class="code-title">Waves effect</h4>
 <p>All buttons by default already have the waves effect.</p>
 <p>Examples: <b>Click.</b></p>
-<a class="e-btn primary">Button</a>
-<a class="e-btn circle primary">E</a>
-<a class="e-btn outlined primary">Button</a>
+<button class="e-btn primary">Button</button>
+<button class="e-btn circle primary">E</button>
+<button class="e-btn outlined primary">Button</button>
 </div>
 
 <!-- Implement btn Full del elemento -->
@@ -72,13 +86,16 @@ to float a button to the right or left. These buttons are fixed on the screen. <
 <h4 class="code-title">Fullwidth Buttons</h4>
 <p>Add class <strong class="code">fullwidth</strong> to occupy 100% of width. <b>(Does not apply in e-btn circle)</b>.</p>
 <p>Examples:</p>
-<a class="e-btn plane primary shadow e-waves plus fullwidth">fullwidth</a>
-<a class="e-btn plane blue-gradient shadow e-waves fullwidth">fullwidth</a>
+<button class="e-btn plane primary shadow e-waves plus fullwidth">fullwidth</button>
+<button class="e-btn plane blue-gradient shadow e-waves fullwidth">fullwidth</button>
 <!-- Code del elemento -->
 {% highlight html %}
 <a class="e-btn fullwidth">fullwidth</a>
 <a class="e-btn fullwidth">fullwidth</a>{% endhighlight %}
 </div>
+
+<div class="container-white">
+<br>
 <article class="e-note block success">
 <div class="note-body">
 <h3 class="code-title">Main Classes</h3>
@@ -91,18 +108,22 @@ These are the 7 kinds of buttons and each share the same properties.
 <p><strong class="code">.e-btn inverted</strong></p>
 <p><strong class="code">.e-btn outlined</strong></p>
 </div>
-</article><br>
+</article>
 
 
-<div class="e-note danger visual">
-<div class="note-header">
-Oh oh! we observe your screen is small,
-we recommend using a larger monitor for the correct visualization of some elements.
+<div class="visual">
+<br>
+  <div class="e-note danger">
+  <div class="note-header">
+  Oh oh! we observe your screen is small,
+  we recommend using a larger monitor for the correct visualization of some elements.
+  </div>
+  <div class="note-body">
+  This page looks small, because it has shrunk the browser or its smaller size device.
+  </div>
+  </div>
 </div>
-<div class="note-body">
-This page looks small, because it has shrunk the browser or its smaller size device.
-</div>
-</div><br>
+<br>
 <style>
 .visual {
 display: none;
@@ -123,7 +144,7 @@ display: none;
 </style>
 
 
-<div class="container-white">
+
 <h3 class="code-title">Basic buttons</h3>
 <p>11 buttons of predefined styles.</p>
 <p>You can modify these buttons using the references above.</p>
@@ -131,21 +152,21 @@ display: none;
 resize, float, fullwidth and animate.</strong></p>
 <div class="e-cols no-gap">
 <div class="e-col"><br>
-<a class="e-btn">Default</a>
-<a class="e-btn white">White</a>
-<a class="e-btn gray">Gray</a>
-<a class="e-btn dark">Dark</a>
-<a class="e-btn black">Black</a>
-<a class="e-btn primary">Primary</a>
-<a class="e-btn success">Success</a>
-<a class="e-btn warning">Warning</a>
-<a class="e-btn sky">Info</a>
-<a class="e-btn danger">Danger</a>
-<a class="e-btn purple">Purple</a>
+<button class="e-btn">Default</button>
+<button class="e-btn white">White</button>
+<button class="e-btn gray">Gray</button>
+<button class="e-btn dark">Dark</button>
+<button class="e-btn black">Black</button>
+<button class="e-btn primary">Primary</button>
+<button class="e-btn success">Success</button>
+<button class="e-btn warning">Warning</button>
+<button class="e-btn sky">Info</button>
+<button class="e-btn danger">Danger</button>
+<button class="e-btn purple">Purple</button>
 <p><strong>No-shadow</strong></p>
-<a class="e-btn danger no-shadow">Danger</a>
-<a class="e-btn success no-shadow">Success</a>
-<a class="e-btn purple no-shadow">Purple</a>
+<button class="e-btn danger no-shadow">Danger</button>
+<button class="e-btn success no-shadow">Success</button>
+<button class="e-btn purple no-shadow">Purple</button>
 </div>
 <div class="e-col">
 <!-- Code -->
@@ -229,29 +250,29 @@ resize, float and animate.</strong></p>
 <p><b>Does not include gradient colors.</b></p>
 <div class="e-cols no-gap">
 <div class="e-col">
-<a class="e-btn outlined primary">Primary</a>
+<button class="e-btn outlined primary">Primary</button>
 <!-- Success button -->
-<a class="e-btn outlined success">Success</a>
+<button class="e-btn outlined success">Success</button>
 <!-- Warning button -->
-<a class="e-btn outlined warning">Warning</a>
+<button class="e-btn outlined warning">Warning</button>
 <!-- Sky button -->
-<a class="e-btn outlined sky">Info</a>
+<button class="e-btn outlined sky">Info</button>
 <!-- Danger button -->
-<a class="e-btn outlined danger">Danger</a>
+<button class="e-btn outlined danger">Danger</button>
 <!-- Gray button -->
-<a class="e-btn outlined gray">Gray</a>
+<button class="e-btn outlined gray">Gray</button>
 <!-- Dark button -->
-<a class="e-btn outlined dark">Dark</a>
+<button class="e-btn outlined dark">Dark</button>
 <!-- Purple button -->
-<a class="e-btn outlined purple">Purple</a>
+<button class="e-btn outlined purple">Purple</button>
 <p><strong>No-shadow</strong></p>
-<a class="e-btn outlined no-shadow success">Success</a>
-<a class="e-btn outlined no-shadow sky">Info</a>
-<a class="e-btn outlined no-shadow danger">Danger</a>
-<a class="e-btn outlined no-shadow gray">Gray</a>
-<a class="e-btn outlined no-shadow dark">Dark</a>
-<a class="e-btn outlined no-shadow purple">Purple</a>
-<a class="e-btn outlined no-shadow warning">Warning</a>
+<button class="e-btn outlined no-shadow success">Success</button>
+<button class="e-btn outlined no-shadow sky">Info</button>
+<button class="e-btn outlined no-shadow danger">Danger</button>
+<button class="e-btn outlined no-shadow gray">Gray</button>
+<button class="e-btn outlined no-shadow dark">Dark</button>
+<button class="e-btn outlined no-shadow purple">Purple</button>
+<button class="e-btn outlined no-shadow warning">Warning</button>
 </div>
 <div class="e-col">
 {% highlight html %}
@@ -324,18 +345,18 @@ resize, float and animate.</strong></p>
 <p><b>Does not include gradient colors.</b></p>
 <div class="e-cols no-gap">
 <div class="e-col">
-<a class="e-btn outlined plane primary">Primary</a>
-<a class="e-btn outlined plane success">Success</a>
-<a class="e-btn outlined plane warning">Warning</a>
-<a class="e-btn outlined plane sky">Info</a>
-<a class="e-btn outlined plane danger">Danger</a>
-<a class="e-btn outlined plane gray">Gray</a>
-<a class="e-btn outlined plane dark">Dark</a>
-<a class="e-btn outlined plane purple">Purple</a>
+<button class="e-btn outlined plane primary">Primary</button>
+<button class="e-btn outlined plane success">Success</button>
+<button class="e-btn outlined plane warning">Warning</button>
+<button class="e-btn outlined plane sky">Info</button>
+<button class="e-btn outlined plane danger">Danger</button>
+<button class="e-btn outlined plane gray">Gray</button>
+<button class="e-btn outlined plane dark">Dark</button>
+<button class="e-btn outlined plane purple">Purple</button>
 <p><strong>No-shadow</strong></p>
-<a class="e-btn outlined plane no-shadow primary">Primary</a>
-<a class="e-btn outlined plane no-shadow success">Success</a>
-<a class="e-btn outlined plane no-shadow warning">Warning</a>
+<button class="e-btn outlined plane no-shadow primary">Primary</button>
+<button class="e-btn outlined plane no-shadow success">Success</button>
+<button class="e-btn outlined plane no-shadow warning">Warning</button>
 </div>
 <div class="e-col">
 <!-- Code -->
@@ -364,36 +385,36 @@ resize, float and animate.</strong></p>
 <p><b>Does not include gradient colors.</b></p>
 <div class="e-cols no-gap">
 <div class="e-col">
-<a class="e-btn inverted">Default</a>
-<a class="e-btn inverted primary">Primary</a>
-<a class="e-btn inverted success">Success</a>
-<a class="e-btn inverted warning">Warning</a>
-<a class="e-btn inverted sky">Info</a>
-<a class="e-btn inverted danger">Danger</a>
-<a class="e-btn inverted gray">Gray</a>
-<a class="e-btn inverted dark">Dark</a>
-<a class="e-btn inverted purple">Purple</a>
+<button class="e-btn inverted">Default</button>
+<button class="e-btn inverted primary">Primary</button>
+<button class="e-btn inverted success">Success</button>
+<button class="e-btn inverted warning">Warning</button>
+<button class="e-btn inverted sky">Info</button>
+<button class="e-btn inverted danger">Danger</button>
+<button class="e-btn inverted gray">Gray</button>
+<button class="e-btn inverted dark">Dark</button>
+<button class="e-btn inverted purple">Purple</button>
 <p><strong>Inverted Plane</strong></p>
-<a class="e-btn inverted plane">Default</a>
-<a class="e-btn inverted plane primary">Primary</a>
-<a class="e-btn inverted plane success">Success</a>
-<a class="e-btn inverted plane warning">Warning</a>
-<a class="e-btn inverted plane sky">Info</a>
-<a class="e-btn inverted plane danger">Danger</a>
-<a class="e-btn inverted plane gray">Gray</a>
-<a class="e-btn inverted plane dark">Dark</a>
-<a class="e-btn inverted plane purple">Purple</a>
+<button class="e-btn inverted plane">Default</button>
+<button class="e-btn inverted plane primary">Primary</button>
+<button class="e-btn inverted plane success">Success</button>
+<button class="e-btn inverted plane warning">Warning</button>
+<button class="e-btn inverted plane sky">Info</button>
+<button class="e-btn inverted plane danger">Danger</button>
+<button class="e-btn inverted plane gray">Gray</button>
+<button class="e-btn inverted plane dark">Dark</button>
+<button class="e-btn inverted plane purple">Purple</button>
 <br>
 <p><strong>Transparent Buttons</strong></p>
 <div class="e-col-11 e-alert primary">
-<a class="e-btn outlined transparent no-shadow">Button</a>
-<a class="e-btn outlined rounded transparent no-shadow">Button</a>
-<a class="e-btn outlined transparent">Button</a>
-<a class="e-btn outlined plane transparent no-shadow">Button</a>
+<button class="e-btn outlined transparent no-shadow">Button</button>
+<button class="e-btn outlined rounded transparent no-shadow">Button</button>
+<button class="e-btn outlined transparent">Button</button>
+<button class="e-btn outlined plane transparent no-shadow">Button</button>
 <br>
-<a class="e-btn outlined transparent small no-shadow">Button</a>
-<a class="e-btn outlined rounded  small transparent no-shadow">Button</a>
-<a class="e-btn outlined plane transparent small no-shadow">Button</a>
+<button class="e-btn outlined transparent small no-shadow">Button</button>
+<button class="e-btn outlined rounded  small transparent no-shadow">Button</button>
+<button class="e-btn outlined plane transparent small no-shadow">Button</button>
 </div>
 </div>
 <div class="e-col">
@@ -431,24 +452,24 @@ Button
 resize, float, fullwidth and animate.</strong></p>
 <div class="e-cols no-gap">
 <div class="e-col">
-<a class="e-btn plane primary">Primary</a>
-<a class="e-btn plane success">Success</a>
-<a class="e-btn plane danger">Danger</a>
-<a class="e-btn plane warning">Warning</a>
+<button class="e-btn plane primary">Primary</button>
+<button class="e-btn plane success">Success</button>
+<button class="e-btn plane danger">Danger</button>
+<button class="e-btn plane warning">Warning</button>
 <br><br>
-<a class="e-btn plane purple">Purple</a>
-<a class="e-btn plane blue-gradient">Button</a>
-<a class="e-btn plane green-gradient">Button</a>
-<a class="e-btn plane purple-gradient">Button</a>
+<button class="e-btn plane purple">Purple</button>
+<button class="e-btn plane blue-gradient">Button</button>
+<button class="e-btn plane green-gradient">Button</button>
+<button class="e-btn plane purple-gradient">Button</button>
 <p><strong>No-shadow</strong></p>
-<a class="e-btn plane no-shadow success">Success</a>
-<a class="e-btn plane no-shadow danger">Danger</a>
-<a class="e-btn plane no-shadow warning">Warning</a>
+<button class="e-btn plane no-shadow success">Success</button>
+<button class="e-btn plane no-shadow danger">Danger</button>
+<button class="e-btn plane no-shadow warning">Warning</button>
 <p><strong>Inverted</strong></p>
-<a class="e-btn plane inverted  warning">Warning</a>
-<a class="e-btn plane inverted  success">Success</a>
-<a class="e-btn plane inverted  danger">Danger</a>
-<a class="e-btn plane inverted purple">Purple</a>
+<button class="e-btn plane inverted  warning">Warning</button>
+<button class="e-btn plane inverted  success">Success</button>
+<button class="e-btn plane inverted  danger">Danger</button>
+<button class="e-btn plane inverted purple">Purple</button>
 </div>
 <div class="e-col">
 <!-- Code -->
@@ -472,6 +493,60 @@ resize, float, fullwidth and animate.</strong></p>
 </div>
 </div>
 </div>
+
+<div class="container-white">
+  <h4 class="code-title">Disabled Buttons</h4>
+  <hr class="hr">
+  <div class="e-cols centered">
+    <div class="e-col">
+      <a class="e-btn primary" disabled>Disabled</a>
+      <a class="e-btn danger" disabled>Disabled</a>
+    </div>
+    <div class="e-col-6">
+{% highlight html %}
+<a class="e-btn" disabled>Button</a>
+{% endhighlight %}
+    </div>
+  </div>
+</div>
+
+<div class="container-white">
+  <h4 class="code-title">Buttons group</h4>
+  <hr class="hr">
+  <div class="e-cols centered">
+    <div class="e-col">
+      <div class="e-buttons unified">
+        <button class="e-btn small success"><i class="fas fa-check"></i></button>
+        <button class="e-btn small primary"><i class="fas fa-plus"></i></button>
+        <button class="e-btn small danger"><i class="far fa-trash-alt"></i></button>
+      </div>
+      <div class="e-buttons unified">
+        <button class="e-btn anime inverted success"><i class="fas fa-check"></i></button>
+        <button class="e-btn anime inverted primary"><i class="fas fa-plus"></i></button>
+        <button class="e-btn anime inverted danger"><i class="far fa-trash-alt"></i></button>
+      </div>
+      <div class="e-buttons unified">
+        <button class="e-btn anime plus success"><i class="fas fa-check"></i></button>
+        <button class="e-btn anime plus primary"><i class="fas fa-plus"></i></button>
+        <button class="e-btn anime plus danger"><i class="far fa-trash-alt"></i></button>
+      </div>
+      </div>
+    <div class="e-col-6">
+{% highlight html %}
+<div class="e-buttons unified">
+  <a class="e-btn success">Button</a>
+  <a class="e-btn primary">Button</a>
+  <a class="e-btn danger">Button</a>
+</div>
+{% endhighlight %}
+    </div>
+  </div>
+<a href="{{site.url}}/buttons-group" class="e-btn inverted danger fullwidth">
+See more about groups
+</a>
+</div>
+
+
 
 <!-- Botones Rounded -->
 <div class="container-white">

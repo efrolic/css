@@ -1,13 +1,16 @@
 /* Function for e-menu*/
-input#e-menu:checked ~ div.e-menu{
-      display: flex;
-      @extend .eSlide;
+
+input#e-menu:checked ~ div.e-menu {
+  display: flex;
+  @extend .eSlide;
 }
-input#e-menu:checked ~ ul.e-menu{
-      display: flex;
-      @extend .eSlide;
+
+input#e-menu:checked ~ ul.e-menu {
+  display: flex;
+  @extend .eSlide;
 }
 /* Function for nav-full*/
+
 input#cap-nav-full:checked ~ div.cap-nav-full {
   display: block;
 }

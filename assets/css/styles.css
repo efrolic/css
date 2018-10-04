@@ -1,7 +1,6 @@
 * {
   transition: width .4s;
 }
-
 *::selection {
   background: #f75676;
   color: white;

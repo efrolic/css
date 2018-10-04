@@ -1,0 +1,47 @@
+/******************************************************
+*      Buttons Group
+*******************************************************/
+
+.e-buttons,
+.e-drops,
+.e-tags {
+  @extend %centered;
+  justify-content: flex-start;
+
+  & .e-btn:not(:last-child),
+  .e-dropdown:not(:last-child),
+  .e-tag:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  &.unified {
+    & .e-btn,
+    .e-dropdown,
+    .e-tag {
+      margin-right: 0;
+      margin-left : 0;
+    }
+
+    & .e-btn:not(:last-child),
+    .e-dropdown:not(:last-child),
+    .e-tag:not(:last-child) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius   : 0;
+    }
+
+    & .e-btn:not(:first-child),
+    .e-dropdown:not(:first-child),
+    .e-tag:not(:first-child) {
+      border-bottom-left-radius: 0;
+      border-top-left-radius   : 0;
+    }
+  }
+}
+
+.e-tags {
+  & .e-tag {
+    min-height   : 1.8em;
+    line-height  : 1.8em;
+    margin-bottom: 0.5rem;
+  }
+}

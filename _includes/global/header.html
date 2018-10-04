@@ -13,9 +13,21 @@
     <a target="_blank" href="https://github.com/EfraPeralta/eFrolic" class="e-btn circle inverted">
       <i class="fab fa-github"></i>
     </a>
-    <a href="{{ site.url }}/documentation" class="e-btn plane inverted primary no-mobile">
-      Documentation
-    </a>
+    <!-- With Button -->
+      <div class="e-drops unified no-mobile">
+        <a href="{{ site.url }}/documentation" class="e-btn inverted plane shadow primary {% if page.permalink == '/documentation' %}active{% endif %}">
+          Documentation
+        </a>
+
+        <div class="e-dropdown shadow"><i class="fas fa-chevron-down"></i>
+          <div class="drop-items shadow-6">
+            <a class="drop-item">GET STARTED</a>
+            <a class="drop-item">LAYAOUT</a>
+            <a class="drop-item">COMPONENTS</a>
+            <a class="drop-item">UTILITIES</a>
+          </div>
+        </div>
+      </div>
     <i class="e-distribution"></i>
     <a href="{{ site.url }}/documentation" class="e-menu-item no-desktop {% if page.permalink == '/documentation' %}active{% endif %}">
       <i class="fas fa-archive sky"></i> Documentation
