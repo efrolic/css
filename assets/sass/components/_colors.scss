@@ -38,9 +38,14 @@ $colors: (
 %place-color {
   color: $white;
 
-  & a:not(.e-btn),
-  .e-dropdown {
+  & .e-dropdown,
+  & a:not(.e-btn) {
     color: $white;
+  }
+
+  & .e-dropdown:after,
+  &:after {
+    border-color: #f9f9f9 transparent transparent !important;
   }
 }
 

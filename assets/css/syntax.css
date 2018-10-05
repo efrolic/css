@@ -13,8 +13,8 @@
   padding-left: 15px;
  }
 .highlight .nt { color: #5e72e4 } /* Name.Tag */ /* <body> */
-.highlight .na { color: #ef8d0b } /* Name.Attribute */ /* class="e-btn " */
-.highlight .s { color: #1ebea4 } /* Literal.String */ /* "contenido" */
+.highlight .na { color: #1ebea4 } /* Name.Attribute */ /* class="e-btn " */
+.highlight .s { color: #f75676 } /* Literal.String */ /* "contenido" */
 .highlight .c { color: #999988; font-style: bold } /* Comment */
 .highlight .k { color: crimson; font-weight: bold } /* Keyword *//* @media */
 .highlight .m { color: #ef0a4e } /* Literal.Number */

@@ -38,6 +38,10 @@
       left      : 0;
       margin-top: 8px;
     }
+
+    & .e-dropdown:after {
+      display: none;
+    }
   }
 }
 

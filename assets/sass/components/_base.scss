@@ -43,6 +43,10 @@ html {
         }
       }
     }
+
+    & .e-dropdown:after {
+      border-color: white transparent transparent !important;
+    }
   }
 
   &.no-desktop {

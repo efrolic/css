@@ -16,9 +16,20 @@
   font-size      : 0.90rem;
   overflow       : visible;
   width          : auto;
+  min-height     : 38px;
 
   &:after {
-    background-image: none;
+    background-image   : none;
+    border             : inset 0.4em;
+    content            : '';
+    border-bottom-width: 0;
+    border-top-style   : solid;
+    border-color       : rgba(0,0,0,.4) transparent transparent;
+    position           : relative;
+    top                : 0.5em;
+    display            : inline-block;
+    float              : right;
+    margin-left        : 0.5em;
   }
 }
 
@@ -63,6 +74,20 @@
   & .e-btn {
     margin-left: 0;
   }
+
+  > h1,
+   > h2,
+   > h3,
+   > h4,
+   > h5,
+   > h6,
+   > i,
+   > span,
+   > strong,
+  & > p {
+    padding: 10px 15px;
+    color  : rgba(0,0,0,0.6) !important;
+  }
 }
 
 .drop-items:before {
@@ -87,7 +112,7 @@
 
       &:before {
         left : auto;
-        right: 40px;
+        right: 28px;
       }
     }
   }
@@ -104,7 +129,7 @@
 
       &:before {
         left : auto;
-        right: 40px;
+        right: 28px;
       }
     }
   }
