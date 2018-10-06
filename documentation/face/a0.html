@@ -1,0 +1,99 @@
+---
+layout: base
+permalink: /face/a0
+title: Welcome to the home page.
+---
+
+<main class="e-face e-fullscreen purple">
+
+  <header class="e-nav fixed no-bg">
+    <h5>Logo</h5>
+    <!--img src="https://bit.ly/2D7yayE" style="width:90px;height:auto;"-->
+    <label for="e-menu" class="e-btn inverted purple no-shadow no-desktop"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="e-menu">
+    <nav class="e-menu">
+      <button class="e-btn plane inverted purple">Messages</button>
+      <button class="e-btn plane inverted purple">Notification</button>
+      <i class="e-distribution"></i>
+      <a class="e-menu-item">Services</a>
+      <a class="e-menu-item">About</a>
+      <a class="e-menu-item">Contacts</a>
+      <button class="e-btn inverted purple">Get started</button>
+    </nav>
+  </header>
+
+  <div class="e-container-fluid">
+    <div class="e-cols white">
+      <div class="e-col-6 centered e-fullheight">
+        <div class="e-container">
+          <h1 class="e-title">Welcome to the home page.</h1>
+          <h2 class="e-subtitle" style="color:#5e72e4;">You are on the main page.</h2>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+             in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+             officia deserunt mollit anim id est laborum.</p>
+
+          <button class="e-btn plane inverted purple">Portfolio</button>
+          <button class="e-btn plane inverted purple">Get started <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="e-col-6 centered e-fullheight no-mobile purple-gradient">
+        <img src="https://bit.ly/2pj4yVo" />
+      </div>
+    </div>
+  </div>
+</main>
+
+<br>
+<div class="container-white e-col-10">
+{% highlight html %}
+<main class="e-face e-fullscreen purple">
+  <header class="e-nav fixed no-bg">
+    <img src="https://bit.ly/2D7yayE" style="width:90px;height:auto;">
+    <label for="e-menu" class="e-btn inverted purple no-shadow no-desktop"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="e-menu">
+    <nav class="e-menu">
+      <a class="e-btn plane inverted purple">Messages</a>
+      <a class="e-btn plane inverted purple">Notification</a>
+      <i class="e-distribution"></i>
+      <a class="e-menu-item">Services</a>
+      <a class="e-menu-item">About</a>
+      <a class="e-menu-item">Contacts</a>
+      <a class="e-btn inverted purple">Get started</a>
+    </nav>
+  </header>
+
+  <div class="e-container-fluid">
+    <div class="e-cols white">
+      <div class="e-col-6 centered e-fullheight">
+        <div class="e-container">
+          <h1 class="e-title">Welcome to the home page.</h1>
+          <h2 class="e-subtitle" style="color:#5e72e4;">You are on the main page.</h2>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+          <a class="e-btn plane inverted purple">Portfolio</a>
+          <a class="e-btn plane inverted purple">Get started</a>
+        </div>
+      </div>
+      <div class="e-col-6 centered e-fullheight no-mobile purple-gradient">
+        <img src="https://bit.ly/2pj4yVo" />
+      </div>
+    </div>
+  </div>
+</main>
+{% endhighlight %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script>
+$(window).scroll(function() {
+  if ($(".e-nav").offset().top > 56) {
+      $(".e-nav").addClass("white");
+      $(".e-nav").removeClass("no-bg");
+  } else {
+      $(".e-nav").removeClass("white");
+      $(".e-nav").addClass("no-bg");
+  }
+});
+</script>

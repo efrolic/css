@@ -46,20 +46,20 @@ sizes and states. They are easy to customize, take a look and create your own na
       </div>
     </nav>
 {% highlight html %}
-<nav class="e-nav primary">
+<header class="e-nav primary">
   <img src="https://bit.ly/2wzHhlX" style="width:90px;height:auto;">
   <label for="e-menu" class="e-btn primary no-shadow no-desktop"><i class="fas fa-bars"></i></label>
   <input type="checkbox" id="e-menu">
-  <div class="e-menu">
+  <nav class="e-menu">
     <i class="e-distribution"></i>
 
     <!-- Content... -->
-  </div>
-</nav>
+  </nav>
+</header>
 {% endhighlight %}
     <p><strong>With explanatory comments</strong></p>
 {% highlight html %}
-<nav class="e-nav primary">
+<header class="e-nav primary">
   <!-- Brand or logo that is always visible, usually to the left -->
   <img src="https://bit.ly/2wzHhlX" style="width:90px;height:auto;">
 
@@ -69,11 +69,11 @@ sizes and states. They are easy to customize, take a look and create your own na
   <!-- Input, important not to modify and keep above the container div(e-menu) -->
   <input type="checkbox" id="e-menu">
   <!-- Contains all items of navigation -->
-  <div class="e-menu">
+  <nav class="e-menu">
     <a class="e-menu-item">Item</a><!-- X4 -->
     <!-- More content... -->
-  </div>
-</nav>
+  </nav>
+</header>
 {% endhighlight %}
 </div>
 <div class="container-white">
@@ -98,17 +98,17 @@ with distribution. // All content on the Right.</b><br><br>
           </div>
         </nav>
   {% highlight html %}
-  <nav class="e-nav">
+  <header class="e-nav">
     <h6>Logo</h6>
-    <div class="e-menu">
+    <nav class="e-menu">
       <!-- Push the elements of the container to the right -->
       <i class="e-distribution"></i>
 
       <!-- All content -->
       <a class="e-menu-item">Item</a>
       <a class="e-menu-item">Item</a>
-    </div>
-  </nav>
+    </nav>
+  </header>
   {% endhighlight %}
         <p>Example:<br> <b>
 with distribution. // All content on the left.</b><br></p>
@@ -123,16 +123,16 @@ with distribution. // All content on the left.</b><br></p>
             </div>
           </nav>
   {% highlight html %}
-  <nav class="e-nav">
+  <header class="e-nav">
     <h6>Logo</h6>
-    <div class="e-menu">
+    <nav class="e-menu">
       <a class="e-menu-item">Item</a>
       <a class="e-menu-item">Item</a>
 
       <!-- Push the container elements to the left -->
       <i class="e-distribution"></i>
-    </div>
-  </nav>
+    </nav>
+  </header>
   {% endhighlight %}
 
           <p>Example:<br> <b>
@@ -150,9 +150,9 @@ with distribution. // Both sides.</b><br></p>
               </div>
             </nav>
   {% highlight html %}
-  <nav class="e-nav">
+  <header class="e-nav">
     <h6>Logo</h6>
-    <div class="e-menu">
+    <nav class="e-menu">
       <!-- More content -->
       <a class="e-menu-item">Item</a>
 
@@ -162,8 +162,8 @@ with distribution. // Both sides.</b><br></p>
 
       <a class="e-btn">Button</a>
       <!-- More content -->
-    </div>
-  </nav>
+    </nav>
+  </header>
   {% endhighlight %}
 </div>
 

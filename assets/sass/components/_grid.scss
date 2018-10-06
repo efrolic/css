@@ -18,10 +18,6 @@
   &-fluid {
     width: 100%;
   }
-
-  &.centered {
-    @extend %centered;
-  }
 }
 
 .e-cols {
@@ -30,20 +26,12 @@
   flex-direction: row;
   margin        : 0 auto;
   flex-wrap     : wrap;
+  width         : 100%;
 
   &.no-gap {
     & [class*="e-col"] {
       padding: 0 !important;
     }
-  }
-
-  &.centered {
-    @extend %centered;
-  }
-
-  &.between {
-    @extend %centered;
-    justify-content: space-between;
   }
 }
 
@@ -54,12 +42,7 @@
   width: percentage($e-col / 12);
 }
 
-[class*="e-col"] {
-  width  : 100%;
-  padding: 0 0.75rem 0.75rem;
-  flex   : 0 0 auto;
-  margin : 0 auto;
-
+[class*="e-"] {
   &.centered {
     @extend %centered;
   }
@@ -68,17 +51,39 @@
     @extend %centered;
     justify-content: space-between;
   }
+
+  &.align-start {
+    @extend %centered;
+    justify-content: flex-start;
+  }
+
+  &.align-end {
+    @extend %centered;
+    justify-content: flex-end;
+  }
+}
+
+.e-col {
+  width  : 100%;
+  padding: 0 0.75rem 0.75rem;
+  flex   : 0 0 auto;
+  margin : 0 auto;
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      width  : 100%;
+      padding: 0 0.75rem 0.75rem;
+      flex   : 0 0 auto;
+      margin : 0 auto;
+    }
+  }
 }
 /* Desktop */
 @media only screen and (min-width: 1024px) {
   .e-col {
-    -webkit-box-flex       : 1;
-    -ms-flex-positive      : 1;
-    flex-grow              : 1;
-    flex-shrink            : 1;
-    -ms-flex-preferred-size: 0;
-    flex-basis             : 0;
-    max-width              : 100%;
+    flex-grow  : 1;
+    flex-shrink: 1;
+    flex-basis : 0;
+    max-width  : 100%;
     @for $i from 1 through 12 {
       &-#{$i} {
         @include col($i);

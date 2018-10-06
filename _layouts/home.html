@@ -31,29 +31,30 @@ layout: base
       </section>
     </main>
 
-    <section class="e-container centered e-fullscreen bg-2">
-      <div class="e-cols">
-        <div class="e-col-4 container-white">
+      <div class="e-cols centered e-fullscreen bg-2">
+        <div class="container-white e-col-4">
           <h3 class="size-3" style="color:#{{ site.title_color }};">Css / GitHub</h3>
-          <p style="color:{{ site.text_color }};">
-            Copy-paste the stylesheet
-            <strong class="code">&lt;link></strong>
-            into your
-            <strong class="code">&lt;head></strong>
-            before all other stylesheets to load our CSS.</p>
+         <p style="color:{{ site.text_color }};">
+           Copy-paste the stylesheet
+           <strong class="code">&lt;link></strong>
+           into your
+           <strong class="code">&lt;head></strong>
+           before all other stylesheets to load our CSS.</p>
 <!-- Code -->
 {% highlight html %}
- <link rel="stylesheet" href="{{ page.css_github }}">
- <!-- Font awesome icons -->
- <link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ page.css_github }}">
+<!-- Font awesome icons -->
+<link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
 {% endhighlight %}
+
         </div>
-        <div class="e-col-3 container-white">
+        <div class="container-white e-col-3">
           <h3 class="size-3" style="color:#{{ site.title_color }};">Get started</h3>
-          <p style="color:{{ site.text_color }};">Get started with eFrolic, a simple and functional framework for creating responsive sites on mobile devices. Use one of the following ways to start using.</p>
-          <a href="{{site.url}}/start" class="e-btn fullwidth plus {{ site.button }}">Template</a>
+       <p style="color:{{ site.text_color }};">Get started with eFrolic, a simple and functional framework for creating responsive sites on mobile devices. Use one of the following ways to start using.</p>
+       <a href="{{site.url}}/start" class="e-btn fullwidth plus {{ site.button }}">Template</a>
         </div>
-        <div class="e-col-4 container-white">
+
+        <div class="container-white e-col-4">
           <h3 class="size-3" style="color:#{{ site.title_color }};">Css / CDN</h3>
           <p style="color:{{ site.text_color }};">
             Copy-paste the stylesheet
@@ -68,8 +69,10 @@ layout: base
   <link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
 {% endhighlight %}
         </div>
-      </div>
-    </section>
+
+        </div>
+
+
 
     <section class="e-container centered e-fullscreen bg">
       <div class="e-cols">
@@ -211,66 +214,66 @@ layout: base
 
     <section class="e-container centered e-fullscreen" style="background:#f9f9f9;">
       <div class="e-cols">
-        <div class="e-col-8">
-          <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">Fullscreen and centered containers</h3>
+        <div class="e-col">
+          <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">
+            Fullscreen and centered containers</h3>
           <hr>
           <p class="size-6" style="color:{{ site.text_color }};text-align:center;">
             All the children of this container will be centered vertically.
           </p>
         </div>
-        <div class="e-cols" style="text-align:center;"></div>
       </div>
     </section>
-    <section class="e-container centered e-fullscreen bg">
-      <div class="e-cols">
-        <div class="e-col-8">
-          <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">The grid system is simple</h3>
-          <hr>
+
+<section class="e-container centered e-fullscreen bg">
+    <div class="e-cols">
+       <div class="e-col-8">
+        <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">The grid system is simple</h3>
+          <br>
           <p class="size-6" style="color:{{ site.text_color }};text-align:center;">
             The grid is focused on mobile devices from the beginning and there is only one type.
             Easy to learn, just need a container and automatic columns or with a defined size,
             these will adjust to the size of the graphic window.
           </p>
+          <hr>
         </div>
-        <hr>
-        <div class="e-cols" style="text-align:center;">
-          <div class="e-col">
-            <div class="e-alert sky">
-              <strong>Auto</strong>
-            </div>
-          </div>
-          <div class="e-col">
-            <div class="e-alert warning">
-              <strong>Auto</strong>
-            </div>
-          </div>
-          <div class="e-col">
-            <div class="e-alert success">
-              <strong>Auto</strong>
-            </div>
-          </div>
-          <div class="e-col">
-            <div class="e-alert dark">
-              <strong>Auto</strong>
-            </div>
-          </div>
-        </div>
-        <div class="e-cols" style="text-align:center;">
-          <div class="e-col-3">
-            <div class="e-alert purple">
-              <strong>e-col-3</strong>
-            </div>
-          </div>
-          <div class="e-col-6">
-            <div class="e-alert primary">
-              <strong>e-col-6</strong>
-            </div>
-          </div>
-          <div class="e-col-3">
-            <div class="e-alert danger">
-              <strong>e-col-3</strong>
-            </div>
-          </div>
+        <i class="w-100"></i>
+      <div class="e-col">
+        <div class="e-alert sky">
+          <strong>Auto</strong>
         </div>
       </div>
-    </section>
+      <div class="e-col">
+        <div class="e-alert warning">
+          <strong>Auto</strong>
+        </div>
+      </div>
+      <div class="e-col">
+        <div class="e-alert success">
+          <strong>Auto</strong>
+        </div>
+      </div>
+      <div class="e-col">
+        <div class="e-alert dark">
+          <strong>Auto</strong>
+        </div>
+      </div>
+      <i class="w-100"></i>
+    <div class="e-col-3">
+      <div class="e-alert purple">
+        <strong>e-col-3</strong>
+      </div>
+    </div>
+    <div class="e-col-6">
+      <div class="e-alert primary">
+        <strong>e-col-6</strong>
+      </div>
+    </div>
+    <div class="e-col-3">
+      <div class="e-alert danger">
+        <strong>e-col-3</strong>
+      </div>
+    </div>
+    </div>
+
+</section>

@@ -49,31 +49,39 @@ html {
     }
   }
 
-  &.no-desktop {
+  &.no-desktop,
+  [class*="e-"].no-desktop {
     @include desktop {
       display: none;
     }
   }
 
-  &.no-mobile {
+  &.no-mobile,
+  [class*="e-"].no-mobile {
     @media only screen and (max-width: 1024px) {
       display: none;
     }
   }
 
+  &.e-sm-height,
   &.e-sm-screen {
-    min-width : 100%;
     min-height: 33.3333333333vh;
   }
 
+  &.e-md-height,
   &.e-md-screen {
-    min-width : 100%;
     min-height: 50vh;
   }
 
+  &.e-fullheight,
   &.e-fullscreen {
-    min-width : 100%;
     min-height: 100vh;
+  }
+
+  &.e-fullscreen,
+  &.e-md-screen,
+  &.e-sm-screen {
+    min-width: 100%;
   }
 
   &.no-shadow {
@@ -145,6 +153,7 @@ hr {
   @extend .eFade;
 }
 /* Clase active del menu */
+
 .active {
   background-color: lighten(rgba(0,0,0,0.1),30%) !important;
 }
