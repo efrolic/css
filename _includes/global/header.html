@@ -13,7 +13,6 @@
     <a target="_blank" href="https://github.com/EfraPeralta/eFrolic" class="e-btn circle inverted">
       <i class="fab fa-github"></i>
     </a>
-    <!-- With Button -->
       <div class="e-drops unified no-mobile">
         <a href="{{ site.url }}/documentation" class="e-btn inverted plane shadow primary {% if page.permalink == '/documentation' %}active{% endif %}">
           Documentation
@@ -21,10 +20,10 @@
 
         <div class="e-dropdown shadow" aria-hidden="true">
           <div class="drop-items shadow-6">
-            <a class="drop-item">GET STARTED</a>
-            <a class="drop-item">LAYAOUT</a>
-            <a class="drop-item">COMPONENTS</a>
-            <a class="drop-item">UTILITIES</a>
+            <a href="{{site.url}}/documentation/get-started" class="drop-item {% if page.permalink == '/documentation/get-started' %}active{% endif %}">GET STARTED</a>
+            <a href="{{site.url}}/documentation/layout" class="drop-item {% if page.permalink == '/documentation/layout' %}active{% endif %}">LAYOUT</a>
+            <a href="{{site.url}}/documentation/components" class="drop-item {% if page.permalink == '/documentation/components' %}active{% endif %}">COMPONENTS</a>
+            <a href="{{site.url}}/documentation/utilities" class="drop-item {% if page.permalink == '/documentation/utilities' %}active{% endif %}">UTILITIES</a>
           </div>
         </div>
       </div>
@@ -103,7 +102,7 @@
     </a>
   </li>
 
-  <p class="label"><br><strong>Layaout</strong></p>
+  <p class="label"><br><strong>Layout</strong></p>
 
   <li class="{% if page.permalink == '/container' %}active{% endif %}">
     <a href="{{ site.url }}/container"><i class="fas fa-box-open sky"></i> Container

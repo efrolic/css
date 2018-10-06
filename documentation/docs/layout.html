@@ -1,0 +1,29 @@
+---
+
+layout: default
+
+permalink: /documentation/layout
+
+title: Layout
+
+description: "Design components, classes to design the structure."
+
+---
+
+<h3 class="code-title">{{page.title}} <span class="e-tag static danger">Assistants</span></h3>
+<p class="desc">{{page.description}}</p>
+<hr class="hr">
+<div class="container-white">
+<br>
+<div class="e-cols centered">
+{% for item in site.data.layout %}
+  <div class="e-col-6 docs">
+    <a href="{{site.url}}{{item.url}}">
+    <h6 class="code-title size-6">{{item.name}} <span class="e-tag static rounded danger">{{item.category}}</span></h6>
+    <p class="desc">{{item.bio}}</p>
+    </a>
+  </div>
+{% endfor %}
+</div>
+  <br>
+</div>

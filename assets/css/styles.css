@@ -75,7 +75,7 @@ margin-left:-15px;
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   .main {
     background: linear-gradient(to right, rgba(255, 255, 255, .1) 60%, rgba(29, 161, 242, .3) 50%),
       url(https://firebasestorage.googleapis.com/v0/b/efrolic-bf2a0.appspot.com/o/icons-background.svg?alt=media&token=60c717fe-dd46-4bbe-a9d2-3c454d0b73c0) !important;
@@ -516,4 +516,14 @@ hr {
   text-transform: uppercase;
   font-family:sans-serif;
   color: rgba(0,0,0,0.5);
+}
+
+.docs{
+  border-radius: 10px;
+  transition: .4s;
+  padding: 25px 25px;
+}
+.docs:hover{
+  background: #f7f8f9;
+  cursor: pointer;
 }

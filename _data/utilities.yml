@@ -1,0 +1,16 @@
+- name: Color palette
+  category: Assistants
+  url: /colors
+  bio: "Colors are used as variants in all classes of eFrolic,
+  that is, as a second class after the main one to customize elements."
+
+- name: Typography
+  category: Utilities
+  url: /typography
+  bio: "This is the documentation and examples of general typography.
+  We add our configurations to provide different sizes among other options."
+
+- name: Shadows
+  category: Utilities
+  url: /shadows
+  bio: "Add shadows to your elements by applying one of the 8 types of shadows available."

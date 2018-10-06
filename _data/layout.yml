@@ -1,0 +1,10 @@
+- name: System Grid
+  category: Layout
+  url: /grid
+  bio: "We use a standard 12 column grid system. The network is built with Flexbox technology,
+  totally responsive It will help you design your pages in an easy and orderly manner."
+
+- name: Face
+  category: Layout
+  url: /face
+  bio: "The face is a container to create full page presentations for your website to be elegant."

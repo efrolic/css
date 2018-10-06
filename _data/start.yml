@@ -1,0 +1,5 @@
+- name: Start
+  category: Get started
+  url: /start
+  bio: "Get started with eFrolic, a simple and functional framework for
+  creating responsive sites on mobile devices."

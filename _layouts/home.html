@@ -7,9 +7,32 @@ layout: base
       <nav class="e-nav no-bg">
         <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}}"/></a>
         <i class="e-distribution"></i>
+
+
+
+        <div class="e-drops unified no-mobile">
+          <a href="{{ site.url }}/documentation" class="e-btn inverted plane primary {% if page.permalink == '/documentation' %}active{% endif %}">
+            Documentation
+          </a>
+
+          <div class="e-dropdown primary shadow" aria-hidden="true">
+            <div class="drop-items shadow-3">
+              <a href="{{site.url}}/documentation/get-started" class="drop-item">GET STARTED</a>
+              <a href="{{site.url}}/documentation/layout" class="drop-item">LAYOUT</a>
+              <a href="{{site.url}}/documentation/components" class="drop-item">COMPONENTS</a>
+              <a href="{{site.url}}/documentation/utilities" class="drop-item">UTILITIES</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
         <a href="{{ site.url }}/buttons" class="e-btn {{ site.button }}">
           <i class="fas fa-box"></i>
-          Download</a>
+          Download
+        </a>
       </nav>
 
       <section class="face-body centered">
@@ -23,7 +46,7 @@ layout: base
           <a href="{{ site.url }}/start" class="eUp e-btn plus {{ site.button }}">
             <b>Get started</b>
           </a>
-          <a href="{{ site.url }}/face" class="eUp e-btn plus {{ site.button_secondary }}">
+          <a href="{{ site.url }}/documentation" class="eUp e-btn plus {{ site.button_secondary }}">
             <b>Documentation</b>
           </a>
         </div>
