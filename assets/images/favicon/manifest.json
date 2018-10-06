@@ -1,6 +1,5 @@
 {
-    "name": "eFrolic",
-    "short_name": "eFrolic",
+    "name": "",
     "icons": [
         {
             "src": "/assets/images/favicon/android-chrome-144x144.png",
@@ -8,7 +7,6 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "rgb(29, 161, 242)",
-    "background_color": "white",
+    "theme_color": "#1da1f2",
     "display": "standalone"
 }
