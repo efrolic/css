@@ -9,6 +9,6 @@
         }
     ],
     "theme_color": "rgb(29, 161, 242)",
-    "background_color": "#ffffff",
+    "background_color": "transparent",
     "display": "standalone"
 }
