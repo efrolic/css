@@ -1,12 +1,13 @@
 {
-    "name": "",
+    "name": "eFrolic | It is a CSS framework, simple and modern.",
     "icons": [
         {
-            "src": "/assets/images/favicon/android-chrome-144x144.png",
+            "src": "\/favicon\/android-chrome-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         }
     ],
     "theme_color": "#1da1f2",
+    "background_color": "#ffffff",
     "display": "standalone"
 }
