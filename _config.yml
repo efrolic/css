@@ -6,8 +6,10 @@ subtitle: "It is the party of developers, simple and modern."
 description: "It is a CSS framework, which without using javascript is interactive and animated.
 This framework is based on being modular and simple to develop web interfaces focused on mobile devices."
 
-# twitter
+# Social
 twitter: "https://twitter.com/e_frolic"
+github: "https://github.com/EfraaX/eFrolic"
+github_me: "https://github.com/EfraaX"
 
 # Config
 button: anime primary
@@ -23,7 +25,8 @@ lang: en
 ref: hello
 
 # Build settings
+version: "V0.4.1"
 markdown: kramdown
-url: https://efraperalta.github.io/eFrolic
+url: "https://efraax.github.io/eFrolic"
 permalink: pretty
 exclude: ['node_modules', 'gulpfile.js', 'package-lock.json', 'Gemfile', 'Gemfile.lock', 'feed.xml']

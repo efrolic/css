@@ -1,0 +1,78 @@
+* {
+  &.no-bg {
+    background      : transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow      : none !important;
+    border          : none !important;
+    @include desktop {
+      padding-top: 20px;
+    }
+    @media only screen and (max-width: 1023px) {
+      & .e-menu {
+        background: white !important;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.1), 0 2px 10px 0 rgba(0,0,0,.1);
+
+        & .e-dropdown,
+        & .e-menu-item {
+          color      : $e-font-color !important;
+          font-weight: 700;
+
+          &:hover {
+            background: whitesmoke;
+            transition: 0.2s;
+            color     : $primary !important;
+          }
+        }
+      }
+    }
+
+    & .e-dropdown:after {
+      border-color: white transparent transparent !important;
+    }
+  }
+
+  &.no-desktop,
+  [class*="e-"].no-desktop {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &.no-mobile,
+  [class*="e-"].no-mobile {
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &.e-sm-height,
+  &.e-sm-screen {
+    min-height: 33.3333333333vh;
+  }
+
+  &.e-md-height,
+  &.e-md-screen {
+    min-height: 50vh;
+  }
+
+  &.e-fullheight,
+  &.e-fullscreen {
+    min-height: 100vh;
+  }
+
+  &.e-fullscreen,
+  &.e-md-screen,
+  &.e-sm-screen {
+    min-width: 100%;
+  }
+
+  &.no-shadow {
+    box-shadow: none;
+
+    & a:not(.e-btn),
+    button:not(.e-btn) {
+      box-shadow: none !important;
+    }
+  }
+}

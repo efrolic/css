@@ -87,7 +87,7 @@ margin-left:-15px;
 
 .eFroli {
   -webkit-box-shadow: none;
-  box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.05) !important;
   border-bottom: solid .5px rgba(0, 0, 0, 0.1);
   min-height: 70px;
   margin-bottom: 1.25rem;

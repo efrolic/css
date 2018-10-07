@@ -10,12 +10,12 @@
   </a>
   <input type="checkbox" id="e-menu">
   <div class="e-menu">
-    <a target="_blank" href="https://github.com/EfraPeralta/eFrolic" class="e-btn circle inverted">
+    <a target="_blank" href="{{site.github}}" class="e-btn circle inverted">
       <i class="fab fa-github"></i>
     </a>
       <div class="e-drops unified no-mobile">
-        <a href="{{ site.url }}/documentation" class="e-btn inverted plane shadow primary {% if page.permalink == '/documentation' %}active{% endif %}">
-          Documentation
+        <a href="{{ site.url }}/documentation" class="e-btn primary">
+          View Docs
         </a>
 
         <div class="e-dropdown shadow" aria-hidden="true">
@@ -124,10 +124,6 @@
     </a>
   </li>
 
-  <li class="{% if page.permalink == '/section' %}active{% endif %}">
-    <a href="{{ site.url }}/section"><i class="fas fa-columns gray"></i> Section
-    </a>
-  </li>
   <li class="{% if page.permalink == '/footer' %}active{% endif %}">
     <a href="{{ site.url }}/footer"><i class="fas fa-vector-square primary"></i> Footer
     </a>
@@ -256,7 +252,7 @@
     </a>
   </li>
   <li>
-    <a href="https://github.com/EfraPeralta/eFrolic" target="_blank"><i class="fab fa-github-alt"></i> GitHub
+    <a href="{{site.github}}" target="_blank"><i class="fab fa-github-alt"></i> GitHub
     </a>
   </li>
   <li class="{% if page.permalink == '/author' %}active{% endif %}">

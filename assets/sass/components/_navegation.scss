@@ -8,7 +8,7 @@
   justify-content: space-between;
   background     : $default;
   color          : $e-font-color;
-  box-shadow     : 0 2px 5px 0 rgba(0,0,0,.1), 0 2px 10px 0 rgba(0,0,0,.1);
+  @extend .shadow-5;
   padding        : 8px;
   @include desktop {
     padding-left : 5%;
@@ -67,6 +67,7 @@
 /***************************************************************
 *                      Full Navbar styles
 ****************************************************************/
+
 .e-nav-full {
   position        : fixed;
   top             : 0;

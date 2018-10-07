@@ -6,9 +6,10 @@ layout: base
 
       <nav class="e-nav no-bg">
         <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}}"/></a>
+        <a href="{{site.github}}" target="_blank" class="e-btn circle inverted no-mobile"><i class="fab fa-github"></i></a>
+        <a href="{{site.twitter}}" target="_blank" class="e-btn circle inverted sky no-mobile"><i class="fab fa-twitter"></i></a>
+
         <i class="e-distribution"></i>
-
-
 
         <div class="e-drops unified no-mobile">
           <a href="{{ site.url }}/documentation" class="e-btn inverted plane primary {% if page.permalink == '/documentation' %}active{% endif %}">
@@ -43,6 +44,21 @@ layout: base
             {% else %}{{site.description}}
             {% endif %}
           </p>
+          <div class="e-toolbar centered">
+            <div class="e-tags unified">
+              <span class="e-tag dark">Currently</span>
+              <span class="e-tag danger">{{site.version}}</span>
+            </div>
+            <div class="e-tags unified">
+              <i class="e-tag sky fab fa-twitter"></i>
+              <a href="{{site.twitter}}" target="_blank" class="e-tag sky">Tweet</a>
+            </div>
+            <div class="e-tags unified">
+              <i class="e-tag primary fab fa-facebook-f"></i>
+              <a href="{{site.twitter}}" target="_blank" class="e-tag primary">Like</a>
+            </div>
+          </div>
+
           <a href="{{ site.url }}/start" class="eUp e-btn plus {{ site.button }}">
             <b>Get started</b>
           </a>
