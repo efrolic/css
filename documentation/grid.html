@@ -73,12 +73,12 @@ a system of simple and receptive columns."
       <div class="e-cols danger centered e-sm-screen">
         <div class="e-col">
           <div class="e-alert white" style="font-weight:bold;">
-            Centered columns
+            Column
           </div>
         </div>
         <div class="e-col">
           <div class="e-alert white" style="font-weight:bold;">
-            Centered columns
+            Column
           </div>
         </div>
       </div>
@@ -97,17 +97,17 @@ a system of simple and receptive columns."
       <div class="e-cols danger between e-sm-screen">
         <div class="e-col-3">
           <div class="e-alert white" style="font-weight:bold;">
-            Between columns
+            Column
           </div>
         </div>
         <div class="e-col-3">
           <div class="e-alert white" style="font-weight:bold;">
-            Between columns
+            Column
           </div>
         </div>
         <div class="e-col-3">
           <div class="e-alert white" style="font-weight:bold;">
-            Between columns
+            Column
           </div>
         </div>
       </div>
@@ -120,6 +120,51 @@ a system of simple and receptive columns."
       {% endhighlight %}
       <hr>
 
+      * Add <strong class="code">align-start</strong> to the container to align its columns at the beginning of the container,
+      <b>example:</b>
+      <hr>
+      <div class="e-cols danger align-start e-sm-screen">
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+      </div>
+      {% highlight html %}
+      <div class="e-cols align-start">
+        <div class="e-col">...</div>
+        <div class="e-col">...</div>
+      </div>
+      {% endhighlight %}
+      <hr>
+
+      * Add <strong class="code">align-end</strong> to the container to line up its columns at the end of the container,
+      <b>example:</b>
+      <hr>
+      <div class="e-cols danger align-end e-sm-screen">
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+      </div>
+      {% highlight html %}
+      <div class="e-cols align-start">
+        <div class="e-col">...</div>
+        <div class="e-col">...</div>
+      </div>
+      {% endhighlight %}
+      <hr>
 
       * Add <strong class="code">no-gap</strong> to the container to eliminate the padding / space added to the columns.
       <b>example:</b>
@@ -127,12 +172,12 @@ a system of simple and receptive columns."
       <div class="e-cols no-gap">
         <div class="e-col">
           <div class="e-alert success" style="font-weight:bold;">
-            No-gap columns
+            No-gap / Column
           </div>
         </div>
         <div class="e-col">
           <div class="e-alert danger" style="font-weight:bold;">
-            No-gap columns
+            No-gap / Column
           </div>
         </div>
         <div class="e-col">
@@ -168,7 +213,7 @@ a system of simple and receptive columns."
   </p>
   <div class="e-note block purple">
     <div class="note-body">
-      * Add <strong class="code">centered</strong> a sus columnas para centrar su contenido vertical y horizontalmente.
+      * Add <strong class="code">centered</strong> to its columns to center its content vertically and horizontally.
       <b>example:</b>
       {% highlight html %}
       <div class="e-cols">
@@ -176,12 +221,31 @@ a system of simple and receptive columns."
         <div class="e-col centered">...</div>
       </div>
       {% endhighlight %}
-      * Add <strong class="code">between</strong> a sus columnas para mantener un espaciado entre su contenido.
+      * Add <strong class="code">between</strong> to its columns to maintain a spacing between its contents.
       <b>example:</b>
       {% highlight html %}
       <div class="e-cols">
         <div class="e-col">...</div>
         <div class="e-col between">...</div>
+      </div>
+      {% endhighlight %}
+
+
+      * Add <strong class="code">align-start</strong> to the container to align its content at the beginning of the column,
+      <b>example:</b>
+      {% highlight html %}
+      <div class="e-cols">
+        <div class="e-col">...</div>
+        <div class="e-col align-start">...</div>
+      </div>
+      {% endhighlight %}
+
+      * Add <strong class="code">align-end</strong> to the container to align its content at the end of the column,
+      <b>example:</b>
+      {% highlight html %}
+      <div class="e-cols">
+        <div class="e-col">...</div>
+        <div class="e-col align-end">...</div>
       </div>
       {% endhighlight %}
     </div>
@@ -337,6 +401,78 @@ a system of simple and receptive columns."
   </div>
   {% endhighlight %}
 </div>
+
+
+<div class="container-white">
+  <h4 class="code-title">Nesting</h4>
+  <p>
+This is an example of nested columns,
+ using containers <strong class="code">e-cols</strong> plus the number of columns needed. Perfect to create your layout.</p>
+  <hr class="hr">
+  <div class="e-cols">
+    <div class="e-col-12 e-alert primary">
+      Header
+    </div>
+
+<div class="e-col-12 centered" style="background:#f7f8f9;">
+  main container
+  <div class="e-cols">
+    <div class="e-col-8 e-alert warning centered">
+      main 2
+      <div class="e-cols">
+        <div class="e-col e-alert primary">
+          Banner
+        </div>
+      </div>
+      <div class="e-cols between">
+        <div class="e-col-3 e-alert danger">
+          Section 1
+        </div>
+        <div class="e-col-3 e-alert danger">
+          Section 2
+        </div>
+        <div class="e-col-3 e-alert danger">
+          Section 3
+        </div>
+      </div>
+    </div>
+    <div class="e-col-4 e-alert purple" style="height:200px;">
+      Aside
+    </div>
+  </div>
+</div>
+<div class="e-col e-alert gray centered">
+  Footer
+</div>
+  </div>
+  <!-- Code -->
+{% highlight html %}
+<div class="e-cols">
+  <div class="e-col-12">Header</div>
+  <div class="e-col-12 centered">
+    main container
+    <div class="e-cols">
+      <div class="e-col-8 centered">
+        main 2
+        <div class="e-cols">
+          <div class="e-col">Banner</div>
+        </div>
+        <div class="e-cols between">
+          <div class="e-col-3">Section 1</div>
+          <div class="e-col-3">Section 2</div>
+          <div class="e-col-3">Section 3</div>
+        </div>
+      </div>
+      <div class="e-col-4">Aside</div>
+    </div>
+  </div>
+  <div class="e-col centered">Footer</div>
+</div>
+{% endhighlight %}
+</div>
+
+
+
 
 <div class="container-white">
   <h4 class="code-title">Grid Layouts</h4>

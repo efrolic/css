@@ -25,7 +25,7 @@ lang: en
 ref: hello
 
 # Build settings
-version: "V0.4.1"
+version: "V0.2.3"
 markdown: kramdown
 url: "https://efraax.github.io/eFrolic"
 permalink: pretty
