@@ -11,12 +11,11 @@
   vertical-align: middle;
   border-radius : 0.22rem;
 
-  &.rounded {
-    border-radius: 100px;
-    padding      : 0.25em 0.8em;
-  }
-
   &.static {
     font-size: 0.870rem !important;
+  }
+
+  &.rounded {
+    padding: 0.25em 0.8em;
   }
 }

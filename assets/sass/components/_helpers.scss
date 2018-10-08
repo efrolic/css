@@ -70,9 +70,16 @@
   &.no-shadow {
     box-shadow: none;
 
-    & a:not(.e-btn),
-    button:not(.e-btn) {
+    &:not(.e-btn) {
       box-shadow: none !important;
     }
+  }
+}
+
+.e-alert,
+.e-btn,
+.e-tag {
+  &.rounded {
+    border-radius: 100px;
   }
 }
