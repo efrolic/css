@@ -15,6 +15,7 @@ h6 {
   margin-top   : 0.5rem;
   line-height  : 1.2;
   font-weight  : 700;
+  color        : inherit;
 }
 
 strong {
@@ -49,11 +50,13 @@ h6 {
   font-size  : 2.7rem;
   font-weight: 900;
   line-height: 1.125;
+  color      : inherit;
 }
 
 .e-subtitle {
   font-size  : 1.50rem;
   font-weight: 600;
+  color      : inherit;
 }
 
 .size-1 {
@@ -81,7 +84,10 @@ h6 {
 }
 
 .size-plus {
-  font-size: 4.50rem;
+  font-size: 3.50rem;
+  @include desktop {
+    font-size: 4.50rem;
+  }
 }
 
 .e-blockquote {

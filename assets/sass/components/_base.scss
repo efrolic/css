@@ -4,11 +4,14 @@ html {
   min-width       : 320px;
   padding         : 0;
   margin          : 0;
-  font-size       : 1rem;
+  font-size       : 15px;
   font-weight     : 400;
   line-height     : 1.5;
   text-rendering  : optimizeLegibility;
   text-size-adjust: 100%;
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 * {
@@ -84,6 +87,7 @@ hr {
   @extend .eFade;
 }
 /* Clase active del menu */
+
 .active {
   background-color: lighten(rgba(0,0,0,0.1),30%) !important;
 }
