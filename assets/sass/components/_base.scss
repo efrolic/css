@@ -1,7 +1,6 @@
 body,
 html {
   font-family     : $e-font;
-  height          : 100%;
   min-width       : 320px;
   padding         : 0;
   margin          : 0;
@@ -20,13 +19,12 @@ html {
   }
 }
 
-a {
-  background-color: transparent;
-  text-decoration : none;
-}
-
 img {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 #cap-nav-full,
@@ -62,6 +60,16 @@ hr {
   }
 }
 
+.link {
+  opacity: 0.9;
+
+  &:hover {
+    opacity        : 1;
+    text-decoration: underline;
+    cursor         : pointer;
+  }
+}
+
 .e-cap {
   position        : fixed;
   top             : 0;
@@ -76,7 +84,6 @@ hr {
   @extend .eFade;
 }
 /* Clase active del menu */
-
 .active {
   background-color: lighten(rgba(0,0,0,0.1),30%) !important;
 }

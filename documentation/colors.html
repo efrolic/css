@@ -7,7 +7,9 @@ title: Color palette
 
 description: "Our color palette consists of neutral, white and blue.
 These colors are used as variants in all classes of eFrolic,
-that is, as a second class after the main one to personalize elements."
+that is, as a second class after the main one to personalize elements.
+<br><br>
+Colors convey meaning and add a bit of emotional weight to the elements."
 
 ---
 
@@ -15,7 +17,7 @@ that is, as a second class after the main one to personalize elements."
 <p class="desc">{{ page.description }}</p>
 <hr class="hr">
 <div class="container-white">
-<h3 class="code-title">Use</h3>
+<h3 class="code-title">Use as background</h3>
 <p>After a main class, example: <strong class="code">e-btn</strong> apply the desired color in lowercase letters.</p>
 <p><strong class="e-s danger code">Required:</strong> <strong>
     A main class of eFrolic.</strong></p>
@@ -24,6 +26,7 @@ that is, as a second class after the main one to personalize elements."
 <!-- Code -->
 {% highlight html %}
 <a class="e-btn primary">Color</a>
+<div class="e-alert danger">...</div>
 {% endhighlight %}
 <br>
 <div class="e-cols">
@@ -86,4 +89,97 @@ that is, as a second class after the main one to personalize elements."
     <p class="size-5" style="color:white;"><br> Black <br><br></p>
   </div>
 </div>
+</div>
+
+
+
+
+<div class="container-white">
+<h3 class="code-title">Use as text color</h3>
+<p>Add <strong class="code">text-</strong> after the color to use.</p>
+<p><strong class="e-s warning code">Warning:</strong> <strong>
+Not all colors are available for text.</strong></p>
+<!-- Code -->
+{% highlight html %}
+<a class="text-primary">Color</a>
+<p class="text-danger">...</p>
+<h2 class="text-sky">...</h2>
+{% endhighlight %}
+<br>
+<p class="e- dark text-white">text-white</p>
+<p class="text-gray">text-gray</p>
+<p class="text-dark">text-dark</p>
+<p class="text-black">text-black</p>
+<p class="text-primary">text-primary</p>
+<p class="text-success">text-success</p>
+<p class="text-danger">text-danger</p>
+<p class="text-warning">text-warning</p>
+<p class="text-sky">text-sky</p>
+<p class="text-purple">text-purple</p>
+<!-- Code -->
+{% highlight html %}
+<p class="text-white">text-white</p>
+<p class="text-gray">text-gray</p>
+<p class="text-dark">text-dark</p>
+<p class="text-black">text-black</p>
+<p class="text-primary">text-primary</p>
+<p class="text-success">text-success</p>
+<p class="text-danger">text-danger</p>
+<p class="text-warning">text-warning</p>
+<p class="text-sky">text-sky</p>
+<p class="text-purple">text-purple</p>
+{% endhighlight %}
+<br>
+<h5 class="code-title">Using in anchors</h5>
+<hr class="hr">
+<p><a href="#" class="link e- dark text-white">text-white</a></p>
+<p><a href="#" class="link text-gray">text-gray</a></p>
+<p><a href="#" class="link text-dark">text-dark</a></p>
+<p><a href="#" class="link text-black">text-black</a></p>
+<p><a href="#" class="link text-primary">text-primary</a></p>
+<p><a href="#" class="link text-success">text-success</a></p>
+<p><a href="#" class="link text-danger">text-danger</a></p>
+<p><a href="#" class="link text-warning">text-warning</a></p>
+<p><a href="#" class="link text-sky">text-sky</a></p>
+<p><a href="#" class="link text-purple">text-purple</a></p>
+<!-- Code -->
+{% highlight html %}
+<p><a href="#" class="link text-white">text-white</a></p>
+<p><a href="#" class="link text-gray">text-gray</a></p>
+<p><a href="#" class="link text-dark">text-dark</a></p>
+<p><a href="#" class="link text-black">text-black</a></p>
+<p><a href="#" class="link text-primary">text-primary</a></p>
+<p><a href="#" class="link text-success">text-success</a></p>
+<p><a href="#" class="link text-danger">text-danger</a></p>
+<p><a href="#" class="link text-warning">text-warning</a></p>
+<p><a href="#" class="link text-sky">text-sky</a></p>
+<p><a href="#" class="link text-purple">text-purple</a></p>
+{% endhighlight %}<br>
+
+
+<h5 class="code-title">Using in heading</h5>
+<hr class="hr">
+<h1 class="e- dark text-white">text-white</h1>
+<h2 class="text-gray">text-gray</h2>
+<h3 class="text-dark">text-dark</h3>
+<h1 class="text-danger">text-danger</h1>
+<h2 class="text-warning">text-warning</h2>
+<h3 class="text-sky">text-sky</h3>
+<h4 class="text-purple">text-purple</h4>
+<h4 class="text-black">text-black</h4>
+<h5 class="text-primary">text-primary</h5>
+<h6 class="text-success">text-success</h6>
+<!-- Code -->
+{% highlight html %}
+<h1 class="text-white">text-white</h1>
+<h2 class="text-gray">text-gray</h2>
+<h3 class="text-dark">text-dark</h3>
+<h1 class="text-danger">text-danger</h1>
+<h2 class="text-warning">text-warning</h2>
+<h3 class="text-sky">text-sky</h3>
+<h4 class="text-purple">text-purple</h4>
+<h4 class="text-black">text-black</h4>
+<h5 class="text-primary">text-primary</h5>
+<h6 class="text-success">text-success</h6>
+{% endhighlight %}
 </div>

@@ -180,11 +180,6 @@ $colors: (
       }
     }
   }
-
-  &.text-white {
-    color      : $white !important;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  }
 }
 
 %hover-colors {
@@ -229,18 +224,21 @@ $colors: (
   @extend %e-colors;
 }
 
-i,
-span {
+* {
   @each $name, $pair in $colors {
     $color: nth($pair, 1);
 
-    &.#{$name} {
-      color: $color;
+    &.text-#{$name} {
+      color: $color !important;
     }
   }
 
-  &.warning {
-    color: $warning;
+  &.text-warning {
+    color: $warning !important;
+  }
+
+  &.text-white {
+    color: $white !important;
   }
 }
 
