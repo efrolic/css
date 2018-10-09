@@ -1,0 +1,127 @@
+---
+layout: default
+
+permalink: /container
+
+title: Containers
+
+description: "Containers are a simple design element to center your content horizontally.
+By default a container maintains margins on the sides to maintain an adequate proportion,
+however this can be eliminated.
+<br><br>
+The containers can be used in any context, as a parent or as a direct child of any of the elements."
+---
+
+<h3 class="code-title">{{ page.title }} <span class="e-tag static danger">Layaout</span></h3>
+<p class="desc">{{ page.description }}</p>
+<h5 class="code-title">Responsive breakpoints</h5>
+<p class="desc">
+The containers are intervened in some points of the viewport to provide a better experience and spacing.
+We use the following breakpoints for each type of device.</p>
+<div class="e-note block primary">
+  <div class="note-body">
+    <p>In <strong>smartphones</strong> from 320px to 767px: <strong class="code">width : 92.50%;</strong>
+    Uses 92.50% of the total width of the viewport.</p>
+    <p>In <strong>tablets</strong> from 768px to 1023px: <strong class="code">max-width : 720px;</strong>
+    the container will have a maximum width of 720px.</p>
+    <p>In <strong>Desktop</strong> from 1024px to 1366px: <strong class="code">max-width : 976px;</strong>
+    the container will have a maximum width of 976px.</p>
+    <p>In <strong>Desktop-plus</strong> from 1366px and up: <strong class="code">max-width : 1366px;</strong>
+    the container will have a maximum width of 1366px.</p>
+  </div>
+</div>
+<br>
+<a href="{{site.url}}/container-example" target="_blank" class="e-btn primary">See example in a window <i class="fas fa-arrow-right"></i></a>
+<hr class="hr">
+<div class="container-white">
+<br>
+<div class="e-container">
+  <div class="e-cols no-gap">
+    <div class="e-col-12">
+      <div class="e-alert primary">
+        Header
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-alert danger e-sm-height">
+        Main
+      </div>
+    </div>
+    <div class="e-col-3">
+      <div class="e-alert success e-sm-height">
+        Aside
+      </div>
+    </div>
+  </div>
+
+
+{% highlight html %}
+<div class="e-container">
+  <!-- Content here -->
+</div>
+{% endhighlight%}
+</div>
+</div>
+
+<div class="container-white">
+<h4 class="code-title">Fluid container</h4>
+<p class="desc">Use <strong class="code">.e-container-fluid</strong> for a full width container, spanning the entire width of the viewport.</p>
+<br>
+<a href="{{site.url}}/container-fluid-example" target="_blank" class="e-btn primary">See example in a window <i class="fas fa-arrow-right"></i></a>
+
+<hr class="hr">
+
+<div class="e-container-fluid">
+  <div class="e-cols no-gap">
+    <div class="e-col-12">
+      <div class="e-alert primary">
+        Header
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-alert danger e-sm-height">
+        Main
+      </div>
+    </div>
+    <div class="e-col-3">
+      <div class="e-alert success e-sm-height">
+        Aside
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+  <div class="e-container-fluid">
+    <!-- Content here -->
+  </div>
+  {% endhighlight%}
+</div>
+</div>
+
+
+
+<div class="container-white">
+<h4 class="code-title">Section container</h4>
+<p class="desc">
+A simple container that adds a space to divide your page into sections.
+ Recommended use accompanied by a fluid or spaced container.</p>
+<p class="desc">Use <strong class="code">.e-section</strong></p>
+<br>
+<a href="{{site.url}}/container-section-example" target="_blank" class="e-btn primary">See example in a window <i class="fas fa-arrow-right"></i></a>
+{% highlight html %}
+<div class="e-container">
+  <div class="e-section">..1</div>
+  <div class="e-section">..2</div>
+</div>
+
+<!-- or -->
+
+<div class="e-container-fluid">
+  <div class="e-section">..1</div>
+  <div class="e-section">..2</div>
+</div>
+
+{% endhighlight%}
+
+</div>
+</div>
+</div>

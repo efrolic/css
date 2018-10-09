@@ -8,3 +8,8 @@
   category: Layout
   url: /face
   bio: "The face is a container to create full page presentations for your website to be elegant."
+
+- name: Containers
+  category: Layout
+  url: /container
+  bio: "Containers are a simple design element to center your content horizontally."

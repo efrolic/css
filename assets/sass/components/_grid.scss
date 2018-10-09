@@ -7,17 +7,25 @@
 }
 
 .e-container {
-  margin-left : auto;
-  margin-right: auto;
-  padding     : 0;
-  width       : 90%;
+  width : 92.50%;
+  margin: 0 auto;
+  @include tablet {
+    max-width: 720px;
+  }
+  @include desktop {
+    max-width: 976px;
+  }
   @include desktop-plus {
-    width: 80%;
+    max-width: 1366px;
   }
 
   &-fluid {
     width: 100%;
   }
+}
+
+.e-section {
+  margin: 3rem auto;
 }
 
 .e-cols {
