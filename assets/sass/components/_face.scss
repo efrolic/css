@@ -1,13 +1,11 @@
 .e-face {
-  align-items          : stretch;
-  display              : flex;
-  flex-direction       : column;
-  justify-content      : space-between;
-  background           : $default;
-  background-size      : cover;
-  background-repeat    : no-repeat;
-  background-attachment: fixed;
-  height               : auto !important;
+  align-items    : stretch;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  background     : $default;
+  @extend %bg;
+  height         : auto !important;
 
   & > img {
     max-width: 77% !important;

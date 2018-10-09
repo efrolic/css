@@ -1,0 +1,151 @@
+---
+layout: default
+
+permalink: /background
+
+title: Background image
+
+description: "The background images are specially chosen illustrations
+to convey a feeling in the introductions to our websites, They are beautiful and
+high quality images to give the best experience.
+<br><br>
+The images are full and fixed background to give a sensation of
+<strong>Parallax</strong> without Javascript."
+
+---
+
+<h2 class="code-title">{{ page.title }} <span class="e-tag static danger">Utilities</span></h2>
+<p class="desc">{{ page.description }}</p>
+<hr class="hr">
+<div class="container-white">
+<h4 class="code-title">Use</h4>
+<p class="desc"> Add <strong class="code">bg-x</strong> to the container that you applied the background. <strong>example:</strong></p>
+{% highlight html %}
+<body class="e-container-fluid bg-d"></body>
+
+<div class="e-face bg-a">...</div>
+<div class="e-container bg-b">...</div>
+<div class="e-container-fluid bg-c">...</div>
+
+<section class="e-section bg-random">...</section>
+{% endhighlight %}
+<p class="desc">
+You only need a simple class to create these beautiful backgrounds,
+even if you need to add window sizes you can use the following:</p>
+{% highlight html %}
+<div class="e-face e-sm-screen bg-a">...</div>
+
+<div class="e-container e-md-height bg-b">...</div>
+
+<div class="e-fullscreen bg-c">...</div>
+{% endhighlight %}
+<a href="{{site.url}}/helpers" class="e-btn fullwidth inverted danger">know more in helpers <i class="fas fa-external-link-alt"></i></a>
+</div>
+
+
+<div class="container-white">
+<h4 class="code-title">Our favorite background.</h4>
+<p class="desc">Random background, It is a background that changes every time the page or window is updated.
+Perfect for safe sites and daring styles. <strong>Its beautiful!</strong></p>
+<p class="desc">Use : <strong class="code">bg-random</strong></p>
+<hr class="hr">
+<div class="e-col-12">
+  <img class="face-shadow" src="{{site.url}}/assets/images/bg/bg-random.png" alt="{{site.title}} {{site.subtitle}}">
+</div>
+<a href="{{site.url}}/face/e" target="_blank" class="e-btn anime fullwidth primary">Live view <i class="fas fa-external-link-alt"></i></a>
+<br>
+<div class="e-col-12">
+{% highlight html %}
+<div class="e-face bg-random">
+  ...
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+  <h5 class="code-title">Explosion of red roses.</h5>
+  <p class="desc">Use : <strong class="code">bg-a</strong></p>
+  <hr class="hr">
+  <div class="e-col-12">
+    <img class="face-shadow" src="{{site.url}}/assets/images/bg/bg-a.png" alt="{{site.title}} {{site.subtitle}}">
+  </div>
+  <a href="{{site.url}}/face/a" target="_blank" class="e-btn anime fullwidth primary">Live view <i class="fas fa-external-link-alt"></i></a>
+  <br>
+  <div class="e-col-12">
+  {% highlight html %}
+  <div class="e-container bg-a">
+    ...
+  </div>
+  {% endhighlight %}
+  </div>
+</div>
+<div class="e-section">
+  <h5 class="code-title">The stories of the ocean.</h5>
+  <p class="desc">Use : <strong class="code">bg-b</strong></p>
+  <hr class="hr">
+  <div class="e-col-12">
+    <img class="face-shadow" src="{{site.url}}/assets/images/bg/bg-b.png" alt="{{site.title}} {{site.subtitle}}">
+  </div>
+  <a href="{{site.url}}/face/c" target="_blank" class="e-btn anime fullwidth primary">Live view <i class="fas fa-external-link-alt"></i></a>
+  <br>
+  <div class="e-col-12">
+  {% highlight html %}
+  <div class="e-face bg-b">
+    ...
+  </div>
+  {% endhighlight %}
+  </div>
+</div>
+<div class="e-section">
+  <h5 class="code-title">FREEZING STORIES FOR LIFE</h5>
+  <p class="desc">Use : <strong class="code">bg-c</strong></p>
+  <hr class="hr">
+  <div class="e-col-12">
+    <img class="face-shadow" src="{{site.url}}/assets/images/bg/bg-c.png" alt="{{site.title}} {{site.subtitle}}">
+  </div>
+  <a href="{{site.url}}/face/b" target="_blank" class="e-btn anime fullwidth primary">Live view <i class="fas fa-external-link-alt"></i></a>
+  <br>
+  <div class="e-col-12">
+  {% highlight html %}
+  <div class="e-face bg-c">
+    ...
+  </div>
+  {% endhighlight %}
+  </div>
+</div>
+<div class="e-section">
+  <h5 class="code-title">I love Web Programing</h5>
+  <p class="desc">Use : <strong class="code">bg-d</strong></p>
+  <hr class="hr">
+  <div class="e-col-12">
+    <img class="face-shadow" src="{{site.url}}/assets/images/bg/bg-d.png" alt="{{site.title}} {{site.subtitle}}">
+  </div>
+  <a href="{{site.url}}/face/d" target="_blank" class="e-btn anime fullwidth primary">Live view <i class="fas fa-external-link-alt"></i></a>
+  <br>
+  <div class="e-col-12">
+  {% highlight html %}
+  <div class="e-face bg-d">
+    ...
+  </div>
+  {% endhighlight %}
+  </div>
+</div>
+</div>
+
+<div class="container-white">
+  <h5 class="code-title">Create your personal background</h5>
+  <p class="desc">Use this piece of CSS code to create your own background
+  with the image you want for your project. Create a class in your stylesheet
+  and apply to the container element you want.</p>
+  <hr class="hr">
+  {% highlight css %}
+  .my-background {
+
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)), url("Your-URL-IMAGE");
+    background-size      : cover;
+    background-repeat    : no-repeat;
+    background-attachment: fixed;
+    height               : 100%;
+
+  }
+  {% endhighlight %}
+</div>
