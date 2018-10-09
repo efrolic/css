@@ -21,6 +21,7 @@
             <a href="{{site.url}}/documentation/layout" class="drop-item {% if page.permalink == '/documentation/layout' %}active{% endif %}">LAYOUT</a>
             <a href="{{site.url}}/documentation/components" class="drop-item {% if page.permalink == '/documentation/components' %}active{% endif %}">COMPONENTS</a>
             <a href="{{site.url}}/documentation/utilities" class="drop-item {% if page.permalink == '/documentation/utilities' %}active{% endif %}">UTILITIES</a>
+            <a href="{{site.url}}/helpers" class="drop-item {% if page.permalink == '/helpers' %}active{% endif %}">HELPERS</a>
           </div>
         </div>
       </div>
@@ -56,7 +57,7 @@
         </a>
         <hr>
         <a href="{{ site.url }}/helpers" class="e-btn inverted primary">
-          <i class="fas fa-ambulance text-danger"></i> Helpers
+          <i class="fab fa-facebook-f text-sky"></i>acebook
         </a>
         <a href="{{site.twitter}}" target="_blank" class="e-btn sky">
           <i class="fab fa-twitter"></i> Twitter
@@ -214,9 +215,15 @@
     </a>
   </li>
   <li class="{% if page.permalink == '/colors' %}active{% endif %}">
-    <a href="{{ site.url }}/colors"><i class="fas fa-palette text-danger"></i> Colors
+    <a href="{{ site.url }}/colors"><i class="fas fa-palette text-sky"></i> Colors
     </a>
   </li>
+
+  <li class="{% if page.permalink == '/helpers' %}active{% endif %}">
+    <a href="{{ site.url }}/helpers"><i class="fas fa-ambulance text-danger"></i> Helpers
+    </a>
+  </li>
+
   <li class="{% if page.permalink == '/shadows' %}active{% endif %}">
     <a href="{{ site.url }}/shadows"><i class="fas fa-highlighter text-purple"></i> Shadows
     </a>

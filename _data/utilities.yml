@@ -4,6 +4,11 @@
   bio: "Animations are illusions of movements for web elements when reloading
   the page or when entering it. These animations are generated completely with CSS."
 
+- name: Background image
+  category: Utilities
+  url: /background
+  bio: "The background images are specially chosen illustrations to convey a feeling in the
+  introductions to our websites, They are beautiful and high quality images to give the best experience."
 
 - name: Color palette
   category: Assistants
@@ -11,19 +16,20 @@
   bio: "Colors are used as variants in all classes of eFrolic,
   that is, as a second class after the main one to customize elements."
 
-- name: Typography
-  category: Utilities
-  url: /typography
-  bio: "This is the documentation and examples of general typography.
-  We add our configurations to provide different sizes among other options."
+
+- name: Helpers
+  category: Assistants
+  url: /helpers
+  bio: "Used as variants in all classes of eFrolic,
+  that is, as a second class after the main one to customize elements."
 
 - name: Shadows
   category: Utilities
   url: /shadows
   bio: "Add shadows to your elements by applying one of the 8 types of shadows available."
 
-- name: Background image
+- name: Typography
   category: Utilities
-  url: /background
-  bio: "The background images are specially chosen illustrations to convey a feeling in the
-  introductions to our websites, They are beautiful and high quality images to give the best experience."
+  url: /typography
+  bio: "This is the documentation and examples of general typography.
+  We add our configurations to provide different sizes among other options."
