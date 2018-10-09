@@ -1,3 +1,10 @@
+- name: Animations
+  category: Utilities
+  url: /animations
+  bio: "Animations are illusions of movements for web elements when reloading
+  the page or when entering it. These animations are generated completely with CSS."
+
+
 - name: Color palette
   category: Assistants
   url: /colors
