@@ -39,7 +39,8 @@ $colors: (
   color: $white;
 
   & .e-dropdown,
-  & a:not(.e-btn) {
+  & a:not(.e-btn),
+  & li+li::before {
     color: $white;
   }
 
@@ -98,12 +99,7 @@ $colors: (
   &.transparent {
     background : $white;
     font-weight: bold;
-    color      : $e-font-color;
-
-    & a:not(.e-btn),
-    .e-dropdown {
-      color: $e-font-color;
-    }
+    @extend %dark-color;
     @include desktop {
       background : rgba(255,255,255,.1);
       font-weight: normal;

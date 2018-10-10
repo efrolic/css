@@ -1,5 +1,5 @@
 - name: Alerts
-  category: Components
+  category: Component
   url: /alerts
   bio: "Alerts or dialog boxes inform users about a task,
   the states of the system and the actions of the user,
@@ -10,8 +10,16 @@
   url: /alerts-previews
   bio: "This is a preview of all the alerts that you can create by simply adding classes."
 
+- name: Breadcrumb
+  category: Component
+  url: /breadcrumb
+  bio: "Indicate to the user the location of the current page within a navigation
+  hierarchy that automatically adds separators through CSS. Bread crumbs usually
+  improve the browsing experience and are very useful in projects,
+  which tend to have a large structure such as magazines or documentation."
+
 - name: Buttons
-  category: Components
+  category: Component
   url: /buttons
   bio: "The buttons are one of the most essential elements of our design,
   it is the element with which more users interact."
@@ -22,32 +30,32 @@
   bio: "This is a preview of all the buttons you can create just by adding classes."
 
 - name: Social Buttons
-  category: Components
+  category: Component
   url: /social-buttons
   bio: "The buttons of social networks are important elements to share information about our site,
   It is the way to link with your visitors."
 
 - name: Buttons Group
-  category: Components
+  category: Component
   url: /button-group
   bio: "Groups a series of buttons that are contained in (e-buttons)
   creating new appearances and styles, recommended use for related buttons."
 
 - name: Dropdown
-  category: Components
+  category: Component
   url: /dropdown
   bio: "The famous drop-down options are contextual overlays that can be toggled
   to display lists of links and more."
 
 - name: Navbars
-  category: Components
+  category: Component
   url: /navbars
   bio: "Navigation is a main component for our design,
   It is the element with which our users are guided,
   you have different options in colors, sizes and states."
 
 - name: Notes
-  category: Components
+  category: Component
   url: /notes
   bio: "They inform users about a pending task, system statuses, and user actions."
 
@@ -57,7 +65,7 @@
   bio: "This is a preview of all the notes you can create by simply adding classes."
 
 - name: Tags
-  category: Components
+  category: Component
   url: /tags
   bio: "The small labels that are everywhere leaving hints of information.
   Used for counts and labels in blog, categories among others."

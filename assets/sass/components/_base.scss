@@ -1,14 +1,12 @@
 body,
 html {
-  font-family     : $e-font;
-  min-width       : 320px;
-  padding         : 0;
-  margin          : 0;
-  font-size       : 15px;
-  font-weight     : 400;
-  line-height     : 1.5;
-  text-rendering  : optimizeLegibility;
-  text-size-adjust: 100%;
+  font-family: $e-font;
+  min-width  : 320px;
+  padding    : 0;
+  margin     : 0;
+  font-size  : 15px;
+  font-weight: 400;
+  line-height: 1.5;
   @include tablet {
     font-size: 16px;
   }
@@ -17,9 +15,6 @@ html {
 * {
   box-sizing: border-box;
   word-wrap : break-word;
-  @media only screen and (max-width: 500px) {
-    -webkit-overflow-scrolling: touch;
-  }
 }
 
 img {
@@ -87,7 +82,19 @@ hr {
   will-change     : opacity;
   @extend .eFade;
 }
+
+%background {
+  background-color: $default;
+}
 /* Clase active del menu */
+
 .active {
   background-color: lighten(rgba(0,0,0,0.1),30%) !important;
+}
+
+.e-btn,
+.e-dropdown {
+  user-select: none;
+  color      : $e-font-color;
+  cursor     : pointer;
 }

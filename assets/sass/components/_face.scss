@@ -3,7 +3,7 @@
   display        : flex;
   flex-direction : column;
   justify-content: space-between;
-  background     : $default;
+  @extend %background;
   @extend %bg;
   height         : auto !important;
 
@@ -14,12 +14,7 @@
 
   & .e-nav {
     &.white {
-      color: $e-font-color;
-
-      & a:not(.e-btn),
-      .e-dropdown {
-        color: $e-font-color;
-      }
+      @extend %dark-color;
     }
   }
 }
@@ -32,7 +27,7 @@
   flex-grow  : 1;
   flex-shrink: 0;
   padding    : 1.5rem;
-  align-items: center;
+  text-align : center;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 
   & .e-btn {
@@ -43,7 +38,7 @@
   }
 
   &.centered {
-    text-align: center !important;
+    text-align: center;
   }
 }
 

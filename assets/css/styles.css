@@ -1,5 +1,11 @@
 * {
   transition: width .4s;
+
+}
+@media only screen and (max-width: 500px) {
+  *{
+      -webkit-overflow-scrolling: touch;
+  }
 }
 *::selection {
   background: #f75676;

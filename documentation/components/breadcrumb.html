@@ -1,0 +1,288 @@
+---
+
+layout: default
+
+permalink: /breadcrumb
+
+title: Breadcrumb
+
+description: "Indicate to the user the location of the current page
+within a navigation hierarchy that automatically adds separators through CSS.
+Bread crumbs usually improve the browsing experience and are very useful in projects,
+which tend to have a large structure such as magazines or documentation.
+<br><br>
+Use the class <strong>active</strong> to inform the current page.
+The navigation of internal links will be disabled."
+
+---
+
+<h3 class="code-title">{{page.title}} <span class="e-tag static danger">Component</span></h3>
+<p class="desc">{{page.description}}</p>
+<hr class="hr">
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Example:</h5>
+<div class="e-section">
+  <nav class="e-breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-breadcrumb" aria-label="breadcrumb">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="active"><a href="#" aria-current="page">Support</a></li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+</div>
+
+
+
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Colors</h5>
+<div class="e-section">
+  <nav class="e-breadcrumb primary" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav><br>
+  <nav class="e-breadcrumb success" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+  </nav><br>
+  <nav class="e-breadcrumb danger" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+  </nav><br>
+  <nav class="e-breadcrumb purple" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+  </nav><br>
+  <nav class="e-breadcrumb dark" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+  </nav><br>
+  <nav class="e-breadcrumb green-gradient" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+  </nav><br>
+  <nav class="e-breadcrumb purple-gradient" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+  </nav><br>
+  <nav class="e-breadcrumb blue-gradient" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="e-section">
+{% highlight html %}
+                   <!-- Your color -->
+<nav class="e-breadcrumb primary" aria-label="breadcrumb">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="active"><a href="#" aria-current="page">Support</a></li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+</div>
+
+
+
+
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Styles</h5>
+<hr class="hr">
+<div class="e-section">
+  <h6 class="code-title">Tabs</h6>
+  <p class="desc">The breadcrumb tags do not use color variations.</p>
+  <strong class="code text-sky">Only this color.</strong>
+  <nav class="e-breadcrumb tabs" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-breadcrumb tabs" aria-label="breadcrumb">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="active"><a href="#" aria-current="page">Support</a></li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+</div>
+
+
+
+
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Alignment</h5>
+  <hr class="hr">
+<div class="e-section">
+  <h6 class="code-title">Centered</h6>
+  <nav class="e-breadcrumb centered" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-breadcrumb centered" aria-label="breadcrumb">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="active"><a href="#" aria-current="page">Support</a></li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+
+<div class="e-section">
+  <h6 class="code-title">Align-end</h6>
+
+  <nav class="e-breadcrumb align-end" aria-label="breadcrumb">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-breadcrumb align-end" aria-label="breadcrumb">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="active"><a href="#" aria-current="page">Support</a></li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+<div class="e-section">
+  <h6 class="code-title">Centered</h6>
+
+  <nav class="e-breadcrumb tabs centered" aria-label="breadcrumb">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#" aria-current="page">Support</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-breadcrumb tabs centered" aria-label="breadcrumb">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="active"><a href="#" aria-current="page">Support</a></li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+
+
+
+
+<div class="e-section">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> With Icons</h5>
+<hr class="hr">
+<nav class="e-breadcrumb" aria-label="breadcrumb">
+  <ul>
+    <li><a href="#"><i class="fas fa-home text-danger"></i> Home</a></li>
+    <li><a href="#"><i class="far fa-address-card text-success"></i> About</a></li>
+    <li><a href="#"><i class="fas fa-boxes text-warning"></i> Services</a></li>
+    <li><a href="#"><i class="fas fa-book text-sky"></i> Documentation</a></li>
+    <li class="active"><a href="#" aria-current="page"> <i class="fas fa-business-time text-purple"></i> Support</a></li>
+  </ul>
+</nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-breadcrumb" aria-label="breadcrumb">
+  <ul>
+    <li><a href="#"><i class="fas fa-home text-danger"></i> Home</a></li>
+    <li><a href="#"><i class="far fa-address-card text-success"></i> About</a></li>
+    <li class="active"><a href="#" aria-current="page">
+      <i class="fas fa-business-time text-sky"></i> Support</a>
+    </li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+</div>

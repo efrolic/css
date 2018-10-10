@@ -6,7 +6,7 @@
   min-height     : 3.75rem;
   position       : relative;
   justify-content: space-between;
-  background     : $default;
+  @extend %background;
   color          : $e-font-color;
   @extend .shadow-5;
   padding        : 8px;
@@ -67,7 +67,6 @@
 /***************************************************************
 *                      Full Navbar styles
 ****************************************************************/
-
 .e-nav-full {
   position        : fixed;
   top             : 0;

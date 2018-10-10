@@ -139,6 +139,11 @@
     </a>
   </li>
 
+  <li class="{% if page.permalink == '/breadcrumb' %}active{% endif %}">
+    <a href="{{ site.url }}/breadcrumb"><i class="fas fa-ellipsis-h text-danger"></i> Breadcrumb
+    </a>
+  </li>
+
   <li class="{% if page.permalink == '/buttons' %}active{% endif %}">
     <a href="{{ site.url }}/buttons"><i class="far fa-circle text-purple"></i> Buttons
     </a>

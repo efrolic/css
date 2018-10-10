@@ -1,7 +1,7 @@
 .e-tag {
   display       : inline-flex;
   padding       : 0.25em 0.580em;
-  background    : $default;
+  @extend %background;
   color         : $e-font-color;
   font-size     : 80%;
   letter-spacing: 0.3px;

@@ -83,17 +83,18 @@
   }
 }
 
-.e-col {
+%col {
   width  : 100%;
   padding: 0 0.75rem 0.75rem;
   flex   : 0 0 auto;
   margin : 0 auto;
+}
+
+.e-col {
+  @extend %col;
   @for $i from 1 through 12 {
     &-#{$i} {
-      width  : 100%;
-      padding: 0 0.75rem 0.75rem;
-      flex   : 0 0 auto;
-      margin : 0 auto;
+      @extend %col;
     }
   }
 }

@@ -6,9 +6,7 @@
   display        : inline-block;
   position       : relative;
   padding        : 0.585rem 1.25rem;
-  background     : $default;
-  color          : $e-font-color;
-  user-select    : none;
+  @extend %background;
   white-space    : nowrap;
   justify-content: center;
   align-items    : center;
@@ -18,7 +16,6 @@
   letter-spacing : 0.4px;
   margin         : 0.3rem;
   border-radius  : 0.25rem;
-  cursor         : pointer;
   border         : solid 1px transparent;
   text-decoration: none;
   font-size      : 0.90rem;
@@ -126,7 +123,6 @@
   &.inverted {
     @extend %waves-dark;
     background  : white !important;
-    color       : $e-font-color;
     border-color: rgba(0,0,0,0.1);
     box-shadow  : none;
 

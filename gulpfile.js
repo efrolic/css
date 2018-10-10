@@ -25,7 +25,7 @@ gulp.task('browser-sync', ()=> {
 });
 
 gulp.task('cssmin', ()=> {
-    gulp.src('./assets/css/efroli.css')
+    gulp.src('./assets/css/efrolic.css')
         .pipe(cssmin())
         .pipe(autoprefixer({
           browsers: ['last 2 versions'],
@@ -38,7 +38,7 @@ const route = (['./**/*.html', './assets/css/*.css', './*.json', './assets/js/*.
 
 gulp.task('watch', ()=> {
   gulp.watch([data.scss], ['sass']).on('change', browserSync.reload);
-  gulp.watch(['./assets/css/efroli.css'], ['cssmin']);
+  gulp.watch(['./assets/css/efrolic.css'], ['cssmin']);
   gulp.watch([route]).on('change', browserSync.reload);
 });
 

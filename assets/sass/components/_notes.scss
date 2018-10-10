@@ -1,9 +1,9 @@
 .e-note {
-  background-color: $default;
-  border-radius   : 4px;
-  overflow        : hidden;
-  position        : relative;
-  letter-spacing  : 0.2px;
+  @extend %background;
+  border-radius : 4px;
+  overflow      : hidden;
+  position      : relative;
+  letter-spacing: 0.2px;
 
   & > .note-header > .e-sweep {
     position      : relative;
