@@ -47,7 +47,7 @@
   width: 100% !important;
 }
 @mixin col($e-col) {
-  width: percentage($e-col / 12);
+  max-width: percentage($e-col / 12);
 }
 
 [class*="e-"] {
