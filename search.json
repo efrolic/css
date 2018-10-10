@@ -12,16 +12,6 @@ layout: null
     } {% unless forloop.last %},{% endunless %}
   {% endfor %},
 
-  {% for class in site.data.classes %}
-    {
-      "title"    : "{{ class.name | escape }}",
-      "bio" : "{{ class.bio | strip_html | strip_newlines | escape }}",
-      "category" : "{{class.category}}",
-      "url"      : "{{ site.url }}{{ class.url }}"
-
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %},
-
   {% for nav in site.data.components %}
     {
       "title"    : "{{ nav.name | escape }}",

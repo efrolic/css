@@ -1,9 +1,0 @@
-- name: e-face
-  category: Class
-  url: /face
-  bio: "description desde yml"
-
-- name: e-nav
-  category: Class
-  url: /nav
-  bio: "description desde yml"
