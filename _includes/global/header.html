@@ -204,10 +204,16 @@
     </a>
   </li>
 
-  <li class="{% if page.permalink == '/tags' %}active{% endif %}">
-    <a href="{{ site.url }}/tags"><i class="fas fa-tags text-gray"></i> Tags
+  <li class="{% if page.permalink == '/tabs' %}active{% endif %}">
+    <a href="{{ site.url }}/tabs"><i class="fas fa-thumbtack text-danger"></i> Tabs
     </a>
   </li>
+
+  <li class="{% if page.permalink == '/tags' %}active{% endif %}">
+    <a href="{{ site.url }}/tags"><i class="fas fa-tags text-gray"></i> Tags / Badges
+    </a>
+  </li>
+
 
   <p class="label"><br><strong>Utilities</strong></p>
 

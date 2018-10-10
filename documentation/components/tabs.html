@@ -1,0 +1,133 @@
+---
+
+layout: default
+
+permalink: /tabs
+
+title: Tabs
+
+description: "Tabs are a simple component of simple horizontal response navigation that usually
+tells the user the location of the current page.
+<br><br>
+Use the active class to report the current page. The navigation of the internal links will be disabled."
+
+---
+
+<h3 class="code-title">{{page.title}} <span class="e-tag static danger">Component</span></h3>
+<p class="desc">{{page.description}}</p>
+<hr class="hr">
+
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Tabs Example.</h5>
+<hr class="hr">
+<div class="e-section">
+  <p class="desc">The tabs do not use color variations.</p>
+  <strong class="code text-sky">Only this color.</strong>
+  <nav class="e-tabs">
+    <ul>
+      <li class="active"><a>Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-tabs">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="active">
+      <a href="#">Support</a>
+    </li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+</div>
+
+
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Alignment</h5>
+  <hr class="hr">
+<div class="e-section">
+  <h6 class="code-title">Centered</h6>
+  <nav class="e-tabs centered">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#">Support</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-tabs centered">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="active">
+      <a href="#">Support</a>
+    </li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+
+<div class="e-section">
+  <h6 class="code-title">Align-end</h6>
+
+  <nav class="e-tabs align-end">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Documentation</a></li>
+      <li class="active"><a href="#">Support</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-tabs align-end">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="active">
+      <a href="#">Support</a>
+    </li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+<div class="e-section">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> With Icons</h5>
+<hr class="hr">
+<nav class="e-tabs">
+  <ul>
+    <li><a href="#"><i class="fas fa-home text-danger"></i> Home</a></li>
+    <li><a href="#"><i class="far fa-address-card text-success"></i> About</a></li>
+    <li><a href="#"><i class="fas fa-boxes text-warning"></i> Services</a></li>
+    <li><a href="#"><i class="fas fa-book text-sky"></i> Documentation</a></li>
+    <li class="active"><a href="#"> <i class="fas fa-business-time text-purple"></i> Support</a></li>
+  </ul>
+</nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-tabs">
+  <ul>
+    <li><a href="#"><i class="fas fa-home text-danger"></i> Home</a></li>
+    <li><a href="#"><i class="far fa-address-card text-success"></i> About</a></li>
+    <li class="active"><a href="#">
+      <i class="fas fa-business-time text-sky"></i> Support</a>
+    </li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+</div>

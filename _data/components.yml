@@ -64,7 +64,13 @@
   url: /notes-previews
   bio: "This is a preview of all the notes you can create by simply adding classes."
 
-- name: Tags
+- name: Tabs
+  category: Component
+  url: /tabs
+  bio: "Tabs are a simple component of simple horizontal response navigation that
+  usually tells the user the location of the current page. "
+
+- name: Tags / Badges
   category: Component
   url: /tags
   bio: "The small labels that are everywhere leaving hints of information.

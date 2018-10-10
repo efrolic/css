@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.e-breadcrumb {
+%e-breadcrumb {
   font-size    : 1rem;
   white-space  : nowrap;
   user-select  : none;
@@ -64,36 +64,8 @@
   & span {
     margin-right: 0.5rem;
   }
+}
 
-  &.tabs {
-    & ol,
-    & ul {
-      border-bottom: solid 2px #f5f5f5;
-
-      & li+li::before {
-        content: "";
-      }
-
-      & a {
-        border-bottom : solid 1px #f5f5f5;
-        color         : $gray;
-        margin-bottom : -1px;
-        padding       : 0.5em 1em;
-        vertical-align: top;
-
-        &:hover {
-          text-decoration    : none;
-          color              : $sky;
-          border-bottom-color: $sky;
-        }
-      }
-
-      & li.active a {
-        text-decoration    : none;
-        color              : $primary;
-        border-bottom-color: $primary;
-        font-weight        : bold;
-      }
-    }
-  }
+.e-breadcrumb {
+  @extend %e-breadcrumb;
 }
