@@ -35,6 +35,17 @@
   bio: "The buttons of social networks are important elements to share information about our site,
   It is the way to link with your visitors."
 
+- name: Cards
+  category: Component
+  url: /cards
+  bio: "The cards are one of the containers most used by large companies for their products,
+  including options for headings, development and footer, it is the best way to show content to users."
+
+- name: Cards Previews
+  category: Preview
+  url: /cards-previews
+  bio: "This is a preview of all the cards you can create by simply adding classes."
+
 - name: Buttons Group
   category: Component
   url: /button-group
