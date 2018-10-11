@@ -19,7 +19,7 @@
   border         : solid 1px transparent;
   text-decoration: none;
   font-size      : 0.90rem;
-  transition     : box-shadow 0.18s ease-out, background 0.18s ease-out, color 0.18s ease-out;
+  @extend %transition;
   @extend .shadow;
 
   &.float-left {

@@ -1,13 +1,16 @@
 /******************************************************
 *      Buttons Group
 *******************************************************/
+
 .e-buttons,
+.e-cards,
 .e-drops,
 .e-tags {
   @extend %centered;
   justify-content: flex-start;
 
   & .e-btn:not(:last-child),
+  .e-card:not(:last-child),
   .e-dropdown:not(:last-child),
   .e-tag:not(:last-child) {
     margin-right: 0.5rem;
@@ -15,22 +18,25 @@
 
   &.unified {
     & > .e-btn,
-    .e-dropdown,
-    .e-tag {
+    & > .e-card,
+    & > .e-dropdown,
+    & > .e-tag {
       margin-right: 0;
       margin-left : 0;
     }
 
     & > .e-btn:not(:last-child),
-    .e-dropdown:not(:last-child),
-    .e-tag:not(:last-child) {
+    & > .e-card:not(:last-child),
+    & > .e-dropdown:not(:last-child),
+    & > .e-tag:not(:last-child) {
       border-bottom-right-radius: 0;
       border-top-right-radius   : 0;
     }
 
     & > .e-btn:not(:first-child),
-    .e-dropdown:not(:first-child),
-    .e-tag:not(:first-child) {
+    & > .e-card:not(:first-child),
+    & > .e-dropdown:not(:first-child),
+    & > .e-tag:not(:first-child) {
       border-bottom-left-radius: 0;
       border-top-left-radius   : 0;
     }
@@ -45,11 +51,54 @@
   }
 }
 
+.e-cards {
+  & .e-card {
+    margin-bottom: 0.5rem;
+  }
+}
+
+%flex-grow {
+  @include tablet {
+    flex-grow  : 1;
+    flex-shrink: 1;
+    flex-basis : 0;
+  }
+}
+
+.e-cards.unified {
+  align-items: stretch;
+
+  & .e-card {
+    @extend %flex-grow;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      @extend .shadow-3;
+      cursor: pointer;
+      @extend %transition;
+    }
+  }
+}
+
+.e-cards.deck {
+  align-items: stretch;
+
+  & .e-card {
+    @extend %flex-grow;
+  }
+  @include tablet {
+    .e-card:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
 .e-toolbar {
   @extend %centered;
   justify-content: flex-start;
 
   & .e-buttons,
+  .e-cards,
   .e-drops,
   .e-tags {
     margin-right: 0.55rem;

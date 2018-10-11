@@ -1,1 +1,77 @@
+.e-card {
+  flex-direction: column;
+  border-radius : 0.35rem;
+  font-weight   : 400;
+  overflow      : hidden;
+  box-shadow    : 0 0.5rem 1rem rgba(0,0,0,.15);
+  max-width     : 100%;
+  background    : white;
 
+  &.profile {
+    & .e-card-cover {
+      height  : 120px;
+      overflow: hidden;
+
+      & img {
+        height: auto;
+      }
+    }
+
+    & .e-card-photo {
+      border-radius: 50%;
+      width        : 125px;
+      margin       : -60px auto 0;
+      height       : 125px;
+      background   : #f1f1f1;
+
+      & img {
+        height       : 100%;
+        border       : solid 5px #fff;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+.card-body {
+  flex   : 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color    : inherit;
+  padding  : 0;
+  margin   : 0;
+}
+
+.card-text {
+  color    : inherit;
+  font-size: 0.9rem;
+}
+
+.e-card-cover {
+  background: $default;
+}
+
+.e-cards-mansory {
+  @extend %centered;
+  @include tablet {
+    column-count: 2;
+    column-gap  : 1.25rem;
+    orphans     : 1;
+    widows      : 1;
+    display     : block;
+  }
+  @include desktop {
+    column-count: 3;
+  }
+  @include desktop-plus {
+    column-count: 4;
+  }
+
+  & .e-card {
+    display      : inline-block;
+    margin-bottom: 1rem;
+  }
+}

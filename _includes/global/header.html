@@ -29,6 +29,7 @@
     <a href="{{ site.url }}/documentation" class="e-menu-item no-desktop {% if page.permalink == '/documentation' %}active{% endif %}">
       <i class="fas fa-archive text-sky"></i> Documentation
     </a>
+
     <a href="{{ site.url }}/helpers" class="e-menu-item {% if page.permalink == '/helpers' %}active{% endif %}">
       <i class="far fa-bookmark text-success"></i> News
     </a>
@@ -96,7 +97,7 @@
     </a>
   </li-->
   <li class="{% if page.permalink == '/news' %}active{% endif %}">
-    <a href="{{ site.url }}/news"><i class="far fa-bookmark text-success"></i> See the new
+    <a href="{{ site.url }}/news"><i class="far fa-bookmark text-success"></i> See the news
     </a>
   </li>
 
@@ -166,6 +167,11 @@
 
   <li class="{% if page.permalink == '/cards' %}active{% endif %}">
     <a href="{{ site.url }}/cards"><i class="far fa-id-card text-danger"></i> Cards
+    </a>
+  </li>
+
+  <li class="{% if page.permalink == '/cards-previews' %}active{% endif %}">
+    <a href="{{ site.url }}/cards-previews"><i class="fas fa-desktop text-danger"></i> Cards previews
     </a>
   </li>
 

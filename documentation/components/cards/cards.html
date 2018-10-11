@@ -1,0 +1,781 @@
+---
+
+layout: default
+
+permalink: /cards
+
+title: Cards
+
+description: "The cards are one of the containers most used by large companies for their products,
+including options for headings, development and footer,
+it is the best way to show content to users. The big ones bet on them, they are clear and elegant.
+<br><br>
+Add colors, shadows, components among other utilities."
+
+---
+
+<h3 class="code-title">{{page.title}} <span class="e-tag static danger">Component</span></h3>
+<p class="desc">{{page.description}}</p>
+<hr class="hr">
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Basic example</h5>
+<p class="desc">
+The cards do not have a fixed width, so they will naturally fill the entire
+width of their parent element. You can use the grid system to add a width or customize to your tastes.</p>
+<hr class="hr">
+<div class="e-section">
+  <div class="e-cols align-start">
+    <div class="e-col">
+      <div class="e-card" style="width: 20rem;">
+        <img src="https://bit.ly/2NmBmLy" alt="{{site.title}}">
+        <div class="card-body">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn danger">Button</button>
+          <button class="e-btn inverted plane danger">Button</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  <div class="e-section">
+    <div class="e-col-12">
+{% highlight html %}
+<div class="e-card" style="width: 20rem;">
+  <!--Card image-->
+  <img src="https://bit.ly/2NmBmLy" />
+
+  <!--Card body-->
+  <div class="card-body">
+    <h3 class="card-title">Card Title</h3>
+    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+    <a class="e-btn danger">Button</a>
+    <a class="e-btn plane inverted danger">Button</a>
+  </div>
+</div>
+{% endhighlight %}
+    </div>
+  </div>
+
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Waves effect</h5>
+    <p>You can customize the cards with the wave effect to give a better experience.</p>
+    <p>Use: <strong class="code">e-waves</strong></p>
+    <hr class="hr">
+    <div class="e-card e-waves" style="width:20rem;">
+      <img src="https://bit.ly/2MLIEmM" alt="{{site.title}}">
+      <div class="card-body">
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+        <button class="e-btn purple">Button</button>
+        <button class="e-btn inverted plane purple">Button</button>
+      </div>
+    </div>
+
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<div class="e-card e-waves" style="width: 20rem;">
+  <!--Card image-->
+  <img src="https://bit.ly/2MLIEmM" />
+
+  <!--Card body-->
+  <div class="card-body">
+    <h3 class="card-title">Card Title</h3>
+    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+    <a class="e-btn purple">Button</a>
+    <a class="e-btn plane inverted purple">Button</a>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+</div>
+<div class="container-white">
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Profile card</h5>
+    <p>This is a business card, by default it will look like this you can add images or colors</p>
+    <hr class="hr">
+<div class="e-container">
+  <div class="e-cards between">
+
+  <div class="e-card profile" style="width:20rem;">
+    <div class="e-card-cover primary"></div>
+    <div class="e-card-photo">
+      <img src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="{{site.description}}">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title text-center text-dark">Efrain Peralta</h3>
+      <p class="card-text text-center"><small>58.9k followers</small></p>
+      <hr>
+      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+      <button class="e-btn fullwidth primary">Follow</button>
+    </div>
+  </div>
+
+
+  <div class="e-card profile" style="width:20rem;">
+    <div class="e-card-cover">
+      <img src="https://bit.ly/2CbPhNV" alt="{{site.title}}{{site.subtitle}}">
+    </div>
+    <div class="e-card-photo">
+      <img src="https://bit.ly/2PulhQX" alt="{{site.description}}">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title text-center text-dark">Efrain Peralta</h3>
+      <p class="card-text text-center"><small>58.9k followers</small></p>
+      <hr>
+      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+      <button class="e-btn fullwidth danger">Follow</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="e-cols">
+<div class="e-col-6">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> With color</h6>
+{% highlight html %}
+<div class="e-card profile" style="width:20rem;">
+                      <!-- Your color -->
+  <div class="e-card-cover primary">
+    <!-- Or image, <img src="..." alt="" -->
+  </div>
+  <div class="e-card-photo">
+    <img src="..." alt="">
+  </div>
+  <div class="card-body">
+    <h3 class="card-title text-center text-dark">Efrain Peralta</h3>
+    <p class="card-text text-center"><small>58.9k followers</small></p>
+    <hr>
+    <p class="card-text text-center">Lorem ipsum dolor sit amet.</p>
+    <a class="e-btn fullwidth primary">Follow</a>
+  </div>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-col-6">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> With image</h6>
+{% highlight html %}
+<div class="e-card profile" style="width:20rem;">
+  <div class="e-card-cover">
+    <img src="https://bit.ly/2RKe9kO" />
+  </div>
+  <div class="e-card-photo">
+    <img src="https://bit.ly/2PulhQX" />
+  </div>
+  <div class="card-body">
+    <h3 class="card-title text-center text-dark">Efrain Peralta</h3>
+    <p class="card-text text-center"><small>58.9k followers</small></p>
+    <hr>
+    <p class="card-text text-center">Lorem ipsum dolor sit amet.</p>
+    <a class="e-btn fullwidth purple">Follow</a>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+<br>
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Combinations</h6>
+<br>
+
+<div class="e-cols">
+  <div class="e-col">
+  <div class="e-card profile">
+    <div class="e-card-cover danger"></div>
+    <div class="e-card-photo">
+      <img src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="{{site.description}}">
+    </div>
+    <div class="e-buttons centered">
+      <button class="e-btn plane inverted danger">Perfil</button>
+      <button class="e-btn plane inverted danger"><span class="e-tag danger">524.2k</span> Followers</button>
+      <button class="e-btn plane inverted danger"><span class="e-tag danger">104.8k</span> Following</button>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title text-center text-dark">Efrain Peralta <span class="e-tag static">Followed</span> </h3>
+      <p class="card-text text-center"><small>558.9k followers</small></p>
+      <hr>
+      <img src="https://bit.ly/2RKe9kO" />
+      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+      <button class="e-btn fullwidth inverted danger">Like</button>
+      <button class="e-btn fullwidth danger">Unfollow</button>
+    </div>
+  </div>
+</div>
+
+  <div class="e-col">
+  <div class="e-card profile">
+    <div class="e-card-cover primary"></div>
+    <div class="e-card-photo">
+      <img src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="{{site.description}}">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title text-center text-dark">Efrain Peralta <span class="e-tag static">Followed</span> </h3>
+      <p class="card-text text-center"><small>558.9k followers</small></p>
+      <hr>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+
+      <img src="https://bit.ly/2RKe9kO" />
+      <div class="e-buttons between">
+        <button class="e-btn plane inverted primary">Like</button>
+        <button class="e-btn plane inverted primary">Comment</button>
+        <button class="e-btn plane inverted primary">Share</button>
+        <button class="e-btn plane inverted primary">Unfollow</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-card profile">
+  <div class="e-card-cover danger"></div>
+  <div class="e-card-photo">
+    <img src="...">
+  </div>
+  <div class="e-buttons centered">
+    <a class="e-btn plane inverted danger">Perfil</a>
+    <a class="e-btn plane inverted danger"><span class="e-tag danger">524.2k</span> Followers</a>
+    <a class="e-btn plane inverted danger"><span class="e-tag danger">104.8k</span> Following</a>
+  </div>
+  <div class="card-body">
+    <h3 class="card-title text-center text-dark">Efrain Peralta <span class="e-tag static">Followed</span></h3>
+    <p class="card-text text-center"><small>558.9k followers</small></p>
+    <hr>
+    <img src="https://bit.ly/2RKe9kO" />
+    <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <a class="e-btn fullwidth inverted danger">Like</a>
+    <a class="e-btn fullwidth danger">Unfollow</a>
+  </div>
+</div>
+
+<div class="e-card profile">
+  <div class="e-card-cover primary"></div>
+  <div class="e-card-photo">
+    <img src="...">
+  </div>
+  <div class="card-body">
+    <h3 class="card-title text-center text-dark">Efrain Peralta <span class="e-tag static">Followed</span></h3>
+    <p class="card-text text-center"><small>558.9k followers</small></p>
+    <hr>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <img src="https://bit.ly/2RKe9kO" />
+    <div class="e-buttons between">
+      <a class="e-btn plane inverted primary">Like</a>
+      <a class="e-btn plane inverted primary">Comment</a>
+      <a class="e-btn plane inverted primary">Share</a>
+      <a class="e-btn plane inverted primary">Unfollow</a>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+</div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Colors</h5>
+<hr class="hr">
+<div class="e-cards centered">
+  <div class="e-card primary" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn transparent">Button</a>
+    </div>
+  </div>
+  <div class="e-card success" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn transparent">Button</a>
+    </div>
+  </div>
+  <div class="e-card danger" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn transparent">Button</a>
+    </div>
+  </div>
+  <div class="e-card warning" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn inverted">Button</a>
+    </div>
+  </div>
+  <div class="e-card sky" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn transparent">Button</a>
+    </div>
+  </div>
+  <div class="e-card purple" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn transparent">Button</a>
+    </div>
+  </div>
+  <div class="e-card white" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn primary">Button</a>
+    </div>
+  </div>
+  <div class="e-card gray" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn transparent">Button</a>
+    </div>
+  </div>
+  <div class="e-card dark" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn transparent">Button</a>
+    </div>
+  </div>
+  <div class="e-card green-gradient" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn transparent">Button</a>
+    </div>
+  </div>
+  <div class="e-card purple-gradient" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn transparent">Button</a>
+    </div>
+  </div>
+  <div class="e-card blue-gradient" style="width: 20rem;">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+      <a class="e-btn transparent">Button</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="e-section">
+{% highlight html %}
+              <!-- Your color -->
+<div class="e-card primary" style="width: 20rem;">
+  <div class="card-body">
+    <h3 class="card-title">Card Title</h3>
+    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+    <a class="e-btn transparent">Button</a>
+  </div>
+</div>
+{% endhighlight %}
+</div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Card groups</h5>
+    <p>Use the groups of cards to create related cards or lists of products or prices,
+       the groups cards take the same horizontal and vertical
+       size and are shaded when doing hovering over them, you can eliminate
+       shadows by using the corresponding class.</p>
+       <p>Use: <strong class="code">e-cards unified</strong> </p>
+    <hr class="hr">
+    <div class="e-cards unified centered">
+      <div class="e-card profile">
+        <div class="e-card-cover warning"></div>
+        <div class="e-card-photo">
+          <img src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="{{site.description}}">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title text-center text-dark">Efrain Peralta</h3>
+
+          <div class="e-tags unified centered">
+            <span class="e-tag warning">58.9k</span>
+            <span class="e-tag white shadow">followers</span>
+          </div>
+          <hr>
+          <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn fullwidth warning">Follow</button>
+        </div>
+      </div>
+      <div class="e-card profile">
+        <div class="e-card-cover primary">
+        </div>
+        <div class="e-card-photo">
+          <img src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="{{site.description}}">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title text-center text-dark">Efrain Peralta</h3>
+          <div class="e-tags unified centered">
+            <span class="e-tag primary">72.2k</span>
+            <span class="e-tag white shadow">followers</span>
+          </div>
+          <hr>
+          <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn fullwidth primary">Follow</button>
+        </div>
+      </div>
+      <div class="e-card profile">
+        <div class="e-card-cover success"></div>
+        <div class="e-card-photo">
+          <img src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="{{site.description}}">
+        </div>
+        <div class="card-body">
+          <div class="e-tags centered">
+            <span class="e-tag danger">New</span>
+            <span class="e-tag sky">New</span>
+            <span class="e-tag purple">New</span>
+            <span class="e-tag warning">New</span>
+          </div>
+          <h3 class="card-title text-center text-dark">Efrain Peralta</h3>
+          <p class="card-text text-center"><small>58.9k followers</small></p>
+          <hr>
+          <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn fullwidth success">Follow</button>
+        </div>
+      </div>
+      <div class="e-card profile">
+        <div class="e-card-cover danger"></div>
+        <div class="e-card-photo">
+          <img src="https://image.flaticon.com/icons/png/512/147/147144.png" alt="{{site.description}}">
+        </div>
+        <div class="card-body">
+          <h3 class="card-title text-center text-dark">Efrain Peralta <span class="e-tag static primary">Follow</span></h3>
+          <p class="card-text text-center"><small>58.9k followers</small></p>
+          <hr>
+          <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+          <button class="e-btn fullwidth danger">Follow</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<div class="e-cards unified centered">
+  <div class="e-card profile">
+    <div class="e-card-cover warning"></div>
+    <div class="e-card-photo">
+      <img src="..." alt="">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title text-center text-dark">Efrain Peralta</h3>
+      <div class="e-tags unified centered">
+        <span class="e-tag warning">58.9k</span>
+        <span class="e-tag white shadow">followers</span>
+      </div>
+      <hr>
+      <p class="card-text text-center">Lorem ipsum dolor sit amet.</p>
+      <a class="e-btn fullwidth warning">Follow</a>
+    </div>
+  </div>
+  <div class="e-card profile">
+    <div class="e-card-cover primary">
+    </div>
+    <div class="e-card-photo">
+      <img src="..." alt="">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title text-center text-dark">Efrain Peralta</h3>
+      <div class="e-tags unified centered">
+        <span class="e-tag primary">72.2k</span>
+        <span class="e-tag white shadow">followers</span>
+      </div>
+      <hr>
+      <p class="card-text text-center">Lorem ipsum dolor sit amet.</p>
+      <a class="e-btn fullwidth primary">Follow</a>
+    </div>
+  </div>
+  <div class="e-card profile">
+    <div class="e-card-cover success"></div>
+    <div class="e-card-photo">
+      <img src="..." alt="">
+    </div>
+    <div class="card-body">
+      <div class="e-tags centered">
+        <span class="e-tag danger">New</span>
+        <span class="e-tag sky">New</span>
+        <span class="e-tag purple">New</span>
+        <span class="e-tag warning">New</span>
+      </div>
+      <h3 class="card-title text-center text-dark">Efrain Peralta</h3>
+      <p class="card-text text-center"><small>58.9k followers</small></p>
+      <hr>
+      <p class="card-text text-center">Lorem ipsum dolor sit ametne.</p>
+      <a class="e-btn fullwidth success">Follow</a>
+    </div>
+  </div>
+  <div class="e-card profile">
+    <div class="e-card-cover danger"></div>
+    <div class="e-card-photo">
+      <img src="..." alt="">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title text-center text-dark">Efrain Peralta
+        <span class="e-tag static primary">Follow</span>
+      </h3>
+      <p class="card-text text-center"><small>58.9k followers</small></p>
+      <hr>
+      <p class="card-text text-center">Lorem ipsum dolor sit ametnec.</p>
+      <a class="e-btn fullwidth danger">Follow</a>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Card mansory</h5>
+    <p>Create a style of type <strong>Mansory</strong> with this container, the cards can be organized in
+       columns similar to Freemasonry with only CSS, even though it is not a <strong>Mansory</strong>
+       as with Javascript, Cards are ordered from top to bottom and left to the right.</p>
+    <p>Use: <strong class="code">e-cards-mansory</strong></p>
+    <div class="e-note warning">
+      <div class="note-header">
+        Warning
+      </div>
+      <div class="note-body">
+        This container is similar to <a href="https://masonry.desandro.com/" target="_blank"><strong class=" e- text-danger">Mansory</strong></a> but not in its entirety,
+        the cards are aligned differently from top to bottom and from left to right.
+      </div>
+    </div>
+    <br>
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Responsive breakpoints</h5>
+    <div class="e-note block primary">
+      <div class="note-body">
+        <p>In <strong>smartphones</strong> from 320px to 767px: <strong class="code">1 column</strong></p>
+        <p>In <strong>tablets</strong> from 768px to 1023px: <strong class="code">2 column</strong></p>
+        <p>In <strong>Desktop</strong> from 1024px to 1366px: <strong class="code">3 column</strong></p>
+        <p>In <strong>Desktop-plus</strong> from 1366px and up: <strong class="code">4 column</strong></p>
+      </div>
+    </div>
+    <hr class="hr">
+    <div class="e-cards-mansory">
+      <div class="e-card">
+        <img src="{{site.url}}/assets/images/290x200.png" alt="{{site.title}}">
+        <div class="card-body">
+          <h3 class="card-title text-primary">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn primary">Button</button>
+          <button class="e-btn inverted plane primary">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <img src="{{site.url}}/assets/images/290x200.png" alt="{{site.title}}">
+        <div class="card-body">
+          <h3 class="card-title text-success">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn success">Button</button>
+          <button class="e-btn inverted plane success">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <div class="card-body">
+          <h3 class="card-title text-danger">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn fullwidth danger">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <div class="card-body">
+          <h3 class="card-title text-purple">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn fullwidth purple">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <img src="{{site.url}}/assets/images/290x200.png" alt="{{site.title}}">
+        <div class="card-body">
+          <h3 class="card-title text-sky">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn sky">Button</button>
+          <button class="e-btn inverted plane sky">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <div class="card-body">
+          <h3 class="card-title text-purple">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn fullwidth purple">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <div class="card-body">
+          <h3 class="card-title">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn fullwidth dark">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <img src="{{site.url}}/assets/images/290x200.png" alt="{{site.title}}">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+        </div>
+      </div>
+      <div class="e-card">
+        <div class="card-body">
+          <h3 class="card-title">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn fullwidth primary">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <div class="card-body">
+          <h3 class="card-title text-purple">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn fullwidth purple">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <div class="card-body">
+          <h3 class="card-title text-purple">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn fullwidth purple">Button</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<div class="e-cards-mansory">
+  <div class="e-card">
+    <img src="..." alt="...">
+    <div class="card-body">
+      <h3 class="card-title text-primary">Card deck</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <a class="e-btn primary">Button</a>
+    </div>
+  </div>
+  <div class="e-card">
+    <div class="card-body">
+      <h3 class="card-title text-danger">Card deck</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <a class="e-btn fullwidth danger">Button</a>
+    </div>
+  </div>
+  <div class="e-card">
+    <img src="..." alt="...">
+    <div class="card-body">
+      <h3 class="card-title text-sky">Card deck</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <a class="e-btn sky">Button</a>
+      <a class="e-btn inverted plane sky">Button</a>
+    </div>
+  </div>
+  <div class="e-card">
+    <div class="card-body">
+      <h3 class="card-title text-purple">Card deck</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <a class="e-btn fullwidth purple">Button</a>
+    </div>
+  </div>
+  <div class="e-card">
+    <img src="..." alt="...">
+    <div class="card-body">
+      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+  <div class="e-card">
+    <div class="card-body">
+      <h3 class="card-title text-purple">Card deck</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <a class="e-btn fullwidth purple">Button</a>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Card decks</h5>
+    <p>The class <strong>deck</strong> organizes the cards like <strong>unified</strong> making
+    them have a same size of width and height, differentiated in that this container does not
+    join them and maintain a spacing between each one.</p>
+    <p>Use: <strong class="code">e-cards deck</strong></p>
+    <hr class="hr">
+    <div class="e-cards deck">
+      <div class="e-card">
+        <img src="{{site.url}}/assets/images/290x200.png" alt="{{site.title}}">
+        <div class="card-body">
+          <div class="e-tags">
+            <span class="e-tag danger">New</span>
+            <span class="e-tag sky">New</span>
+            <span class="e-tag purple">New</span>
+          </div>
+
+          <h3 class="card-title">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn danger">Button</button>
+          <button class="e-btn inverted plane danger">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <img src="{{site.url}}/assets/images/290x200.png" alt="{{site.title}}">
+        <div class="card-body">
+          <h3 class="card-title">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn danger">Button</button>
+          <button class="e-btn inverted plane danger">Button</button>
+        </div>
+      </div>
+      <div class="e-card">
+        <img src="{{site.url}}/assets/images/290x200.png" alt="{{site.title}}">
+        <div class="card-body">
+          <h3 class="card-title">Card deck</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. </p>
+          <button class="e-btn danger">Button</button>
+          <button class="e-btn inverted plane danger">Button</button>
+        </div>
+      </div>
+    </div>
+    <div class="e-section">
+{% highlight html %}
+<div class="e-cards deck">
+  <div class="e-card">
+    <img src="..." alt="...">
+    <div class="card-body">
+      <h3 class="card-title">Card deck</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <a class="e-btn danger">Button</a>
+    </div>
+  </div>
+  <div class="e-card">
+    <img src="..." alt="...">
+    <div class="card-body">
+      <h3 class="card-title">Card deck</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <a class="e-btn danger">Button</a>
+    </div>
+  </div>
+  <div class="e-card">
+    <img src="..." alt="...">
+    <div class="card-body">
+      <h3 class="card-title">Card deck</h3>
+      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <a class="e-btn danger">Button</a>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+    </div>
+  </div>
+</div>

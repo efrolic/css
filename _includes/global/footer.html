@@ -53,9 +53,10 @@
         <div class="e-col">
           <h5>See the news</h5>
           <ul>
-            <li><a class="link">news 1</a></li>
-            <li><a class="link">news 2</a></li>
-            <li><a class="link">news 3</a></li>
+            {% for post in site.posts | limit: 5 %}
+            <li><a href="{{site.url}}{{post.url}}">{{post.title}}</a></li>
+            {% endfor %}
+            <li><a href="{{site.url}}/news"><small>View all news</small></a></li>
           </ul>
         </div>
         <div class="e-col no-mobile">
