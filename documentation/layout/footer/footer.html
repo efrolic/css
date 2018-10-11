@@ -1,0 +1,1125 @@
+---
+layout: default
+
+permalink: /footer
+
+title: Footer
+
+description: "Footer is a section of our page that is generally used as
+an additional navigation for the website. The container footer can contain
+links, buttons, company information, copyright and many other elements.
+<br><br>
+We use the grid system to create the content of our footer and other components."
+---
+
+<h3 class="code-title">{{ page.title }} <span class="e-tag static danger">Layout</span></h3>
+<p class="desc">{{ page.description }}</p>
+<hr class="hr">
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Footer Example:</h5>
+<p class="desc">
+The default footer takes the background color based on the background of the body of your website,
+ie if your site has the color body (Blue) the footer takes a slightly stronger tone of the same blue.
+<br><br>
+You can also add colors from our palette.</p>
+<div class="e-section">
+  <footer class="e-footer">
+    <div class="e-container">
+    <div class="e-section">
+    <div class="e-cols">
+      <div class="e-col-5">
+        <h4>Footer Content</h4>
+        <p class="look">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="e-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#!">Service 1</a></li>
+          <li><a href="#!">Service 2</a></li>
+          <li><a href="#!">Service 3</a></li>
+          <li><a href="#!">Service 4</a></li>
+        </ul>
+      </div>
+      <div class="e-col">
+        <h5>Products</h5>
+        <ol>
+          <li><a href="#!">Product 1</a></li>
+          <li><a href="#!">Product 2</a></li>
+          <li><a href="#!">Product 3</a></li>
+          <li><a href="#!">Product 4</a></li>
+        </ol>
+      </div>
+    </div>
+    </div>
+    </div>
+  <div class="e-footer-bar">
+  <p>© 2018 Copyright: <a class="link" href="{{site.url}}"> eFrolicss.com</a></p>
+  </div>
+  </footer>
+</div>
+<div class="e-section">
+{% highlight html %}
+<footer class="e-footer">
+  <div class="e-container"><!-- Or e-container-fluid -->
+    <div class="e-section"><!-- Optional -->
+      <div class="e-cols">
+        <div class="e-col-5">
+          <h4>Footer Content</h4>
+          <p class="look">Your text...</p>
+        </div>
+        <div class="e-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a>Link 1</a></li>
+            <li><a>Link 2</a></li>
+          </ul>
+        </div>
+        <div class="e-col">
+          <h5>Products</h5>
+          <ol>
+            <li><a>Link 1</a></li>
+            <li><a>Link 2</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="e-footer-bar">
+    <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+  </div>
+</footer>
+{% endhighlight %}
+</div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Footer-bar</h5>
+    <p class="desc">The footer-bar is an element of the footer container, used for
+    copyrights, buttons, breadcrumb, among other components.</p>
+    <div class="e-footer-bar">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small primary"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small sky"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small danger"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<div class="e-footer-bar">
+  <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+  <div class="e-buttons">
+    <a class="e-btn circle small primary"><i class="fab fa-facebook-f"></i></a>
+    <a class="e-btn circle small sky"><i class="fab fa-twitter"></i></a>
+    <a class="e-btn circle small danger"><i class="fab fa-google"></i></a>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+
+
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Alignment</h5><br>
+    <h6 class="code-title">Centered</h6>
+    <div class="e-footer-bar centered">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small primary"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small sky"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small danger"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<div class="e-footer-bar centered">
+Your content...
+</div>
+{% endhighlight %}
+  </div>
+
+  <div class="e-section">
+    <h6 class="code-title">Align-end</h6>
+    <div class="e-footer-bar align-end">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small primary"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small sky"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small danger"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<div class="e-footer-bar align-end">
+Your content...
+</div>
+{% endhighlight %}
+  </div>
+  <div class="e-section">
+    <h6 class="code-title">Between</h6>
+    <div class="e-footer-bar between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small primary"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small sky"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small danger"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<div class="e-footer-bar between">
+Your content...
+</div>
+{% endhighlight %}
+  </div>
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Colors</h5><br>
+    <div class="e-footer-bar primary between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small transparent"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+    <div class="e-footer-bar danger between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small transparent"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+    <div class="e-footer-bar success between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small transparent"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+    <div class="e-footer-bar warning between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small transparent"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+    <div class="e-footer-bar purple-gradient between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small transparent"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+    <div class="e-footer-bar green-gradient between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small transparent"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+    <div class="e-footer-bar blue-gradient between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+         <div class="e-buttons">
+           <button class="e-btn circle small transparent"><i class="fab fa-facebook-f"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-twitter"></i></button>
+           <button class="e-btn circle small transparent"><i class="fab fa-google"></i></button>
+         </div>
+    </div>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+                <!-- Your color -->
+<div class="e-footer-bar primary">
+Your content...
+</div>
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Footer examples.</h5>
+    <br>
+    <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Links</h6>
+    <br>
+    <footer class="e-footer primary">
+      <div class="e-container-fluid"><!-- Or e-container-fluid -->
+          <div class="e-cols">
+            <div class="e-col">
+              <h5>Links</h5>
+              <ul>
+                <li><a href="#!">Link 1</a></li>
+                <li><a href="#!">Link 2</a></li>
+                <li><a href="#!">Link 3</a></li>
+                <li><a href="#!">Link 4</a></li>
+              </ul>
+            </div>
+            <div class="e-col">
+              <h5>Links</h5>
+              <ul>
+                <li><a class="link" href="#!">Link 1</a></li>
+                <li><a class="link" href="#!">Link 2</a></li>
+                <li><a class="link" href="#!">Link 3</a></li>
+                <li><a class="link" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+            <div class="e-col">
+              <h5>Links</h5>
+              <ol>
+                <li><a href="#!">Link 1</a></li>
+                <li><a href="#!">Link 2</a></li>
+                <li><a href="#!">Link 3</a></li>
+                <li><a href="#!">Link 4</a></li>
+              </ol>
+            </div>
+            <div class="e-col">
+              <h5>Links</h5>
+              <ol>
+                <li><a class="link" href="#!">Link 1</a></li>
+                <li><a class="link" href="#!">Link 2</a></li>
+                <li><a class="link" href="#!">Link 3</a></li>
+                <li><a class="link" href="#!">Link 4</a></li>
+              </ol>
+            </div>
+        </div>
+      </div>
+      <div class="e-footer-bar between">
+        <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+        <div class="e-buttons">
+          <button class="e-btn circle small transparent"><i class="fab fa-facebook-f"></i></button>
+          <button class="e-btn circle small transparent"><i class="fab fa-twitter"></i></button>
+          <button class="e-btn circle small transparent"><i class="fab fa-google"></i></button>
+        </div>
+      </div>
+    </footer><br>
+    <footer class="e-footer danger">
+      <div class="e-container-fluid"><!-- Or e-container-fluid -->
+          <div class="e-cols">
+            <div class="e-col">
+              <h5>Links</h5>
+              <ul>
+                <li><a href="#!">Link 1</a></li>
+                <li><a href="#!">Link 2</a></li>
+                <li><a href="#!">Link 3</a></li>
+                <li><a href="#!">Link 4</a></li>
+              </ul>
+            </div>
+            <div class="e-col">
+              <h5>Links</h5>
+              <ul>
+                <li><a class="link" href="#!">Link 1</a></li>
+                <li><a class="link" href="#!">Link 2</a></li>
+                <li><a class="link" href="#!">Link 3</a></li>
+                <li><a class="link" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+            <div class="e-col">
+              <h5>Links</h5>
+              <ol>
+                <li><a href="#!">Link 1</a></li>
+                <li><a href="#!">Link 2</a></li>
+                <li><a href="#!">Link 3</a></li>
+                <li><a href="#!">Link 4</a></li>
+              </ol>
+            </div>
+            <div class="e-col">
+              <h5>Links</h5>
+              <ol>
+                <li><a class="link" href="#!">Link 1</a></li>
+                <li><a class="link" href="#!">Link 2</a></li>
+                <li><a class="link" href="#!">Link 3</a></li>
+                <li><a class="link" href="#!">Link 4</a></li>
+              </ol>
+            </div>
+        </div>
+      </div>
+      <div class="e-footer-bar between">
+        <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+        <div class="e-buttons">
+          <button class="e-btn circle small transparent"><i class="fab fa-facebook-f"></i></button>
+          <button class="e-btn circle small transparent"><i class="fab fa-twitter"></i></button>
+          <button class="e-btn circle small transparent"><i class="fab fa-google"></i></button>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="e-section">
+  {% highlight html %}
+  <footer class="e-footer primary">
+    <div class="e-container-fluid">
+      <div class="e-cols">
+        <div class="e-col">
+          <h5>Links</h5>
+          <ul>
+            <li><a class="link">Link 1</a></li>
+            <li><a class="link">Link 2</a></li>
+          </ul>
+        </div>
+        <div class="e-col">
+          <h5>Links</h5>
+          <ul>
+            <li><a class="link">Link 1</a></li>
+            <li><a class="link">Link 2</a></li>
+          </ul>
+        </div>
+        <div class="e-col">
+          <h5>Links</h5>
+          <ol>
+            <li><a class="link">Link 1</a></li>
+            <li><a class="link">Link 2</a></li>
+          </ol>
+        </div>
+        <div class="e-col">
+          <h5>Links</h5>
+          <ol>
+            <li><a class="link">Link 1</a></li>
+            <li><a class="link">Link 2</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="e-footer-bar between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+      <div class="e-buttons">
+        <a class="e-btn circle small transparent"><i class="fab fa-facebook-f"></i></a>
+        <a class="e-btn circle small transparent"><i class="fab fa-twitter"></i></a>
+        <a class="e-btn circle small transparent"><i class="fab fa-google"></i></a>
+      </div>
+    </div>
+  </footer>
+  {% endhighlight %}
+  </div>
+
+  <div class="e-section">
+      <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Combinations</h6>
+      <br>
+
+<div class="e-footer-bar purple-gradient between">
+  <h4>Logo</h4>
+  <div class="e-buttons">
+    <a class="e-btn circle small shadow-6 primary"><i class="fab fa-facebook-f"></i></a>
+    <a class="e-btn circle small shadow-6 sky"><i class="fab fa-twitter"></i></a>
+    <a class="e-btn circle small shadow-6 danger"><i class="fab fa-google"></i></a>
+  </div>
+</div>
+<footer class="e-footer dark">
+  <div class="e-container-fluid">
+    <!-- Or e-container-fluid -->
+    <div class="e-section">
+      <!-- Optional -->
+      <div class="e-cols">
+        <div class="e-col-5">
+          <h4>Footer Content</h4>
+          <p class="look">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="e-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#!">Link 1</a></li>
+            <li><a href="#!">Link 2</a></li>
+            <li><a href="#!">Link 3</a></li>
+          </ul>
+        </div>
+        <div class="e-col">
+          <h5>Products</h5>
+          <ol>
+            <li><a href="#!">Link 1</a></li>
+            <li><a href="#!">Link 2</a></li>
+            <li><a href="#!">Link 3</a></li>
+          </ol>
+        </div>
+        <div class="e-col">
+          <h5>Products</h5>
+          <ol>
+            <li><a href="#!">Link 1</a></li>
+            <li><a href="#!">Link 2</a></li>
+            <li><a href="#!">Link 3</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="e-section">
+      <div class="e-container centered">
+        <hr class="hr">
+        <h3>Newsletter
+          <span class="e-tag transparent static">Releases</span>
+          <span class="e-tag transparent static">Features</span>
+          <span class="e-tag transparent static">stay in the loop!</span> </h3>
+        <div class="e-col-12 centered">
+          <a href="#" class="e-btn rounded purple-gradient shadow-6"> Subscribe now!</a>
+        </div>
+        <hr class="hr">
+      </div>
+    </div>
+  </div>
+  <div class="e-footer-bar between">
+    <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+    <nav class="e-breadcrumb" aria-label="breadcrumb">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li class="active"><a href="#" aria-current="page">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<div class="e-footer-bar purple-gradient between">
+  <h4>Logo</h4>
+  <div class="e-buttons">
+    <a class="e-btn circle small primary"><i class="fab fa-facebook-f"></i></a>
+    <a class="e-btn circle small sky"><i class="fab fa-twitter"></i></a>
+    <a class="e-btn circle small danger"><i class="fab fa-google"></i></a>
+  </div>
+</div>
+<footer class="e-footer dark">
+  <div class="e-container-fluid">
+    <div class="e-section">
+      <div class="e-cols">
+        <div class="e-col-5">
+          <h4>Footer Content</h4>
+          <p class="look">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="e-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#!">Link 1</a></li>
+            <li><a href="#!">Link 2</a></li>
+          </ul>
+        </div>
+        <div class="e-col">
+          <h5>Products</h5>
+          <ol>
+            <li><a href="#!">Link 1</a></li>
+            <li><a href="#!">Link 2</a></li>
+          </ol>
+        </div>
+        <div class="e-col">
+          <h5>Products</h5>
+          <ol>
+            <li><a href="#!">Link 1</a></li>
+            <li><a href="#!">Link 2</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="e-section">
+      <div class="e-container centered">
+        <hr class="hr">
+        <h3>Newsletter
+          <span class="e-tag transparent static">Releases</span>
+          <span class="e-tag transparent static">Features</span>
+          <span class="e-tag transparent static">stay in the loop!</span> </h3>
+        <div class="e-col-12 centered">
+          <a href="#" class="e-btn rounded purple-gradient"> Subscribe now!</a>
+        </div>
+        <hr class="hr">
+      </div>
+    </div>
+  </div>
+  <div class="e-footer-bar between">
+    <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+    <nav class="e-breadcrumb" aria-label="breadcrumb">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="active"><a aria-current="page">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+{% endhighlight %}
+  </div>
+
+<div class="e-section">
+<footer class="e-footer warning">
+  <div class="e-container-fluid">
+    <div class="e-cols">
+      <div class="e-col-4">
+        <h4>Footer Content</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Fugit amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum.</p>
+      </div>
+      <div class="e-col">
+        <h5>Links</h5>
+        <ul>
+          <li><a class="link">Link 1</a></li>
+          <li><a class="link">Link 2</a></li>
+          <li><a class="link">Link 3</a></li>
+          <li><a class="link">Link 4</a></li>
+        </ul>
+      </div>
+      <div class="e-col">
+        <h5>Links</h5>
+        <ul>
+          <li><a class="link">Link 1</a></li>
+          <li><a class="link">Link 2</a></li>
+          <li><a class="link">Link 3</a></li>
+          <li><a class="link">Link 4</a></li>
+        </ul>
+      </div>
+      <div class="e-col">
+        <h5>Links</h5>
+        <ol>
+          <li><a class="link">Link 1</a></li>
+          <li><a class="link">Link 2</a></li>
+          <li><a class="link">Link 3</a></li>
+          <li><a class="link">Link 4</a></li>
+        </ol>
+      </div>
+      <div class="e-col no-mobile">
+        <h5 class="text-center">Links</h5>
+        <div class="e-buttons centered">
+          <a class="e-btn circle small shadow-6 inverted primary"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="e-buttons centered">
+          <a class="e-btn circle small shadow-6 inverted sky"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="e-buttons centered">
+          <a class="e-btn circle small shadow-6 inverted danger"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="e-footer-bar between">
+    <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+    <div class="e-buttons no-desktop">
+      <a class="e-btn circle small shadow-6 inverted primary"><i class="fab fa-facebook-f"></i></a>
+      <a class="e-btn circle small shadow-6 inverted sky"><i class="fab fa-twitter"></i></a>
+      <a class="e-btn circle small shadow-6 inverted danger"><i class="fab fa-google"></i></a>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+<div class="e-section">
+ {% highlight html %}
+<footer class="e-footer warning">
+  <div class="e-container-fluid">
+    <div class="e-cols">
+      <div class="e-col-4">
+        <h4>Footer Content</h4>
+        <p>Your text...</p>
+      </div>
+      <div class="e-col">
+        <h5>Links</h5>
+        <ul>
+          <li><a class="link">Link 1</a></li>
+        </ul>
+      </div>
+      <div class="e-col">
+        <h5>Links</h5>
+        <ul>
+          <li><a class="link">Link 1</a></li>
+        </ul>
+      </div>
+      <div class="e-col">
+        <h5>Links</h5>
+        <ol>
+          <li><a class="link">Link 1</a></li>
+        </ol>
+      </div>
+      <div class="e-col no-mobile">
+        <h5 class="text-center">Links</h5>
+        <div class="e-buttons centered">
+          <a class="e-btn circle small inverted primary"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="e-buttons centered">
+          <a class="e-btn circle small inverted sky"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="e-buttons centered">
+          <a class="e-btn circle small inverted danger"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="e-footer-bar between">
+    <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+    <div class="e-buttons no-desktop">
+      <a class="e-btn circle small inverted primary"><i class="fab fa-facebook-f"></i></a>
+      <a class="e-btn circle small inverted sky"><i class="fab fa-twitter"></i></a>
+      <a class="e-btn circle small inverted danger"><i class="fab fa-google"></i></a>
+    </div>
+  </div>
+</footer>
+{% endhighlight %}
+</div>
+
+<div class="e-section">
+  <footer class="e-footer success">
+  <div class="e-container-fluid">
+    <div class="e-cols">
+      <div class="e-col">
+        <nav class="e-breadcrumb" aria-label="breadcrumb">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="e-col-12">
+        <div class="e-buttons centered">
+          <a class="e-btn circle shadow-6 inverted primary"><i class="fab fa-facebook-f"></i></a>
+          <a class="e-btn circle shadow-6 inverted sky"><i class="fab fa-twitter"></i></a>
+          <a class="e-btn circle shadow-6 inverted danger"><i class="fab fa-google"></i></a>
+          <a class="e-btn circle shadow-6 inverted dark"><i class="fab fa-github"></i></a>
+          <a class="e-btn circle shadow-6 inverted primary"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="e-footer-bar centered">
+    <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+  </div>
+</footer>
+</div>
+<div class="e-section">
+   {% highlight html %}
+  <footer class="e-footer success">
+    <div class="e-cols">
+      <div class="e-col">
+        <nav class="e-breadcrumb" aria-label="breadcrumb">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="e-col-12">
+        <div class="e-buttons centered">
+          <a class="e-btn circle inverted primary"><i class="fab fa-facebook-f"></i></a>
+          <a class="e-btn circle inverted sky"><i class="fab fa-twitter"></i></a>
+          <a class="e-btn circle inverted danger"><i class="fab fa-google"></i></a>
+          <a class="e-btn circle inverted dark"><i class="fab fa-github"></i></a>
+          <a class="e-btn circle inverted primary"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  <div class="e-footer-bar centered">
+    <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+  </div>
+</footer>
+{% endhighlight %}
+</div>
+
+
+
+
+
+
+<div class="e-section">
+  <footer class="e-footer inst-gradient">
+    <div class="e-container">
+      <div class="e-section">
+        <div class="e-cols">
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Products</h5>
+            <ol>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ol>
+          </div>
+          <div class="e-col">
+            <h5>Products</h5>
+            <ol>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="e-section">
+        <div class="e-container centered">
+          <hr>
+          <h3>Newsletter
+            <span class="e-tag purple static">Releases</span>
+            <span class="e-tag success static">Features</span>
+          </h3>
+          <div class="e-col-12 centered">
+            <button class="e-btn plus transparent"> Subscribe now!</button>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="e-section">
+        <div class="e-container centered">
+          <div class="e-buttons centered">
+            <a class="e-btn circle inverted shadow-6 small primary"><i class="fab fa-facebook-f"></i></a>
+            <a class="e-btn circle inverted shadow-6 small sky"><i class="fab fa-twitter"></i></a>
+            <a class="e-btn circle inverted shadow-6 small danger"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="e-footer-bar between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+      <nav class="e-breadcrumb" aria-label="breadcrumb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="active"><a aria-current="page">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</div>
+<div class="e-section">
+  <footer class="e-footer green-gradient">
+    <div class="e-container">
+      <div class="e-section">
+        <div class="e-cols">
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Products</h5>
+            <ol>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ol>
+          </div>
+          <div class="e-col">
+            <h5>Products</h5>
+            <ol>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="e-section">
+        <div class="e-container centered">
+          <hr>
+          <h3>Newsletter
+            <span class="e-tag danger static">Releases</span>
+            <span class="e-tag success static">Features</span>
+          </h3>
+          <div class="e-col-12 centered">
+            <button class="e-btn plus transparent"> Subscribe now!</button>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="e-section">
+        <div class="e-container centered">
+          <div class="e-buttons centered">
+            <a class="e-btn circle inverted shadow-6 small primary"><i class="fab fa-facebook-f"></i></a>
+            <a class="e-btn circle inverted shadow-6 small sky"><i class="fab fa-twitter"></i></a>
+            <a class="e-btn circle inverted shadow-6 small danger"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="e-footer-bar between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+      <nav class="e-breadcrumb" aria-label="breadcrumb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="active"><a aria-current="page">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</div>
+<div class="e-section">
+  <footer class="e-footer black">
+    <div class="e-container">
+      <div class="e-section">
+        <div class="e-cols">
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Products</h5>
+            <ol>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ol>
+          </div>
+          <div class="e-col">
+            <h5>Products</h5>
+            <ol>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="e-section">
+        <div class="e-container centered">
+          <hr>
+          <h3>Newsletter
+            <span class="e-tag danger static">Releases</span>
+            <span class="e-tag success static">Features</span>
+          </h3>
+          <div class="e-col-12 centered">
+            <button class="e-btn plus transparent"> Subscribe now!</button>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="e-section">
+        <div class="e-container centered">
+          <div class="e-buttons centered">
+            <a class="e-btn circle inverted shadow-6 small primary"><i class="fab fa-facebook-f"></i></a>
+            <a class="e-btn circle inverted shadow-6 small sky"><i class="fab fa-twitter"></i></a>
+            <a class="e-btn circle inverted shadow-6 small danger"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="e-footer-bar between dark">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+      <nav class="e-breadcrumb" aria-label="breadcrumb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="active"><a aria-current="page">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</div>
+
+<div class="e-section">
+  <footer class="e-footer primary">
+    <div class="e-container">
+      <div class="e-section">
+        <div class="e-cols">
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Products</h5>
+            <ol>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ol>
+          </div>
+          <div class="e-col">
+            <h5>Products</h5>
+            <ol>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="e-section">
+        <div class="e-container centered">
+          <hr>
+          <h3>Newsletter
+            <span class="e-tag danger static">Releases</span>
+            <span class="e-tag success static">Features</span>
+          </h3>
+          <div class="e-col-12 centered">
+            <button class="e-btn plus transparent"> Subscribe now!</button>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="e-section">
+        <div class="e-container centered">
+          <div class="e-buttons centered">
+            <a class="e-btn circle inverted shadow-6 small primary"><i class="fab fa-facebook-f"></i></a>
+            <a class="e-btn circle inverted shadow-6 small sky"><i class="fab fa-twitter"></i></a>
+            <a class="e-btn circle inverted shadow-6 small danger"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="e-footer-bar between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+      <nav class="e-breadcrumb" aria-label="breadcrumb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="active"><a aria-current="page">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</div>
+<div class="e-section">
+{% highlight html %}
+  <footer class="e-footer primary">
+    <div class="e-container">
+      <div class="e-section">
+        <div class="e-cols">
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="e-col">
+            <h5>Products</h5>
+            <ol>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ol>
+          </div>
+          <div class="e-col">
+            <h5>Products</h5>
+            <ol>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="e-section">
+        <div class="e-container centered">
+          <hr>
+          <h3>Newsletter
+            <span class="e-tag danger static">Releases</span>
+            <span class="e-tag success static">Features</span>
+          </h3>
+          <div class="e-col-12 centered">
+            <button class="e-btn plus transparent"> Subscribe now!</button>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="e-section">
+        <div class="e-container centered">
+          <div class="e-buttons centered">
+            <a class="e-btn circle inverted small primary"><i class="fab fa-facebook-f"></i></a>
+            <a class="e-btn circle inverted small sky"><i class="fab fa-twitter"></i></a>
+            <a class="e-btn circle inverted small danger"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="e-footer-bar between">
+      <p>© 2018 Copyright: <a class="link"> eFrolicss.com</a></p>
+      <nav class="e-breadcrumb" aria-label="breadcrumb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="active"><a aria-current="page">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+{% endhighlight %}
+</div>
+</div>

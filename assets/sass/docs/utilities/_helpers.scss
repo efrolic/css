@@ -93,3 +93,36 @@
     text-align: right !important;
   }
 }
+
+[class*="e-"] {
+  &.centered {
+    @extend %centered;
+  }
+
+  &.between {
+    @extend %centered;
+    justify-content: space-between;
+
+    & > [class*="e-col"] {
+      margin: 0;
+    }
+  }
+
+  &.align-start {
+    @extend %centered;
+    justify-content: flex-start;
+
+    & > [class*="e-col"] {
+      margin: 0;
+    }
+  }
+
+  &.align-end {
+    @extend %centered;
+    justify-content: flex-end;
+
+    & > [class*="e-col"] {
+      margin: 0;
+    }
+  }
+}

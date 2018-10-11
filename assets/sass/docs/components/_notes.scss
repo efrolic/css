@@ -44,9 +44,13 @@
 .note-body {
   padding    : 1.25rem 1.25rem 1.25rem 1.5rem;
   background : rgba(255,255,255,.95);
-  color      : rgba(0,0,0,0.8) !important;
   font-family: inherit;
   font-weight: normal !important;
+
+  &,
+  & p {
+    color: rgba(0,0,0,0.8) !important;
+  }
 }
 
 .note-footer {

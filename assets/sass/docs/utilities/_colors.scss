@@ -30,6 +30,7 @@ $colors: (
   color: $e-font-color;
 
   & a:not(.e-btn),
+  & p,
   .e-dropdown {
     color: $e-font-color;
   }
@@ -40,7 +41,8 @@ $colors: (
 
   & .e-dropdown,
   & a:not(.e-btn),
-  & li+li::before {
+  & li+li::before,
+  & p {
     color: $white;
   }
 
@@ -347,26 +349,6 @@ $colors: (
 .e-btn {
   @extend %hover-colors;
 
-  &.white {
-    background-color: $white !important;
-    text-shadow     : none;
-    @extend %dark-color;
-  }
-
-  &.transparent {
-    background: rgba(255,255,255,.1) !important;
-    color     : $white !important;
-
-    & > li,
-    a {
-      color      : $white !important;
-      font-weight: normal;
-    }
-    @include desktop {
-      background: rgba(255,255,255,.1) !important;
-    }
-  }
-
   &.outlined {
     @extend %outlined;
   }
@@ -400,6 +382,17 @@ $colors: (
           }
         }
       }
+    }
+  }
+}
+
+.e-btn,
+.e-tag {
+  &.transparent {
+    background: rgba(255,255,255,.1) !important;
+    color     : $white !important;
+    @include desktop {
+      background: rgba(255,255,255,.1) !important;
     }
   }
 }

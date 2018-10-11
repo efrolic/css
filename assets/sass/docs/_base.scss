@@ -24,11 +24,7 @@ img {
 
 a {
   text-decoration: none;
-}
-
-#cap-nav-full,
-input#e-menu {
-  display: none;
+  color          : $primary;
 }
 
 li {
@@ -43,58 +39,8 @@ hr {
   background-color: lighten(rgba(0,0,0,.1),2%);
 }
 
-.e-search {
-  min-height   : 30px;
-  border       : none;
-  border-radius: 3px;
-  box-shadow   : none;
-  margin       : auto;
-  width        : 100%;
-  padding      : 8px 5px;
-  background   : rgba(0,0,0,.2);
-  color        : white;
-
-  &::-webkit-input-placeholder {
-    color: white;
-  }
-}
-
-.link {
-  opacity: 0.9;
-
-  &:hover {
-    opacity        : 1;
-    text-decoration: underline;
-    cursor         : pointer;
-  }
-}
-
-.e-cap {
-  position        : fixed;
-  top             : 0;
-  left            : 0;
-  bottom          : 0;
-  right           : 0;
-  width           : 100%;
-  height          : 100vh;
-  z-index         : 9000;
-  background-color: rgba(0,0,0,.5);
-  will-change     : opacity;
-  @extend .eFade;
-}
-
-%background {
-  background-color: $default;
-}
-/* Clase active del menu */
-
-.active {
-  background-color: lighten(rgba(0,0,0,0.1),30%) !important;
-}
-
-.e-btn,
-.e-dropdown {
-  user-select: none;
-  color      : $e-font-color;
-  cursor     : pointer;
+*[disabled] {
+  opacity   : 0.5;
+  cursor    : not-allowed;
+  box-shadow: none !important;
 }

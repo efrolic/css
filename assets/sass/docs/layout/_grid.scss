@@ -50,39 +50,6 @@
   max-width: percentage($e-col / 12);
 }
 
-[class*="e-"] {
-  &.centered {
-    @extend %centered;
-  }
-
-  &.between {
-    @extend %centered;
-    justify-content: space-between;
-
-    & > [class*="e-col"] {
-      margin: 0;
-    }
-  }
-
-  &.align-start {
-    @extend %centered;
-    justify-content: flex-start;
-
-    & > [class*="e-col"] {
-      margin: 0;
-    }
-  }
-
-  &.align-end {
-    @extend %centered;
-    justify-content: flex-end;
-
-    & > [class*="e-col"] {
-      margin: 0;
-    }
-  }
-}
-
 %col {
   width  : 100%;
   padding: 0 0.75rem 0.75rem;

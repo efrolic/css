@@ -131,12 +131,6 @@
     }
   }
 
-  &[disabled] {
-    opacity   : 0.5;
-    cursor    : not-allowed;
-    box-shadow: none !important;
-  }
-
   &:focus {
     box-shadow: 0 0 0 2.4px lighten($default,1.8%);
     outline   : none !important;

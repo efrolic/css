@@ -13,3 +13,9 @@
   category: Layout
   url: /container
   bio: "Containers are a simple design element to center your content horizontally."
+
+- name: Footer
+  category: Layout
+  url: /footer
+  bio: "Footer is a section of our page that is generally used as an additional navigation for the website.
+  The container footer can contain links, buttons, company information, copyright and many other elements. "
