@@ -2,41 +2,89 @@
 layout: default
 
 ---
+<style>
+.e-card h1,
+.e-card h2,
+.e-card h3,
+.e-card h4,
+.e-card h5,
+.e-card h6 {
+  color: #343a40;
+}
 
+code {
+  font-size: 1rem;
+}
 
+p {
+  font-size: 1.17rem;
+  font-weight: normal;
+  font-family: inherit;
+}
 
-{{content}}
+</style>
+<div class="e-card profile e-md-height">
+  <div class="post-page e- centered">
+    {% if page.image %}
+    <img src="{{site.url}}{{page.image}}" alt="{{page.title}}">
+    {% endif %}
+  </div>
+  <div class="e-card-photo">
+    <img src="{{site.url}}{{site.photo_profile}}" alt="{{page.title}}">
+  </div>
+  <div class="card-body">
+    <div class="e-container">
+      <h3 class="e- size-3 text-dark"><i class="fas fa-hashtag text-danger"></i> {{page.title}} <span class="e-tag static">{{page.tag}}</span> </h3>
+      <div class="e-toolbar">
+        <div class="e-tags">
+          <span class="e-tag">{{ page.date | date_to_string }}</span>
+          <span class="e-tag {{page.color}}">{{ page.tag }}</span>
+        </div>
+        <div class="e-tags unified">
+          <i class="e-tag sky fab fa-twitter"></i>
+          <a href="{{ site.twitter }}" target="_blank" class="e-tag sky"> Twitter</a>
 
+        </div>
+        <div class="e-tags unified">
+          <i class="e-tag primary fab fa-facebook-f"></i>
+          <a href="{{ site.facebook }}" target="_blank" class="e-tag primary"> Facebook</a>
+        </div>
+      </div>
+      <hr class="hr">
+      {{ content }}
+    </div>
+  </div>
+</div>
 
 <div class="e-section between">
   {% if page.previous.url %}
   <h6><a href="{{page.previous.url}}"><i class="fas fa-arrow-left"></i> {{page.previous.title}}</a></h6>
   {% endif %}
   {% if page.next.url %}
-    <h6><a href="{{page.next.url}}">{{page.next.title}} <i class="fas fa-arrow-right"></i></a></h6>
+  <h6><a href="{{page.next.url}}">{{page.next.title}} <i class="fas fa-arrow-right"></i></a></h6>
   {% endif %}
 </div>
 
 <div class="e-section"> <br> </div>
 <div class="e-section">
-<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Recent posts</h5><hr>
-<div class="e-cards deck centered">
-  {% for post in site.posts limit: 4 %}
-  <div class="e-card profile" style="width:20rem;">
-    <div class="e-card-cover {{post.color}}">
-      <img src="{{site.url}}{{post.image}}" />
-    </div>
-    <div class="card-body">
-      <h6 class=""> <a href="{{site.url}}{{post.url}}"> {{post.title}}</a></h6>
-      <p class="card-text">{{post.short_description}}</p>
-      <hr>
-      <div class="e-buttons align-end">
-        <span class="e-tag">{{page.date | date_to_string }}</span>
-        <a href="{{site.url}}{{post.url}}" class="e-btn plane inverted primary">Read</a>
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Recent posts</h5>
+  <hr>
+  <div class="e-cards deck centered">
+    {% for post in site.posts limit: 4 %}
+    <div class="e-card profile" style="width:20rem;">
+      <div class="e-card-cover {{post.color}} centered">
+        <img src="{{site.url}}{{post.image}}" />
+      </div>
+      <div class="card-body">
+        <h6 class=""> <a href="{{site.url}}{{post.url}}"> {{post.title}}</a></h6>
+        <p class="card-text">{{post.short_description}}</p>
+        <hr>
+        <div class="e-buttons align-end">
+          <span class="e-tag">{{page.date | date_to_string }}</span>
+          <a href="{{site.url}}{{post.url}}" class="e-btn plane inverted primary">Read</a>
+        </div>
       </div>
     </div>
+    {% endfor %}
   </div>
-
-  {% endfor %}
-</div>
 </div>

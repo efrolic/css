@@ -1,3 +1,4 @@
+{% include donate.html %}
 <div class="e-footer-bar centered white shadow-1 aside">
   <p>Designed and built with all the <span class="e-tag danger">love </span> in the world by &nbsp;&nbsp;</p>
   <iframe src="https://ghbtns.com/github-btn.html?user=EfraaX&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
@@ -12,18 +13,14 @@
         <a href="{{site.github_me}}" target="_blank" class="e-btn inverted dark"><i class="fab fa-github-alt size-1"></i></a>
         <a href="{{site.twitter}}" target="_blank" class="e-btn inverted sky"><i class="fab fa-twitter size-1"></i></a>
       </div>
-      <div class="e-col-12 centered">
-        <a href="{{site.donate}}" target="_blank" class="e-btn inverted purple ePull infinite"><i class="fas fa-heart text-danger size-1 ePull infinite"></i><br>
-          Donate</a>
-      </div>
       <hr>
     </div>
     <div class="e-section">
-        {% if page.next.url %}
-          <h4>You read about
-            <i class="fas fa-arrow-right"></i>
-             <a class="e-tag primary" href="{{page.next.url}}">{{page.next.title}}</a> </h4>
-        {% endif %}
+      {% if page.next.url %}
+      <h4>You read about
+        <i class="fas fa-arrow-right"></i>
+        <a class="e-tag primary" href="{{page.next.url}}">{{page.next.title}}</a> </h4>
+      {% endif %}
     </div>
     <div class="e-section">
       <div class="e-cols">

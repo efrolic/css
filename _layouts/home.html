@@ -2,302 +2,303 @@
 layout: base
 ---
 
-    <main class="e-face e-fullscreen main">
+<main class="e-face e-fullscreen main">
 
-      <nav class="e-nav no-bg">
-        <a href="{{site.url}}" class="logo"><img src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}}"/></a>
-        <a href="{{site.github}}" target="_blank" class="e-btn circle inverted no-mobile ePull infinite"><i class="fab fa-github"></i></a>
-        <a href="{{site.twitter}}" target="_blank" class="e-btn circle inverted sky no-mobile ePull infinite"><i class="fab fa-twitter"></i></a>
-        <i class="e-distribution"></i>
+  <nav class="e-nav no-bg">
+    <a href="{{site.url}}" class="logo"><img src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}}" /></a>
+    <a href="{{site.github}}" target="_blank" class="e-btn circle inverted no-mobile ePull infinite"><i class="fab fa-github"></i></a>
+    <a href="{{site.twitter}}" target="_blank" class="e-btn circle inverted sky no-mobile ePull infinite"><i class="fab fa-twitter"></i></a>
+    <i class="e-distribution"></i>
 
-        <div class="e-drops unified no-mobile">
-          <a href="{{ site.url }}/documentation" class="e-btn inverted plane primary {% if page.permalink == '/documentation' %}active{% endif %}">
-            Documentation
-          </a>
+    <div class="e-drops unified no-mobile">
+      <a href="{{ site.url }}/documentation" class="e-btn inverted plane primary {% if page.permalink == '/documentation' %}active{% endif %}">
+        Documentation
+      </a>
 
-          <div class="e-dropdown primary shadow" aria-hidden="true">
-            <div class="drop-items shadow-3">
-              <a href="{{site.url}}/documentation/get-started" class="drop-item">GET STARTED</a>
-              <a href="{{site.url}}/documentation/layout" class="drop-item">LAYOUT</a>
-              <a href="{{site.url}}/documentation/components" class="drop-item">COMPONENTS</a>
-              <a href="{{site.url}}/documentation/utilities" class="drop-item">UTILITIES</a>
-              <a href="{{site.url}}/helpers" class="drop-item">HELPERS</a>
-            </div>
-          </div>
+      <div class="e-dropdown primary shadow" aria-hidden="true">
+        <div class="drop-items shadow-3">
+          <a href="{{site.url}}/documentation/get-started" class="drop-item">GET STARTED</a>
+          <a href="{{site.url}}/documentation/layout" class="drop-item">LAYOUT</a>
+          <a href="{{site.url}}/documentation/components" class="drop-item">COMPONENTS</a>
+          <a href="{{site.url}}/documentation/utilities" class="drop-item">UTILITIES</a>
+          <a href="{{site.url}}/helpers" class="drop-item">HELPERS</a>
         </div>
+      </div>
+    </div>
 
 
 
 
 
-        <a href="{{ site.url }}/buttons" class="e-btn {{ site.button }}">
-          <i class="fas fa-box"></i>
-          Download
+    <a href="{{ site.url }}/buttons" class="e-btn {{ site.button }}">
+      <i class="fas fa-box"></i>
+      Download
+    </a>
+  </nav>
+
+  <section class="face-body centered">
+    <div class="face-item mi-item" style="text-shadow:none;">
+      <img class="eSlide" src="{{ site.url }}/assets/images/efrolic-developer.png" style="max-width:370px !important;" alt="{{ site.description }}">
+      <p class="info-frolic eSlide" style="color:{{ site.text_color }};">
+        {% if page.description %}{{ page.description }}
+        {% else %}{{site.description}}
+        {% endif %}
+      </p>
+      <div class="e-toolbar centered">
+        <div class="e-tags unified">
+          <span class="e-tag dark">Currently</span>
+          <span class="e-tag danger">{{site.version}}</span>
+        </div>
+        <div class="e-tags unified">
+          <i class="e-tag sky fab fa-twitter"></i>
+          <a href="{{site.twitter}}" target="_blank" class="e-tag sky">Tweet</a>
+        </div>
+        <div class="e-tags unified">
+          <i class="e-tag primary fab fa-facebook-f"></i>
+          <a href="{{site.twitter}}" target="_blank" class="e-tag primary">Like</a>
+        </div>
+      </div>
+
+      <a href="{{ site.url }}/start" class="eUp e-btn plus {{ site.button }}">
+        <b>Get started</b>
+      </a>
+      <a href="{{ site.url }}/documentation" class="eUp e-btn plus {{ site.button_secondary }}">
+        <b>Documentation</b>
+      </a>
+    </div>
+    <div class="e-col no-mobile"></div>
+  </section>
+</main>
+
+<div class="e-cols centered e-fullscreen bg-2">
+  <div class="container-white e-col-4">
+    <h3 class="size-3" style="color:#{{ site.title_color }};">Css / GitHub</h3>
+    <p style="color:{{ site.text_color }};">
+      Copy-paste the stylesheet
+      <strong class="code">&lt;link></strong>
+      into your
+      <strong class="code">&lt;head></strong>
+      before all other stylesheets to load our CSS.</p>
+    <!-- Code -->
+    {% highlight html %}
+    <link rel="stylesheet" href="{{ page.css_github }}">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
+    {% endhighlight %}
+
+  </div>
+  <div class="container-white e-col-3">
+    <h3 class="size-3" style="color:#{{ site.title_color }};">Get started</h3>
+    <p style="color:{{ site.text_color }};">Get started with eFrolic, a simple and functional framework for creating responsive sites on mobile devices. Use one of the following ways to start using.</p>
+    <a href="{{site.url}}/start" class="e-btn fullwidth plus {{ site.button }}">Template</a>
+  </div>
+
+  <div class="container-white e-col-4">
+    <h3 class="size-3" style="color:#{{ site.title_color }};">Css / CDN</h3>
+    <p style="color:{{ site.text_color }};">
+      Copy-paste the stylesheet
+      <strong class="code">&lt;link></strong>
+      into your
+      <strong class="code">&lt;head></strong>
+      before all other stylesheets to load our CSS.</p>
+    <!-- Code -->
+    {% highlight html %}
+    <link rel="stylesheet" href="{{ page.css_cdn }}">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
+    {% endhighlight %}
+  </div>
+
+</div>
+
+
+
+<section class="e-container centered e-fullscreen bg">
+  <div class="e-cols">
+    <div class="e-col-3">
+      <div class="e-alert hov primary">
+        <a class="e-sweep">
+          <i class="far fa-clone"></i>
         </a>
-      </nav>
-
-      <section class="face-body centered">
-        <div class="face-item mi-item" style="text-shadow:none;">
-          <img class="eSlide" src="{{ site.url }}/assets/images/efrolic-developer.png" style="max-width:370px !important;" alt="{{ site.description }}">
-          <p class="info-frolic eSlide" style="color:{{ site.text_color }};">
-            {% if page.description %}{{ page.description }}
-            {% else %}{{site.description}}
-            {% endif %}
-          </p>
-          <div class="e-toolbar centered">
-            <div class="e-tags unified">
-              <span class="e-tag dark">Currently</span>
-              <span class="e-tag danger">{{site.version}}</span>
-            </div>
-            <div class="e-tags unified">
-              <i class="e-tag sky fab fa-twitter"></i>
-              <a href="{{site.twitter}}" target="_blank" class="e-tag sky">Tweet</a>
-            </div>
-            <div class="e-tags unified">
-              <i class="e-tag primary fab fa-facebook-f"></i>
-              <a href="{{site.twitter}}" target="_blank" class="e-tag primary">Like</a>
-            </div>
-          </div>
-
-          <a href="{{ site.url }}/start" class="eUp e-btn plus {{ site.button }}">
-            <b>Get started</b>
-          </a>
-          <a href="{{ site.url }}/documentation" class="eUp e-btn plus {{ site.button_secondary }}">
-            <b>Documentation</b>
-          </a>
-        </div>
-        <div class="e-col no-mobile"></div>
-      </section>
-    </main>
-
-      <div class="e-cols centered e-fullscreen bg-2">
-        <div class="container-white e-col-4">
-          <h3 class="size-3" style="color:#{{ site.title_color }};">Css / GitHub</h3>
-         <p style="color:{{ site.text_color }};">
-           Copy-paste the stylesheet
-           <strong class="code">&lt;link></strong>
-           into your
-           <strong class="code">&lt;head></strong>
-           before all other stylesheets to load our CSS.</p>
-<!-- Code -->
-{% highlight html %}
-<link rel="stylesheet" href="{{ page.css_github }}">
-<!-- Font awesome icons -->
-<link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
-{% endhighlight %}
-
-        </div>
-        <div class="container-white e-col-3">
-          <h3 class="size-3" style="color:#{{ site.title_color }};">Get started</h3>
-       <p style="color:{{ site.text_color }};">Get started with eFrolic, a simple and functional framework for creating responsive sites on mobile devices. Use one of the following ways to start using.</p>
-       <a href="{{site.url}}/start" class="e-btn fullwidth plus {{ site.button }}">Template</a>
-        </div>
-
-        <div class="container-white e-col-4">
-          <h3 class="size-3" style="color:#{{ site.title_color }};">Css / CDN</h3>
-          <p style="color:{{ site.text_color }};">
-            Copy-paste the stylesheet
-            <strong class="code">&lt;link></strong>
-            into your
-            <strong class="code">&lt;head></strong>
-            before all other stylesheets to load our CSS.</p>
-<!-- Code -->
-{% highlight html %}
-  <link rel="stylesheet" href="{{ page.css_cdn }}">
-  <!-- Font awesome icons -->
-  <link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
-{% endhighlight %}
-        </div>
-
-        </div>
-
-
-
-    <section class="e-container centered e-fullscreen bg">
-      <div class="e-cols">
-        <div class="e-col-3">
-          <div class="e-alert hov primary">
-            <a class="e-sweep">
-              <i class="far fa-clone"></i>
-            </a>
-            <h4>
-              Modular
-            </h4>
-            <strong>
-              Use only what you need.
-            </strong>All modules are divided, in each section You have a modular download button.
-          </div>
-        </div>
-        <div class="e-col-3">
-          <div class="e-alert hov sky">
-            <a class="e-sweep">
-              <i class="far fa-heart"></i>
-            </a>
-            <h4>
-              Super easy
-            </h4>
-            eFrolic is a framework with simple classes so using it is as easy as remembering that everything has an e- front.
-          </div>
-        </div>
-        <div class="e-col-3">
-          <div class="e-alert hov sky">
-            <a class="e-sweep">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </a>
-            <h4>
-              Free
-            </h4>
-            All content is free and on github, there are no Premium, VIP or PRO sections everything you find is yours!
-          </div>
-        </div>
-        <div class="e-col-3">
-          <div class="e-alert hov primary">
-            <a class="e-sweep">
-              <i class="fas fa-code"></i>
-            </a>
-            <h4>
-              No JScript
-            </h4>
-            It does not use JavaScript, everything is pure CSS so it is integrated in any JS environment. Angular, React, Vue among others.
-          </div>
-        </div>
-        <hr>
-        <div class="e-col">
-          <h2 class="size-3" style="color:#{{ site.title_color }};text-align:center;">Work with your favorite tools and languages.</h2>
-          <p class="size-6" style="color:{{ site.text_color }};text-align:center;">This framework is pure CSS so it can be integrated in any environment.</p>
-        </div>
-        <hr>
-        <div class="e-col">
-          <div class="e-alert hov danger" style="text-align:center;">
-            <i class="fab fa-angular e-title"></i>
-            <h4>
-              Angular
-            </h4>
-          </div>
-        </div>
-        <div class="e-col">
-          <div class="e-alert hov sky" style="text-align:center;">
-            <i class="fab fa-react e-title"></i>
-            <h4>
-              React
-            </h4>
-          </div>
-        </div>
-        <div class="e-col">
-          <div class="e-alert hov success" style="text-align:center;">
-            <i class="fab fa-vuejs e-title"></i>
-            <h4>
-              Vue
-            </h4>
-          </div>
-        </div>
-        <div class="e-col">
-          <div class="e-alert hov warning" style="text-align:center;">
-            <i class="fab fa-js-square e-title"></i>
-            <h4>
-              JavaScript
-            </h4>
-          </div>
-        </div>
-        <div class="e-col">
-          <div class="e-alert hov danger" style="text-align:center;">
-            <i class="fab fa-ember" style="font-size:5.8rem;"></i>
-          </div>
-        </div>
+        <h4>
+          Modular
+        </h4>
+        <strong>
+          Use only what you need.
+        </strong>All modules are divided, in each section You have a modular download button.
       </div>
-    </section>
-
-    <section class="e-fullscreen centered  bg-2">
-      <div class="e-cols">
-        <div class="e-col-5">
-          <h3 class="e-title" style="color:#{{ site.title_color }};">Easy lessons to learn</h3>
-          <p class="size-6" style="color:{{ site.text_color }};">We use simple classes to make it easy to remember and relate to the elements. Let's see, who does not remember this; use an e- in front of all classes, it's that simple. ¡A main class and abundant variations!</p>
-          <p>
-            <strong class="code">e-btn</strong>
-          </p>
-          <button class="e-btn danger">Button</button>
-          <button class="e-btn success">Button</button>
-          <button class="e-btn warning">Button</button>
-          <button class="e-btn sky">Button</button>
-        </div>
-        <div class="e-col-4" style="text-align:center;">
-          <p>
-            <strong class="code">e-btn outlined</strong>
-          </p>
-          <button class="e-btn outlined plus danger">Button</button>
-          <p>
-            <strong class="code">e-btn circle</strong>
-          </p>
-          <button class="e-btn circle primary">
-            <i class="fab fa-facebook-f"></i>
-          </button>
-          <button class="e-btn circle sky">
-            <i class="fab fa-twitter"></i>
-          </button>
-          <button class="e-btn circle danger">
-            <i class="fab fa-pinterest-p"></i>
-          </button>
-          <br><br>
-          <button class="e-btn success">
-            <i class="fab fa-spotify"></i>
-            Spotify</button>
-          <button class="e-btn purple">
-            <i class="fab fa-twitch"></i>
-            Twitch</button>
-          <button class="e-btn danger">
-            <i class="fab fa-pinterest-p"></i>interest
-          </button>
-        </div>
+    </div>
+    <div class="e-col-3">
+      <div class="e-alert hov sky">
+        <a class="e-sweep">
+          <i class="far fa-heart"></i>
+        </a>
+        <h4>
+          Super easy
+        </h4>
+        eFrolic is a framework with simple classes so using it is as easy as remembering that everything has an e- front.
       </div>
-    </section>
-
-    <section class="e-fullscreen centered" style="background:#f9f9f9;">
-      <div class="e-cols">
-        <div class="e-col">
-          <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">
-            Fullscreen and centered containers</h3>
-          <hr>
-          <p class="size-6" style="color:{{ site.text_color }};text-align:center;">
-            All the children of this container will be centered vertically.
-          </p>
-        </div>
+    </div>
+    <div class="e-col-3">
+      <div class="e-alert hov sky">
+        <a class="e-sweep">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </a>
+        <h4>
+          Free
+        </h4>
+        All content is free and on github, there are no Premium, VIP or PRO sections everything you find is yours!
       </div>
-    </section>
+    </div>
+    <div class="e-col-3">
+      <div class="e-alert hov primary">
+        <a class="e-sweep">
+          <i class="fas fa-code"></i>
+        </a>
+        <h4>
+          No JScript
+        </h4>
+        It does not use JavaScript, everything is pure CSS so it is integrated in any JS environment. Angular, React, Vue among others.
+      </div>
+    </div>
+    <hr>
+    <div class="e-col">
+      <h2 class="size-3" style="color:#{{ site.title_color }};text-align:center;">Work with your favorite tools and languages.</h2>
+      <p class="size-6" style="color:{{ site.text_color }};text-align:center;">This framework is pure CSS so it can be integrated in any environment.</p>
+    </div>
+    <hr>
+    <div class="e-col">
+      <div class="e-alert hov danger" style="text-align:center;">
+        <i class="fab fa-angular e-title"></i>
+        <h4>
+          Angular
+        </h4>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-alert hov sky" style="text-align:center;">
+        <i class="fab fa-react e-title"></i>
+        <h4>
+          React
+        </h4>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-alert hov success" style="text-align:center;">
+        <i class="fab fa-vuejs e-title"></i>
+        <h4>
+          Vue
+        </h4>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-alert hov warning" style="text-align:center;">
+        <i class="fab fa-js-square e-title"></i>
+        <h4>
+          JavaScript
+        </h4>
+      </div>
+    </div>
+    <div class="e-col">
+      <div class="e-alert hov danger" style="text-align:center;">
+        <i class="fab fa-ember" style="font-size:5.8rem;"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="e-fullscreen centered  bg-2">
+  <div class="e-cols">
+    <div class="e-col-5">
+      <h3 class="e-title" style="color:#{{ site.title_color }};">Easy lessons to learn</h3>
+      <p class="size-6" style="color:{{ site.text_color }};">We use simple classes to make it easy to remember and relate to the elements. Let's see, who does not remember this; use an e- in front of all classes, it's that simple. ¡A main class and
+        abundant variations!</p>
+      <p>
+        <strong class="code">e-btn</strong>
+      </p>
+      <button class="e-btn danger">Button</button>
+      <button class="e-btn success">Button</button>
+      <button class="e-btn warning">Button</button>
+      <button class="e-btn sky">Button</button>
+    </div>
+    <div class="e-col-4" style="text-align:center;">
+      <p>
+        <strong class="code">e-btn outlined</strong>
+      </p>
+      <button class="e-btn outlined plus danger">Button</button>
+      <p>
+        <strong class="code">e-btn circle</strong>
+      </p>
+      <button class="e-btn circle primary">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+      <button class="e-btn circle sky">
+        <i class="fab fa-twitter"></i>
+      </button>
+      <button class="e-btn circle danger">
+        <i class="fab fa-pinterest-p"></i>
+      </button>
+      <br><br>
+      <button class="e-btn success">
+        <i class="fab fa-spotify"></i>
+        Spotify</button>
+      <button class="e-btn purple">
+        <i class="fab fa-twitch"></i>
+        Twitch</button>
+      <button class="e-btn danger">
+        <i class="fab fa-pinterest-p"></i>interest
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="e-fullscreen centered" style="background:#f9f9f9;">
+  <div class="e-cols">
+    <div class="e-col">
+      <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">
+        Fullscreen and centered containers</h3>
+      <hr>
+      <p class="size-6" style="color:{{ site.text_color }};text-align:center;">
+        All the children of this container will be centered vertically.
+      </p>
+    </div>
+  </div>
+</section>
 
 <section class="e-container centered e-fullheight bg">
-    <div class="e-cols">
-       <div class="e-col-8">
-        <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">The grid system is simple</h3>
-          <br>
-          <p class="size-6" style="color:{{ site.text_color }};text-align:center;">
-            The grid is focused on mobile devices from the beginning and there is only one type.
-            Easy to learn, just need a container and automatic columns or with a defined size,
-            these will adjust to the size of the graphic window.
-          </p>
-          <hr>
-        </div>
-        <i class="w-100"></i>
-      <div class="e-col">
-        <div class="e-alert sky">
-          <strong>Auto</strong>
-        </div>
+  <div class="e-cols">
+    <div class="e-col-8">
+      <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">The grid system is simple</h3>
+      <br>
+      <p class="size-6" style="color:{{ site.text_color }};text-align:center;">
+        The grid is focused on mobile devices from the beginning and there is only one type.
+        Easy to learn, just need a container and automatic columns or with a defined size,
+        these will adjust to the size of the graphic window.
+      </p>
+      <hr>
+    </div>
+    <i class="w-100"></i>
+    <div class="e-col">
+      <div class="e-alert sky">
+        <strong>Auto</strong>
       </div>
-      <div class="e-col">
-        <div class="e-alert warning">
-          <strong>Auto</strong>
-        </div>
+    </div>
+    <div class="e-col">
+      <div class="e-alert warning">
+        <strong>Auto</strong>
       </div>
-      <div class="e-col">
-        <div class="e-alert success">
-          <strong>Auto</strong>
-        </div>
+    </div>
+    <div class="e-col">
+      <div class="e-alert success">
+        <strong>Auto</strong>
       </div>
-      <div class="e-col">
-        <div class="e-alert dark">
-          <strong>Auto</strong>
-        </div>
+    </div>
+    <div class="e-col">
+      <div class="e-alert dark">
+        <strong>Auto</strong>
       </div>
-      <i class="w-100"></i>
+    </div>
+    <i class="w-100"></i>
     <div class="e-col-3">
       <div class="e-alert purple">
         <strong>e-col-3</strong>
@@ -313,7 +314,7 @@ layout: base
         <strong>e-col-3</strong>
       </div>
     </div>
-    </div>
+  </div>
 
 </section>
 
@@ -339,11 +340,11 @@ layout: base
             <div class="e-col-4">
               {% for post in site.posts limit: 1 %}
               <div class="e-card profile shadow-3">
-              <div class="e-card-cover {{post.color}} centered">
-                {% if post.image %}
-              <img src="{{site.url}}{{post.image}}" alt="{{post.title}}">
-                {% endif %}
-              </div>
+                <div class="e-card-cover {{post.color}} centered">
+                  {% if post.image %}
+                  <img src="{{site.url}}{{post.image}}" alt="{{post.title}}">
+                  {% endif %}
+                </div>
                 <div class="card-body">
                   <h3 class="card-title text-center text-gray">{{post.title}} <span class="e-tag static {{post.tag_color}}">{{post.tag}}</span></h3>
                   <p class="card-text text-center">{{ post.date | date_to_string }}</p>
@@ -358,3 +359,14 @@ layout: base
     </div>
   </div>
 </section>
+
+
+
+{% include global/footer.html %}
+
+<style>
+.aside {
+  padding: 0 !important;
+}
+
+</style>

@@ -14,7 +14,7 @@ description: "Find out everything that is happening, visit the news frequently t
   <div class="card-body">
     <div class="e-cols centered">
       <div class="e-col">
-        <h2 class="e-title text-primary">{{ page.title }}</h2>
+        <h2 class="e-title text-primary"> {{ page.title }}</h2>
         <p class="e- size-6">{{ page.description }}</p>
         <hr class="hr">
         <div class="e-section e-buttons">
@@ -36,7 +36,7 @@ description: "Find out everything that is happening, visit the news frequently t
           {% endif %}
         </div>
           <div class="card-body">
-            <h5 class="text-center text-gray">{{post.title}} <span class="e-tag static {{post.tag_color}}">{{post.tag}}</span></h5>
+            <h5 class="text-center "><a class="e- text-gray" href="{{site.url}}{{post.url}}"> {{post.title}} </a> <span class="e-tag static {{post.tag_color}}">{{post.tag}}</span></h5>
             <p class="card-text text-center">{{ post.date | date_to_string }}</p>
             <a href="{{site.url}}{{post.url}}" class="e-btn inverted fullwidth {{post.color}}"> Read more <i class="fas fa-arrow-right"></i></a>
           </div>
@@ -61,7 +61,7 @@ description: "Find out everything that is happening, visit the news frequently t
   {% endif %}
 </div>
   <div class="card-body">
-    <h5 class="text-center text-gray">{{post.title}} <span class="e-tag static {{post.tag_color}}">{{post.tag}}</span></h5>
+    <h5 class="text-center text-gray"><a href="{{site.url}}{{post.url}}">{{post.title}}</a> <span class="e-tag static {{post.tag_color}}">{{post.tag}}</span></h5>
     <p class="card-text text-center">{{ post.date | date_to_string }}</p>
     <hr>
     <p class="card-text">{{post.short_description}}</p>
