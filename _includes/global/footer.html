@@ -18,6 +18,13 @@
       <hr>
     </div>
     <div class="e-section">
+        {% if page.next.url %}
+          <h4>You read about
+            <i class="fas fa-arrow-right"></i>
+             <a class="e-tag primary" href="{{page.next.url}}">{{page.next.title}}</a> </h4>
+        {% endif %}
+    </div>
+    <div class="e-section">
       <div class="e-cols">
 
         <div class="e-col-4">
@@ -53,7 +60,7 @@
         <div class="e-col">
           <h5>See the news</h5>
           <ul>
-            {% for post in site.posts | limit: 5 %}
+            {% for post in site.posts | limit: 4 %}
             <li><a href="{{site.url}}{{post.url}}">{{post.title}}</a></li>
             {% endfor %}
             <li><a href="{{site.url}}/news"><small>View all news</small></a></li>

@@ -7,6 +7,7 @@ description: "It is a CSS framework, which without using javascript is interacti
 This framework is based on being modular and simple to develop web interfaces focused on mobile devices."
 
 # Social
+photo_profile: "/assets/images/post/profile/profile-2.jpeg"
 twitter: "https://twitter.com/e_frolic"
 github: "https://github.com/EfraaX/eFrolic"
 github_me: "https://github.com/EfraaX"

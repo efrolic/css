@@ -1,0 +1,42 @@
+---
+layout: default
+
+---
+
+
+
+{{content}}
+
+
+<div class="e-section between">
+  {% if page.previous.url %}
+  <h6><a href="{{page.previous.url}}"><i class="fas fa-arrow-left"></i> {{page.previous.title}}</a></h6>
+  {% endif %}
+  {% if page.next.url %}
+    <h6><a href="{{page.next.url}}">{{page.next.title}} <i class="fas fa-arrow-right"></i></a></h6>
+  {% endif %}
+</div>
+
+<div class="e-section"> <br> </div>
+<div class="e-section">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Recent posts</h5><hr>
+<div class="e-cards deck centered">
+  {% for post in site.posts limit: 4 %}
+  <div class="e-card profile" style="width:20rem;">
+    <div class="e-card-cover {{post.color}}">
+      <img src="{{site.url}}{{post.image}}" />
+    </div>
+    <div class="card-body">
+      <h6 class=""> <a href="{{site.url}}{{post.url}}"> {{post.title}}</a></h6>
+      <p class="card-text">{{post.short_description}}</p>
+      <hr>
+      <div class="e-buttons align-end">
+        <span class="e-tag">{{page.date | date_to_string }}</span>
+        <a href="{{site.url}}{{post.url}}" class="e-btn plane inverted primary">Read</a>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+</div>

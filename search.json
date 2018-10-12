@@ -2,16 +2,6 @@
 layout: null
 ---
 [
-  {% for post in site.posts %}
-    {
-      "title"    : "{{ post.title | escape }}",
-      "bio" : "{{ post.bio | strip_html | strip_newlines | escape }}",
-      "category" : "{{post.tag}}",
-      "url"      : "{{ site.url }}{{ post.url }}"
-
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %},
-
   {% for nav in site.data.components %}
     {
       "title"    : "{{ nav.name | escape }}",

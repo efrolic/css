@@ -556,3 +556,8 @@ hr {
     margin-right: 110px;
   }
 }
+
+.post-page{
+  max-height: 300px;
+  overflow: hidden;
+}

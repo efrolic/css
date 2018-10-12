@@ -316,3 +316,45 @@ layout: base
     </div>
 
 </section>
+
+
+<section class="e-fullscreen bg-2 centered">
+  <div class="e-container">
+    <div class="e-section">
+      <div class="e-card white">
+        <div class="card-body">
+          <div class="e-cols centered">
+            <div class="e-col">
+              <h2 class="e-title text-primary">News</h2>
+              <p class="e- size-6">Find out everything that is happening, visit the news frequently to discover the new features instantly.</p>
+              <hr class="hr">
+              <div class="e-section e-buttons">
+                <a class="e-btn rounded shadow-6 inverted danger">All updates</a>
+                <a class="e-btn rounded shadow-6 inverted sky">New features</a>
+                <a class="e-btn rounded shadow-6 inverted purple">Tutorials</a>
+                <a class="e-btn rounded shadow-6 inverted warning">Bug fixes</a>
+                <a class="e-btn rounded shadow-6 inverted success">Releases</a>
+              </div>
+            </div>
+            <div class="e-col-4">
+              {% for post in site.posts limit: 1 %}
+              <div class="e-card profile shadow-3">
+              <div class="e-card-cover {{post.color}} centered">
+                {% if post.image %}
+              <img src="{{site.url}}{{post.image}}" alt="{{post.title}}">
+                {% endif %}
+              </div>
+                <div class="card-body">
+                  <h3 class="card-title text-center text-gray">{{post.title}} <span class="e-tag static {{post.tag_color}}">{{post.tag}}</span></h3>
+                  <p class="card-text text-center">{{ post.date | date_to_string }}</p>
+                  <a href="{{site.url}}{{post.url}}" class="e-btn inverted fullwidth {{post.color}}"> Read more <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
