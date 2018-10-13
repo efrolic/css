@@ -115,53 +115,6 @@ layout: base
 
 <section class="e-container centered e-fullscreen bg">
   <div class="e-cols">
-    <div class="e-col-3">
-      <div class="e-alert hov primary">
-        <a class="e-sweep">
-          <i class="far fa-clone"></i>
-        </a>
-        <h4>
-          Modular
-        </h4>
-        <strong>
-          Use only what you need.
-        </strong>All modules are divided, in each section You have a modular download button.
-      </div>
-    </div>
-    <div class="e-col-3">
-      <div class="e-alert hov sky">
-        <a class="e-sweep">
-          <i class="far fa-heart"></i>
-        </a>
-        <h4>
-          Super easy
-        </h4>
-        eFrolic is a framework with simple classes so using it is as easy as remembering that everything has an e- front.
-      </div>
-    </div>
-    <div class="e-col-3">
-      <div class="e-alert hov sky">
-        <a class="e-sweep">
-          <i class="fas fa-chalkboard-teacher"></i>
-        </a>
-        <h4>
-          Free
-        </h4>
-        All content is free and on github, there are no Premium, VIP or PRO sections everything you find is yours!
-      </div>
-    </div>
-    <div class="e-col-3">
-      <div class="e-alert hov primary">
-        <a class="e-sweep">
-          <i class="fas fa-code"></i>
-        </a>
-        <h4>
-          No JScript
-        </h4>
-        It does not use JavaScript, everything is pure CSS so it is integrated in any JS environment. Angular, React, Vue among others.
-      </div>
-    </div>
-    <hr>
     <div class="e-col">
       <h2 class="size-3" style="color:#{{ site.title_color }};text-align:center;">Work with your favorite tools and languages.</h2>
       <p class="size-6" style="color:{{ site.text_color }};text-align:center;">This framework is pure CSS so it can be integrated in any environment.</p>
@@ -208,69 +161,53 @@ layout: base
 </section>
 
 <section class="e-fullscreen centered  bg-2">
-  <div class="e-cols">
+
+
+  <div class="e-container">
+  <div class="e-cols centered">
     <div class="e-col-5">
-      <h3 class="e-title" style="color:#{{ site.title_color }};">Easy lessons to learn</h3>
-      <p class="size-6" style="color:{{ site.text_color }};">We use simple classes to make it easy to remember and relate to the elements. Let's see, who does not remember this; use an e- in front of all classes, it's that simple. ¡A main class and
+      <h3 class="size-3" style="color:#{{ site.title_color }};">Classes related to the element</h3>
+      <p class="look" style="color:{{ site.text_color }};">We use simple classes to make it easy to remember and relate to the elements. Let's see, who does not remember this; use an e- in front of all classes, it's that simple. ¡A main class and
         abundant variations!</p>
       <p>
         <strong class="code">e-btn</strong>
       </p>
       <button class="e-btn danger">Button</button>
       <button class="e-btn success">Button</button>
+      <button class="e-btn primary">Button</button>
       <button class="e-btn warning">Button</button>
-      <button class="e-btn sky">Button</button>
+      <button class="e-btn purple">Button</button>
     </div>
-    <div class="e-col-4" style="text-align:center;">
-      <p>
-        <strong class="code">e-btn outlined</strong>
-      </p>
-      <button class="e-btn outlined plus danger">Button</button>
-      <p>
-        <strong class="code">e-btn circle</strong>
-      </p>
-      <button class="e-btn circle primary">
-        <i class="fab fa-facebook-f"></i>
-      </button>
-      <button class="e-btn circle sky">
-        <i class="fab fa-twitter"></i>
-      </button>
-      <button class="e-btn circle danger">
-        <i class="fab fa-pinterest-p"></i>
-      </button>
-      <br><br>
-      <button class="e-btn success">
-        <i class="fab fa-spotify"></i>
-        Spotify</button>
-      <button class="e-btn purple">
-        <i class="fab fa-twitch"></i>
-        Twitch</button>
-      <button class="e-btn danger">
-        <i class="fab fa-pinterest-p"></i>interest
-      </button>
+    <div class="e-col-4">
+      <div class="e-card profile shadow-3">
+        <div class="e-card-cover danger"></div>
+        <div class="e-card-photo shadow-6">
+          <img src="{{site.url}}{{site.photo_profile}}">
+        </div>
+        <div class="e-buttons centered">
+          <a class="e-btn plane inverted danger"><span class="e-tag danger">524.2k</span> Followers</a>
+          <a class="e-btn plane inverted danger"><span class="e-tag danger">104.8k</span> Following</a>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title text-center text-dark">I am, e-card profile <span class="e-tag static">Followed</span></h3>
+          <p class="card-text text-center"><small>558.9k followers</small></p>
+
+          <button class="e-btn fullwidth inverted danger">Like</button>
+          <button class="e-btn fullwidth danger">Unfollow</button>
+        </div>
+      </div>
+
     </div>
+  </div>
   </div>
 </section>
 
-<section class="e-fullscreen centered" style="background:#f9f9f9;">
-  <div class="e-cols">
-    <div class="e-col">
-      <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">
-        Fullscreen and centered containers</h3>
-      <hr>
-      <p class="size-6" style="color:{{ site.text_color }};text-align:center;">
-        All the children of this container will be centered vertically.
-      </p>
-    </div>
-  </div>
-</section>
 
 <section class="e-container centered e-fullheight bg">
   <div class="e-cols">
     <div class="e-col-8">
-      <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">The grid system is simple</h3>
-      <br>
-      <p class="size-6" style="color:{{ site.text_color }};text-align:center;">
+      <h3 class="e-title" style="color:#{{ site.title_color }};text-align:center;">The grid system</h3>
+      <p class="look" style="color:{{ site.text_color }};text-align:center;">
         The grid is focused on mobile devices from the beginning and there is only one type.
         Easy to learn, just need a container and automatic columns or with a defined size,
         these will adjust to the size of the graphic window.

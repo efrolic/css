@@ -38,13 +38,13 @@
       <i class="fas fa-splotch text-danger"></i> Expo
     </a-->
 
-    <div class="e-dropdown">
+    <!--div class="e-dropdown">
       <i class="fas fa-boxes text-purple"></i> More
       <div class="drop-items">
         <!--a href="{{ site.url }}/js" class="drop-item {% if page.permalink == '/made-js' %}active{% endif %}">
           <i class="fab fa-js-square text-warning"></i> Components made with Js
         </a-->
-        <a href="{{ site.url }}/colors" class="drop-item {% if page.permalink == '/colors' %}active{% endif %}">
+        <!--a href="{{ site.url }}/colors" class="drop-item {% if page.permalink == '/colors' %}active{% endif %}">
           <i class="fas fa-palette text-danger"></i> Colors
         </a>
         <a href="{{ site.url }}/background" class="drop-item {% if page.permalink == '/background' %}active{% endif %}">
@@ -64,7 +64,7 @@
           <i class="fab fa-twitter"></i> Twitter
         </a>
       </div>
-    </div>
+    </div-->
     <a href="https://www.patreon.com/efrolic" target="_blank" class="e-btn inverted purple ePull infinite">
       <i class="fas fa-heart text-danger ePull infinite"></i> Donate
     </a>
@@ -83,6 +83,11 @@
     </div>
   </div>
   <p class="label"><br><strong>Get started</strong></p>
+  <li class="{% if page.permalink == '/approach' %}active{% endif %}">
+    <a href="{{ site.url }}/approach">
+      <i class="fas fa-users text-purple"></i> Approach
+    </a>
+  </li>
   <li class="{% if page.permalink == '/start' %}active{% endif %}">
     <a href="{{ site.url }}/start">
       <i class="fas fa-play text-danger"></i> Quick start
