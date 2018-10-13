@@ -71,7 +71,7 @@ layout: base
 </main>
 
 <div class="e-cols centered e-fullscreen bg-2">
-  <div class="container-white e-col-4">
+  <div class="container-white e-col-4 shadow-3">
     <h3 class="size-3" style="color:#{{ site.title_color }};">Css / GitHub</h3>
     <p style="color:{{ site.text_color }};">
       Copy-paste the stylesheet
@@ -80,20 +80,22 @@ layout: base
       <strong class="code">&lt;head></strong>
       before all other stylesheets to load our CSS.</p>
     <!-- Code -->
-    {% highlight html %}
-    <link rel="stylesheet" href="{{ page.css_github }}">
-    <!-- Font awesome icons -->
-    <link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
-    {% endhighlight %}
-
+{% highlight html %}
+<link rel="stylesheet" href="{{ page.css_github }}">
+<!-- Font awesome icons -->
+<link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
+{% endhighlight %}
+<p class="look" style="color:{{ site.text_color }};">
+Includes icon fonts <strong>(Font awesome)</strong>
+</p>
   </div>
-  <div class="container-white e-col-3">
+  <div class="container-white e-col-3 shadow-3">
     <h3 class="size-3" style="color:#{{ site.title_color }};">Get started</h3>
     <p style="color:{{ site.text_color }};">Get started with eFrolic, a simple and functional framework for creating responsive sites on mobile devices. Use one of the following ways to start using.</p>
     <a href="{{site.url}}/start" class="e-btn fullwidth plus {{ site.button }}">Template</a>
   </div>
 
-  <div class="container-white e-col-4">
+  <div class="container-white e-col-4 shadow-3">
     <h3 class="size-3" style="color:#{{ site.title_color }};">Css / CDN</h3>
     <p style="color:{{ site.text_color }};">
       Copy-paste the stylesheet
@@ -103,10 +105,13 @@ layout: base
       before all other stylesheets to load our CSS.</p>
     <!-- Code -->
     {% highlight html %}
-    <link rel="stylesheet" href="{{ page.css_cdn }}">
-    <!-- Font awesome icons -->
-    <link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
-    {% endhighlight %}
+<link rel="stylesheet" href="{{ page.css_cdn }}">
+<!-- Font awesome icons -->
+<link rel="stylesheet" href="{{page.fontawesome}}" integrity="{{page.fontawesome_integrity}}" crossorigin="anonymous">
+{% endhighlight %}
+<p class="look" style="color:{{ site.text_color }};">
+Includes icon fonts <strong>(Font awesome)</strong>
+</p>
   </div>
 
 </div>
