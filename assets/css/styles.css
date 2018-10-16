@@ -192,12 +192,15 @@ pre{
 }
 
 .e-nav-aside::-webkit-scrollbar-thumb {
-  background-color: rgb(253, 253, 253);
+  background-color: rgba(0, 0, 0,.070);
+  cursor: pointer;
+  border-radius: 200px;
 }
 
 .e-nav-aside::-webkit-scrollbar {
-  width: 1px;
+  width: 7px;
   height: 9px;
+
 }
 
 .e-nav-aside::-webkit-scrollbar-track {
@@ -207,6 +210,7 @@ pre{
 .e-nav-aside::-webkit-scrollbar-track:hover {
   background-color: rgb(253, 253, 253);
 }
+
 
 @media only screen and (min-width:1024px) {
   .e-nav-aside {
@@ -228,6 +232,9 @@ pre{
   padding: 10px 10px 10px 40px;
   -webkit-transition: .2s;
   transition: .2s
+}
+.e-nav-aside li:last-child {
+margin-bottom: 20px;
 }
 
 .e-nav-aside li:hover {
@@ -522,13 +529,18 @@ hr {
   margin        : 0;
   text-align    : left;
   padding-bottom: 15px;
-  border-bottom : solid 1px rgba(0,0,0,0.1);
   width         : 100%;
-  font-size     : 11px;
+  font-size     : .9rem;
   letter-spacing: 0.3px;
   padding-left  : 40px;
-  text-transform: uppercase;
-  font-family:sans-serif;
+  color: rgba(0,0,0,0.5);
+  transition: color .5s;
+}
+
+.label:hover a{
+  color: rgba(0,0,0,0.5);
+}
+.label.on-active a{
   color: rgba(0,0,0,0.5);
 }
 
@@ -560,4 +572,12 @@ hr {
 .post-page{
   max-height: 300px;
   overflow: hidden;
+}
+
+
+.off-page{
+  display: none;
+}
+.on-page{
+  display: block;
 }

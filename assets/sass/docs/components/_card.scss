@@ -52,6 +52,7 @@
 
 .e-card-cover {
   background: $default;
+  @extend %centered;
 }
 
 .e-cards-mansory {

@@ -3,3 +3,8 @@
   url: /start
   bio: "Get started with eFrolic, a simple and functional framework for
   creating responsive sites on mobile devices."
+
+- name: Approach
+  category: Information
+  url: /approach
+  bio: "Learn about our vision and focus in the development of this tool, explanations of categories and others."

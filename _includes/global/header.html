@@ -82,7 +82,8 @@
       </div>
     </div>
   </div>
-  <p class="label"><br><strong>Get started</strong></p>
+  <p class="label {% if page.category == 'start' %}on-active{% endif %}"><br><strong><a href="{{site.url}}/approach">Get started</a></strong></p>
+  <div class="off-page {% if page.category == 'start' %} on-page {% endif %}">
   <li class="{% if page.permalink == '/approach' %}active{% endif %}">
     <a href="{{ site.url }}/approach">
       <i class="fas fa-users text-purple"></i> Approach
@@ -105,9 +106,9 @@
     <a href="{{ site.url }}/news"><i class="far fa-bookmark text-success"></i> See the news
     </a>
   </li>
-
-  <p class="label"><br><strong>Layout</strong></p>
-
+  </div>
+  <p class="label {% if page.category == 'layout' %}on-active{% endif %}"><strong><a href="{{site.url}}/container" >Layout</a></strong></p>
+  <div class="off-page {% if page.category == 'layout' %} on-page {% endif %}">
   <li class="{% if page.permalink == '/container' %}active{% endif %}">
     <a href="{{ site.url }}/container"><i class="fas fa-box-open text-sky"></i> Container
     </a>
@@ -132,21 +133,21 @@
     <a href="{{ site.url }}/footer"><i class="fas fa-vector-square text-primary"></i> Footer
     </a>
   </li>
-
-  <p class="label"><br><strong>Components</strong></p>
-
+</div>
+  <p class="label {% if page.category == 'components' %}on-active{% endif %}"><a href="{{site.url}}/alerts" ><strong>Components</strong></a></p>
+<div class="off-page {% if page.category == 'components' %} on-page {% endif %}">
   <li class="{% if page.permalink == '/alerts' %}active{% endif %}">
-    <a href="{{ site.url }}/alerts"><i class="far fa-clone text-primary"></i> Alerts
+    <a href="{{ site.url }}/alerts"><i class="far fa-clone text-danger"></i> Alerts
     </a>
   </li>
 
   <li class="{% if page.permalink == '/alerts-previews' %}active{% endif %}">
-    <a href="{{ site.url }}/alerts-previews"><i class="fas fa-desktop text-primary"></i> Alerts previews
+    <a href="{{ site.url }}/alerts-previews"><i class="fas fa-desktop text-danger"></i> Alerts previews
     </a>
   </li>
 
   <li class="{% if page.permalink == '/breadcrumb' %}active{% endif %}">
-    <a href="{{ site.url }}/breadcrumb"><i class="fas fa-ellipsis-h text-danger"></i> Breadcrumb
+    <a href="{{ site.url }}/breadcrumb"><i class="fas fa-ellipsis-h text-primary"></i> Breadcrumb
     </a>
   </li>
 
@@ -224,10 +225,10 @@
     <a href="{{ site.url }}/tags"><i class="fas fa-tags text-gray"></i> Tags / Badges
     </a>
   </li>
+</div>
 
-
-  <p class="label"><br><strong>Utilities</strong></p>
-
+  <p class="label {% if page.category == 'utilities' %}on-active{% endif %}"><strong><a href="{{site.url}}/animations">Utilities</a></strong></p>
+  <div class="off-page {% if page.category == 'utilities' %} on-page {% endif %}">
   <li class="{% if page.permalink == '/animations' %}active{% endif %}">
     <a href="{{ site.url }}/animations"><i class="fas fa-car-crash text-success"></i> Animations
     </a>
@@ -254,8 +255,8 @@
     <a href="{{ site.url }}/typography"><i class="fas fa-laptop-code text-gray"></i> Typography
     </a>
   </li>
-
-  <p class="label"><br><strong>Sources</strong></p>
+</div>
+  <p class="label"><strong>Sources</strong></p>
 
   <li class="{% if page.permalink == '/icons' %}active{% endif %}">
     <a href="{{ site.url }}/icons"><i class="far fa-laugh-wink text-primary"></i> Icons
