@@ -5,6 +5,10 @@
     clear  : both;
   }
 }
+
+.clear {
+  @include clearfix;
+}
 @mixin tablet() {
   @media only screen and (min-width: 768px) {
     @content;

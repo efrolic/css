@@ -244,6 +244,10 @@
     <a href="{{ site.url }}/colors"><i class="fas fa-palette text-sky"></i> Colors
     </a>
   </li>
+  <li class="{% if page.permalink == '/clear' %}active{% endif %}">
+    <a href="{{ site.url }}/clear"><i class="fas fa-broom text-danger"></i> Clear
+    </a>
+  </li>
   <li class="{% if page.permalink == '/delete' %}active{% endif %}">
     <a href="{{ site.url }}/delete"><i class="fas fa-times text-success"></i> Delete
     </a>
@@ -252,10 +256,15 @@
     <a href="{{ site.url }}/shadows"><i class="fas fa-highlighter text-purple"></i> Shadows
     </a>
   </li>
+  <li class="{% if page.permalink == '/text' %}active{% endif %}">
+    <a href="{{ site.url }}/text"><i class="fas fa-text-height text-warning"></i> Text
+    </a>
+  </li>
   <li class="{% if page.permalink == '/typography' %}active{% endif %}">
     <a href="{{ site.url }}/typography"><i class="fas fa-laptop-code text-gray"></i> Typography
     </a>
   </li>
+
 </div>
   <p class="label"><strong>Sources</strong></p>
 

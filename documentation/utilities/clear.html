@@ -1,0 +1,41 @@
+---
+layout: default
+
+permalink: /clear
+
+category: utilities
+
+title: Clear
+
+description: "This utility cleans the content floating inside a container. Add as principal or a daughter tag."
+
+---
+
+<h3 class="code-title">{{ page.title }} <span class="e-tag static danger">Utilities</span></h3>
+<p class="look">{{ page.description }}</p>
+<hr class="hr">
+<div class="container-white">
+<div class="e-section">
+  <nav class="e- success">
+    <a class="e-btn white" style="float:left;">Float left</a>
+    <a class="e-btn white" style="float:right;">Float right</a>
+    <i class="clear"></i>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="clear">
+  <a class="e-btn" style="float:left;">Float left</a>
+  <a class="e-btn" style="float:right;">Float right</a>
+</div>
+
+<!-- Or -->
+
+<div class="e-container">
+  <a class="e-btn" style="float:left;">Float left</a>
+  <a class="e-btn" style="float:right;">Float right</a>
+  <i class="clear"></i>
+</div>
+{% endhighlight %}
+</div>
+</div>
