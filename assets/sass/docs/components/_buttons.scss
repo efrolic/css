@@ -5,13 +5,10 @@
 .e-btn {
   display        : inline-block;
   position       : relative;
-  padding        : 0.585rem 1.25rem;
+  padding        : 0.575rem 1.25rem;
   @extend %background;
   white-space    : nowrap;
-  justify-content: center;
-  align-items    : center;
   text-align     : center;
-  vertical-align : baseline;
   font-weight    : 600;
   letter-spacing : 0.4px;
   margin         : 0.3rem;
@@ -19,6 +16,7 @@
   border         : solid 1px transparent;
   text-decoration: none;
   font-size      : 0.90rem;
+  line-height    : normal;
   @extend %transition;
   @extend .shadow;
 
