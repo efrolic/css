@@ -35,21 +35,21 @@ Use one of the following ways to start using."
 The icons are used in almost all the components, we use <strong class="code">Font awesome</strong> but it is free to add your icons from other sources that you like.</p>
   <p>Copy-paste the stylesheet <strong class="code">&lt;link></strong> into your <strong class="code">&lt;head></strong> before all other stylesheets to load our CSS.</p>
 {% highlight html %}
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ site.fontawesome }}" integrity="{{ site.fontawesome_integrity }}" crossorigin="anonymous">
 {% endhighlight %}
 </div>
 <div class="container-white">
   <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Css / CDN</h5>
   <p>Copy-paste the stylesheet <strong class="code">&lt;link></strong> into your <strong class="code">&lt;head></strong> before all other stylesheets to load our CSS.</p>
 {% highlight html %}
-<link rel="stylesheet" href="https://efraperalta.github.io/eFrolic/index.html#/">
+<link rel="stylesheet" href="{{ site.css_cdn }}">
 {% endhighlight %}
 </div>
 <div class="container-white">
   <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Css / GitHub</h5>
   <p>Copy-paste the stylesheet <strong class="code">&lt;link></strong> into your <strong class="code">&lt;head></strong> before all other stylesheets to load our CSS.</p>
 {% highlight html %}
-<link rel="stylesheet" href="https://efraperalta.github.io/eFrolic/index.html#/">
+<link rel="stylesheet" href="{{ site.css_github }}">
 {% endhighlight %}
 </div>
 <div id="template" class="container-white">
@@ -64,9 +64,9 @@ The icons are used in almost all the components, we use <strong class="code">Fon
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hello, world!</title>
     <!-- Font awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ site.fontawesome }}" integrity="{{ site.fontawesome_integrity }}" crossorigin="anonymous">
     <!-- Css -->
-    <link rel="stylesheet" href="https://efraperalta.github.io/eFrolic/index.html#/">
+    <link rel="stylesheet" href="{{ site.css_cdn }}">
   </head>
   <body>
     <div class="e-container">

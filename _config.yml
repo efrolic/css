@@ -14,6 +14,13 @@ github_me: "https://github.com/EfraaX"
 facebook: "https://www.facebook.com/Efrolicss-954443128098679/"
 donate: "https://www.paypal.me/efraperalta"
 
+
+# CSS
+css_cdn: "https://efraperalta.github.io/eFrolic/index.html#/"
+css_github: "https://efraax.github.io/eFrolic/assets/css/efrolic.css"
+fontawesome: "https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+fontawesome_integrity: "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+
 # Config
 button: anime primary
 button_secondary: anime inverted primary
