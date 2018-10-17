@@ -26,16 +26,6 @@ $colors: (
   "dark"   : $dark
 );
 
-%dark-color {
-  color: $e-font-color;
-
-  & a:not(.e-btn),
-  & p,
-  .e-dropdown {
-    color: $e-font-color;
-  }
-}
-
 %place-color {
   color: $white;
 
@@ -44,6 +34,16 @@ $colors: (
   & li+li::before,
   & p {
     color: $white;
+  }
+}
+
+%dark-color {
+  color: $e-font-color;
+
+  & a:not(.e-btn),
+  & p,
+  .e-dropdown {
+    color: $e-font-color;
   }
 }
 

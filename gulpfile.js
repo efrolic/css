@@ -29,7 +29,7 @@ gulp.task('cssmin', ()=> {
         .pipe(cssmin())
         .pipe(autoprefixer({
           browsers: ['last 1 versions'],
-          cascade: true
+          cascade: false
           }))
         .pipe(gulp.dest(data.css));
 });
