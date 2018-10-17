@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-@import './utilities/animations';
 @import 'mixins';
 @import './utilities/colors';
 @import 'general';
-@import 'scroll';
 @import './layout/grid';
 @import './layout/face';
 @import './layout/footer';
@@ -14,3 +12,4 @@
 @import './utilities/align';
 @import './components/all';
 @import './utilities/helpers';
+@import './utilities/animations';
