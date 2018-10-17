@@ -42,6 +42,11 @@
   url: /shadows
   bio: "Add shadows to your elements by applying one of the 8 types of shadows available."
 
+- name: Sizing
+  category: Utilities
+  url: /sizing
+  bio: "Easily add sizes to the elements, width or height in relation to the viewport or in relation to the father."
+
 - name: Typography
   category: Utilities
   url: /typography
