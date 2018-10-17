@@ -244,6 +244,10 @@
     <a href="{{ site.url }}/colors"><i class="fas fa-palette text-sky"></i> Colors
     </a>
   </li>
+  <li class="{% if page.permalink == '/delete' %}active{% endif %}">
+    <a href="{{ site.url }}/delete"><i class="fas fa-times text-success"></i> Delete
+    </a>
+  </li>
   <li class="{% if page.permalink == '/shadows' %}active{% endif %}">
     <a href="{{ site.url }}/shadows"><i class="fas fa-highlighter text-purple"></i> Shadows
     </a>

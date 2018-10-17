@@ -21,6 +21,10 @@
   bio: "Colors are used as variants in all classes of eFrolic,
   that is, as a second class after the main one to customize elements."
 
+- name: Delete
+  category: Utilities
+  url: /delete
+  bio: "The traditional icon used to close, delete, cancel, discard content among others."
 
 - name: Helpers
   category: Assistants

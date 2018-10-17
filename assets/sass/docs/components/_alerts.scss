@@ -21,20 +21,10 @@
     margin-right  : 5px;
   }
 
-  & > .e-sweep {
-    position      : absolute;
-    right         : 0.5rem;
-    top           : 0.5rem;
-    padding       : 2px 8px;
-    text-align    : center;
-    cursor        : pointer;
-    font-size     : 15px;
-    vertical-align: middle;
-    color         : rgba(0,0,0,0.4);
-
-    &:focus {
-      outline: solid 2.2px lighten(rgba(0,0,0,0.2),30%);
-    }
+  & > .e-delete {
+    right   : 0.5rem;
+    top     : 0.5rem;
+    position: absolute;
   }
 
   & > a:not(.e-btn) {
