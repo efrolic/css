@@ -33,7 +33,7 @@
     & .drop-items {
       display   : block;
       position  : relative;
-      box-shadow: none !important;
+      box-shadow: none;
       width     : 100%;
       left      : 0;
       margin-top: 8px;
@@ -67,6 +67,7 @@
 /***************************************************************
 *                      Full Navbar styles
 ****************************************************************/
+
 .e-nav-full {
   position        : fixed;
   top             : 0;
@@ -128,7 +129,6 @@
 
   & ul {
     padding-top: 30px;
-    margin     : 0;
   }
 }
 

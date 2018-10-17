@@ -1,31 +1,15 @@
 .e-dropdown {
-  display        : inline-block;
-  position       : relative;
-  padding        : 0.5rem 1.25rem;
+  display      : inline-block;
+  position     : relative;
+  padding      : 0.5rem 1.25rem;
   @extend %background;
-  white-space    : nowrap;
+  white-space  : nowrap;
   @extend %centered;
-  justify-content: center;
-  margin         : 0.3rem;
-  border-radius  : 0.25rem;
-  font-size      : 0.90rem;
-  overflow       : visible;
-  width          : auto;
-  min-height     : 38px;
-
-  &:after {
-    background-image   : none;
-    border             : inset 0.4em;
-    content            : '';
-    border-bottom-width: 0;
-    border-top-style   : solid;
-    border-color       : rgba(0,0,0,.4) transparent transparent;
-    position           : relative;
-    top                : 0.5em;
-    display            : inline-block;
-    float              : right;
-    margin-left        : 0.5em;
-  }
+  margin       : 0.3rem;
+  border-radius: 0.25rem;
+  font-size    : 0.90rem;
+  overflow     : visible;
+  width        : auto;
 }
 
 .drop-items {

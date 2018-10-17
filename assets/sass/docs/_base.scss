@@ -31,6 +31,12 @@ li {
   list-style: none;
 }
 
+ol,
+ul {
+  padding: 0;
+  margin : 0;
+}
+
 hr {
   border          : none;
   width           : 100%;

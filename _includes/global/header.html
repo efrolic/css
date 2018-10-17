@@ -15,13 +15,12 @@
           Documentation
         </a>
 
-        <div class="e-dropdown shadow" aria-hidden="true">
+        <div class="e-dropdown shadow" aria-hidden="true"><i class="fas fa-angle-down"></i>
           <div class="drop-items shadow-6">
             <a href="{{site.url}}/documentation/get-started" class="drop-item {% if page.permalink == '/documentation/get-started' %}active{% endif %}">GET STARTED</a>
             <a href="{{site.url}}/documentation/layout" class="drop-item {% if page.permalink == '/documentation/layout' %}active{% endif %}">LAYOUT</a>
             <a href="{{site.url}}/documentation/components" class="drop-item {% if page.permalink == '/documentation/components' %}active{% endif %}">COMPONENTS</a>
             <a href="{{site.url}}/documentation/utilities" class="drop-item {% if page.permalink == '/documentation/utilities' %}active{% endif %}">UTILITIES</a>
-            <a href="{{site.url}}/helpers" class="drop-item {% if page.permalink == '/helpers' %}active{% endif %}">HELPERS</a>
           </div>
         </div>
       </div>
@@ -233,6 +232,10 @@
     <a href="{{ site.url }}/animations"><i class="fas fa-car-crash text-success"></i> Animations
     </a>
   </li>
+  <li class="{% if page.permalink == '/alignments' %}active{% endif %}">
+    <a href="{{ site.url }}/alignments"><i class="fas fa-align-center text-danger"></i> Alignments
+    </a>
+  </li>
   <li class="{% if page.permalink == '/background' %}active{% endif %}">
     <a href="{{ site.url }}/background"><i class="far fa-images"></i> Background
     </a>
@@ -241,12 +244,6 @@
     <a href="{{ site.url }}/colors"><i class="fas fa-palette text-sky"></i> Colors
     </a>
   </li>
-
-  <li class="{% if page.permalink == '/helpers' %}active{% endif %}">
-    <a href="{{ site.url }}/helpers"><i class="fas fa-ambulance text-danger"></i> Helpers
-    </a>
-  </li>
-
   <li class="{% if page.permalink == '/shadows' %}active{% endif %}">
     <a href="{{ site.url }}/shadows"><i class="fas fa-highlighter text-purple"></i> Shadows
     </a>

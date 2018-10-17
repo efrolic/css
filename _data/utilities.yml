@@ -4,6 +4,11 @@
   bio: "Animations are illusions of movements for web elements when reloading
   the page or when entering it. These animations are generated completely with CSS."
 
+- name: Alignments
+  category: Utilities
+  url: /alignments
+  bio: "Align the elements of the containers easily by adding one of the alignment classes. "
+
 - name: Background image
   category: Utilities
   url: /background

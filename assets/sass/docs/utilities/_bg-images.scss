@@ -19,7 +19,7 @@ $images: (
   height               : 100%;
 }
 
-[class*="e-"] {
+* {
   @each $bg-image, $bg in $images {
     &.#{$bg-image} {
       background-image: $bg;

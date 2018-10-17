@@ -1,0 +1,125 @@
+---
+layout: default
+
+permalink: /alignments
+
+category: utilities
+
+title: Alignments
+
+description: "Align the elements of the containers easily by adding one of the alignment classes.
+<br><br>
+You can add any type of alignment to any of the components and it will be affected."
+
+---
+
+<h2 class="code-title">{{ page.title }} <span class="e-tag static danger">Utilities</span></h2>
+<p class="desc">{{ page.description }}</p>
+<hr class="hr">
+<div class="container-white">
+<div class="e-section">
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Use</h5>
+
+</div>
+<div class="e-section">
+
+      <p>* Add <strong class="code">centered</strong> to the container to center its columns vertically and horizontally
+      <b>example:</b></p>
+      <hr>
+      <div class="e-cols primary centered e-sm-screen">
+        <div class="e-col">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+        <div class="e-col">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+      </div>
+      {% highlight html %}
+      <div class="e-cols centered">
+        <div class="e-col">...</div>
+        <div class="e-col">...</div>
+      </div>
+      {% endhighlight %}
+      <hr>
+
+
+      <p>* Add <strong class="code">between</strong> to the container to maintain a spacing between each column.
+      <b>example:</b></p>
+      <hr>
+      <div class="e-cols primary between e-sm-screen">
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+      </div>
+      {% highlight html %}
+      <div class="e-cols between">
+        <div class="e-col">...</div>
+        <div class="e-col">...</div>
+        <div class="e-col">...</div>
+      </div>
+      {% endhighlight %}
+      <hr>
+
+      <p>* Add <strong class="code">align-start</strong> to the container to align its columns at the beginning of the container,
+      <b>example:</b></p>
+      <hr>
+      <div class="e-cols primary align-start e-sm-screen">
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+      </div>
+      {% highlight html %}
+      <div class="e-cols align-start">
+        <div class="e-col">...</div>
+        <div class="e-col">...</div>
+      </div>
+      {% endhighlight %}
+      <hr>
+
+      <p>* Add <strong class="code">align-end</strong> to the container to line up its columns at the end of the container,
+      <b>example:</b></p>
+      <hr>
+      <div class="e-cols primary align-end e-sm-screen">
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+        <div class="e-col-3">
+          <div class="e-alert white" style="font-weight:bold;">
+            Column
+          </div>
+        </div>
+      </div>
+      {% highlight html %}
+      <div class="e-cols align-start">
+        <div class="e-col">...</div>
+        <div class="e-col">...</div>
+      </div>
+      {% endhighlight %}
+    </div>
+
+</div>

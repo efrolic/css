@@ -1,0 +1,38 @@
+%centered {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+  align-items    : center;
+  vertical-align : middle;
+}
+
+%child-col {
+  & > [class*="e-col"] {
+    margin: 0;
+  }
+}
+
+* {
+  &.centered {
+    @extend %centered;
+    justify-content: center !important;
+  }
+
+  &.between {
+    @extend %centered;
+    justify-content: space-between !important;
+    @extend %child-col;
+  }
+
+  &.align-start {
+    @extend %centered;
+    justify-content: flex-start !important;
+    @extend %child-col;
+  }
+
+  &.align-end {
+    @extend %centered;
+    justify-content: flex-end !important;
+    @extend %child-col;
+  }
+}

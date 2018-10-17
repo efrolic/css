@@ -45,11 +45,6 @@ $colors: (
   & p {
     color: $white;
   }
-
-  & .e-dropdown:after,
-  &:after {
-    border-color: #f9f9f9 transparent transparent !important;
-  }
 }
 
 %e-colors {
@@ -252,19 +247,9 @@ $colors: (
   &.warning {
     color: $warning;
 
-    & a:not(.e-btn),
-    .e-dropdown {
-      color: $warning;
-    }
-
     &:hover {
       color           : $warning;
       background-image: radial-gradient(rgba($warning,.045) 100%, transparent 0.01%) !important;
-
-      & a:not(.e-btn),
-      .e-dropdown {
-        color: $warning;
-      }
     }
 
     &:focus {
@@ -277,19 +262,9 @@ $colors: (
     &.#{$name} {
       color: $color;
 
-      & a:not(.e-btn),
-      .e-dropdown {
-        color: $color;
-      }
-
       &:hover {
         color           : $color;
         background-image: radial-gradient(rgba($color,.045) 100%, transparent 0.01%) !important;
-
-        & a:not(.e-btn),
-        .e-dropdown {
-          color: $color;
-        }
       }
 
       &:focus {
@@ -308,18 +283,10 @@ $colors: (
     color       : $warning;
     border-color: $warning;
 
-    & > a {
-      color: $warning;
-    }
-
     &:focus,
     &:hover {
       background: $warning;
       color     : $white;
-
-      & > a {
-        color: $white;
-      }
     }
   }
   @each $name, $pair in $colors {
@@ -329,18 +296,10 @@ $colors: (
       border-color: $color;
       color       : $color;
 
-      & > a {
-        color: $color;
-      }
-
       &:focus,
       &:hover {
         background: $color;
         color     : $white;
-
-        & > a {
-          color: $white;
-        }
       }
     }
   }

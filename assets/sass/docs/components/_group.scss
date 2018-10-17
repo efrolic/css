@@ -1,13 +1,13 @@
 /******************************************************
 *      Buttons Group
 *******************************************************/
-
 .e-buttons,
 .e-cards,
 .e-drops,
 .e-tags {
   @extend %centered;
   justify-content: flex-start;
+  align-items    : stretch;
 
   & .e-btn:not(:last-child),
   .e-card:not(:last-child),
