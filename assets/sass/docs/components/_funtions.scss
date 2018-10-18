@@ -1,13 +1,7 @@
 /* Function for e-menu*/
-
 input#e-menu:checked ~ div.e-menu,
 input#e-menu:checked ~ nav.e-menu,
 input#e-menu:checked ~ ul.e-menu {
   display: flex;
   @extend .eSlide;
-}
-/* Function for sidenav*/
-
-input#cap-sidenav:checked ~ div.cap-sidenav {
-  display: inherit;
 }

@@ -29,7 +29,14 @@ input#e-menu {
   }
 }
 
+%e-cap-fade {
+  -webkit-animation-duration: 0.4s !important;
+  animation-duration        : 0.4s !important;
+}
+
 .e-cap {
+  @extend .eFade;
+  @extend %e-cap-fade;
   position        : fixed;
   top             : 0;
   left            : 0;
@@ -39,8 +46,6 @@ input#e-menu {
   height          : 100vh;
   z-index         : 9000;
   background-color: rgba(0,0,0,.5);
-  will-change     : opacity;
-  @extend .eFade;
 }
 
 %background {
