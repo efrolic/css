@@ -6,10 +6,10 @@
   min-height     : 3.75rem;
   position       : relative;
   justify-content: space-between;
-  @extend %background;
   color          : $e-font-color;
-  @extend .shadow-5;
   padding        : 8px;
+  @extend %background;
+  @extend .shadow-5;
   @include desktop {
     padding-left : 5%;
     padding-right: 5%;
@@ -49,13 +49,6 @@
   @extend %e-nav;
 }
 
-.e-img {
-  width           : 45px;
-  height          : 45px;
-  border-radius   : 100%;
-  background-color: white;
-}
-
 .e-distribution {
   width  : 0.5px;
   display: none;
@@ -65,76 +58,82 @@
   }
 }
 /***************************************************************
-*                      Full Navbar styles
+*                      Sidenav styles
 ****************************************************************/
-.e-nav-full {
+.e-sidenav {
   position        : fixed;
   top             : 0;
   height          : 100vh;
   width           : 220px;
-  padding         : 30px 0 0;
+  padding         : 0;
   z-index         : 10000;
   box-shadow      : 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-  background-color: $default;
+  background-color: $white;
   color           : $e-font-color;
-  font-size       : 0.875rem;
-  @extend .eSlide;
+  font-size       : 0.9rem;
   overflow-y      : auto;
+  @extend .eSlide;
   @include desktop {
-    width     : 15rem;
-    overflow-y: hidden;
+    width: 15rem;
   }
+}
+
+.sidenav-brand {
+  padding: 1.5em 3em;
+  @extend %centered;
+
+  & img {
+    width      : 80%;
+    margin-left: -10px;
+  }
+}
+
+.sidenav-label {
+  margin-left   : 20px;
+  font-size     : 0.75rem;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  font-weight   : 700;
+  font-family   : sans-serif;
+
+  &:not(:last-child) {
+    margin-bottom: 1em;
+    margin-top   : 1em;
+  }
+}
+
+.sidenav-item:first-child,
+.sidenav-label:first-child {
+  margin-top: 5.3em;
+}
+
+.sidenav-item {
+  padding    : 0.5em 0.75em 0.5em 25px;
+  user-select: none;
 
   &:hover {
-    overflow-y: auto;
+    background: rgba(0,0,0,0.060);
+    transition: all 0.4s ease-out;
   }
 
-  & .e-nav-footer {
-    font-size     : 0.8125rem;
-    text-align    : center;
-    overflow      : hidden;
-    padding-bottom: 30px;
-  }
-
-  & li {
-    width         : 100%;
-    padding       : 10px;
-    transition    : 0.2s;
-    padding-left  : 40px;
-    cursor        : pointer;
-    color         : white;
-    text-shadow   : 1px 1px 2px rgba(0,0,0,0.1);
-    letter-spacing: 0.4px;
-
-    &:hover {
-      background-color: rgba(0,0,0,0.1);
-    }
-
-    & i,
-    span {
-      margin-right: 10px;
-      font-size   : 1.0625rem;
-    }
-
-    & a {
-      color: white;
-    }
+  &,
+  & a {
+    display: block;
+    color  : inherit;
   }
 }
 
-.cap-nav-full {
+.cap-sidenav {
   display: none;
-  padding: 0;
-
-  & ul {
-    padding-top: 30px;
-  }
 }
 
-.cap-nav-full-hidden {
+.cap-sidenav-hidden {
   position        : absolute !important;
   background-color: transparent !important;
 }
+/***************************************************************
+*                      End Sidenav
+****************************************************************/
 
 %e-menu-item {
   @extend %waves;

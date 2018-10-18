@@ -1,0 +1,95 @@
+---
+
+layout: default
+
+permalink: /progress
+
+category: components
+
+title: Progress
+
+description: "Native HTML progress bars customized with a single class and different colors."
+
+---
+
+<h3 class="code-title">{{page.title}} <span class="e-tag static danger">Component</span></h3>
+<p class="look">{{page.description}}</p>
+<hr class="hr">
+<div class="container-white">
+<div class="e-section">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Default</h6>
+<progress class="e-progress" value="37" max="100"></progress>
+</div>
+<div class="e-section">
+{% highlight html %}
+<progress class="e-progress" value="37" max="100"></progress>
+{% endhighlight %}
+</div>
+<div class="e-section">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> With Shadow</h6>
+<progress class="e-progress danger shadow-6" value="50" max="100"></progress>
+</div>
+<div class="e-section">
+{% highlight html %}
+<progress class="e-progress shadow-6" value="50" max="100"></progress>
+{% endhighlight %}
+</div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+    <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Colors</h6>
+
+    <progress class="e-progress" value="15" max="100"></progress><br>
+    <progress class="e-progress primary" value="25" max="100"></progress><br>
+    <progress class="e-progress success" value="35" max="100"></progress><br>
+    <progress class="e-progress danger" value="45" max="100"></progress><br>
+    <progress class="e-progress warning" value="55" max="100"></progress><br>
+    <progress class="e-progress sky" value="65" max="100"></progress><br>
+    <progress class="e-progress purple" value="75" max="100"></progress><br>
+    <progress class="e-progress gray" value="85" max="100"></progress><br>
+    <progress class="e-progress dark" value="95" max="100"></progress><br>
+    <progress class="e-progress black" value="100" max="100"></progress><br>
+
+
+    <progress class="e-progress" value="100" max="100"></progress><br>
+    <progress class="e-progress primary" value="95" max="100"></progress><br>
+    <progress class="e-progress success" value="85" max="100"></progress><br>
+    <progress class="e-progress danger" value="75" max="100"></progress><br>
+    <progress class="e-progress warning" value="65" max="100"></progress><br>
+    <progress class="e-progress sky" value="55" max="100"></progress><br>
+    <progress class="e-progress purple" value="45" max="100"></progress><br>
+    <progress class="e-progress gray" value="35" max="100"></progress><br>
+    <progress class="e-progress dark" value="25" max="100"></progress><br>
+    <progress class="e-progress black" value="15" max="100"></progress>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<progress class="e-progress" value="15" max="100"></progress>
+<progress class="e-progress primary" value="25" max="100"></progress>
+<progress class="e-progress success" value="35" max="100"></progress>
+<progress class="e-progress danger" value="45" max="100"></progress>
+<progress class="e-progress warning" value="55" max="100"></progress>
+<progress class="e-progress sky" value="65" max="100"></progress>
+<progress class="e-progress purple" value="75" max="100"></progress>
+<progress class="e-progress gray" value="85" max="100"></progress>
+<progress class="e-progress dark" value="95" max="100"></progress>
+<progress class="e-progress black" value="100" max="100"></progress>
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+    <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Change sizes</h6>
+    <p>Progress bars only have one size but you can change it by directly styling a style.</p>
+    <progress class="e-progress" value="75" max="100" style="height:2px;"></progress><br>
+    <progress class="e-progress" value="75" max="100" style="height:25px;"></progress>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<progress class="e-progress" value="75" max="100" style="height:2px;"></progress>
+<progress class="e-progress" value="75" max="100" style="height:25px;"></progress>
+{% endhighlight %}
+  </div>
+</div>

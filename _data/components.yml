@@ -75,11 +75,16 @@
   url: /notes-previews
   bio: "This is a preview of all the notes you can create by simply adding classes."
 
+- name: Progress
+  category: Component
+  url: /progress
+  bio: "Native HTML progress bars customized with a single class and different colors."
+
 - name: Tabs
   category: Component
   url: /tabs
   bio: "Tabs are a simple component of simple horizontal response navigation that
-  usually tells the user the location of the current page. "
+  usually tells the user the location of the current page."
 
 - name: Tags / Badges
   category: Component

@@ -1,0 +1,60 @@
+.e-progress {
+  -moz-appearance   : none;
+  -webkit-appearance: none;
+  border            : none;
+  border-radius     : 100px;
+  display           : block;
+  height            : 1rem;
+  overflow          : hidden;
+  padding           : 0;
+  width             : 100%;
+  background-color  : $default !important;
+
+  &::-webkit-progress-bar {
+    background-color: $default !important;
+  }
+
+  &::-webkit-progress-value {
+    background-color: #1ebea4;
+  }
+
+  &::-moz-progress-bar {
+    background-color: #1ebea4;
+  }
+
+  &::-ms-fill {
+    background-color: #1ebea4;
+    border          : none;
+  }
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      &::-webkit-progress-value {
+        background-color: $color;
+      }
+
+      &::-moz-progress-bar {
+        background-color: $color;
+      }
+
+      &::-ms-fill {
+        background-color: $color;
+      }
+    }
+  }
+
+  &.warning {
+    &::-webkit-progress-value {
+      background-color: $warning;
+    }
+
+    &::-moz-progress-bar {
+      background-color: $warning;
+    }
+
+    &::-ms-fill {
+      background-color: $warning;
+    }
+  }
+}

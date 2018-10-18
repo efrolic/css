@@ -215,6 +215,11 @@
     </a>
   </li>
 
+  <li class="{% if page.permalink == '/progress' %}active{% endif %}">
+    <a href="{{ site.url }}/progress"><i class="fas fa-spinner text-success"></i> Progress
+    </a>
+  </li>
+
   <li class="{% if page.permalink == '/tabs' %}active{% endif %}">
     <a href="{{ site.url }}/tabs"><i class="fas fa-thumbtack text-danger"></i> Tabs
     </a>

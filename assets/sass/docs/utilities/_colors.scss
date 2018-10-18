@@ -235,14 +235,6 @@ $colors: (
   }
 }
 
-.e-nav-full {
-  &.white {
-    & li {
-      text-shadow: none;
-    }
-  }
-}
-
 %inverted {
   &.warning {
     color: $warning;
