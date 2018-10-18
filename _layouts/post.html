@@ -16,14 +16,14 @@ code {
   font-size: 1rem;
 }
 
-p {
-  font-size: 1.17rem;
+.e-card.body p {
+  font-size: 1.12rem;
   font-weight: normal;
   font-family: inherit;
 }
 
 </style>
-<div class="e-card profile e-md-height">
+<div class="e-card body profile e-md-height">
   <div class="post-page e- centered">
     {% if page.image %}
     <img src="{{site.url}}{{page.image}}" alt="{{page.title}}">
@@ -80,8 +80,7 @@ p {
         <p class="card-text">{{post.short_description}}</p>
         <hr>
         <div class="e-buttons align-end">
-          <span class="e-tag">{{page.date | date_to_string }}</span>
-          <a href="{{site.url}}{{post.url}}" class="e-btn plane inverted primary">Read</a>
+          <a href="{{site.url}}{{post.url}}" class="e-btn plane inverted primary">Read more <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
