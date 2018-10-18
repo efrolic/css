@@ -52,3 +52,8 @@
   url: /typography
   bio: "This is the documentation and examples of general typography.
   We add our configurations to provide different sizes among other options."
+
+- name: Visibility
+  category: Utilities
+  url: /visibility
+  bio: "Controls the visibility of the elements on mobile or desktop."

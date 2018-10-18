@@ -1,0 +1,47 @@
+---
+layout: default
+
+permalink: /visibility
+
+category: utilities
+
+title: Visibility
+
+description: "Controls the visibility of the elements
+on mobile or desktop devices by adding one of the available classes.
+<br><br>
+The elements are controlled by the Display property, so they disappear,
+not occupying a place in the design and reappearing in the opposite of the control."
+
+---
+
+<h3 class="code-title">{{ page.title }} <span class="e-tag static danger">Utilities</span></h3>
+<p class="desc">{{ page.description }}</p>
+<hr class="hr">
+<div class="container-white">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> No-mobile:</h6>
+<p>
+The item will not be visible on mobile devices, it appears in Desktop.
+<br><br>
+Disabled up to 1023px.<br>
+Appears in 1024px (Desktop)</p>
+<div class="e-section">
+{% highlight html %}
+<div class="no-mobile">
+...
+</div>
+{% endhighlight %}
+</div>
+</div>
+
+<div class="container-white">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> No-desktop:</h6>
+<p>The item will not be visible in Desktop, but visible on mobile devices.</p>
+<div class="e-section">
+{% highlight html %}
+<div class="no-desktop">
+...
+</div>
+{% endhighlight %}
+</div>
+</div>
