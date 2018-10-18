@@ -68,9 +68,10 @@ hr {
 }
 
 *[disabled] {
-  opacity   : 0.5;
-  cursor    : not-allowed;
-  box-shadow: none !important;
+  opacity       : 0.5;
+  cursor        : not-allowed;
+  box-shadow    : none !important;
+  pointer-events: none;
 }
 
 table {

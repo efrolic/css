@@ -1,0 +1,404 @@
+---
+
+layout: default
+
+permalink: /pagination
+
+category: components
+
+title: Pagination
+
+description: "The traditional paging to divide content into numbered pages or
+indicate that there is a series of related content on several pages.
+<br><br>
+This component does not include custom colors. It is only available in blue."
+
+---
+
+<h3 class="code-title">{{page.title}} <span class="e-tag static danger">Component</span></h3>
+<p class="look">{{page.description}}</p>
+<hr class="hr">
+<div class="container-white">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Example:</h6>
+<div class="e-section">
+  <nav class="e-pagination" role="navigation" aria-label="pagination">
+
+    <div class="e-page-content">
+      <a href="/" class="e-page-item">Previous</a>
+      <a href="/" class="e-page-item">Next page</a>
+    </div>
+
+    <ul class="e-page-content">
+
+      <li class="e-page-item">
+        <a href="/" aria-label="Goto page 1">1</a>
+      </li>
+
+      <li class="e-page-item on-page">
+        <a href="/" aria-label="Goto page 2">2</a>
+      </li>
+
+      <li class="e-page-item">
+        <a aria-label="Goto page 3">3</a>
+      </li>
+
+      <li class="e-page-item">
+        <a aria-label="Goto page 4">4</a>
+      </li>
+
+      <li class="e-page-item">
+        <a aria-label="Goto page 5">5</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-pagination" aria-label="pagination">
+
+  <div class="e-page-content">
+    <a class="e-page-item">Previous</a>
+    <a class="e-page-item">Next page</a>
+  </div>
+
+  <ul class="e-page-content">
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+    <li class="e-page-item on-page">
+      <a aria-label="Goto page 2">2</a>
+    </li>
+  </ul>
+
+</nav>
+{% endhighlight %}
+</div>
+
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Disabled:</h6>
+<div class="e-section">
+  <nav class="e-pagination" role="navigation" aria-label="pagination">
+
+    <ul class="e-page-content">
+
+      <li class="e-page-item">
+        <a href="/" aria-label="Goto page 1">1</a>
+      </li>
+
+      <li class="e-page-item">
+        <a href="/" aria-label="Goto page 2">2</a>
+      </li>
+
+      <li class="e-page-item">
+        <a aria-label="Goto page 3">3</a>
+      </li>
+
+      <li class="e-page-item on-page">
+        <a aria-label="Goto page 4">4</a>
+      </li>
+
+      <li class="e-page-item">
+        <a aria-label="Goto page 5">5</a>
+      </li>
+    </ul>
+    <div class="e-page-content">
+      <a href="/" class="e-page-item" disabled>Previous</a>
+      <a href="/" class="e-page-item">Next page</a>
+    </div>
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-pagination" aria-label="pagination">
+
+  <ul class="e-page-content">
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+    <li class="e-page-item on-page">
+      <a aria-label="Goto page 2">2</a>
+    </li>
+  </ul>
+
+  <div class="e-page-content">
+    <a class="e-page-item" disabled>Previous</a>
+    <a class="e-page-item">Next page</a>
+  </div>
+
+</nav>
+{% endhighlight %}
+</div>
+<div class="e-section">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Variations</h6>
+  <nav class="e-pagination" role="navigation" aria-label="pagination">
+
+    <a href="/" class="e-page-item" disabled>Previous</a>
+
+    <ul class="e-page-content">
+
+      <li class="e-page-item">
+        <a href="/" aria-label="Goto page 1">1</a>
+      </li>
+
+      <li class="e-page-item">
+        <a href="/" aria-label="Goto page 2">2</a>
+      </li>
+
+      <li class="e-page-item">
+        <a aria-label="Goto page 3">3</a>
+      </li>
+
+      <li class="e-page-item on-page">
+        <a aria-label="Goto page 4">4</a>
+      </li>
+
+      <li class="e-page-item">
+        <a aria-label="Goto page 5">5</a>
+      </li>
+    </ul>
+
+    <a href="/" class="e-page-item">Next page</a>
+
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-pagination" aria-label="pagination">
+  <a class="e-page-item" disabled>Previous</a>
+
+  <ul class="e-page-content">
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+    <li class="e-page-item on-page">
+      <a aria-label="Goto page 2">2</a>
+    </li>
+  </ul>
+
+  <a class="e-page-item">Next page</a>
+</nav>
+{% endhighlight %}
+</div>
+</div>
+
+
+<div class="container-white">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Unified</h6>
+  <p>Add <strong class="code">unified</strong> to unify container elements <strong class="code">e-page-content</strong></p>
+  <div class="e-cols">
+    <div class="e-col">
+      <div class="e-section">
+        <nav class="e-pagination" aria-label="pagination">
+
+      <div class="e-page-content unified">
+        <a class="e-page-item">Previous</a>
+
+        <li class="e-page-item">
+          <a aria-label="Goto page 1">1</a>
+        </li>
+        <li class="e-page-item">
+          <a aria-label="Goto page 2">2</a>
+        </li>
+        <li class="e-page-item on-page">
+          <a aria-label="Goto page 3">3</a>
+        </li>
+        <li class="e-page-item">
+          <a aria-label="Goto page 4">4</a>
+        </li>
+        <a class="e-page-item">Next page</a>
+      </div>
+
+    </nav>
+      </div>
+    </div>
+    <div class="e-col-12">
+{% highlight html %}
+<nav class="e-pagination" aria-label="pagination">
+  <ul class="e-page-content unified">
+    <a class="e-page-item" disabled>Previous</a>
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+    <li class="e-page-item on-page">
+      <a aria-label="Goto page 2">2</a>
+    </li>
+    <a class="e-page-item">Next page</a>
+  </ul>
+</nav>
+{% endhighlight %}
+    </div>
+  </div>
+<div class="e-section">
+  <nav class="e-pagination" aria-label="pagination">
+
+    <div class="e-page-content unified">
+      <a class="e-page-item">Previous</a>
+      <a class="e-page-item">Next page</a>
+    </div>
+
+    <ul class="e-page-content">
+      <li class="e-page-item">
+        <a aria-label="Goto page 1">1</a>
+      </li>
+      <li class="e-page-item on-page">
+        <a aria-label="Goto page 2">2</a>
+      </li>
+      <li class="e-page-item">
+        <a aria-label="Goto page 3">3</a>
+      </li>
+      <li class="e-page-item">
+        <a aria-label="Goto page 4">4</a>
+      </li>
+    </ul>
+
+  </nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-pagination" aria-label="pagination">
+  <div class="e-page-content unified">
+    <a class="e-page-item">Previous</a>
+    <a class="e-page-item">Next page</a>
+  </div>
+
+  <ul class="e-page-content">
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+    <li class="e-page-item on-page">
+      <a aria-label="Goto page 2">2</a>
+    </li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+</div>
+
+<div class="container-white">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Sizes</h6>
+  <p>Add different sizes to the page.</p>
+  <div class="e-section">
+    <h6 class="code-title">small</h6>
+    <nav class="e-pagination small" aria-label="pagination">
+      <ul class="e-page-content">
+        <li class="e-page-item">
+          <a aria-label="Goto page 1">1</a>
+        </li>
+        <li class="e-page-item on-page">
+          <a aria-label="Goto page 2">2</a>
+        </li>
+        <li class="e-page-item">
+          <a aria-label="Goto page 3">3</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="e-section">
+{% highlight html %}
+<nav class="e-pagination small" aria-label="pagination">
+
+  <ul class="e-page-content">
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+  </ul>
+
+</nav>
+{% endhighlight %}
+    </div>
+    <h6 class="code-title">plus</h6>
+    <nav class="e-pagination plus" aria-label="pagination">
+      <ul class="e-page-content">
+        <li class="e-page-item">
+          <a aria-label="Goto page 1">1</a>
+        </li>
+        <li class="e-page-item on-page">
+          <a aria-label="Goto page 2">2</a>
+        </li>
+        <li class="e-page-item">
+          <a aria-label="Goto page 3">3</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="e-section">
+{% highlight html %}
+<nav class="e-pagination plus" aria-label="pagination">
+
+  <ul class="e-page-content">
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+  </ul>
+
+</nav>
+{% endhighlight %}
+    </div>
+  </div>
+</div>
+
+<div class="container-white">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Alignments</h6>
+<p>Change the alignment of pagination components with <a href="{{site.url}}/alignments">Alignments utilities.</a></p>
+<div class="e-section">
+<h6 class="code-title">Centered</h6>
+<nav class="e-pagination centered" aria-label="pagination">
+  <ul class="e-page-content">
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+    <li class="e-page-item on-page">
+      <a aria-label="Goto page 2">2</a>
+    </li>
+    <li class="e-page-item">
+      <a aria-label="Goto page 3">3</a>
+    </li>
+  </ul>
+
+</nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-pagination centered" aria-label="pagination">
+  <ul class="e-page-content">
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+
+
+<div class="e-section">
+<h6 class="code-title">Align-end</h6>
+<nav class="e-pagination align-end" aria-label="pagination">
+  <ul class="e-page-content">
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+    <li class="e-page-item on-page">
+      <a aria-label="Goto page 2">2</a>
+    </li>
+    <li class="e-page-item">
+      <a aria-label="Goto page 3">3</a>
+    </li>
+    <li class="e-page-item">
+      <a aria-label="Goto page 4">4</a>
+    </li>
+    <li class="e-page-item">
+      <a aria-label="Goto page 5">5</a>
+    </li>
+  </ul>
+
+</nav>
+</div>
+<div class="e-section">
+{% highlight html %}
+<nav class="e-pagination align-end" aria-label="pagination">
+  <ul class="e-page-content">
+    <li class="e-page-item">
+      <a aria-label="Goto page 1">1</a>
+    </li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>
+</div>

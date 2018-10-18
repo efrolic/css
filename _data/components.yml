@@ -75,6 +75,12 @@
   url: /notes-previews
   bio: "This is a preview of all the notes you can create by simply adding classes."
 
+- name: Pagination
+  category: Component
+  url: /pagination
+  bio: "The traditional paging to divide content into numbered pages or indicate
+  that there is a series of related content on several pages. "
+
 - name: Progress
   category: Component
   url: /progress

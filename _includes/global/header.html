@@ -200,10 +200,11 @@
     </a>
   </li>
 
+<!--
   <li class="{% if page.permalink == '/sidenav' %}active{% endif %}">
     <a href="{{ site.url }}/sidenav"><i class="fas fa-grip-vertical text-sky"></i> SideNav
     </a>
-  </li>
+  </li> -->
 
   <li class="{% if page.permalink == '/notes' %}active{% endif %}">
     <a href="{{ site.url }}/notes"><i class="fas fa-comment-alt text-warning"></i> Notes
@@ -212,6 +213,11 @@
 
   <li class="{% if page.permalink == '/notes-previews' %}active{% endif %}">
     <a href="{{ site.url }}/notes-previews"><i class="fas fa-desktop text-warning"></i> Notes previews
+    </a>
+  </li>
+
+  <li class="{% if page.permalink == '/pagination' %}active{% endif %}">
+    <a href="{{ site.url }}/pagination"><i class="far fa-caret-square-right text-purple"></i> Pagination
     </a>
   </li>
 
