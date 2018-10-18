@@ -21,9 +21,9 @@
   bio: "Colors are used as variants in all classes of eFrolic,
   that is, as a second class after the main one to customize elements."
 
-- name: Clear
+- name: Clean
   category: Utilities
-  url: /clear
+  url: /clean
   bio: "This utility cleans the content floating inside a container. Add as principal or a daughter tag."
 
 - name: Delete
