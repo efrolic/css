@@ -33,6 +33,39 @@ background-position: center;
 
 {% include global/footer.html %}
 
+{% if page.form == 'form' %}
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$(function(){
+
+   $('a[href*=#]').click(function() {
+
+   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+       && location.hostname == this.hostname) {
+
+           var $target = $(this.hash);
+
+           $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+           if ($target.length) {
+
+               var targetOffset = $target.offset().top;
+
+               var top = targetOffset - 85 + 'px';
+
+               $('html,body').animate({scrollTop: top}, 300);
+
+               return false;
+
+          }
+
+     }
+
+ });
+
+});
+</script>
+{% endif %}
 <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
 <script type="text/javascript">
 var sjs = SimpleJekyllSearch({

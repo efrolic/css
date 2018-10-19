@@ -423,36 +423,3 @@ We choose only these two colors because they are those that represent the states
   </ul>
 </nav>
 </div>
-
-
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript">
-$(function(){
-
-   $('a[href*=#]').click(function() {
-
-   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-       && location.hostname == this.hostname) {
-
-           var $target = $(this.hash);
-
-           $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
-           if ($target.length) {
-
-               var targetOffset = $target.offset().top;
-
-               var top = targetOffset - 85 + 'px';
-
-               $('html,body').animate({scrollTop: top}, 300);
-
-               return false;
-
-          }
-
-     }
-
- });
-
-});
-</script>
