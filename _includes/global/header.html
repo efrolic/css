@@ -81,6 +81,7 @@
       </div>
     </div>
   </div>
+  <div class="on-page {% if page.form == 'form' %} off-pages {% endif %}">
   <p class="label {% if page.category == 'start' %}on-active{% endif %}"><br><strong><a href="{{site.url}}/approach">Get started</a></strong></p>
   <div class="off-page {% if page.category == 'start' %} on-page {% endif %}">
   <li class="{% if page.permalink == '/approach' %}active{% endif %}">
@@ -185,8 +186,8 @@
     </a>
   </li>
 
-  <li class="{% if page.permalink == '/form' %}active{% endif %}">
-    <a href="{{ site.url }}/form"><i class="fab fa-wpforms text-purple"></i> Form
+  <li class="{% if page.permalink == '/forms' %}active{% endif %}">
+    <a href="{{ site.url }}/forms"><i class="fab fa-wpforms text-purple"></i> Forms
     </a>
   </li>
 
@@ -321,4 +322,19 @@
       Website content licensed: <br>
       <a rel="license" class="licensed" target="_blank" href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported (CC BY 3.0)</a></p>
   </div>
+  </div>
+  <!-- Form navigation -->
+
+{% if page.form == 'form' %}
+  <p class="label"> <br> <strong><a href="{{site.url}}/documentation/components"><i class="fas fa-arrow-left text-danger"></i> Back to docs</a></strong></p>
+  <p class="label"><strong>On this page <span class="e-tag danger">Forms</span> </strong></p>
+
+  <li><a href="#sizes">Sizes</a></li>
+  <li><a href="#status">Status / Colors</a></li>
+  <li><a href="#groups">Form groups</a></li>
+  <li><a href="#styles">Styles</a></li>
+  <li><a href="#grid">Form grid</a></li>
+  <li><a href="#h-form">Horizontal Form</a></li>
+  <li><a href="#item">Item</a></li>
+{% endif %}
 </nav>

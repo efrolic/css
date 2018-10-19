@@ -1,0 +1,203 @@
+%place-control {
+  transition        : border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  height            : calc(2.420rem + 2px);
+  padding           : 0.375rem 0.75rem;
+  border            : solid 1px #e3e4e5;
+  display           : inline-flex;
+  justify-content   : flex-start;
+  color             : rgba(0,0,0,0.6) !important;
+  border-radius     : 0.25rem;
+  align-items       : center;
+  background-color  : #fff !important;
+  max-width         : 100%;
+  font-size         : 1rem;
+  vertical-align    : top;
+  position          : relative;
+  -moz-appearance   : none;
+  -webkit-appearance: none;
+
+  &:hover {
+    border-color: #c4cbd3;
+  }
+
+  &:focus {
+    outline     : none !important;
+    border-color: $primary;
+    box-shadow  : 0 0 0 0.125em rgba($primary,.25);
+  }
+
+  &.small {
+    height   : calc(1.75rem + 2px);
+    padding  : 0.30rem 0.5rem;
+    font-size: 0.80rem;
+  }
+
+  &.plus {
+    height   : calc(3.15rem + 2px);
+    padding  : 0.450rem 1rem;
+    font-size: 1.20rem;
+  }
+}
+
+.e-control {
+  @extend %place-control;
+  box-shadow   : inset 0 1px 1px rgba(10,10,10,.080);
+  width        : 100%;
+
+  &[readonly] {
+    box-shadow: none !important;
+  }
+
+  &[disabled] {
+    background: #f3f3f3 !important;
+  }
+  $input-colors: (
+    "success": $success,
+    "danger" : $danger
+  );
+  @each $name, $pair in $input-colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      border-color: $color;
+      color       : darken($color,15%) !important;
+
+      &:focus {
+        box-shadow: 0 0 0 0.125em rgba($color,.25);
+      }
+    }
+  }
+}
+
+.e-form-group {
+  margin-bottom: 0.85rem;
+
+  & .e-btn {
+    margin: 0;
+  }
+
+  & .e-form-info {
+    display   : block;
+    margin-top: 0.30rem;
+    color     : #6c757d;
+    font-size : 0.80rem;
+  }
+}
+
+.default {
+  & .e-control {
+    background: $default !important;
+  }
+}
+
+.rounded {
+  & .e-control {
+    border-radius: 100px;
+  }
+}
+
+.rounded textarea.e-control,
+textarea.e-control.rounded {
+  border-radius: 0.25rem !important;
+}
+
+textarea.e-control {
+  min-height : 120px;
+  resize     : vertical;
+  padding-top: 0.9em;
+}
+
+input[type="file"].e-control {
+  background : #f7f8f9 !important;
+  display    : block;
+  width      : 100%;
+  height     : auto;
+  line-height: 1.7;
+}
+
+.e-label {
+  display       : block;
+  margin-bottom : 0.5rem;
+  color         : inherit;
+  font-weight   : bold;
+  letter-spacing: 0.2px;
+  opacity       : 0.9;
+}
+/******************************************************************
+*
+*******************************************************************/
+.e-select:not([multiple]) {
+  @extend %place-control;
+  cursor         : pointer;
+  padding-right  : 2.5em !important;
+  background     : #fff url("https://bit.ly/2Ev45cV") no-repeat right 1rem center;
+  background-size: 9px 10px;
+}
+
+.e-select[multiple] {
+  border-radius: 0.25rem;
+  border       : solid 1px #e3e4e5;
+  color        : rgba(0,0,0,0.6) !important;
+  width        : 100%;
+
+  & option {
+    padding: 0.470em 0.9em;
+  }
+}
+/*****************************************/
+
+.e-control-helper {
+  padding      : 0 0.9em;
+  border-radius: 0.25rem;
+  @extend %centered;
+  background   : #fff;
+  border       : solid 1px #e3e4e5;
+  color        : rgba(0,0,0,0.5);
+}
+
+.e-form-group {
+  &.unified {
+    position   : relative;
+    display    : flex;
+    flex-wrap  : wrap;
+    align-items: stretch;
+    width      : 100%;
+
+    & .e-btn:not(:first-child),
+    & .e-control-helper:not(:first-child),
+    & .e-control:not(:first-child),
+    & .e-select:not(:first-child) {
+      border-top-left-radius   : 0;
+      border-bottom-left-radius: 0;
+      margin-left              : -1px;
+    }
+
+    & .e-btn:not(:last-child),
+    & .e-control-helper:not(:last-child),
+    & .e-control:not(:last-child),
+    & .e-select:not(:last-child) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius   : 0;
+      margin-right              : -1px;
+    }
+
+    & .e-control {
+      position     : relative;
+      flex         : 1 1 auto;
+      width        : 1%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.e-form-box {
+  margin       : 0 auto;
+  padding      : 2rem;
+  @include desktop {
+    padding: 3rem;
+  }
+  overflow     : hidden;
+  border-radius: 0.625rem;
+  border       : solid 0.5px rgba(0,0,0,0.050);
+  @extend .shadow;
+}
