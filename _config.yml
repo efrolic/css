@@ -37,6 +37,6 @@ ref: hello
 # Build settings
 version: "V0.2.3"
 markdown: kramdown
-url: "https://efraax.github.io/eFrolic"
+url: "http://efrolicss.com"
 permalink: pretty
 exclude: ['node_modules', 'gulpfile.js', 'package-lock.json', 'Gemfile', 'Gemfile.lock', 'feed.xml']
