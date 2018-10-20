@@ -126,6 +126,7 @@ input[type="file"].e-control {
 /*****************************************************
 *                      Select
 ******************************************************/
+
 .e-select:not([multiple]) {
   @extend %place-control;
   cursor         : pointer;
@@ -147,7 +148,6 @@ input[type="file"].e-control {
 /*****************************************
 *   Form group unified
 ******************************************/
-
 .e-control-helper {
   padding      : 0 0.9em;
   border-radius: 0.25rem;
@@ -212,7 +212,6 @@ input[type="file"].e-control {
 /*******************************************************
 *                  Input Range
 *******************************************************/
-
 .e-range {
   -webkit-appearance: none;
   -moz-appearance   : none;
