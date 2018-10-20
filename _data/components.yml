@@ -58,6 +58,54 @@
   bio: "The famous drop-down options are contextual overlays that can be toggled
   to display lists of links and more."
 
+- name: Forms
+  category: Components
+  url: /forms
+  bio: "Use traditional custom forms controls to give a good user experience.
+  We use a pleasant style and regulated to the standards, modern, simple and adaptable."
+
+- name: Input
+  category: Element
+  url: /forms
+  bio: "Use traditional custom forms controls to give a good user experience.
+  We use a pleasant style and regulated to the standards, modern, simple and adaptable."
+
+- name: Select
+  category: Element
+  url: /forms
+  bio: "Use traditional custom forms controls to give a good user experience.
+  We use a pleasant style and regulated to the standards, modern, simple and adaptable."
+
+- name: Textarea
+  category: Element
+  url: /forms
+  bio: "Use traditional custom forms controls to give a good user experience.
+  We use a pleasant style and regulated to the standards, modern, simple and adaptable."
+
+- name: Checkbox
+  category: Element
+  url: /forms
+  bio: "Use traditional custom forms controls to give a good user experience.
+  We use a pleasant style and regulated to the standards, modern, simple and adaptable."
+
+- name: Radio
+  category: Element
+  url: /forms
+  bio: "Use traditional custom forms controls to give a good user experience.
+  We use a pleasant style and regulated to the standards, modern, simple and adaptable."
+
+- name: File input
+  category: Element
+  url: /forms
+  bio: "Use traditional custom forms controls to give a good user experience.
+  We use a pleasant style and regulated to the standards, modern, simple and adaptable."
+
+- name: Range input
+  category: Element
+  url: /forms
+  bio: "Use traditional custom forms controls to give a good user experience.
+  We use a pleasant style and regulated to the standards, modern, simple and adaptable."
+
 - name: Navbars
   category: Component
   url: /navbars

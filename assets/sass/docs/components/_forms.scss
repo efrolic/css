@@ -75,13 +75,13 @@
   & .e-btn {
     margin: 0;
   }
+}
 
-  & .e-form-info {
-    display   : block;
-    margin-top: 0.30rem;
-    color     : #6c757d;
-    font-size : 0.80rem;
-  }
+.e-form-info {
+  display   : block;
+  margin-top: 0.30rem;
+  color     : #6c757d;
+  font-size : 0.80rem;
 }
 
 .default {
@@ -123,9 +123,9 @@ input[type="file"].e-control {
   letter-spacing: 0.2px;
   opacity       : 0.9;
 }
-/******************************************************************
-*
-*******************************************************************/
+/*****************************************************
+*                      Select
+******************************************************/
 .e-select:not([multiple]) {
   @extend %place-control;
   cursor         : pointer;
@@ -144,7 +144,9 @@ input[type="file"].e-control {
     padding: 0.470em 0.9em;
   }
 }
-/*****************************************/
+/*****************************************
+*   Form group unified
+******************************************/
 
 .e-control-helper {
   padding      : 0 0.9em;
@@ -153,6 +155,7 @@ input[type="file"].e-control {
   background   : #fff;
   border       : solid 1px #e3e4e5;
   color        : rgba(0,0,0,0.5);
+  font-weight  : 500;
 }
 
 .e-form-group {
@@ -187,6 +190,11 @@ input[type="file"].e-control {
       width        : 1%;
       margin-bottom: 0;
     }
+
+    & .e-label {
+      display: block;
+      width  : 100%;
+    }
   }
 }
 
@@ -200,4 +208,70 @@ input[type="file"].e-control {
   border-radius: 0.625rem;
   border       : solid 0.5px rgba(0,0,0,0.050);
   @extend .shadow;
+}
+/*******************************************************
+*                  Input Range
+*******************************************************/
+
+.e-range {
+  -webkit-appearance: none;
+  -moz-appearance   : none;
+  width             : 100%;
+  height            : 0.5rem;
+  background        : #f3f3f3;
+  outline           : none;
+  opacity           : 0.8;
+  -webkit-transition: 0.2s;
+  transition        : opacity 0.2s;
+  border-radius     : 100px;
+}
+
+.e-range:hover {
+  opacity: 1;
+}
+
+.e-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance        : none;
+  width             : 17px;
+  height            : 17px;
+  background        : #fff;
+  cursor            : pointer;
+  border-radius     : 100%;
+  box-shadow        : 0.15rem 0.125rem 0.25rem rgba(0,0,0,.075);
+  border            : solid 0.5px rgba(0,0,0,0.050);
+  -webkit-transition: 0.2s;
+  transition        : all 0.2s;
+}
+
+.e-range::-webkit-slider-thumb:hover {
+  width : 20px;
+  height: 20px;
+}
+
+.e-range::-moz-range-thumb {
+  width        : 17px;
+  height       : 17px;
+  background   : #fff;
+  cursor       : pointer;
+  border-radius: 100%;
+  box-shadow   : 0 0.125rem 0.25rem rgba(0,0,0,.075);
+  border       : solid 0.5px rgba(0,0,0,0.050);
+}
+
+.e-range::-moz-range-track {
+  -webkit-appearance: none;
+  -moz-appearance   : none;
+  width             : 100%;
+  height            : 0.5rem;
+  background        : rgba(0,0,0,0.050);
+  outline           : none;
+  border-radius     : 100px;
+}
+
+.marked {
+  background    : $default !important;
+  color         : rgba(0,0,0,0.7);
+  font-weight   : bold;
+  letter-spacing: 0.2px;
 }

@@ -1,0 +1,70 @@
+$border: solid 1px rgba(0,0,0,0.1) !important;
+
+*.border {
+  border       : $border;
+  border-radius: 0.25rem;
+
+  &-left {
+    border-left: $border;
+  }
+
+  &-right {
+    border-right: $border;
+  }
+
+  &-top {
+    border-top: $border;
+  }
+
+  &-bottom {
+    border-bottom: $border;
+  }
+
+  &-y {
+    border-bottom: $border;
+    border-top   : $border;
+  }
+
+  &-x {
+    border-right: $border;
+    border-left : $border;
+  }
+}
+
+*.rounded {
+  border-radius: 100px;
+}
+
+*.circle {
+  border-radius: 100%;
+}
+
+*.no-border {
+  border: none !important;
+
+  &-left {
+    border-left: none !important;
+  }
+
+  &-right {
+    border-right: none !important;
+  }
+
+  &-top {
+    border-top: none !important;
+  }
+
+  &-bottom {
+    border-bottom: none !important;
+  }
+
+  &-y {
+    border-bottom: none !important;
+    border-top   : none !important;
+  }
+
+  &-x {
+    border-right: none !important;
+    border-left : none !important;
+  }
+}

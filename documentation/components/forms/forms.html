@@ -15,6 +15,10 @@ We use a pleasant style and regulated to the standards, modern, simple and adapt
 
 ---
 
+<style>
+.e-nav-aside li {padding: 5px 5px 5px 40px;}
+</style>
+
 <h3 class="code-title">{{page.title}} <span class="e-tag static danger">Component</span></h3>
 <p class="desc">{{page.description}}</p>
 <hr class="hr">
@@ -79,13 +83,13 @@ It can be applied to all types of input control, textarea, file among others.</p
     <p>Add the classes <strong class="code">small</strong> or <strong class="code">plus</strong>
     to change the size of your controls.</p>
     <div class="e-form-group">
-      <input class="e-control small" type="text" placeholder="Text input">
+      <input class="e-control small" type="text" placeholder="Text Input small">
     </div>
     <div class="e-form-group">
-      <input class="e-control" type="text" placeholder="Text input">
+      <input class="e-control" type="text" placeholder="Text input normal">
     </div>
     <div class="e-form-group">
-      <input class="e-control plus" type="text" placeholder="Text input">
+      <input class="e-control plus" type="text" placeholder="Text input plus">
     </div>
   </div>
   <div class="e-section">
@@ -120,7 +124,7 @@ We choose only these two colors because they are those that represent the states
 <input class="e-control danger" type="text" value="@Invalid user">
 {% endhighlight %}
   </div>
-<div class="e-section">
+<div class="e-section" id="disabled">
   <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Disabled</h6>
   <div class="e-form-group">
     <input class="e-control" type="text" placeholder="Disabled input" disabled>
@@ -129,7 +133,7 @@ We choose only these two colors because they are those that represent the states
 <input class="e-control" type="text" placeholder="@eFrolic" disabled>
 {% endhighlight %}
 </div>
-<div class="e-section">
+<div class="e-section" id="readonly">
   <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Readonly</h6>
   <p>Use <strong>readonly HTML</strong> to get a static entry, your text is not editable, it is only available for reading.</p>
   <div class="e-form-group">
@@ -139,39 +143,6 @@ We choose only these two colors because they are those that represent the states
 <input class="e-control" type="text" value="@eFrolic" readonly>
 {% endhighlight %}
 </div>
-</div>
-
-
-<div class="container-white" id="groups">
-  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Form groups</h5>
-  <p>The class <strong>e-form-group</strong> to create a container around the controls by grouping them into small sections.</p>
-  <div class="e-section">
-    <div class="e-form-group">
-      <label class="e-label">Label</label>
-      <input class="e-control" type="text" placeholder="Text input">
-      <p class="e-form-info">This is information text or help.</p>
-    </div>
-    <div class="e-form-group">
-      <label class="e-label">Other Label</label>
-      <input class="e-control" type="text" placeholder="Text input">
-    </div>
-    <div class="e-form-group">
-      <button type="button" class="e-btn small primary">Button</button>
-    </div>
-    <div class="e-col-12">
-{% highlight html %}
-<div class="e-form-group">
-  <label class="e-label">Label</label>
-  <input class="e-control" type="text" placeholder="Text">
-  <p class="e-form-info">This is information text or help.</p>
-</div>
-
-<div class="e-form-group">
-  <button type="button" class="e-btn primary">Button</button>
-</div>
-{% endhighlight %}
-    </div>
-  </div>
 </div>
 
 <div class="container-white" id="styles">
@@ -254,6 +225,374 @@ We choose only these two colors because they are those that represent the states
 </form>
 {% endhighlight %}
   </div>
+</div>
+
+<div class="container-white" id="groups">
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Form groups</h5>
+  <p>The class <strong>e-form-group</strong> to create a container around the controls by grouping them into small sections.</p>
+  <div class="e-section">
+    <div class="e-form-group">
+      <label class="e-label">Label</label>
+      <input class="e-control" type="text" placeholder="Text input">
+      <p class="e-form-info">This is information text or help.</p>
+    </div>
+    <div class="e-form-group">
+      <label class="e-label">Other Label</label>
+      <input class="e-control" type="text" placeholder="Text input">
+    </div>
+    <div class="e-form-group">
+      <button type="button" class="e-btn small primary">Button</button>
+    </div>
+<div class="e-col-12">
+{% highlight html %}
+<div class="e-form-group">
+  <label class="e-label">Label</label>
+  <input class="e-control" type="text" placeholder="Text">
+  <p class="e-form-info">This is information text or help.</p>
+</div>
+
+<div class="e-form-group">
+  <button type="button" class="e-btn primary">Button</button>
+</div>
+{% endhighlight %}
+  </div>
+  </div>
+</div>
+
+<div class="container-white" id="unified">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Form group unified</h5>
+<p class="desc">Use the class <strong class="code">unified</strong> to easily unify the form controls by adding buttons, text, select, among others.</p>
+<div class="e-section">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Basic example:</h6>
+<div class="e-form-group unified">
+  <div class="e-control-helper">
+    Username
+  </div>
+  <input class="e-control" type="text" placeholder="@eFrolicss">
+</div>
+
+<div class="e-form-group unified">
+  <input class="e-control" type="text" placeholder="Your email">
+  <div class="e-control-helper marked">
+    @gmail.com
+  </div>
+</div>
+
+<label class="e-label">Find a repository</label>
+<div class="e-form-group unified">
+  <div class="e-control-helper">
+    <i class="fas fa-search text-primary"></i>
+  </div>
+  <input class="e-control" type="text" placeholder="Search...">
+  <button type="button" class="e-btn primary">Search</button>
+</div>
+
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-form-group unified"><!-- Here -->
+  ...
+</div>
+{% endhighlight %}
+<br>
+{% highlight html %}
+<div class="e-form-group unified">
+  <div class="e-control-helper">
+    Username
+  </div>
+  <input class="e-control" type="text" placeholder="@eFrolic">
+</div>
+
+<div class="e-form-group unified">
+  <input class="e-control" type="text" placeholder="Your email">
+  <div class="e-control-helper marked">
+    @gmail.com
+  </div>
+</div>
+
+<label class="e-label">Find a repository</label>
+<div class="e-form-group unified">
+  <div class="e-control-helper">
+    <i class="fas fa-search text-primary"></i>
+  </div>
+  <input class="e-control" type="text" placeholder="Search...">
+  <button type="button" class="e-btn primary">Search</button>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section" id="control-helper">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Control helper</h6>
+<p>Use class <strong class="code">e-control-helper</strong> to create a help container.</p>
+<div class="e-form-group unified">
+  <div class="e-control-helper">
+    Text helper
+  </div>
+  <input class="e-control" type="text" placeholder="Text input">
+</div>
+<p>Add <strong class="code">marked</strong> to mark the text and add light gray color.</p>
+<div class="e-form-group unified">
+  <div class="e-control-helper marked">
+    @gmail.com
+  </div>
+  <input class="e-control" type="text" placeholder="Efrain Peralta">
+</div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-form-group unified">
+  <div class="e-control-helper"><!-- Here -->
+    Text helper
+  </div>
+  <input class="e-control" type="text" placeholder="...">
+</div>
+
+<div class="e-form-group unified">
+  <div class="e-control-helper marked"><!-- Here marked -->
+    @gmail.com
+  </div>
+  <input class="e-control" type="text" placeholder="...">
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+<p class="desc">Add the background and text colors to personalize. <a href="{{site.url}}/colors">Color palette</a> </p>
+<div class="e-form-group unified">
+  <div class="e-control-helper"><!-- Here -->
+    <i class="fab fa-twitter text-sky"></i>
+  </div>
+  <input class="e-control" type="text" placeholder="Text input">
+</div>
+
+<div class="e-form-group unified">
+  <div class="e-control-helper danger"><!-- Here marked -->
+    @eFrolicss
+  </div>
+  <input class="e-control" type="text" placeholder="Text input">
+</div>
+<div class="e-form-group unified">
+  <div class="e-control-helper text-success"><!-- Here -->
+    @eFrolicss
+  </div>
+  <input class="e-control" type="text" placeholder="Text input">
+</div>
+
+<div class="e-form-group unified">
+  <div class="e-control-helper primary"><!-- Here marked -->
+    @eFrolicss
+  </div>
+  <input class="e-control" type="text" placeholder="Text input">
+</div>
+<div class="e-form-group unified">
+  <div class="e-control-helper purple"><!-- Here marked -->
+    @eFrolicss
+  </div>
+  <input class="e-control" type="text" placeholder="Text input">
+</div>
+<div class="e-form-group unified">
+  <div class="e-control-helper success"><!-- Here marked -->
+    @eFrolicss
+  </div>
+  <input class="e-control" type="text" placeholder="Text input">
+</div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-form-group unified">
+  <div class="e-control-helper primary"><!-- Here -->
+    @eFrolicss
+  </div>
+  <input class="e-control" type="text" placeholder="...">
+</div>
+
+<div class="e-form-group unified">
+  <div class="e-control-helper text-danger"><!-- Here -->
+    @eFrolicss
+  </div>
+  <input class="e-control" type="text" placeholder="...">
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section" id="multiple-inputs">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Multiple inputs</h6>
+<div class="e-form-group unified">
+  <div class="e-control-helper marked"><!-- Here -->
+    First and last name
+  </div>
+  <input class="e-control" type="text" placeholder="First name">
+  <input class="e-control" type="text" placeholder="Last name">
+</div>
+<div class="e-form-group unified">
+  <div class="e-control-helper primary"><!-- Here -->
+    First and last name
+  </div>
+  <input class="e-control" type="text" placeholder="First name">
+  <input class="e-control" type="text" placeholder="Last name">
+</div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-form-group unified">
+  <div class="e-control-helper marked">
+    First and last name
+  </div>
+  <input class="e-control" type="text" placeholder="First name">
+  <input class="e-control" type="text" placeholder="Last name">
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section" id="button-addons">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Button addons</h6>
+  <div class="e-form-group unified">
+    <button type="button" class="e-btn primary">Button</button>
+    <input class="e-control" type="text" placeholder="Text input">
+  </div>
+  <div class="e-form-group unified">
+    <input class="e-control" type="text" placeholder="Text input">
+    <button type="button" class="e-btn danger">Button</button>
+  </div>
+  <div class="e-form-group unified">
+    <button type="button" class="e-btn primary">Button</button>
+    <button type="button" class="e-btn inverted primary">Button</button>
+    <input class="e-control" type="text" placeholder="Text input">
+  </div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-form-group unified">
+  <button type="button" class="e-btn primary">Button</button>
+  <input class="e-control" type="text" placeholder="...">
+</div>
+{% endhighlight %}
+</div>
+</div>
+
+
+
+<div class="container-white" id="help-text">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Help text</h6>
+  <p class="look">Use help text or information to indicate states or warnings to the user.</p>
+  <div class="e-section">
+  <h6 class="code-title text-sky">Example:</h6>
+  <div class="e-form-group">
+  <label class="e-label">Label</label>
+  <input class="e-control" type="text" placeholder="Text">
+  <p class="e-form-info">This is information text or help.</p>
+  </div>
+  <div class="e-form-group">
+  <label class="e-label">Username</label>
+  <input class="e-control danger" type="text" value="@eFrolicss">
+  <p class="e-form-info text-danger">This username is not available.</p>
+  </div>
+{% highlight html %}
+<div class="e-form-group">
+  <label class="e-label">Username</label>
+  <input class="e-control" type="text" placeholder="Text">
+  <p class="e-form-info">This is information text or help.</p>
+</div>
+
+<div class="e-form-group">
+  <label class="e-label">Username</label>
+  <input class="e-control danger" type="text" value="@eFrolicss">
+  <p class="e-form-info text-danger">This username is not available.</p>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="container-white" id="icons">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> With icons</h5>
+<p class="look">Use icons inside the containers, using the help elements.</p>
+<div class="e-section">
+  <div class="e-form-group unified">
+  <div class="e-control-helper">
+    <i class="far fa-envelope"></i>
+  </div>
+  <input class="e-control" type="email" placeholder="Email">
+  <div class="e-control-helper">
+    <i class="fas fa-check"></i>
+  </div>
+</div>
+  <div class="e-form-group unified">
+  <div class="e-control-helper">
+    <i class="fas fa-lock"></i>
+  </div>
+  <input class="e-control" type="password" placeholder="Password">
+</div>
+  <div class="e-form-group">
+    <button type="button" class="e-btn primary">Login</button>
+</div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-form-group unified">
+  <div class="e-control-helper">
+    <i class="far fa-envelope"></i><!-- Icon -->
+  </div>
+
+  <input class="e-control" type="email" placeholder="Email">
+
+  <div class="e-control-helper">
+    <i class="fas fa-check"></i><!-- Icon -->
+  </div>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+<p>Remove the edges. <a href="{{site.url}}/borders">Borders</a> </p>
+<div class="e-form-group unified">
+  <div class="e-control-helper no-border-right">
+    <i class="far fa-envelope text-primary"></i><!-- Icon -->
+  </div>
+
+  <input class="e-control no-border-x" type="email" placeholder="Email">
+
+  <div class="e-control-helper no-border-left">
+    <i class="fas fa-check text-success"></i><!-- Icon -->
+  </div>
+</div>
+
+{% highlight html %}
+<div class="e-form-group unified">
+  <div class="e-control-helper no-border-right">
+    <i class="far fa-envelope text-primary"></i>
+  </div>
+  <input class="e-control no-border-x" type="email" placeholder="Email">
+  <div class="e-control-helper no-border-left">
+    <i class="fas fa-check text-success"></i>
+  </div>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+<p>Add the background and text colors to personalize. <a href="{{site.url}}/colors">Color palette</a> </p>
+<div class="e-form-group unified">
+<div class="e-control-helper">
+  <i class="fas fa-lock text-danger"></i>
+</div>
+<input class="e-control" type="password" placeholder="Password">
+</div>
+<div class="e-form-group unified">
+<div class="e-control-helper danger">
+  <i class="fas fa-lock"></i>
+</div>
+<input class="e-control" type="password" placeholder="Password">
+</div>
+
+{% highlight html %}
+<div class="e-form-group unified">
+  <div class="e-control-helper">
+    <i class="fas fa-lock text-danger"></i>
+  </div>
+  <input class="e-control" type="password" placeholder="Pass">
+</div>
+<div class="e-form-group unified">
+  <div class="e-control-helper danger">
+    <i class="fas fa-lock"></i>
+  </div>
+  <input class="e-control" type="password" placeholder="Pass">
+</div>
+{% endhighlight %}
+</div>
 </div>
 
 <div class="container-white" id="grid">
@@ -406,9 +745,521 @@ We choose only these two colors because they are those that represent the states
   </div>
 </div>
 
+<div class="container-white" id="form-box">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Form box</h5>
+<p class="look">It is a container element of forms to give elegant and personal appearances.</p>
+<h6 class="code-title">Example:</h6>
+<div class="e-cols">
+  <div class="e-col-12 align-start">
+    <form class="e-form-box text-center" style="max-width:410px;">
+      <h3 class="text-gray">Sign up</h3>
+      <div class="e-section">
+        <div class="e-form-group unified">
+           <input class="e-control" type="text" placeholder="First name">
+           <input class="e-control" type="text" placeholder="Last name">
+        </div>
+        <div class="e-form-group unified">
+        <div class="e-control-helper">
+        <i class="fas fa-lock text-danger"></i>
+        </div>
+        <input class="e-control" type="password" placeholder="Password">
 
+        </div>
 
+        <p class="e-form-info">At least 8 characters.</p>
+        <div class="e-form-group">
+           <input class="e-control" type="text" placeholder="@Username">
+        </div>
+        <div class="e-form-group">
+           <label>
+             <input type="checkbox"/>
+             Subscribe to our newsletter
+           </label>
+        </div>
+        <div class="e-form-group">
+        <button type="button" class="e-btn fullwidth primary"> Sign in</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="e-col">
+{% highlight html %}
+<form class="e-form-box">
+  ...
+</form>
+{% endhighlight %}
+<br>
+{% highlight html %}
+<form class="e-form-box text-center">
+  <h3 class="text-gray">Sign up</h3>
+  <div class="e-section">
+    <div class="e-form-group unified">
+       <input class="e-control" type="text" placeholder="First name">
+       <input class="e-control" type="text" placeholder="Last name">
+    </div>
+    <div class="e-form-group unified">
+    <div class="e-control-helper">
+    <i class="fas fa-lock text-danger"></i>
+    </div>
+    <input class="e-control" type="password" placeholder="Password">
+    </div>
+    <p class="e-form-info">At least 8 characters.</p>
+    <div class="e-form-group">
+       <input class="e-control" type="text" placeholder="@Username">
+    </div>
+    <div class="e-form-group">
+       <label>
+         <input type="checkbox"/>
+         Subscribe to our newsletter
+       </label>
+    </div>
+    <div class="e-form-group">
+    <button type="button" class="e-btn fullwidth primary"> Sign in</button>
+    </div>
+  </div>
+</form>
+{% endhighlight %}
+  </div>
+</div>
+</div>
 
+<div class="container-white" id="select">
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Select</h5>
+  <p class="look">Stylize the HTML drop-down selectors, create beautiful combinations with buttons, inputs, text and more.</p>
+  <h6 class="code-title">Example:</h6>
+  <div class="e-cols">
+    <div class="e-col">
+      <div class="e-section">
+        <select class="e-select">
+        <option>Select dropdown</option>
+        <option>Options one</option>
+        <option>Options two</option>
+        <option>Options three</option>
+      </select>
+      </div>
+    </div>
+    <div class="e-col">
+{% highlight html %}
+<select class="e-select">
+  <option>Select dropdown</option>
+  <option>Options one</option>
+  <option>Options two</option>
+</select>
+{% endhighlight %}
+</div>
+</div><br>
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Sizes</h6>
+  <div class="e-cols centered">
+    <div class="e-col">
+      <div class="e-section">
+        <select class="e-select small">
+        <option>Select dropdown</option>
+        <option>Options one</option>
+        <option>Options two</option>
+        <option>Options three</option>
+      </select>
+      <br><br>
+        <select class="e-select">
+        <option>Select dropdown</option>
+        <option>Options one</option>
+        <option>Options two</option>
+        <option>Options three</option>
+      </select>
+      <br><br>
+      <select class="e-select plus">
+        <option>Select dropdown</option>
+        <option>Options one</option>
+        <option>Options two</option>
+        <option>Options three</option>
+      </select>
+      </div>
+    </div>
+    <div class="e-col">
+{% highlight html %}
+<select class="e-select small">
+  <option>Select dropdown</option>
+  <option>Options</option>
+</select>
+<select class="e-select plus">
+  <option>Select dropdown</option>
+  <option>Options</option>
+</select>
+{% endhighlight %}
+</div>
+</div><br>
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> With icons</h6>
+  <div class="e-cols">
+    <div class="e-col">
+      <div class="e-section">
+      <div class="e-form-group unified">
+        <div class="e-control-helper">
+          <i class="far fa-clipboard text-danger"></i>
+        </div>
+        <select class="e-select">
+        <option>Select dropdown</option>
+        <option>Options one</option>
+        <option>Options two</option>
+        <option>Options three</option>
+        </select>
+      </div>
+
+      <div class="e-form-group unified">
+        <div class="e-control-helper no-border-right">
+          <i class="fas fa-lock text-primary"></i>
+        </div>
+        <select class="e-select small no-border-left">
+        <option>Select dropdown</option>
+        <option>Options one</option>
+        <option>Options two</option>
+        <option>Options three</option>
+        </select>
+      </div>
+      <div class="e-form-group unified">
+        <div class="e-control-helper no-border-right">
+          <i class="fas fa-lock text-danger"></i>
+        </div>
+        <select class="e-select no-border-left">
+        <option>Select dropdown</option>
+        <option>Options one</option>
+        <option>Options two</option>
+        <option>Options three</option>
+        </select>
+      </div>
+      <div class="e-form-group unified">
+        <div class="e-control-helper no-border-right">
+          <i class="fas fa-lock text-success"></i>
+        </div>
+        <select class="e-select plus no-border-left">
+        <option>Select dropdown</option>
+        <option>Options one</option>
+        <option>Options two</option>
+        <option>Options three</option>
+        </select>
+      </div>
+      </div>
+    </div>
+    <div class="e-col">
+{% highlight html %}
+<div class="e-form-group unified">
+  <div class="e-control-helper">
+    <i class="far fa-clipboard text-danger"></i>
+  </div>
+  <select class="e-select">
+    <option>Select dropdown</option>
+    <option>Options one</option>
+  </select>
+</div>
+
+<div class="e-form-group unified">
+  <div class="e-control-helper no-border-right">
+    <i class="fas fa-lock text-danger"></i>
+  </div>
+  <select class="e-select no-border-left">
+    <option>Select dropdown</option>
+    <option>Options one</option>
+  </select>
+</div>
+
+<div class="e-form-group unified">
+  <div class="e-control-helper no-border-right">
+    <i class="fas fa-lock text-danger"></i>
+  </div>
+  <select class="e-select plus no-border-left">
+    <option>Select dropdown</option>
+  </select>
+</div>
+{% endhighlight %}
+</div>
+</div><br>
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Combinations</h6>
+  <div class="e-cols centered">
+    <div class="e-col">
+<div class="e-form-group unified">
+  <select class="e-select">
+    <option>Select dropdown</option>
+    <option>Options one</option>
+  </select>
+  <input class="e-control" type="text" placeholder="Text input">
+</div>
+<div class="e-form-group unified">
+<button type="button" class="e-btn primary">Button</button>
+  <input class="e-control" type="text" placeholder="Text input">
+
+  <select class="e-select">
+    <option>Select dropdown</option>
+    <option>Options one</option>
+  </select>
+</div>
+<div class="e-form-group unified">
+  <div class="e-control-helper marked">
+    Options
+  </div>
+  <select class="e-select">
+    <option>Select dropdown</option>
+    <option>Options one</option>
+  </select>
+</div>
+</div>
+<div class="e-col">
+{% highlight html %}
+<div class="e-form-group unified">
+  <select class="e-select">
+    <option>Select dropdown</option>
+    <option>Options one</option>
+  </select>
+  <input class="e-control" type="text" placeholder="..">
+</div>
+<div class="e-form-group unified">
+  <button type="button" class="e-btn sky">Button</button>
+  <input class="e-control" type="text" placeholder="..">
+  <select class="e-select">
+    <option>Select dropdown</option>
+    <option>Options one</option>
+  </select>
+</div>
+</div>
+{% endhighlight %}
+</div>
+</div>
+<div class="e-section">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Multiple select</h6>
+  <div class="e-cols centered">
+    <select class="e-select" multiple size="5">
+    <option value="Options">Options</option>
+    <option value="Options">Options</option>
+    <option value="Options">Options</option>
+    <option value="Options">Options</option>
+    <option value="Options">Options</option>
+    <option value="Options">Options</option>
+    <option value="Options">Options</option>
+    <option value="Options">Options</option>
+    <option value="Options">Options</option>
+  </select>
+  </div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<select class="e-select" multiple size="5">
+  <option value="Options">Options</option>
+  <option value="Options">Options</option>
+  <option value="Options">Options</option>
+</select>
+{% endhighlight %}
+</div>
+</div>
+
+<div class="container-white" id="textarea">
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Textarea</h5>
+  <p class="look">The traditional textarea and its variations.</p>
+  <div class="e-cols centered">
+    <div class="e-col">
+      <textarea class="e-control" placeholder="Textarea"></textarea>
+    </div>
+    <div class="e-col">
+{% highlight html %}
+<textarea class="e-control" placeholder="Textarea"></textarea>
+{% endhighlight %}
+    </div>
+  </div><br>
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Status</h6>
+  <div class="e-cols centered">
+    <div class="e-col">
+      <textarea class="e-control success" placeholder="Textarea"></textarea>
+      <br><br>
+      <textarea class="e-control danger" placeholder="Textarea"></textarea>
+    </div>
+    <div class="e-col">
+{% highlight html %}
+<textarea class="e-control success" placeholder=".."></textarea>
+
+<textarea class="e-control danger" placeholder=".."></textarea>
+{% endhighlight %}
+    </div>
+  </div><br>
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Disabled</h6>
+  <div class="e-cols centered">
+    <div class="e-col">
+      <textarea class="e-control" placeholder="Textarea" disabled></textarea>
+    </div>
+    <div class="e-col">
+{% highlight html %}
+<textarea class="e-control" placeholder=".." disabled></textarea>
+{% endhighlight %}
+    </div>
+  </div><br>
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Readonly</h6>
+  <div class="e-cols centered">
+    <div class="e-col">
+      <textarea class="e-control" readonly>@eFrolicss</textarea>
+    </div>
+    <div class="e-col">
+{% highlight html %}
+<textarea class="e-control" readonly>@eFrolicss</textarea>
+{% endhighlight %}
+    </div>
+  </div>
+  </div>
+
+<div class="container-white" id="checkbox">
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Checkbox</h5>
+  <p>It does not apply extravagant styles to traditional checkboxes.</p>
+  <div class="e-cols centered">
+  <div class="e-col">
+    <label>
+      <input type="checkbox">
+      I agree to the <a href="#">terms and conditions</a>
+    </label>
+  </div>
+  <div class="e-col">
+{% highlight html %}
+<label>
+  <input type="checkbox">
+  I agree to the <a href="#">terms and conditions</a>
+</label>
+{% endhighlight %}
+  </div>
+</div><br>
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Disabled</h6>
+  <div class="e-cols centered">
+  <div class="e-col">
+    <label disabled>
+      <input type="checkbox">
+      I agree to the <a href="#">terms and conditions</a>
+    </label>
+  </div>
+  <div class="e-col">
+{% highlight html %}
+<label disabled>
+  <input type="checkbox">
+  I agree to the <a href="#">terms and conditions</a>
+</label>
+{% endhighlight %}
+  </div>
+  </div>
+</div>
+
+<div class="container-white" id="radio">
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Radio</h5>
+  <p>It does not apply extravagant styles to traditional Radio.</p>
+  <div class="e-cols centered">
+  <div class="e-col">
+    <label>
+      <input type="radio" name="eFrolic">
+      Yes
+    </label>
+    <label>
+      <input type="radio" name="eFrolic">
+      No
+    </label>
+  </div>
+  <div class="e-col">
+{% highlight html %}
+<label>
+  <input type="radio" name="eFrolic">
+  Yes
+</label>
+<label>
+  <input type="radio" name="eFrolic">
+  No
+</label>
+{% endhighlight %}
+  </div>
+</div><br>
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Disabled</h6>
+  <div class="e-cols centered">
+  <div class="e-col">
+    <label disabled>
+      <input type="radio" name="eFrolic">
+      Yes
+    </label>
+    <label disabled>
+      <input type="radio" name="eFrolic">
+      No
+    </label>
+  </div>
+  <div class="e-col">
+{% highlight html %}
+<label disabled>
+  <input type="radio" name="eFrolic">
+  Yes
+</label>
+<label disabled>
+  <input type="radio" name="eFrolic">
+  No
+</label>
+{% endhighlight %}
+  </div>
+  </div>
+</div>
+
+<div class="container-white" id="file">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> File</h6>
+  <p></p>
+  <div class="e-section">
+    <input class="e-control" type="file" name="eFrolic">
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<input class="e-control" type="file" name="eFrolic">
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="container-white" id="range">
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Range Inputs</h5>
+  <p class="look">Apply styles to horizontal scroll rank entries using our classes.</p>
+  <div class="e-section">
+    <input type="range" class="e-range">
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<input type="range" class="e-range">
+{% endhighlight %}
+  </div>
+  <div class="e-section">
+    <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Colors</h6>
+    <br>
+    <input type="range" class="e-range primary">
+    <input type="range" class="e-range success">
+    <input type="range" class="e-range danger">
+    <input type="range" class="e-range warning">
+    <input type="range" class="e-range sky">
+    <input type="range" class="e-range purple">
+    <input type="range" class="e-range gray">
+    <input type="range" class="e-range dark">
+    <input type="range" class="e-range black">
+    <input type="range" class="e-range green-gradient">
+    <input type="range" class="e-range purple-gradient">
+    <input type="range" class="e-range blue-gradient">
+    <input type="range" class="e-range inst-gradient">
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<input type="range" class="e-range primary">
+<input type="range" class="e-range success">
+<input type="range" class="e-range danger">
+<input type="range" class="e-range warning">
+<input type="range" class="e-range sky">
+<input type="range" class="e-range purple">
+<input type="range" class="e-range gray">
+<input type="range" class="e-range dark">
+<input type="range" class="e-range black">
+<input type="range" class="e-range green-gradient">
+<input type="range" class="e-range purple-gradient">
+<input type="range" class="e-range blue-gradient">
+<input type="range" class="e-range inst-gradient">
+{% endhighlight %}
+  </div>
+  <div class="e-section">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Disabled</h6>
+<input type="range" class="e-range" disabled>
+  </div>
+  <div class="e-section">
+{% highlight html %}
+<input type="range" class="e-range" disabled>
+{% endhighlight %}
+</div>
+</div>
 
 <div class="fixed-bottom e- shadow-2 centered aside primary no-mobile">
   <nav class="e-tabs">
@@ -419,7 +1270,8 @@ We choose only these two colors because they are those that represent the states
     <li><a href="#checkbox">Checkbox</a></li>
     <li><a href="#radio">Radio</a></li>
     <li><a href="#file">File</a></li>
-    <li><a href="#box">Form box</a></li>
+    <li><a href="#range">Range</a></li>
+    <li><a href="#form-box">Form box</a></li>
   </ul>
 </nav>
 </div>
