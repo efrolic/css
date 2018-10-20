@@ -15,6 +15,11 @@
   bio: "The background images are specially chosen illustrations to convey a feeling in the
   introductions to our websites, They are beautiful and high quality images to give the best experience."
 
+- name: Borders
+  category: Utilities
+  url: /borders
+  bio: "Use the edge classes to quickly stylize the edges of an element. Use the borders to add or remove the edges of an element."
+
 - name: Color palette
   category: Assistants
   url: /colors
