@@ -47,7 +47,7 @@
   &.fullwidth {
     width: 100%;
   }
-  /* Anime Button */
+
   &.anime {
     border             : solid 1px rgba(0, 0, 0, 0.1);
     border-bottom      : solid rgba(0, 0, 0,.2);
@@ -68,8 +68,7 @@
       border-radius: 5px;
     }
   }
-  /* End Anime Button */
-  /* Circle Button */
+
   &.circle {
     border-radius: 100%;
     font-size    : $size-icon-circle;
@@ -100,8 +99,7 @@
       text-align: center;
     }
   }
-  /* End Circle Button */
-  /* Outlined Button */
+
   &.outlined {
     background  : white;
     color       : $e-font-color;
@@ -112,7 +110,7 @@
       background: $default;
     }
   }
-  /* End Outlined Button */
+
   &.plane {
     border-radius: 2px;
     border       : none;

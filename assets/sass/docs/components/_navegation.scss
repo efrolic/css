@@ -57,9 +57,6 @@
     display: block;
   }
 }
-/***************************************************************
-*                      Sidenav styles
-****************************************************************/
 
 .e-sidenav {
   position        : fixed;
@@ -132,9 +129,7 @@
   position        : absolute !important;
   background-color: transparent !important;
 }
-/***************************************************************
-*                      End Sidenav
-****************************************************************/
+
 %e-menu-item {
   @extend %waves;
   display        : inline-block;

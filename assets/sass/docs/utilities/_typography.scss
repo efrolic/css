@@ -84,9 +84,6 @@ h6 {
 }
 
 .size-plus {
-  /* calc([tamaño minimo] + ([tamaño maximo] - [tamaño minimo])
-  * ((100vw - [viewport width minimo]) / ([viewport width maximo]
-  - [viewport width minimo])));*/
   font-size: calc(40px + (56 - 18) * ((100vw - 320px) / (1366 - 320)));
   @include desktop {
     font-size: 4.50rem;

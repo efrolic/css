@@ -51,7 +51,6 @@ input#e-menu {
 %background {
   background-color: $default;
 }
-/* Clase active del menu */
 
 .active {
   background-color: lighten(rgba(0,0,0,0.1),30%) !important;
