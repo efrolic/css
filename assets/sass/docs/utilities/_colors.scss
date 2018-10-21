@@ -30,7 +30,6 @@ $colors: (
 
   & .e-dropdown,
   & a:not(.e-btn),
-  & li+li::before,
   & p {
     color: $white;
   }
