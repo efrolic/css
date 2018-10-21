@@ -2029,7 +2029,7 @@ h6 {
 }
 
 .e-breadcrumb li + li::before, .e-tabs li + li::before {
-  color: #b5b5b5;
+  color: rgba(0, 0, 0, 0.3);
   content: "\0002f";
 }
 
