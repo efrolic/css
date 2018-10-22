@@ -1,0 +1,86 @@
+$gap: 1rem !default;
+$gaps: () !default;
+
+$gaps: map-merge(
+  (
+    3: $gap,
+    2: ($gap * 2),
+    1: ($gap * 3)
+  ),
+  $gaps
+);
+
+
+@each $prop, $letter in (margin: m, padding: p) {
+  @each $gap, $length in $gaps {
+
+    .#{$letter}-#{$gap} { #{$prop}: $length !important; }
+    .#{$letter}t-#{$gap},
+    .#{$letter}y-#{$gap} {
+      #{$prop}-top: $length !important;
+    }
+    .#{$letter}r-#{$gap},
+    .#{$letter}x-#{$gap} {
+      #{$prop}-right: $length !important;
+    }
+    .#{$letter}b-#{$gap},
+    .#{$letter}y-#{$gap} {
+      #{$prop}-bottom: $length !important;
+    }
+    .#{$letter}l-#{$gap},
+    .#{$letter}x-#{$gap} {
+      #{$prop}-left: $length !important;
+    }
+  }
+}
+
+.m-auto {
+  margin: 0 auto !important;
+}
+.no-m {
+  margin: 0 !important;
+}
+
+.no-mt,
+.no-my {
+  margin-top: 0 !important;
+}
+
+.no-mr,
+.no-mx {
+  margin-right: 0 !important;
+}
+
+.no-mb,
+.no-my {
+  margin-bottom: 0 !important;
+}
+
+.no-ml,
+.no-mx {
+  margin-left: 0 !important;
+}
+
+.no-p {
+  padding: 0 !important;
+}
+
+.no-pt,
+.no-py {
+  padding-top: 0 !important;
+}
+
+.no-pr,
+.no-px {
+  padding-right: 0 !important;
+}
+
+.no-pb,
+.no-py {
+  padding-bottom: 0 !important;
+}
+
+.no-pl,
+.no-px {
+  padding-left: 0 !important;
+}

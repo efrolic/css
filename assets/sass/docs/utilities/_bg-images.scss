@@ -10,6 +10,7 @@ $images: (
   "bg-d"     : $bg-d,
   "bg-random": $bg-random
 );
+
 * {
   @each $bg-image, $bg in $images {
     &.#{$bg-image} {

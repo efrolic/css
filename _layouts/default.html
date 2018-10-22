@@ -72,7 +72,7 @@ var sjs = SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   limit: ("7"),
-  searchResultTemplate: '<div class="search-container-item"><a href="{url}" class="content-search-title"><i class="fas fa-search text-success"></i>{title}</a>&nbsp;&nbsp;<span class="code text-danger" style="font-size:12.3px;font-weight:bold;">{category}</span><a href="{url}"><p class="content-search-text">{bio}</p></a></div>',
+  searchResultTemplate: '<div class="search-container-item"><a href="{url}" class="content-search-title"><i class="fas fa-search text-success"></i>{title}&nbsp;&nbsp;<span class="code text-danger" style="font-size:12.3px;font-weight:bold;">{category}</span></a></div>',
   noResultsText: '<p class="found"><i class="far fa-grin-beam-sweat text-danger"></i> No result found! <a style="font-size:13px;color:#1da1f2;" href="{{site.url}}/documentation">View docs.</a></p>',
   json: '{{site.url}}/search.json'
 });

@@ -1,23 +1,23 @@
 %e-nav {
   @extend %centered;
+  justify-content: space-between;
+  position       : relative;
   height         : auto;
   width          : 100%;
   z-index        : 1000;
-  min-height     : 3.75rem;
-  position       : relative;
-  justify-content: space-between;
-  color          : $e-font-color;
+  min-height     : $nav-min-height;
+  color          : $font-color;
   padding        : 8px;
   @extend %background;
   @extend %shadow-5;
   @include desktop {
-    padding-left : 5%;
-    padding-right: 5%;
-    border-bottom: solid 1px lighten(rgba(0,0,0,0.1),20%);
+    padding-left : $nav-padding-desktop;
+    padding-right: $nav-padding-desktop;
+    border-bottom: $nav-border-bottom;
   }
   @include desktop-plus {
-    padding-left : 8%;
-    padding-right: 10%;
+    padding-left : $nav-padding-desktop + 3;
+    padding-right: $nav-padding-desktop + 5;
   }
 
   &.fixed {
@@ -32,7 +32,7 @@
   @media only screen and (max-width: 1023px) {
     & .drop-items {
       display   : block;
-      position: relative;
+      position  : relative;
       box-shadow: none !important;
       width     : 100%;
       left      : 0;
@@ -126,30 +126,30 @@
 }
 
 .cap-sidenav-hidden {
-  position: absolute;
+  position        : absolute;
   background-color: transparent !important;
 }
 
 %e-menu-item {
   @extend %waves;
   display        : inline-block;
-  padding        : 0.5rem 1.25rem;
-  color          : $e-font-color;
   background     : transparent;
   position       : relative;
   cursor         : pointer;
+  padding        : $menu-item-padding;
+  color          : $font-color;
   border         : none;
   text-decoration: none;
   text-align     : left;
   list-style     : none;
-  line-height    : 22px;
+  line-height    : $menu-item-line-height;
   margin         : auto;
   width          : 100%;
   height         : 100%;
 
   &:hover {
     transition: 0.2s;
-    background: rgba(255,255,255,0.170);
+    background: $menu-item-bg-hover;
   }
   @include desktop {
     border-radius: 3px;
@@ -167,11 +167,11 @@
   justify-content : flex-start;
   display         : none;
   width           : 100%;
-  padding         : 7px 0 10px;
+  padding         : $menu-padding;
   margin-top      : 7px;
   margin-bottom   : 0;
   background-color: rgba(255,255,255,.2);
-  border-radius   : 4px;
+  border-radius   : $border-radius;
 
   & .e-dropdown {
     background: transparent;
@@ -239,5 +239,4 @@ input#e-menu:checked ~ ul.e-menu {
   @if $navegation-enable-animation {
     @extend .eSlide;
   }
-
 }

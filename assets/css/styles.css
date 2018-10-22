@@ -460,7 +460,7 @@ hr {
 
 }
 .search-container-item{
-  padding:10px 15px;
+  padding:8px 10px;
   cursor: pointer;
 }
 .search-container-item:hover{
@@ -470,15 +470,18 @@ hr {
   color:#1da1f2;
   margin-left: 10px;
   font-weight: 700;
-  letter-spacing: .3px;
+  letter-spacing: .4px;
+	font-size: 14px;
+	display: block;
+	text-transform: capitalize;
 }
 .content-search-title i {
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 17px;
 }
 .content-search-title:hover{
   color:#f75676;
-  text-decoration: underline;
+
 }
 .content-search-text{
   color:rgba(0,0,0,0.7);

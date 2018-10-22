@@ -3,20 +3,20 @@
 }
 
 .e-btn {
+  border         : solid 1px transparent;
+  border-radius  : $border-radius;
+  font-size      : $btn-font-size;
+  padding        : $btn-padding;
   display        : inline-block;
   position       : relative;
-  padding        : $btn-padding;
-  @extend %background;
   white-space    : nowrap;
   text-align     : center;
   font-weight    : 600;
   letter-spacing : 0.4px;
   margin         : 0.3rem;
-  border-radius  : $border-radius;
-  border         : solid 1px transparent;
   text-decoration: none;
-  font-size      : $btn-font-size;
   line-height    : normal;
+  @extend %background;
   @extend %transition;
   @extend %shadow;
 

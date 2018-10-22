@@ -1,17 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import 'settings';
-
 @import './layout/grid';
 @import './layout/face';
 @import './layout/footer';
-
 @import './utilities/typography';
 @import './utilities/text';
 @import './utilities/shadows';
 @import './utilities/delete';
 @import './utilities/bg-images';
 @import './utilities/align';
-
 @import './components/navegation';
 @import './components/buttons';
 @import './components/tags';
@@ -26,7 +22,7 @@
 @import './components/progress';
 @import './components/modal';
 @import './components/forms';
-
 @import './utilities/borders';
+@import './utilities/spacing';
 @import './utilities/helpers';
 @import './utilities/animations';

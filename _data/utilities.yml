@@ -36,21 +36,25 @@
   url: /delete
   bio: "The traditional icon used to close, delete, cancel, discard content among others."
 
-- name: Helpers
-  category: Assistants
-  url: /helpers
-  bio: "Used as variants in all classes of eFrolic,
-  that is, as a second class after the main one to customize elements."
-
 - name: Shadows
   category: Utilities
   url: /shadows
   bio: "Add shadows to your elements by applying one of the 8 types of shadows available."
 
+- name: Spacing
+  category: Utilities
+  url: /spacing
+  bio: "Margin and padding utility classes to add spacing to the elements."
+
 - name: Sizing
   category: Utilities
   url: /sizing
   bio: "Easily add sizes to the elements, width or height in relation to the viewport or in relation to the father."
+
+- name: Text
+  category: Utilities
+  url: /text
+  bio: "Utilities for the control of fonts, alignments, transformations and others."
 
 - name: Typography
   category: Utilities

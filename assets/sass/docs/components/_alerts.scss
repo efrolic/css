@@ -1,13 +1,13 @@
 .e-alert {
-  padding       : $alert-padding;
-  @extend %background;
-  border-radius : $border-radius;
   position      : relative;
-  letter-spacing: 0.2px;
-  vertical-align: middle;
+  padding       : $alert-padding;
+  border-radius : $border-radius;
   font-size     : $alert-font-size;
   font-family   : inherit;
+  vertical-align: middle;
+  letter-spacing: 0.2px;
   text-shadow   : none;
+  @extend %background;
   @extend %shadow;
 
   &.snack {
