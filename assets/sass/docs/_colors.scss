@@ -1,15 +1,15 @@
 $e-font-color: rgba(0,0,0,.6) !default;
 $default: #f7f8f9 !default;
-$success: #4fd69c;
-$warning: #ffdd57;
-$primary: #1da1f2;
-$danger: #f75676;
-$purple: #5e72e4;
-$sky: #54c7ec;
-$gray: #6c757d;
-$dark: #343a40;
+$success: #4fd69c !default;
+$warning: #ffdd57 !default;
+$primary: #1da1f2 !default;
+$danger: #f75676 !default;
+$purple: #5e72e4 !default;
+$sky: #54c7ec !default;
+$gray: #6c757d !default;
+$dark: #343a40 !default;
 $white: #ffffff !default;
-$black: #000000;
+$black: #000000 !default;
 $purple-gradient: linear-gradient(40deg,#ff6ec4,$purple);
 $blue-gradient: linear-gradient(40deg,#45cafc,#303f9f);
 $green-gradient: linear-gradient(40deg,#00C9FF,#92FE9D);
@@ -79,13 +79,13 @@ $colors: (
         &:hover {
           color     : $dark !important;
           background: $warning !important;
-          @extend .shadow-6;
+          @extend %shadow-6;
         }
 
         &.active {
           color     : $dark !important;
           background: $warning !important;
-          @extend .shadow;
+          @extend %shadow;
         }
       }
     }
@@ -95,7 +95,7 @@ $colors: (
     background : $white;
     font-weight: bold;
     @extend %dark-color;
-    @include desktop {
+    @media only screen and (min-width: $breakpoint-desktop) {
       background : rgba(255,255,255,.1);
       font-weight: normal;
       color      : $white;
@@ -137,7 +137,7 @@ $colors: (
 
       & .no-bg {
         & .e-menu {
-          @media only screen and (max-width: 1023px) {
+          @media only screen and (max-width: $breakpoint-desktop - 1) {
             & .e-dropdown,
             & .e-menu-item {
               &:hover {
@@ -159,13 +159,13 @@ $colors: (
           &:hover {
             color     : $white !important;
             background: $color !important;
-            @extend .shadow-6;
+            @extend %shadow-6;
           }
 
           &.active {
             color     : $white !important;
             background: $color !important;
-            @extend .shadow;
+            @extend %shadow;
           }
         }
       }
@@ -325,7 +325,7 @@ $colors: (
     & .e-menu {
       & .e-menu-item,
       .e-dropdown {
-        @media only screen and (max-width: 1023px) {
+        @media only screen and (max-width: $breakpoint-desktop - 1) {
           &:hover {
             background: lighten(whitesmoke,.7%);
           }
@@ -340,7 +340,7 @@ $colors: (
   &.transparent {
     background: rgba(255,255,255,.1) !important;
     color     : $white !important;
-    @include desktop {
+    @media only screen and (min-width: $breakpoint-desktop) {
       background: rgba(255,255,255,.1) !important;
     }
   }

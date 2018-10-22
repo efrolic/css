@@ -70,7 +70,7 @@
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 
     &:hover {
-      @extend .shadow-3;
+      @extend %shadow-3;
       cursor: pointer;
       @extend %transition;
     }

@@ -10,14 +10,6 @@ $images: (
   "bg-d"     : $bg-d,
   "bg-random": $bg-random
 );
-
-%bg {
-  background-size      : cover;
-  background-repeat    : no-repeat;
-  background-attachment: fixed;
-  height               : 100%;
-}
-
 * {
   @each $bg-image, $bg in $images {
     &.#{$bg-image} {

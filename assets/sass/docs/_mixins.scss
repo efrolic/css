@@ -10,17 +10,17 @@
   @include clearfix;
 }
 @mixin tablet() {
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $breakpoint-tablet) {
     @content;
   }
 }
 @mixin desktop() {
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: $breakpoint-desktop) {
     @content;
   }
 }
 @mixin desktop-plus() {
-  @media only screen and (min-width: 1366px) {
+  @media only screen and (min-width: $breakpoint-desktop-plus) {
     @content;
   }
 }

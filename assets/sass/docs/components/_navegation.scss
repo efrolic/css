@@ -9,7 +9,7 @@
   color          : $e-font-color;
   padding        : 8px;
   @extend %background;
-  @extend .shadow-5;
+  @extend %shadow-5;
   @include desktop {
     padding-left : 5%;
     padding-right: 5%;
@@ -32,7 +32,7 @@
   @media only screen and (max-width: 1023px) {
     & .drop-items {
       display   : block;
-      position  : relative;
+      position: relative;
       box-shadow: none !important;
       width     : 100%;
       left      : 0;
@@ -126,7 +126,7 @@
 }
 
 .cap-sidenav-hidden {
-  position        : absolute !important;
+  position: absolute;
   background-color: transparent !important;
 }
 
@@ -230,4 +230,14 @@
   @include desktop {
     display: block;
   }
+}
+
+input#e-menu:checked ~ div.e-menu,
+input#e-menu:checked ~ nav.e-menu,
+input#e-menu:checked ~ ul.e-menu {
+  display: flex;
+  @if $navegation-enable-animation {
+    @extend .eSlide;
+  }
+
 }

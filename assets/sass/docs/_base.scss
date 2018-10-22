@@ -1,6 +1,3 @@
-$e-font: 'Nunito', sans-serif !default;
-$size-icon-circle: 1.2rem !default;
-
 * {
   box-sizing: border-box;
   word-wrap : break-word;
@@ -17,23 +14,23 @@ $size-icon-circle: 1.2rem !default;
 }
 
 html {
-  font-family             : $e-font;
+  font-family             : $font-family;
   min-width               : 320px;
   font-weight             : 400;
-  line-height             : 1.5;
+  line-height             : $line-height;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust    : 100%;
 }
 
 body {
-  color           : #343a40;
-  background-color: #fff;
+  color           : $body-color;
+  background-color: $body-bg;
   padding         : 0;
   margin          : 0;
-  line-height     : 1.5;
-  font-size       : 15px;
+  line-height     : $line-height;
+  font-size       : $body-font-size;
   @media only screen and (min-width: 768px) {
-    font-size: 16px;
+    font-size: $body-font-size + 1;
   }
 }
 
@@ -43,7 +40,7 @@ img {
 }
 
 a {
-  color                       : rgb(29, 161, 242);
+  color                       : $primary;
   text-decoration             : none;
   background-color            : transparent;
   -webkit-text-decoration-skip: objects;
@@ -122,4 +119,64 @@ textarea {
 
 progress {
   vertical-align: baseline;
+}
+
+#cap-nav-full,
+input#e-menu {
+  display: none;
+}
+
+.e-search {
+  min-height   : 30px;
+  border       : none;
+  border-radius: 3px;
+  box-shadow   : none;
+  margin       : auto;
+  width        : 100%;
+  padding      : 8px 5px;
+  background   : rgba(0,0,0,.2);
+  color        : white;
+
+  &::-webkit-input-placeholder {
+    color: white;
+  }
+}
+
+.link {
+  opacity: 0.9;
+
+  &:hover {
+    opacity        : 1;
+    text-decoration: underline;
+    cursor         : pointer;
+  }
+}
+
+%e-cap-fade {
+  -webkit-animation-duration: 0.4s !important;
+  animation-duration        : 0.4s !important;
+}
+
+.e-cap {
+  @extend %e-cap-fade;
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  bottom          : 0;
+  right           : 0;
+  width           : 100%;
+  height          : 100vh;
+  z-index         : 9000;
+  background-color: rgba(0,0,0,.5);
+}
+
+.active {
+  background-color: lighten(rgba(0,0,0,0.1),30%) !important;
+}
+
+.e-btn,
+.e-dropdown {
+  user-select: none;
+  color      : $font-color;
+  cursor     : pointer;
 }

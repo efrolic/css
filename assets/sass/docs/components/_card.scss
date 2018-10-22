@@ -1,15 +1,15 @@
 .e-card {
   flex-direction: column;
-  border-radius : 0.35rem;
-  font-weight   : 400;
   overflow      : hidden;
-  box-shadow    : 0 0.5rem 1rem rgba(0,0,0,.15);
   max-width     : 100%;
-  background    : white;
+  font-weight   : 400;
+  border-radius : $border-radius + 0.10;
+  box-shadow    : $card-shadow;
+  background    : $card-bg;
 
   &.profile {
     & .e-card-cover {
-      height  : 120px;
+      height  : $card-profile-height;
       overflow: hidden;
 
       & img {
@@ -19,9 +19,9 @@
 
     & .e-card-photo {
       border-radius: 50%;
-      width        : 125px;
+      width        : $card-profile-photo-width;
+      height       : $card-profile-photo-height;
       margin       : -60px auto 0;
-      height       : 125px;
       background   : #f1f1f1;
 
       & img {
@@ -35,11 +35,11 @@
 
 .card-body {
   flex   : 1 1 auto;
-  padding: 1.25rem;
+  padding: $card-body-padding;
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: $card-title-font-size;
   color    : inherit;
   padding  : 0;
   margin   : 0;
@@ -47,28 +47,28 @@
 
 .card-text {
   color    : inherit;
-  font-size: 0.9rem;
+  font-size: $card-text-font-size;
 }
 
 .e-card-cover {
-  background: $default;
+  background: $background-default;
   @extend %centered;
 }
 
 .e-cards-mansory {
   @extend %centered;
   @include tablet {
-    column-count: 2;
-    column-gap  : 1.25rem;
+    column-count: $card-mansory-column-count-tablet;
+    column-gap  : $card-mansory-column-gap;
     orphans     : 1;
     widows      : 1;
     display     : block;
   }
   @include desktop {
-    column-count: 3;
+    column-count: $card-mansory-column-count-desktop;
   }
   @include desktop-plus {
-    column-count: 4;
+    column-count: $card-mansory-column-count-desktop-plus;
   }
 
   & .e-card {
