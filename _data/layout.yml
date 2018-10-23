@@ -14,6 +14,12 @@
   url: /container
   bio: "Containers are a simple design element to center your content horizontally."
 
+- name: Media Object
+  category: Layout
+  url: /media-object
+  bio: "The traditional multimedia object that is used to build components in social network interfaces,
+  such as blog comments, post and similar, but useful in any context."
+
 - name: Footer
   category: Layout
   url: /footer

@@ -1,0 +1,283 @@
+---
+layout: default
+
+permalink: /media-object
+
+category: layout
+
+title: Media Object
+
+description: "The traditional multimedia object that is used to build components
+in social network interfaces, such as blog comments, post and similar, but useful in any context."
+---
+
+<h3 class="code-title">{{ page.title }} <span class="e-tag static danger">Layout</span></h3>
+<p class="desc">{{ page.description }}</p>
+<hr class="hr">
+<div class="container-white">
+<br>
+  <article class="e-media">
+    <img class="mr-3 border circle" src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}}{{site.subtitle}}" style="width:65px;height:65px;min-width:65px;">
+    <div class="e-media-body">
+      <div class="between mb-3">
+        <h5 class="no-my">Efrain Peralta <small class="text-normal">@EfraaX</small></h5>
+        <a class="no-m text-gray"><i class="fas fa-ellipsis-h"></i></a>
+        <p class="no-m w-100">3h · <i class="fas fa-globe-americas"></i></p>
+      </div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+  </article>
+
+<div class="e-section">
+{% highlight html %}
+<article class="e-media">
+  <img class="mr-3" src="./image.png" style="width:65px;height:65px;min-width:65px;">
+  <div class="e-media-body">
+    <div class="between mb-3">
+      <h5 class="no-my">Efrain Peralta <small class="text-normal">@EfraaX</small></h5>
+      <a class="no-m text-gray"><i class="fas fa-ellipsis-h"></i></a>
+      <p class="no-m w-100">3h · <i class="fas fa-globe-americas"></i></p>
+    </div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit magna aliqua.
+  </div>
+</article>
+{% endhighlight %}
+</div>
+
+</div>
+
+
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Nesting</h5>
+<p class="look">You can nest as many elements as you want.</p><br>
+  <div class="e-media">
+    <img class="mr-3 border circle" src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}}{{site.subtitle}}" style="max-width:65px;">
+    <div class="e-media-body">
+      <div class="between mb-3">
+        <h5 class="no-my">Efrain Peralta <small class="text-normal">@EfraaX</small></h5>
+        <a class="no-m text-gray"><i class="fas fa-ellipsis-h"></i></a>
+        <p class="no-m w-100">3h · <i class="fas fa-globe-americas"></i></p>
+      </div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <div class="e-media mt-3">
+        <a class="pr-3" href="#">
+          <img class="border circle" src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}}{{site.subtitle}}" style="max-width:65px;">
+        </a>
+        <div class="e-media-body">
+          <h5 class="no-mt">Efrain Peralta <small class="text-normal">@EfraaX</small></h5>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit dolore magna aliqua.
+        <small class="d-block"><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+        </div>
+      </div>
+      <div class="e-media mt-3">
+        <a class="pr-3" href="#">
+          <img class="border circle" src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}}{{site.subtitle}}" style="max-width:65px;">
+        </a>
+        <div class="e-media-body">
+          <h5 class="no-mt">Efrain Peralta <small class="text-normal">@EfraaX</small></h5>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit dolore magna aliqua.
+        <small class="d-block"><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="e-media mt-2">
+    <img class="mr-3 border circle" src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}}{{site.subtitle}}" style="max-width:65px;">
+    <div class="e-media-body">
+      <div class="between mb-3">
+        <h5 class="no-my">Efrain Peralta <small class="text-normal">@EfraaX</small></h5>
+        <a class="no-m text-gray"><i class="fas fa-ellipsis-h"></i></a>
+      </div>
+      <textarea class="e-control" placeholder="Add a comment..."></textarea>
+      <div class="e-buttons align-end mt-3">
+        <button type="button" class="e-btn small inverted">Cancel</button>
+        <button type="button" class="e-btn small primary">Post</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="e-section">
+{% highlight html %}
+<div class="e-media">
+  <img class="mr-3" src="./image.png" style="max-width:65px;">
+  <div class="e-media-body">
+    <div class="between mb-3">
+      <h5 class="no-my">Efrain Peralta <small class="text-normal">@EfraaX</small></h5>
+      <a class="no-m text-gray"><i class="fas fa-ellipsis-h"></i></a>
+      <p class="no-m w-100">3h · <i class="fas fa-globe-americas"></i></p>
+    </div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit commodo consequat.
+    <div class="e-media mt-3">
+      <a class="pr-3" href="#">
+        <img src="./image.png" style="max-width:65px;">
+      </a>
+      <div class="e-media-body">
+        <h5 class="no-mt">Efrain Peralta <small class="text-normal">@EfraaX</small></h5>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit dolore magna aliqua.
+        <small class="d-block"><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+      </div>
+    </div>
+    <div class="e-media mt-3">
+      <a class="pr-3" href="#">
+        <img src="./image.png" style="max-width:65px;">
+      </a>
+      <div class="e-media-body">
+        <h5 class="no-mt">Efrain Peralta <small class="text-normal">@EfraaX</small></h5>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit dolore magna aliqua.
+        <small class="d-block"><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="e-media mt-2">
+  <img class="mr-3" src="./image.png" style="max-width:65px;">
+  <div class="e-media-body">
+    <div class="between mb-3">
+      <h5 class="no-my">Efrain Peralta <small class="text-normal">@EfraaX</small></h5>
+      <a class="no-m text-gray"><i class="fas fa-ellipsis-h"></i></a>
+    </div>
+    <textarea class="e-control" placeholder="Add a comment..."></textarea>
+    <div class="e-buttons align-end mt-3">
+      <button type="button" class="e-btn small inverted">Cancel</button>
+      <button type="button" class="e-btn small primary">Post</button>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+  </div>
+</div>
+
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Media object within cards</h5>
+<p class="look">You can nest as many elements as you want.</p><br>
+
+<div class="e-card" style="max-width:30rem;">
+  <div class="card-body">
+    <div class="e-media">
+      <img class="mr-3 border circle" src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}}{{site.subtitle}}" style="max-width:65px;">
+      <div class="e-media-body">
+        <div class="between mb-3">
+          <h5 class="no-my text-primary">Efrain Peralta <small class="text-normal text-gray">@EfraaX</small></h5>
+          <a class="no-m text-gray"><i class="fas fa-ellipsis-h"></i></a>
+          <p class="no-m w-100">10 hrs · <i class="fas fa-globe-americas"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="my-3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip commodo.
+    </div>
+    <img src="https://bit.ly/2RKe9kO" />
+    <div class="e-buttons align-end">
+      <button type="button" class="e-btn inverted">Cancel</button>
+      <button type="button" class="e-btn primary">Post</button>
+    </div>
+  </div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-card">
+  <div class="card-body">
+    <div class="e-media">
+      <img class="mr-3 border circle" src="./image.png" style="max-width:65px;">
+      <div class="e-media-body">
+        <div class="between mb-3">
+          <h5 class="no-my text-primary">Efrain Peralta <small class="text-normal text-gray">@EfraaX</small></h5>
+          <a class="no-m text-gray"><i class="fas fa-ellipsis-h"></i></a>
+          <p class="no-m w-100">10 hrs · <i class="fas fa-globe-americas"></i></p>
+        </div>
+      </div>
+    </div>
+    <div class="my-3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+    <img src="https://bit.ly/2RKe9kO" />
+    <div class="e-buttons align-end">
+      <a class="e-btn inverted">Cancel</a>
+      <a class="e-btn primary">Post</a>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Media object within lists</h5>
+<p class="look">You can nest as many elements as you want.</p><br>
+
+  <ul class="e-list" style="max-width:30rem;">
+  <div class="e-container-fluid primary p-3 text-bold">
+    Contributors
+  </div>
+  <li class="e-list-item">
+    <div class="e-media">
+      <img class="mr-3 border circle" src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}}{{site.subtitle}}" style="max-width:65px;">
+      <div class="e-media-body">
+        <div class="between mb-3">
+          <h5 class="no-my text-primary">Efrain Peralta <small class="text-normal text-gray">@EfraaX</small></h5>
+          <a class="no-m text-gray"><i class="fab fa-github-alt"></i></a>
+          <a href="{{site.url}}" class="no-m w-100 text-gray">efrolicss.com · <i class="fas fa-globe-americas"></i></a>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="e-list-item">
+    <div class="e-media">
+      <img class="mr-3 border circle" src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}}{{site.subtitle}}" style="max-width:65px;">
+      <div class="e-media-body">
+        <div class="between mb-3">
+          <h5 class="no-my text-primary">Efrain Peralta <small class="text-normal text-gray">@EfraaX</small></h5>
+          <a class="no-m text-gray"><i class="fab fa-github-alt"></i></a>
+          <a href="{{site.url}}" class="no-m w-100 text-gray">efrolicss.com · <i class="fas fa-globe-americas"></i></a>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="e-list-item">
+    <div class="e-media">
+      <img class="mr-3 border circle" src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}}{{site.subtitle}}" style="max-width:65px;">
+      <div class="e-media-body">
+        <div class="between mb-3">
+          <h5 class="no-my text-primary">Efrain Peralta <small class="text-normal text-gray">@EfraaX</small></h5>
+          <a class="no-m text-gray"><i class="fab fa-github-alt"></i></a>
+          <a href="{{site.url}}" class="no-m w-100 text-gray">efrolicss.com · <i class="fas fa-globe-americas"></i></a>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li class="e-list-item">
+    <div class="e-media">
+      <img class="mr-3 border circle" src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}}{{site.subtitle}}" style="max-width:65px;">
+      <div class="e-media-body">
+        <div class="between mb-3">
+          <h5 class="no-my text-primary">Efrain Peralta <small class="text-normal text-gray">@EfraaX</small></h5>
+          <a class="no-m text-gray"><i class="fab fa-github-alt"></i></a>
+          <a href="{{site.url}}" class="no-m w-100 text-gray">efrolicss.com · <i class="fas fa-globe-americas"></i></a>
+        </div>
+      </div>
+    </div>
+  </li>
+  </ul>
+</div>
+<div class="e-section">
+{% highlight html %}
+<ul class="e-list">
+  <div class="e-container-fluid primary p-3 text-bold">
+    Contributors
+  </div>
+  <li class="e-list-item">
+    <div class="e-media">
+      <img class="mr-3 circle" src="./image.png" style="max-width:65px;">
+      <div class="e-media-body">
+        <div class="between mb-3">
+          <h5 class="no-my text-primary">Efrain Peralta <small class="text-normal text-gray">@EfraaX</small></h5>
+          <a class="no-m text-gray"><i class="fab fa-github-alt"></i></a>
+          <a href="#" class="no-m w-100 text-gray">efrolicss.com · <i class="fas fa-globe-americas"></i></a>
+        </div>
+      </div>
+    </div>
+  </li>
+  <!-- List item x3 -->
+</ul>
+{% endhighlight %}
+</div>
+</div>
