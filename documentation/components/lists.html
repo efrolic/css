@@ -1,0 +1,224 @@
+---
+
+layout: default
+
+permalink: /lists
+
+category: components
+
+title: Lists
+
+description: "The lists used to display related or listed content, the lists administer almost any content and conbinations."
+
+---
+
+<h3 class="code-title">{{page.title}} <span class="e-tag static danger">Component</span></h3>
+<p class="look">{{page.description}}</p>
+
+<div class="container-white">
+<p class="look">You can use the lists with almost any element;</p>
+{% highlight html %}
+<!-- Container List -->
+<ul class="e-list">..</ul>
+<div class="e-list">..</div>
+<section class="e-list">..</section>
+<aside class="e-list">..</aside>
+{% endhighlight %}<br>
+{% highlight html %}
+<!-- Items List -->
+<li class="e-list-item">..</li>
+<a class="e-list">..</a>
+<button type="button" class="e-list">..</button>
+{% endhighlight %}
+</div>
+
+<hr class="hr">
+<div class="container-white">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Example:</h6>
+<br>
+<ul class="e-list" style="max-width:400px;">
+  <li class="e-list-item">List item one</li>
+  <li class="e-list-item">List item two</li>
+  <li class="e-list-item">List item three</li>
+  <li class="e-list-item">List item four</li>
+</ul>
+<div class="e-section">
+{% highlight html %}
+<ul class="e-list">
+  <li class="e-list-item">List item one</li>
+  <li class="e-list-item">List item two</li>
+  <li class="e-list-item">List item three</li>
+</ul>
+{% endhighlight %}
+</div>
+<div class="e-section">
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Disabled</h6><br>
+<div class="e-list" style="max-width:400px;" disabled>
+  <a class="e-list-item">List item one</a>
+  <a class="e-list-item">List item two</a>
+  <a class="e-list-item">List item three</a>
+  <a class="e-list-item">List item four</a>
+</div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-list" disabled>
+  <a class="e-list-item">List item one</a>
+  <a class="e-list-item">List item two</a>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Active</h6><br>
+  <div class="e-list" style="max-width:400px;">
+    <a class="e-list-item">List item one</a>
+    <a class="e-list-item active">List item two</a>
+    <a class="e-list-item">List item three</a>
+    <a class="e-list-item">List item four</a>
+  </div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-list">
+  <a class="e-list-item">List item one</a>
+  <a class="e-list-item active">List item two</a>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Add header</h6><br>
+  <div class="e-list" style="max-width:400px;">
+    <div class="marked p-3">
+      List header
+    </div>
+    <a class="e-list-item">List item one</a>
+    <a class="e-list-item">List item two</a>
+    <a class="e-list-item">List item three</a>
+    <a class="e-list-item">List item four</a>
+  </div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-list">
+  <div class="marked p-3">
+    List header
+  </div>
+  <a class="e-list-item">List item one</a>
+  <a class="e-list-item">List item two</a>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Change color of the header</h6><br>
+  <div class="e-list" style="max-width:400px;">
+    <div class="e-container-fluid sky p-3 text-bold">
+      List header
+    </div>
+    <a class="e-list-item">List item one</a>
+    <a class="e-list-item">List item two</a>
+    <a class="e-list-item">List item three</a>
+    <a class="e-list-item">List item four</a>
+  </div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-list">
+  <div class="e-container-fluid sky p-3 text-bold">
+    List header
+  </div>
+  <a class="e-list-item">List item one</a>
+  <a class="e-list-item">List item two</a>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Remove borders</h6><br>
+  <div class="e-list no-border" style="max-width:400px;">
+    <a class="e-list-item">List item one</a>
+    <a class="e-list-item">List item two</a>
+    <a class="e-list-item">List item three</a>
+    <a class="e-list-item">List item four</a>
+  </div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-list no-border">
+  <a class="e-list-item">List item one</a>
+  <a class="e-list-item">List item two</a>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> With tags</h6><br>
+  <div class="e-list" style="max-width:400px;">
+    <a class="e-list-item between d-flex">List item one <span class="e-tag primary">2</span></a>
+    <a class="e-list-item between d-flex">List item two <span class="e-tag primary">3</span></a>
+    <a class="e-list-item between d-flex">List item three <span class="e-tag primary">0</span></a>
+    <a class="e-list-item between d-flex">List item four <span class="e-tag primary">2</span></a>
+  </div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-list no-border">
+  <a class="e-list-item between d-flex">List item one <span class="e-tag sky">2</span></a>
+  <a class="e-list-item between d-flex">List item two <span class="e-tag sky">3</span></a>
+</div>
+{% endhighlight %}
+</div>
+<div class="e-section">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Combinations</h6><br>
+  <div class="e-list" style="max-width:400px;">
+    <a class="e-list-item">
+      <div class="between">
+        <h5 class="no-m text-primary">Lorem ipsum dolor itemk</h5>
+        <small>1 days ago</small>
+      </div>
+      <p class="no-m">List ipsum itemk sit amet, consectetur eget metus. Maecenas sed adipisicing elit.</p>
+      <div class="between">
+      <small class="text-danger">Last update yesterday.</small>
+      <button type="button" class="e-btn small sky">Accept</button>
+      </div>
+    </a>
+    <a class="e-list-item">
+      <div class="between">
+        <h5 class="no-m text-primary">Lorem ipsum dolor itemk</h5>
+        <small>1 days ago</small>
+      </div>
+      <p class="no-m">List ipsum itemk sit amet, consectetur eget metus. Maecenas sed adipisicing elit.</p>
+      <div class="between">
+      <small class="text-danger">Last update yesterday.</small>
+      <button type="button" class="e-btn small sky">Accept</button>
+      </div>
+    </a>
+    <a class="e-list-item">
+      <div class="between">
+        <h5 class="no-m text-primary">Lorem ipsum dolor itemk</h5>
+        <small>1 days ago</small>
+      </div>
+      <p class="no-m">List ipsum itemk sit amet, consectetur eget metus. Maecenas sed adipisicing elit.</p>
+      <div class="between">
+      <small class="text-danger">Last update yesterday.</small>
+      <button type="button" class="e-btn small sky">Accept</button>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="e-section">
+{% highlight html %}
+<div class="e-list">
+  <div class="e-list-item">
+    <div class="between">
+      <h5 class="no-m text-primary">Lorem ipsum dolor itemk</h5>
+      <small>1 days ago</small>
+    </div>
+    <p class="no-m">List ipsum itemk sit amet, consectetur eget metus.</p>
+    <div class="between">
+      <small class="text-danger">Last update yesterday.</small>
+      <a class="e-btn small sky">Accept</a>
+    </div>
+  </div>
+  <!-- e-list-item x2 -->
+</div>
+{% endhighlight %}
+</div>
+</div>

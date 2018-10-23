@@ -191,6 +191,11 @@
     </a>
   </li>
 
+  <li class="{% if page.permalink == '/lists' %}active{% endif %}">
+    <a href="{{ site.url }}/lists"><i class="fas fa-list-ul text-success"></i> Lists
+    </a>
+  </li>
+
   <li class="{% if page.permalink == '/modal' %}active{% endif %}">
     <a href="{{ site.url }}/modal"><i class="far fa-window-maximize text-primary"></i> Modal
     </a>

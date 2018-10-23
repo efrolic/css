@@ -28,3 +28,14 @@
     @extend %child-col;
   }
 }
+
+*.d-block{
+  display: block !important;
+}
+
+*.d-flex{
+  display: flex !important;
+}
+*.d-flex-grow{
+  flex-grow: 1 !important;
+}

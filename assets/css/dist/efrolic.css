@@ -5,11 +5,11 @@
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-.purple-gradient[class*="e-"], .blue-gradient[class*="e-"], .green-gradient[class*="e-"], .inst-gradient[class*="e-"], .success[class*="e-"], .danger[class*="e-"], .primary[class*="e-"], .purple[class*="e-"], .sky[class*="e-"], .gray[class*="e-"], .black[class*="e-"], .dark[class*="e-"], *.bg-a, *.bg-b, *.bg-c, *.bg-d, *.bg-random {
+.purple-gradient[class*="e-"], .blue-gradient[class*="e-"], .green-gradient[class*="e-"], .inst-gradient[class*="e-"], .success[class*="e-"], .danger[class*="e-"], .primary[class*="e-"], .purple[class*="e-"], .sky[class*="e-"], .gray[class*="e-"], .black[class*="e-"], .dark[class*="e-"], *.bg-a, *.bg-b, *.bg-c, *.bg-d, *.bg-random, .e-list-item.active {
   color: #ffffff;
 }
 
-.purple-gradient[class*="e-"] .e-dropdown, .blue-gradient[class*="e-"] .e-dropdown, .green-gradient[class*="e-"] .e-dropdown, .inst-gradient[class*="e-"] .e-dropdown, .success[class*="e-"] .e-dropdown, .danger[class*="e-"] .e-dropdown, .primary[class*="e-"] .e-dropdown, .purple[class*="e-"] .e-dropdown, .sky[class*="e-"] .e-dropdown, .gray[class*="e-"] .e-dropdown, .black[class*="e-"] .e-dropdown, .dark[class*="e-"] .e-dropdown, *.bg-a .e-dropdown, *.bg-b .e-dropdown, *.bg-c .e-dropdown, *.bg-d .e-dropdown, *.bg-random .e-dropdown,
+.purple-gradient[class*="e-"] .e-dropdown, .blue-gradient[class*="e-"] .e-dropdown, .green-gradient[class*="e-"] .e-dropdown, .inst-gradient[class*="e-"] .e-dropdown, .success[class*="e-"] .e-dropdown, .danger[class*="e-"] .e-dropdown, .primary[class*="e-"] .e-dropdown, .purple[class*="e-"] .e-dropdown, .sky[class*="e-"] .e-dropdown, .gray[class*="e-"] .e-dropdown, .black[class*="e-"] .e-dropdown, .dark[class*="e-"] .e-dropdown, *.bg-a .e-dropdown, *.bg-b .e-dropdown, *.bg-c .e-dropdown, *.bg-d .e-dropdown, *.bg-random .e-dropdown, .e-list-item.active .e-dropdown,
 .purple-gradient[class*="e-"] a:not(.e-btn),
 .blue-gradient[class*="e-"] a:not(.e-btn),
 .green-gradient[class*="e-"] a:not(.e-btn),
@@ -27,6 +27,7 @@
 *.bg-c a:not(.e-btn),
 *.bg-d a:not(.e-btn),
 *.bg-random a:not(.e-btn),
+.e-list-item.active a:not(.e-btn),
 .purple-gradient[class*="e-"] p,
 .blue-gradient[class*="e-"] p,
 .green-gradient[class*="e-"] p,
@@ -43,7 +44,8 @@
 *.bg-b p,
 *.bg-c p,
 *.bg-d p,
-*.bg-random p {
+*.bg-random p,
+.e-list-item.active p {
   color: #ffffff;
 }
 
@@ -1493,6 +1495,18 @@ h6 {
   justify-content: flex-end !important;
 }
 
+*.d-block {
+  display: block !important;
+}
+
+*.d-flex {
+  display: flex !important;
+}
+
+*.d-flex-grow {
+  flex-grow: 1 !important;
+}
+
 .e-nav {
   justify-content: space-between;
   position: relative;
@@ -2809,6 +2823,53 @@ input[type="file"].e-control {
   color: rgba(0, 0, 0, 0.7);
   font-weight: bold;
   letter-spacing: 0.2px;
+}
+
+.e-list {
+  flex-direction: column;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: inherit;
+}
+
+.e-list-item {
+  position: relative;
+  display: block;
+  padding: .6em .90em;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  width: 100%;
+  color: inherit;
+}
+
+.e-list-item:first-child {
+  border-top: none;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.e-list-item:not(:last-child) {
+  border-bottom: none;
+}
+
+.e-list-item:last-child {
+  border-bottom: none;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.e-list-item:hover {
+  background: #fdfdfd;
+}
+
+.e-list-item.active {
+  background: #1da1f2 !important;
 }
 
 *.border {

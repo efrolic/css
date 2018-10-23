@@ -59,10 +59,15 @@
   to display lists of links and more."
 
 - name: Forms
-  category: Components
+  category: Component
   url: /forms
   bio: "Use traditional custom forms controls to give a good user experience.
   We use a pleasant style and regulated to the standards, modern, simple and adaptable."
+
+- name: Lists
+  category: Component
+  url: /lists
+  bio: "The lists used to display related or listed content, the lists administer almost any content and conbinations."
 
 - name: Input
   category: Element
