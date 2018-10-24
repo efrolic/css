@@ -93,11 +93,11 @@ margin-left:-15px;
   background-color: #f7f7f7 !important;
 }
 pre{
-  font-size:.9rem;
+  font-size:1rem;
 }
 @media only screen and (min-width: 1024px){
   pre{
-    font-size:1rem;
+    font-size:1.25rem;
   }
 }
 .e-nav-aside .active a {

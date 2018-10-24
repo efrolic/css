@@ -30,13 +30,16 @@ body {
   line-height     : $line-height;
   font-size       : $body-font-size;
   @media only screen and (min-width: 768px) {
-    font-size: $body-font-size + 1;
+    font-size: $body-font-size + 0.0625;
   }
 }
 
-img {
+img,
+audio,
+video {
   width    : 100%;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -75,6 +78,18 @@ hr {
 table {
   border-collapse: collapse;
 }
+
+// Iframe
+iframe{
+  border: 0;
+}
+
+
+td,
+th{
+  padding: 0;
+}
+
 
 button,
 input,

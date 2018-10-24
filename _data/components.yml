@@ -145,6 +145,11 @@
   bio: "Tabs are a simple component of simple horizontal response navigation that
   usually tells the user the location of the current page."
 
+- name: Tables
+  category: Component
+  url: /tables
+  bio: "Traditional HTML tables stylized from minimalist to extravagant colors."
+
 - name: Tags / Badges
   category: Component
   url: /tags

@@ -1,0 +1,54 @@
+.e-table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: $white;
+  text-align: left;
+
+
+  th,
+  td {
+    padding: .550rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: (2 * 1px) solid rgba(0,0,0,0.1);
+  }
+
+  tbody + tbody {
+    border-top: (2 * 1px) solid rgba(0,0,0,0.1);
+  }
+}
+
+
+.striped {
+  tbody tr:nth-of-type(#{odd}) {
+    background-color: rgba(0,0,0,0.017);
+  }
+}
+
+.hovered {
+  tbody tr:hover {
+
+      background-color: rgba(0,0,0,0.020);
+
+  }
+}
+
+.bordered {
+  border: 1px solid rgba(0,0,0,0.1);
+
+  th,
+  td {
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: (2 * 1px);
+    }
+  }
+}

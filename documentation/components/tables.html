@@ -1,0 +1,656 @@
+---
+
+layout: default
+
+permalink: /tables
+
+category: components
+
+title: Tables
+
+description: "Traditional HTML tables stylized from minimalist to extravagant colors."
+
+---
+
+
+<h3 class="code-title">{{page.title}} <span class="e-tag static danger">Component</span></h3>
+<p class="desc">{{page.description}}</p>
+<hr class="hr">
+<div class="container-white">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Example:</h6><br>
+
+  <table class="e-table">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+<div class="e-section">
+{% highlight html %}
+<table class="e-table">
+  <thead>
+    <tr>
+      <th>NO°</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Efrain</td>
+      <td>Peralta</td>
+      <td>efraperalta@gmail.com</td>
+    </tr>
+    <!-- tr x3 -->
+  </tbody>
+</table>
+{% endhighlight %}
+</div>
+</div>
+<div class="container-white">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Striped rows</h6>
+  <p>Use <strong class="code">striped</strong> to add sautéed lines alternating color.</p>
+  <table class="e-table striped">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+<div class="e-section">
+{% highlight html %}
+<table class="e-table striped">
+  <thead>
+    <tr>
+      <th>NO°</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Efrain</td>
+      <td>Peralta</td>
+      <td>efraperalta@gmail.com</td>
+    </tr>
+    <!-- tr x3 -->
+  </tbody>
+</table>
+{% endhighlight %}
+</div>
+</div>
+<div class="container-white">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Bordered table</h6>
+  <p>Use <strong class="code">bordered</strong> to add borders to all the borders of the table and cells.</p>
+  <table class="e-table bordered">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+<div class="e-section">
+{% highlight html %}
+<table class="e-table bordered">
+  <thead>
+    <tr>
+      <th>NO°</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Efrain</td>
+      <td>Peralta</td>
+      <td>efraperalta@gmail.com</td>
+    </tr>
+    <!-- tr x3 -->
+  </tbody>
+</table>
+{% endhighlight %}
+</div>
+</div>
+<div class="container-white">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Hovered table</h6>
+  <p>Use <strong class="code">hovered</strong> to add a scrolling effect in each row.</p>
+  <table class="e-table hovered">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+<div class="e-section">
+{% highlight html %}
+<table class="e-table hovered">
+  <thead>
+    <tr>
+      <th>NO°</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Efrain</td>
+      <td>Peralta</td>
+      <td>efraperalta@gmail.com</td>
+    </tr>
+    <!-- tr x3 -->
+  </tbody>
+</table>
+{% endhighlight %}
+</div>
+</div>
+<div class="container-white">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Combinations of tables</h6><br>
+  <table class="e-table bordered hovered">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+<div class="e-section">
+{% highlight html %}
+<table class="e-table bordered hovered">
+  <thead>
+    <tr>
+      <th>NO°</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Efrain</td>
+      <td>Peralta</td>
+      <td>efraperalta@gmail.com</td>
+    </tr>
+    <!-- tr x3 -->
+  </tbody>
+</table>
+{% endhighlight %}
+</div>
+</div>
+<div class="container-white">
+  <h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> Colors</h6><br>
+  <table class="e-table bordered hovered primary">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="e-table bordered hovered danger">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="e-table bordered hovered success">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="e-table bordered hovered warning">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="e-table bordered hovered purple">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="e-table bordered hovered green-gradient">
+    <thead>
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+<div class="e-section">
+{% highlight html %}
+                <!-- Your color -->
+<table class="e-table primary">
+  <thead>
+    <tr>
+      <th>NO°</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Efrain</td>
+      <td>Peralta</td>
+      <td>efraperalta@gmail.com</td>
+    </tr>
+    <!-- tr x3 -->
+  </tbody>
+</table>
+{% endhighlight %}
+</div>
+<h6 class="code-title"><i class="fas fa-hashtag text-danger"></i> thead</h6>
+<br>
+  <table class="e-table bordered hovered">
+    <thead class="e-thead primary">
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="e-table bordered hovered">
+    <thead class="e-thead danger">
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="e-table bordered hovered">
+    <thead class="e-thead success">
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="e-table bordered hovered">
+    <thead class="e-thead dark">
+      <tr>
+        <th>NO°</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Efrain</td>
+        <td>Peralta</td>
+        <td>efraperalta@gmail.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Willy</td>
+        <td>Morrison</td>
+        <td>willy@hotmail.com</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>Mery</td>
+        <td>Martinez</td>
+        <td>mery@icloud.com</td>
+      </tr>
+    </tbody>
+  </table>
+<div class="e-section">
+{% highlight html %}
+<table class="e-table">
+  <thead class="e-thead primary">
+    <tr>
+      <th>NO°</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Efrain</td>
+      <td>Peralta</td>
+      <td>efraperalta@gmail.com</td>
+    </tr>
+    <!-- tr x3 -->
+  </tbody>
+</table>
+{% endhighlight %}
+</div>
+</div>
