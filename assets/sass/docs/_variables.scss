@@ -18,6 +18,27 @@ $purple-gradient                       : linear-gradient(40deg,#ff6ec4,$purple);
 $blue-gradient                         : linear-gradient(40deg,#45cafc,#303f9f);
 $green-gradient                        : linear-gradient(40deg,#00C9FF,#92FE9D);
 $inst-gradient                         : radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); // Do not remove from this place
+
+$colors: (
+  "success"                            : $success,
+  "danger"                             : $danger,
+  "primary"                            : $primary,
+  "purple"                             : $purple,
+  "sky"                                : $sky,
+  "gray"                               : $gray,
+  "black"                              : $black,
+  "dark"                               : $dark
+);
+$colors-gradient: (
+  "purple-gradient"                    : $purple-gradient,
+  "green-gradient"                     : $green-gradient,
+  "blue-gradient"                      : $blue-gradient,
+  "inst-gradient"                      : $inst-gradient
+);
+
+
+
+
 @import 'colors'; // Body and default styles
 $font-family                           : 'Nunito', sans-serif !default;
 $body-bg                               : #fff;

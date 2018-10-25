@@ -20,6 +20,15 @@
   margin: 42px auto;
 }
 
+.e-box {
+  margin       : 0 auto;
+  padding      : 1.25rem;
+  overflow     : hidden;
+  border-radius: $form-box-border-radius;
+  border       : $form-box-border;
+  @extend %shadow;
+}
+
 .e-cols {
   display       : flex;
   flex          : 0 1 auto;

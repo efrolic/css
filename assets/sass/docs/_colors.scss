@@ -1,14 +1,3 @@
-$colors: (
-  "success": $success,
-  "danger" : $danger,
-  "primary": $primary,
-  "purple" : $purple,
-  "sky"    : $sky,
-  "gray"   : $gray,
-  "black"  : $black,
-  "dark"   : $dark
-);
-
 %place-color {
   color: $white;
 
@@ -90,28 +79,13 @@ $colors: (
       }
     }
   }
-
-  &.purple-gradient {
-    background: $purple-gradient;
-    @extend %place-color;
-  }
-
-  &.blue-gradient {
-    background: $blue-gradient;
-    @extend %place-color;
-  }
-
-  &.green-gradient {
-    background : $green-gradient;
-    font-weight: bold;
-    @extend %place-color;
-  }
-
-  &.inst-gradient {
-    background : $inst-gradient;
-    font-weight: bold;
-    @extend %place-color;
-  }
+  @each $name, $pair in $colors-gradient {
+    $color: nth($pair, 1);
+    &.#{$name}{
+      background : $color;
+      @extend %place-color;
+    }
+   }
   @each $name, $pair in $colors {
     $color: nth($pair, 1);
 

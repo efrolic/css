@@ -5,7 +5,7 @@ layout: base
 <main class="e-face e-fullscreen main">
 
   <nav class="e-nav no-bg">
-    <a href="{{site.url}}" class="logo"><img src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}}" /></a>
+    <a href="{{site.url}}" class="logo"><img src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}" /></a>
     <a href="{{site.github}}" target="_blank" class="e-btn circle inverted no-mobile ePull infinite"><i class="fab fa-github"></i></a>
     <a href="{{site.twitter}}" target="_blank" class="e-btn circle inverted sky no-mobile ePull infinite"><i class="fab fa-twitter"></i></a>
     <i class="e-distribution"></i>
@@ -18,7 +18,7 @@ layout: base
 
   <section class="face-body centered">
     <div class="face-item mi-item" style="text-shadow:none;">
-      <img class="eSlide" src="{{ site.url }}/assets/images/efrolic-developer.png" style="max-width:370px !important;" alt="{{ site.description }}">
+      <img class="eSlide" src="{{ site.url }}/assets/images/efrolic-developer.png" style="max-width:370px !important;" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
       <p class="info-frolic eSlide" style="color:{{ site.text_color }};">
         {% if page.description %}{{ page.description }}
         {% else %}{{site.description}}
@@ -172,7 +172,7 @@ Includes icon fonts <strong>(Font awesome)</strong>
       <div class="e-card profile shadow-3">
         <div class="e-card-cover danger"></div>
         <div class="e-card-photo shadow-6">
-          <img src="{{site.url}}{{site.photo_profile}}">
+          <img src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
         </div>
         <div class="e-buttons centered">
           <a class="e-btn plane inverted danger"><span class="e-tag danger">524.2k</span> Followers</a>
@@ -269,7 +269,7 @@ Includes icon fonts <strong>(Font awesome)</strong>
               <div class="e-card profile shadow-3">
                 <div class="e-card-cover {{post.color}} centered">
                   {% if post.image %}
-                  <img src="{{site.url}}{{post.image}}" alt="{{post.title}}">
+                  <img src="{{site.url}}{{post.image}}" alt="{{post.title}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
                   {% endif %}
                 </div>
                 <div class="card-body">

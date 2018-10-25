@@ -26,11 +26,11 @@ code {
 <div class="e-card body profile e-md-height">
   <div class="post-page e- centered">
     {% if page.image %}
-    <img src="{{site.url}}{{page.image}}" alt="{{page.title}}">
+    <img src="{{site.url}}{{page.image}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
     {% endif %}
   </div>
   <div class="e-card-photo">
-    <img src="{{site.url}}{{site.photo_profile}}" alt="{{page.title}}">
+    <img src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
   </div>
   <div class="card-body">
     <div class="e-container">
@@ -73,7 +73,7 @@ code {
     {% for post in site.posts limit: 4 %}
     <div class="e-card profile" style="width:20rem;">
       <div class="e-card-cover {{post.color}} centered">
-        <img src="{{site.url}}{{post.image}}" />
+        <img src="{{site.url}}{{post.image}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}"/>
       </div>
       <div class="card-body">
         <h6 class=""> <a href="{{site.url}}{{post.url}}"> {{post.title}}</a></h6>

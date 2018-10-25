@@ -5,14 +5,14 @@
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-.purple-gradient[class*="e-"], .blue-gradient[class*="e-"], .green-gradient[class*="e-"], .inst-gradient[class*="e-"], .success[class*="e-"], .danger[class*="e-"], .primary[class*="e-"], .purple[class*="e-"], .sky[class*="e-"], .gray[class*="e-"], .black[class*="e-"], .dark[class*="e-"], *.bg-a, *.bg-b, *.bg-c, *.bg-d, *.bg-random, .e-list-item.active {
+.purple-gradient[class*="e-"], .green-gradient[class*="e-"], .blue-gradient[class*="e-"], .inst-gradient[class*="e-"], .success[class*="e-"], .danger[class*="e-"], .primary[class*="e-"], .purple[class*="e-"], .sky[class*="e-"], .gray[class*="e-"], .black[class*="e-"], .dark[class*="e-"], *.bg-a, *.bg-b, *.bg-c, *.bg-d, *.bg-random, .e-list-item.active {
   color: #ffffff;
 }
 
-.purple-gradient[class*="e-"] .e-dropdown, .blue-gradient[class*="e-"] .e-dropdown, .green-gradient[class*="e-"] .e-dropdown, .inst-gradient[class*="e-"] .e-dropdown, .success[class*="e-"] .e-dropdown, .danger[class*="e-"] .e-dropdown, .primary[class*="e-"] .e-dropdown, .purple[class*="e-"] .e-dropdown, .sky[class*="e-"] .e-dropdown, .gray[class*="e-"] .e-dropdown, .black[class*="e-"] .e-dropdown, .dark[class*="e-"] .e-dropdown, *.bg-a .e-dropdown, *.bg-b .e-dropdown, *.bg-c .e-dropdown, *.bg-d .e-dropdown, *.bg-random .e-dropdown, .e-list-item.active .e-dropdown,
+.purple-gradient[class*="e-"] .e-dropdown, .green-gradient[class*="e-"] .e-dropdown, .blue-gradient[class*="e-"] .e-dropdown, .inst-gradient[class*="e-"] .e-dropdown, .success[class*="e-"] .e-dropdown, .danger[class*="e-"] .e-dropdown, .primary[class*="e-"] .e-dropdown, .purple[class*="e-"] .e-dropdown, .sky[class*="e-"] .e-dropdown, .gray[class*="e-"] .e-dropdown, .black[class*="e-"] .e-dropdown, .dark[class*="e-"] .e-dropdown, *.bg-a .e-dropdown, *.bg-b .e-dropdown, *.bg-c .e-dropdown, *.bg-d .e-dropdown, *.bg-random .e-dropdown, .e-list-item.active .e-dropdown,
 .purple-gradient[class*="e-"] a:not(.e-btn),
-.blue-gradient[class*="e-"] a:not(.e-btn),
 .green-gradient[class*="e-"] a:not(.e-btn),
+.blue-gradient[class*="e-"] a:not(.e-btn),
 .inst-gradient[class*="e-"] a:not(.e-btn),
 .success[class*="e-"] a:not(.e-btn),
 .danger[class*="e-"] a:not(.e-btn),
@@ -29,8 +29,8 @@
 *.bg-random a:not(.e-btn),
 .e-list-item.active a:not(.e-btn),
 .purple-gradient[class*="e-"] p,
-.blue-gradient[class*="e-"] p,
 .green-gradient[class*="e-"] p,
+.blue-gradient[class*="e-"] p,
 .inst-gradient[class*="e-"] p,
 .success[class*="e-"] p,
 .danger[class*="e-"] p,
@@ -115,18 +115,16 @@
   background: linear-gradient(40deg, #ff6ec4, #5e72e4);
 }
 
+.green-gradient[class*="e-"] {
+  background: linear-gradient(40deg, #00C9FF, #92FE9D);
+}
+
 .blue-gradient[class*="e-"] {
   background: linear-gradient(40deg, #45cafc, #303f9f);
 }
 
-.green-gradient[class*="e-"] {
-  background: linear-gradient(40deg, #00C9FF, #92FE9D);
-  font-weight: bold;
-}
-
 .inst-gradient[class*="e-"] {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  font-weight: bold;
 }
 
 .success[class*="e-"] {
@@ -709,7 +707,7 @@
   transition: box-shadow 0.18s ease-out, background 0.18s ease-out, color 0.18s ease-out;
 }
 
-.warning.inverted[class*="e-"] *.drop-item.active, .success.inverted[class*="e-"] *.drop-item.active, .danger.inverted[class*="e-"] *.drop-item.active, .primary.inverted[class*="e-"] *.drop-item.active, .purple.inverted[class*="e-"] *.drop-item.active, .sky.inverted[class*="e-"] *.drop-item.active, .gray.inverted[class*="e-"] *.drop-item.active, .black.inverted[class*="e-"] *.drop-item.active, .dark.inverted[class*="e-"] *.drop-item.active, *.shadow, .e-btn, .e-alert, .e-form-box {
+.warning.inverted[class*="e-"] *.drop-item.active, .success.inverted[class*="e-"] *.drop-item.active, .danger.inverted[class*="e-"] *.drop-item.active, .primary.inverted[class*="e-"] *.drop-item.active, .purple.inverted[class*="e-"] *.drop-item.active, .sky.inverted[class*="e-"] *.drop-item.active, .gray.inverted[class*="e-"] *.drop-item.active, .black.inverted[class*="e-"] *.drop-item.active, .dark.inverted[class*="e-"] *.drop-item.active, .e-box, *.shadow, .e-btn, .e-alert, .e-form-box {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
@@ -988,7 +986,6 @@ th {
 
 button,
 input,
-optgroup,
 select,
 textarea {
   margin: 0;
@@ -1000,21 +997,6 @@ textarea {
 button,
 select {
   text-transform: none;
-}
-
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
-button::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
 }
 
 input[type="radio"],
@@ -1031,7 +1013,6 @@ progress {
   vertical-align: baseline;
 }
 
-#cap-nav-full,
 input#e-menu {
   display: none;
 }
@@ -1086,6 +1067,14 @@ input#e-menu {
 
 .e-section {
   margin: 42px auto;
+}
+
+.e-box {
+  margin: 0 auto;
+  padding: 1.25rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  border: solid 0.5px rgba(0, 0, 0, 0.05);
 }
 
 .e-cols {
@@ -1787,6 +1776,8 @@ input#e-menu:checked ~ ul.e-menu {
 
 .e-btn.fullwidth {
   width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .e-btn.anime {

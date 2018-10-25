@@ -3,7 +3,7 @@
     <i class="fas fa-th"></i>
   </label>
   <a href="{{ site.url }}" class="logo docs-brand log-b">
-    <img src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}}" />
+    <img src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}" />
   </a>
   <a class="e-btn circle inverted gray no-desktop text-btn" onclick="showNav()">
     <i class="fas fa-bars"></i>
@@ -77,7 +77,7 @@
   <div class="e-face" style="background:transparent;">
     <div class="face-body centered">
       <div class="e-container">
-        <a href="{{ site.url }}" class="logo docs-brand"><img style="width:90px;" src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}}" /></a>
+        <a href="{{ site.url }}" class="logo docs-brand"><img style="width:90px;" src="{{ site.url }}/assets/images/efrolic-brand.png" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}" /></a>
       </div>
     </div>
   </div>
@@ -110,7 +110,7 @@
   <p class="label {% if page.category == 'layout' %}on-active{% endif %}"><strong><a href="{{site.url}}/container" >Layout</a></strong></p>
   <div class="off-page {% if page.category == 'layout' %} on-page {% endif %}">
   <li class="{% if page.permalink == '/container' %}active{% endif %}">
-    <a href="{{ site.url }}/container"><i class="fas fa-box-open text-sky"></i> Container
+    <a href="{{ site.url }}/container"><i class="fas fa-box-open text-sky"></i> Containers
     </a>
   </li>
 
