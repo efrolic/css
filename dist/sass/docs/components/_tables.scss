@@ -1,0 +1,50 @@
+.e-table {
+  width           : 100%;
+  margin-bottom   : 1rem;
+  background-color: $white;
+  text-align      : left;
+
+  td,
+  th {
+    padding       : 0.550rem;
+    vertical-align: top;
+    border-top    : 1px $table-th-border;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom : (2 * 1px) $table-th-border;
+  }
+
+  tbody + tbody {
+    border-top: (2 * 1px) $table-th-border;
+  }
+}
+
+.striped {
+  tbody tr:nth-of-type(#{odd}) {
+    background-color: rgba(0,0,0,0.017);
+  }
+}
+
+.hovered {
+  tbody tr:hover {
+    background-color: rgba(0,0,0,0.020);
+  }
+}
+
+.bordered {
+  border: 1px $table-th-border;
+
+  td,
+  th {
+    border: 1px $table-th-border;
+  }
+
+  thead {
+    td,
+    th {
+      border-bottom-width: (2 * 1px);
+    }
+  }
+}

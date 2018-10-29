@@ -1,0 +1,22 @@
+$bg-a: linear-gradient($danger,rgba(0,0,0,.1)), url("https://bit.ly/2NmBmLy");
+$bg-b: linear-gradient($sky,rgba(0,0,0,.1)), url("https://bit.ly/2orzDph");
+$bg-c: linear-gradient($purple 1%,rgba(255,255,255,.1)), url("https://bit.ly/2MLIEmM");
+$bg-d: linear-gradient($dark,rgba(0,0,0,.1)), url("https://bit.ly/2oqGpf2");
+$bg-random: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)), url("https://source.unsplash.com/random");
+$images: (
+  "bg-a"     : $bg-a,
+  "bg-b"     : $bg-b,
+  "bg-c"     : $bg-c,
+  "bg-d"     : $bg-d,
+  "bg-random": $bg-random
+);
+
+* {
+  @each $bg-image, $bg in $images {
+    &.#{$bg-image} {
+      background-image: $bg;
+      @extend %bg;
+      @extend %place-color;
+    }
+  }
+}

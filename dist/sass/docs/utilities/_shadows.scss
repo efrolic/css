@@ -1,0 +1,29 @@
+* {
+  &.shadow {
+    @extend %shadow;
+
+    &-6 {
+      @extend %shadow-6;
+    }
+
+    &-5 {
+      @extend %shadow-5;
+    }
+
+    &-4 {
+      @extend %shadow-4;
+    }
+
+    &-3 {
+      @extend %shadow-3;
+    }
+
+    &-2 {
+      @extend %shadow-2;
+    }
+
+    &-1 {
+      @extend %shadow-1;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.e-delete {
+  position       : relative;
+  font-family    : sans-serif;
+  background     : transparent;
+  color          : rgba(0,0,0,.4);
+  text-decoration: none !important;
+  border         : none;
+  border-radius  : 4px;
+  font-size      : 1.5rem;
+  line-height    : normal;
+  font-weight    : $font-weight + 300;
+  padding        : 2px 8px 0 6px;
+  text-align     : center;
+  cursor         : pointer;
+
+  &:focus {
+    outline: rgba(77,77,77,.2) solid 2.2px;
+  }
+}

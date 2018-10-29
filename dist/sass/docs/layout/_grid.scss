@@ -1,0 +1,82 @@
+.e-container {
+  width : 92.50%;
+  margin: 0 auto;
+  @include tablet {
+    max-width: 720px;
+  }
+  @include desktop {
+    max-width: 976px;
+  }
+  @include desktop-plus {
+    max-width: 1366px;
+  }
+
+  &-fluid {
+    width: 100%;
+  }
+}
+
+.e-section {
+  margin: 42px auto;
+}
+
+.e-box {
+  margin       : 1rem auto;
+  padding      : 1.25rem;
+  overflow     : hidden;
+  background   : $white;
+  border-radius: $form-box-border-radius;
+  border       : $form-box-border;
+  @extend %shadow;
+}
+
+.e-cols {
+  display       : flex;
+  flex          : 0 1 auto;
+  flex-direction: row;
+  margin        : 0 auto;
+  flex-wrap     : wrap;
+  width         : 100%;
+
+  &.no-gap {
+    & [class*="e-col"] {
+      padding: 0 !important;
+    }
+  }
+}
+
+.w-100 {
+  width: 100% !important;
+}
+@mixin col($e-col) {
+  max-width: percentage($e-col / 12);
+}
+
+%col {
+  width  : 100%;
+  padding: $grid-col-padding;
+  flex   : 0 0 auto;
+  margin : 0 auto;
+}
+
+.e-col {
+  @extend %col;
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      @extend %col;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .e-col {
+    flex-grow  : 1;
+    flex-shrink: 1;
+    flex-basis : 0;
+    max-width  : 100%;
+    @for $i from 1 through 12 {
+      &-#{$i} {
+        @include col($i);
+      }
+    }
+  }
+}

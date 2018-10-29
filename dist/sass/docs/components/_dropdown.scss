@@ -1,0 +1,133 @@
+.e-dropdown {
+  display      : inline-block;
+  position     : relative;
+  padding      : $dropdown-padding;
+  @extend %background;
+  white-space  : nowrap;
+  @extend %centered;
+  margin       : $btn-margin;
+  border-radius: $border-radius;
+  font-size    : $dropdown-font-size;
+  overflow     : visible;
+  width        : auto;
+}
+
+.drop-items {
+  @if $dropdown-enable-animation {
+    @extend .eFade;
+  }
+  display      : none;
+  position     : absolute;
+  min-width    : $drop-items-min-width;
+  background   : $white !important;
+  z-index      : $drop-items-z-index;
+  width        : 100% auto;
+  margin       : 0;
+  left         : 5px;
+  top          : 100%;
+  overflow     : visible;
+  box-shadow   : $drop-items-shadow;
+  padding      : $drop-items-padding;
+  border-radius: 0.6rem;
+
+  & .drop-item {
+    text-align   : left;
+    overflow     : hidden;
+    padding      : $drop-item-padding;
+    background   : $drop-item-bg;
+    display      : block;
+    position     : relative;
+    margin       : 0;
+    background   : transparent;
+    width        : 100%;
+    color        : $font-color !important;
+    text-shadow  : none !important;
+    font-weight  : normal;
+    border-radius: 3px;
+    @extend %transition;
+
+    &:hover {
+      @extend %background;
+      color: $drop-item-hover-color !important;
+    }
+  }
+
+  & .e-btn {
+    margin-left: 0;
+  }
+
+  & > p,
+   > h2,
+   > h3,
+   > h4,
+   > h5,
+   > h6,
+   > i,
+   > span,
+   > strong,
+  > h1 {
+    padding: $drop-item-padding;
+    color  : $font-color !important;
+  }
+}
+
+.drop-items:before {
+  background   : $white;
+  content      : "";
+  display      : block;
+  height       : 16px;
+  width        : 16px;
+  left         : 20px;
+  position     : absolute;
+  bottom       : 100%;
+  transform    : rotate(-45deg) translateY(1rem);
+  z-index      : -5;
+  border-radius: 0.2rem;
+}
+
+.e-dropdown {
+  &.drop-right {
+    & .drop-items {
+      left : auto;
+      right: 5px;
+
+      &:before {
+        left : auto;
+        right: 28px;
+      }
+    }
+  }
+}
+
+.e-buttons,
+.e-drops,
+.e-drops,
+.e-nav {
+  & .e-dropdown:last-child {
+    & .drop-items {
+      left : auto;
+      right: 5px;
+
+      &:before {
+        left : auto;
+        right: 28px;
+      }
+    }
+  }
+}
+@media only screen and (max-width:1024px) {
+  .e-nav {
+    & .e-dropdown:last-child {
+      & .drop-items {
+        &:before {
+          left : 20px;
+          right: auto;
+        }
+      }
+    }
+  }
+}
+
+.e-dropdown:hover .drop-items {
+  display: block;
+}

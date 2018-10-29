@@ -1,0 +1,306 @@
+%place-color {
+  color: $white;
+
+  & .e-dropdown,
+  & a:not(.e-btn),
+  & p {
+    color: $white;
+  }
+}
+
+%dark-color {
+  color: $e-font-color;
+
+  & a:not(.e-btn),
+  & p,
+  .e-dropdown {
+    color: $e-font-color;
+  }
+}
+
+%e-colors {
+  &.white {
+    background: $white;
+    @extend %dark-color;
+  }
+
+  &.warning {
+    background: $warning;
+    @extend %dark-color;
+
+    & .no-bg {
+      & .e-menu {
+        @media only screen and (max-width: 1023px) {
+          & .e-dropdown,
+          & .e-menu-item {
+            &:hover {
+              color: darken($warning,10%) !important;
+            }
+          }
+        }
+      }
+    }
+
+    & .drop-item {
+      &:hover {
+        color: darken($warning,10%) !important;
+      }
+    }
+
+    &.inverted {
+      & *.drop-item {
+        &:hover {
+          color     : $dark !important;
+          background: $warning !important;
+          @extend %shadow-6;
+        }
+
+        &.active {
+          color     : $dark !important;
+          background: $warning !important;
+          @extend %shadow;
+        }
+      }
+    }
+  }
+
+  &.transparent {
+    background : $white;
+    font-weight: bold;
+    @extend %dark-color;
+    @media only screen and (min-width: $breakpoint-desktop) {
+      background : rgba(255,255,255,.1);
+      font-weight: normal;
+      color      : $white;
+
+      & a:not(.e-btn),
+      .e-dropdown {
+        color: $white;
+      }
+    }
+  }
+  @each $name, $pair in $colors-gradient {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      background: $color;
+      @extend %place-color;
+    }
+  }
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      background: $color;
+      @extend %place-color;
+
+      & .no-bg {
+        & .e-menu {
+          @media only screen and (max-width: $breakpoint-desktop - 1) {
+            & .e-dropdown,
+            & .e-menu-item {
+              &:hover {
+                color: $color !important;
+              }
+            }
+          }
+        }
+      }
+
+      & .drop-item {
+        &:hover {
+          color: $color !important;
+        }
+      }
+
+      &.inverted {
+        & *.drop-item {
+          &:hover {
+            color     : $white !important;
+            background: $color !important;
+            @extend %shadow-6;
+          }
+
+          &.active {
+            color     : $white !important;
+            background: $color !important;
+            @extend %shadow;
+          }
+        }
+      }
+    }
+  }
+}
+
+%hover-colors {
+  &.white {
+    &:hover {
+      background-color: lighten(whitesmoke, 2.5%);
+    }
+
+    &:focus {
+      background-color: $white;
+      box-shadow      : 0 0 0 2.4px whitesmoke;
+    }
+  }
+
+  &.warning {
+    &:hover {
+      background: darken($warning, 3%);
+    }
+
+    &:focus {
+      background: darken($warning, 8%);
+      box-shadow: 0 0 0 2.4px rgba($warning,.4);
+    }
+  }
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      &:hover {
+        background: darken($color, 3.2%);
+      }
+
+      &:focus {
+        background: darken($color, 8%);
+        box-shadow: 0 0 0 2.4px rgba($color,.4);
+      }
+    }
+  }
+}
+
+[class*="e-"] {
+  @extend %e-colors;
+}
+
+* {
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    &.text-#{$name} {
+      color: $color !important;
+    }
+  }
+
+  &.text-warning {
+    color: $warning !important;
+  }
+
+  &.text-white {
+    color: $white !important;
+  }
+}
+
+%inverted {
+  &.warning {
+    color: $warning;
+
+    &:hover {
+      color           : $warning;
+      background-image: radial-gradient(rgba($warning,.045) 100%, transparent 0.01%) !important;
+    }
+
+    &:focus {
+      border-color: white;
+    }
+  }
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      color: $color;
+
+      &:hover {
+        color           : $color;
+        background-image: radial-gradient(rgba($color,.045) 100%, transparent 0.01%) !important;
+      }
+
+      &:focus {
+        border-color: white;
+      }
+    }
+  }
+}
+
+%outlined {
+  &.white {
+    border-color: rgba(0,0,0,0.1);
+  }
+
+  &.warning {
+    color       : $warning;
+    border-color: $warning;
+
+    &:focus,
+    &:hover {
+      background: $warning;
+      color     : $white;
+    }
+  }
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      border-color: $color;
+      color       : $color;
+
+      &:focus,
+      &:hover {
+        background: $color;
+        color     : $white;
+      }
+    }
+  }
+}
+
+.e-btn {
+  @extend %hover-colors;
+
+  &.outlined {
+    @extend %outlined;
+  }
+
+  &.inverted {
+    @extend %inverted;
+  }
+}
+
+.e-nav {
+  &.white {
+    & .e-menu {
+      & .e-menu-item,
+      .e-dropdown {
+        &:hover {
+          background: lighten(whitesmoke,.7%);
+        }
+      }
+    }
+  }
+}
+
+.e-nav {
+  &.transparent {
+    & .e-menu {
+      & .e-menu-item,
+      .e-dropdown {
+        @media only screen and (max-width: $breakpoint-desktop - 1) {
+          &:hover {
+            background: lighten(whitesmoke,.7%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.e-btn,
+.e-tag {
+  &.transparent {
+    background: rgba(255,255,255,.1) !important;
+    color     : $white !important;
+    @media only screen and (min-width: $breakpoint-desktop) {
+      background: rgba(255,255,255,.1) !important;
+    }
+  }
+}

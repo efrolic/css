@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  word-wrap : break-word;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+
+html {
+  font-family             : $font-family;
+  min-width               : 320px;
+  font-weight             : $font-weight;
+  line-height             : $line-height;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust    : 100%;
+}
+
+body {
+  color           : $body-color;
+  background-color: $body-bg;
+  padding         : 0;
+  margin          : 0;
+  line-height     : $line-height;
+  font-size       : $body-font-size;
+  @media only screen and (min-width: 768px) {
+    font-size: $body-font-size + 0.0625;
+  }
+}
+
+audio,
+img,
+video {
+  width    : 100%;
+  max-width: 100%;
+  height   : auto;
+}
+
+a {
+  color                       : $primary;
+  text-decoration             : none;
+  background-color            : transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+li {
+  list-style: none;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin : 0;
+}
+
+hr {
+  border          : none;
+  width           : 100%;
+  height          : 1px;
+  margin          : 20px 0;
+  background-color: lighten(rgba(0,0,0,.1),2%);
+}
+
+*[disabled] {
+  opacity       : 0.5;
+  pointer-events: none;
+  cursor        : not-allowed;
+  box-shadow    : none !important;
+  user-select   : none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+iframe {
+  border: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  margin     : 0;
+  font-family: inherit;
+  font-size  : inherit;
+  line-height: inherit;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize  : vertical;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+input#e-menu,
+input#e-sidenav {
+  display : none;
+  position: fixed;
+}
+
+.link {
+  opacity: 0.9;
+
+  &:hover {
+    opacity        : 1;
+    text-decoration: underline;
+    cursor         : pointer;
+  }
+}
+
+.active {
+  background-color: lighten(rgba(0,0,0,0.1),30%) !important;
+}
+
+.e-btn,
+.e-dropdown {
+  user-select: none;
+  color      : $font-color;
+  cursor     : pointer;
+}

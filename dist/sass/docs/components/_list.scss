@@ -1,0 +1,48 @@
+.e-list {
+  flex-direction: column;
+  display       : flex;
+  padding       : 0;
+  margin        : 0;
+  border-radius : $border-radius;
+  border        : $list-border;
+  text-align    : inherit;
+}
+
+.e-list-item {
+  position        : relative;
+  display         : block;
+  width           : 100%;
+  color           : inherit;
+  border          : none;
+  outline         : none;
+  padding         : $list-item-padding;
+  background-color: $list-item-bg;
+  border-top      : $list-item-border;
+  border-bottom   : $list-item-border;
+
+
+  &:first-child {
+    border-top             : none;
+    border-top-left-radius : $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
+
+  &:last-child {
+    border-bottom             : none;
+    border-bottom-left-radius : $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+
+  &:hover {
+    background: lighten($default, 2%);
+  }
+
+  &.active {
+    background: $primary !important;
+    @extend %place-color;
+  }
+}

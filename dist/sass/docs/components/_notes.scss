@@ -1,0 +1,46 @@
+.e-note {
+  @extend %background;
+  border-radius : $border-radius;
+  overflow      : hidden;
+  position      : relative;
+  letter-spacing: 0.2px;
+
+  &.block {
+    border-left: solid 5px transparent;
+  }
+
+  &.lighten {
+    & > .note-body,
+    .note-footer {
+      background: $white !important;
+    }
+    box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+  }
+}
+
+.note-header {
+  padding        : 0.55em;
+  color          : $white !important;
+  font-weight    : $font-weight + 300;
+  display        : flex;
+  justify-content: space-between;
+  font-size      : 1.10rem;
+  align-items    : center;
+}
+
+.note-body {
+  padding    : 1.25rem 1.25rem 1.25rem 1.5rem;
+  background : rgba(255,255,255,.95);
+  font-family: inherit;
+  font-weight: normal !important;
+
+  &,
+  & a,
+  & p {
+    color: rgba(0,0,0,0.8) !important;
+  }
+}
+
+.note-footer {
+  @extend %note-footer;
+}

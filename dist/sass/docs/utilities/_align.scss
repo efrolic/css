@@ -1,0 +1,42 @@
+%child-col {
+  & > [class*="e-col"] {
+    margin: 0;
+  }
+}
+
+* {
+  &.centered {
+    @extend %centered;
+    justify-content: center !important;
+  }
+
+  &.between {
+    @extend %centered;
+    justify-content: space-between !important;
+    @extend %child-col;
+  }
+
+  &.align-start {
+    @extend %centered;
+    justify-content: flex-start !important;
+    @extend %child-col;
+  }
+
+  &.align-end {
+    @extend %centered;
+    justify-content: flex-end !important;
+    @extend %child-col;
+  }
+}
+
+*.d-block {
+  display: block !important;
+}
+
+*.d-flex {
+  display: flex !important;
+}
+
+*.d-flex-grow {
+  flex-grow: 1 !important;
+}

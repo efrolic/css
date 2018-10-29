@@ -1,0 +1,40 @@
+.e-alert {
+  position      : relative;
+  padding       : $alert-padding;
+  border-radius : $border-radius;
+  font-size     : $alert-font-size;
+  font-family   : inherit;
+  vertical-align: middle;
+  letter-spacing: 0.2px;
+  text-shadow   : none;
+  @extend %background;
+  @extend %shadow;
+
+  &.snack {
+    border-radius          : $alert-snack-border-radius;
+    border-top-right-radius: 0;
+  }
+
+  & > .e-icon {
+    font-size     : $alert-icon-size;
+    vertical-align: middle;
+    margin-right  : 5px;
+  }
+
+  & > .e-delete {
+    right   : 0.5rem;
+    top     : 0.5rem;
+    position: absolute;
+  }
+
+  & > a:not(.e-btn) {
+    text-decoration: underline;
+  }
+}
+
+.alert-footer {
+  @extend %note-footer;
+  margin-top: 10px;
+  background: transparent;
+  padding   : $alert-footer-padding;
+}

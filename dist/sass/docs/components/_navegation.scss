@@ -1,0 +1,257 @@
+%e-nav {
+  @extend %centered;
+  justify-content: space-between;
+  position       : relative;
+  height         : auto;
+  width          : 100%;
+  z-index        : 1000;
+  min-height     : $nav-min-height;
+  color          : $font-color;
+  padding        : 8px;
+  @extend %background;
+  @extend %shadow-5;
+  @include desktop {
+    padding-left : $nav-padding-desktop;
+    padding-right: $nav-padding-desktop;
+    border-bottom: $nav-border-bottom;
+  }
+  @include desktop-plus {
+    padding-left : $nav-padding-desktop + 3;
+    padding-right: $nav-padding-desktop + 5;
+  }
+
+  &.fixed {
+    top     : 0;
+    position: fixed;
+  }
+
+  & .e-btn {
+    margin-top   : 0;
+    margin-bottom: 0;
+  }
+  @media only screen and (max-width: 1023px) {
+    & .drop-items {
+      display   : block;
+      position  : relative;
+      box-shadow: none !important;
+      width     : 100%;
+      left      : 0;
+      margin-top: 8px;
+    }
+
+    & .e-dropdown:after {
+      display: none;
+    }
+  }
+}
+
+.e-nav {
+  @extend %e-nav;
+}
+
+.e-distribution {
+  width  : 0.5px;
+  display: none;
+  margin : auto;
+  @include desktop {
+    display: block;
+  }
+}
+
+%e-menu-item {
+  @extend %waves;
+  display        : inline-block;
+  background     : transparent;
+  position       : relative;
+  cursor         : pointer;
+  padding        : $menu-item-padding;
+  color          : $font-color;
+  border         : none;
+  text-decoration: none;
+  text-align     : left;
+  list-style     : none;
+  line-height    : $menu-item-line-height;
+  margin         : auto;
+  width          : 100%;
+  height         : 100%;
+
+  &:hover {
+    transition: 0.2s;
+    background: $menu-item-bg-hover;
+  }
+  @include desktop {
+    border-radius: 3px;
+    margin       : 0 3px;
+    width        : auto;
+  }
+}
+
+.e-menu-item {
+  @extend %e-menu-item;
+}
+
+.e-menu {
+  @extend %centered;
+  justify-content : flex-start;
+  display         : none;
+  width           : 100%;
+  padding         : $menu-padding;
+  margin-top      : 7px;
+  margin-bottom   : 0;
+  background-color: rgba(255,255,255,.2);
+  border-radius   : $border-radius;
+
+  & .e-dropdown {
+    background: transparent;
+    text-align: left;
+    margin    : 0;
+    width     : 100%;
+    @include desktop {
+      width       : auto;
+      margin-left : $btn-margin;
+      margin-right: $btn-margin;
+    }
+
+    &:hover {
+      background: lighten(rgba(255,255,255,0.1),100%);
+    }
+  }
+
+  &.narrow {
+    & > .e-menu-item {
+      width     : auto;
+      flex-grow : 1;
+      text-align: center;
+      @include desktop {
+        flex-grow: 0;
+      }
+    }
+  }
+
+  & .e-btn {
+    margin: 7px;
+  }
+  @include desktop {
+    justify-content : center;
+    background-color: transparent;
+    display         : flex;
+    width           : auto;
+    border          : none;
+    border-radius   : 0;
+    flex-grow       : 1;
+    padding         : 0;
+    margin          : 0;
+
+    & .e-btn {
+      margin-top   : 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.e-separator {
+  display         : none;
+  height          : 22px;
+  width           : 1px;
+  background-color: rgba(0,0,0,0.1);
+  border-radius   : 100px;
+  @include desktop {
+    display: block;
+  }
+}
+
+.e-sidenav {
+  position        : fixed;
+  top             : 0;
+  height          : $sidenav-height;
+  width           : $sidenav-width;
+  padding         : 0;
+  z-index         : 10000;
+  box-shadow      : $sidenav-box-shadow;
+  background-color: $sidenav-bg;
+  color           : $e-font-color;
+  font-size       : 0.9rem;
+  overflow-y      : auto;
+  @extend .eSlide;
+  @include desktop {
+    width: $sidenav-width + 1.25;
+  }
+}
+
+.sidenav-brand {
+  padding: $sidenav-brand-padding;
+  @extend %centered;
+
+  & img {
+    width      : 75%;
+    margin-left: -14px;
+  }
+}
+
+.sidenav-label {
+  margin-left   : $sidenav-label-margin-left;
+  font-size     : $sidenav-label-font-size;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  font-weight   : $font-weight + 300;
+  font-family   : sans-serif;
+
+  &:not(:last-child) {
+    margin-bottom: 1em;
+    margin-top   : 1em;
+  }
+}
+
+.sidenav-item:first-child,
+.sidenav-label:first-child {
+  margin-top: 6rem !important;
+}
+
+.sidenav-item:last-child,
+.sidenav-label:last-child {
+  margin-bottom: 3rem !important;
+}
+
+.sidenav-item {
+  padding       : $sidenav-item-padding;
+  user-select   : none;
+  letter-spacing: 0.3px;
+  font-size     : $sidenav-item-font-size;
+
+  &:hover {
+    background: rgba(0,0,0,0.060);
+    transition: all 0.4s ease-out;
+  }
+
+  &,
+  & a {
+    display: block;
+    color  : inherit;
+  }
+}
+
+.e-cap {
+  @extend %e-cap;
+}
+
+.cap-sidenav {
+  display: none;
+}
+
+.sidenav-hidden {
+  position        : absolute;
+  background-color: transparent !important;
+}
+
+input#e-menu:checked ~ div.e-menu,
+input#e-menu:checked ~ nav.e-menu,
+input#e-menu:checked ~ ul.e-menu {
+  display: flex;
+  @if $navegation-enable-animation {
+    @extend .eSlide;
+  }
+}
+
+input#e-sidenav:checked ~ div.cap-sidenav {
+  display: flex;
+}

@@ -1,0 +1,21 @@
+.e-tag {
+  display       : inline-flex;
+  padding       : 0.25em 0.580em;
+  @extend %background;
+  color         : $e-font-color;
+  font-size     : 80%;
+  letter-spacing: 0.3px;
+  font-weight   : $font-weight + 300;
+  text-align    : center;
+  white-space   : nowrap;
+  vertical-align: middle;
+  border-radius : 0.22rem;
+
+  &.static {
+    font-size: 0.870rem !important;
+  }
+
+  &.rounded {
+    padding: 0.25em 0.8em;
+  }
+}

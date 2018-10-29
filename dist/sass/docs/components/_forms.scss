@@ -1,0 +1,268 @@
+%place-control {
+  transition        : $control-transition;
+  height            : $control-height;
+  padding           : $control-padding;
+  border            : $control-border;
+  display           : inline-flex;
+  justify-content   : flex-start;
+  color             : $control-color !important;
+  border-radius     : $control-border-radius;
+  align-items       : center;
+  background-color  : $control-bg !important;
+  font-size         : $control-font-size;
+  max-width         : 100%;
+  vertical-align    : top;
+  position          : relative;
+  -moz-appearance   : none;
+  -webkit-appearance: none;
+
+  &:hover {
+    border-color: darken($control-border-color, 10%);
+  }
+
+  &:focus {
+    outline     : none !important;
+    z-index     : 100;
+    border-color: $control-border-color-focus;
+    box-shadow  : 0 0 0 0.125em rgba($control-border-color-focus,.25);
+  }
+
+  &.small {
+    height   : $control-height-small;
+    padding  : $control-padding-small;
+    font-size: $control-font-size-small;
+  }
+
+  &.plus {
+    height   : $control-height-plus;
+    padding  : $control-padding-plus;
+    font-size: $control-font-size-plus;
+  }
+}
+
+.e-control {
+  @extend %place-control;
+  box-shadow   : $control-shadow;
+  width        : 100%;
+
+  &[readonly] {
+    box-shadow: none !important;
+  }
+
+  &[disabled] {
+    background: $control-disabled-bg !important;
+  }
+  $input-colors: (
+    "success": $success,
+    "danger" : $danger
+  );
+  @each $name, $pair in $input-colors {
+    $color: nth($pair, 1);
+
+    &.#{$name} {
+      border-color: $color;
+      color       : darken($color,15%) !important;
+
+      &:focus {
+        box-shadow: 0 0 0 0.125em rgba($color,.25);
+      }
+    }
+  }
+}
+
+.e-form-group {
+  margin-bottom: $form-group-m-bottom;
+
+  & .e-btn {
+    margin: 0;
+  }
+}
+
+.e-form-info {
+  display   : block;
+  margin-top: $form-info-m-top;
+  color     : $form-info-color;
+  font-size : $form-info-font-size;
+}
+
+.default {
+  & .e-control {
+    background: $background-default !important;
+  }
+}
+
+.rounded {
+  & .e-control {
+    border-radius: 100px;
+  }
+}
+
+.rounded textarea.e-control,
+textarea.e-control.rounded {
+  border-radius: $border-radius !important;
+}
+
+textarea.e-control {
+  min-height : $control-textarea-height;
+  padding-top: $control-textarea-p-top;
+  resize     : vertical;
+}
+
+input[type="file"].e-control {
+  background : $background-default !important;
+  display    : block;
+  width      : 100%;
+  height     : auto;
+  line-height: 1.7;
+}
+
+.e-label {
+  display       : block;
+  margin-bottom : $label-margin-bottom;
+  font-weight   : $label-font-weight;
+  color         : inherit;
+  letter-spacing: 0.2px;
+  opacity       : 0.9;
+}
+
+.e-select:not([multiple]) {
+  @extend %place-control;
+  cursor         : pointer;
+  padding-right  : 2.5em !important;
+  background     : #fff url("https://bit.ly/2Ev45cV") no-repeat right 1rem center;
+  background-size: 9px 10px;
+}
+
+.e-select[multiple] {
+  border-radius: $border-radius;
+  border       : $control-border;
+  color        : $font-color !important;
+  width        : 100%;
+
+  & option {
+    padding: 0.470em 0.9em;
+  }
+}
+
+.e-control-helper {
+  padding      : $control-helper-padding;
+  border-radius: $border-radius;
+  background   : $white;
+  border       : $control-border;
+  color        : $control-helper-color;
+  font-weight  : $font-weight + 100;
+  @extend %centered;
+}
+
+.e-form-group {
+  &.unified {
+    position   : relative;
+    display    : flex;
+    flex-wrap  : wrap;
+    align-items: stretch;
+    width      : 100%;
+
+    & .e-btn:not(:first-child),
+    & .e-control-helper:not(:first-child),
+    & .e-control:not(:first-child),
+    & .e-select:not(:first-child) {
+      border-top-left-radius   : 0;
+      border-bottom-left-radius: 0;
+      margin-left              : -1px;
+    }
+
+    & .e-btn:not(:last-child),
+    & .e-control-helper:not(:last-child),
+    & .e-control:not(:last-child),
+    & .e-select:not(:last-child) {
+      border-bottom-right-radius: 0;
+      border-top-right-radius   : 0;
+      margin-right              : -1px;
+    }
+
+    & .e-control {
+      position     : relative;
+      flex         : 1 1 auto;
+      width        : 1%;
+      margin-bottom: 0;
+    }
+
+    & .e-label {
+      display: block;
+      width  : 100%;
+    }
+  }
+}
+
+.e-form-box {
+  margin       : 0 auto;
+  padding      : $form-box-padding;
+  @include desktop {
+    padding: $form-box-padding-desktop;
+  }
+  overflow     : hidden;
+  border-radius: $form-box-border-radius;
+  border       : $form-box-border;
+  @extend %shadow;
+}
+
+.e-range {
+  -webkit-appearance: none;
+  -moz-appearance   : none;
+  outline           : none;
+  width             : 100%;
+  opacity           : 0.8;
+  transition        : opacity 0.2s;
+  border-radius     : $range-border-radius;
+  height            : $range-height;
+  background        : $range-bg;
+}
+
+.e-range:hover {
+  opacity: 1;
+}
+
+.e-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance        : none;
+  cursor            : pointer;
+  background        : $white;
+  width             : $range-thumb-width;
+  height            : $range-thumb-height;
+  border-radius     : $range-border-radius;
+  box-shadow        : $range-shadow;
+  border            : solid 0.5px rgba(0,0,0,0.050);
+  transition        : all 0.2s;
+}
+
+.e-range::-webkit-slider-thumb:hover {
+  width : 20px;
+  height: 20px;
+}
+
+.e-range::-moz-range-thumb {
+  cursor       : pointer;
+  border-radius: $range-border-radius;
+  width        : $range-thumb-width;
+  height       : $range-thumb-height;
+  background   : $white;
+  box-shadow   : $range-shadow;
+  border       : $range-border;
+}
+
+.e-range::-moz-range-track {
+  -webkit-appearance: none;
+  -moz-appearance   : none;
+  width             : 100%;
+  outline           : none;
+  height            : $range-height;
+  background        : rgba(0,0,0,0.050);
+  border-radius     : $range-border-radius;
+}
+
+.marked {
+  background    : $default !important;
+  color         : $marked-color;
+  font-weight   : $font-weight + 300;
+  letter-spacing: 0.2px;
+}

@@ -1,0 +1,141 @@
+.e-btn:not([disabled]) {
+  @extend %waves;
+}
+
+.e-btn {
+  border         : $btn-border;
+  border-radius  : $border-radius;
+  font-size      : $btn-font-size;
+  padding        : $btn-padding;
+  display        : inline-block;
+  position       : relative;
+  white-space    : nowrap;
+  text-align     : center;
+  font-weight    : $font-weight + 200;
+  letter-spacing : $btn-letter-spacing;
+  margin         : $btn-margin;
+  text-decoration: none;
+  line-height    : normal;
+  @extend %background;
+  @extend %transition;
+  @extend %shadow;
+
+  &.float-left {
+    position: $btn-float-position;
+    bottom  : $btn-float-spacing;
+    left    : $btn-float-spacing;
+    z-index : $btn-float-z-index;
+  }
+
+  &.float-right {
+    position: $btn-float-position;
+    bottom  : $btn-float-spacing;
+    right   : $btn-float-spacing;
+    z-index : $btn-float-z-index !important;
+  }
+
+  &.small {
+    padding  : $btn-padding-small;
+    font-size: $btn-font-size-small;
+  }
+
+  &.plus {
+    padding  : $btn-padding-plus;
+    font-size: $btn-font-size-plus;
+  }
+
+  &.fullwidth {
+    width       : 100%;
+    margin-left : 0 !important;
+    margin-right: 0 !important;
+  }
+
+  &.anime {
+    border             : $btn-anime-border;
+    border-bottom      : solid rgba(0, 0, 0,.2);
+    border-top         : solid rgba(0, 0, 0, 0.1);
+    border-top-width   : $btn-anime-border-top-width;
+    border-bottom-width: $btn-anime-border-bottom-width;
+    border-radius      : $btn-anime-border-radius;
+    transition         : border 0.1s ease-in;
+    box-shadow         : none;
+
+    &:active,
+    &:focus {
+      border-top-width   : $btn-anime-border-bottom-width;
+      border-bottom-width: $btn-anime-border-top-width;
+    }
+
+    &.small {
+      border-radius: $border-radius + 0.0625;
+    }
+  }
+
+  &.circle {
+    border-radius: 100%;
+    font-size    : $btn-circle-font-size;
+    border       : none;
+    padding      : 0;
+    line-height  : $btn-circle-height;
+    width        : $btn-circle-width;
+    overflow     : hidden;
+    text-align   : center;
+    text-shadow  : 1px 1px 1px rgba(0,0,0,0.2);
+
+    &.small {
+      line-height: $btn-circle-height - 11;
+      width      : $btn-circle-width - 11;
+      font-size  : $btn-circle-font-size - 0.3125rem;
+      padding    : 0;
+    }
+
+    &.plus {
+      line-height: $btn-circle-height + 15;
+      width      : $btn-circle-width + 15;
+      font-size  : $btn-circle-font-size + 0.3125;
+      padding    : 0;
+    }
+
+    &.fullwidth {
+      width     : $btn-circle-width;
+      text-align: center;
+    }
+
+    &.inverted {
+      text-shadow: none !important;
+    }
+  }
+
+  &.outlined {
+    background  : $white;
+    color       : $e-font-color;
+    border-color: $background-default;
+
+    &:focus,
+    &:hover {
+      background: $background-default;
+    }
+  }
+
+  &.plane {
+    border-radius: $border-radius / 2;
+    border       : none;
+  }
+
+  &.inverted {
+    @extend %waves-dark;
+    background  : $white !important;
+    border-color: rgba(0,0,0,0.1);
+    box-shadow  : none;
+
+    &:hover {
+      background-image: radial-gradient(rgba(0,0,0,.019) 100%, transparent 0.01%) !important;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2.4px lighten($default,1.8%);
+    outline   : none !important;
+    z-index   : 100;
+  }
+}

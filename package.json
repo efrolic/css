@@ -2,6 +2,13 @@
   "name": "efrolic",
   "version": "0.2.3",
   "description": "It is a CSS framework, which without using javascript is interactive and animated. This framework is based on being simple and modern to develop web interfaces focused on mobile devices.",
+  "keywords": [
+  "framework css",
+  "css",
+  "sass",
+  "responsive",
+  "front-end"
+  ],
   "main": "gulpfile.js",
   "dependencies": {
     "browser-sync": "^2.26.3",
@@ -26,5 +33,5 @@
   "bugs": {
     "url": "https://github.com/EfraaX/eFrolic/issues"
   },
-  "homepage": "https://github.com/EfraaX/eFrolic"
+  "homepage": "http://efrolicss.com"
 }

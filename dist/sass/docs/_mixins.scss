@@ -1,0 +1,26 @@
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear  : both;
+  }
+}
+
+.clean {
+  @include clearfix;
+}
+@mixin tablet() {
+  @media only screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+@mixin desktop() {
+  @media only screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+@mixin desktop-plus() {
+  @media only screen and (min-width: $breakpoint-desktop-plus) {
+    @content;
+  }
+}

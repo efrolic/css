@@ -1,0 +1,78 @@
+.e-card {
+  flex-direction: column;
+  overflow      : hidden;
+  max-width     : 100%;
+  font-weight   : $font-weight;
+  border-radius : $border-radius + 0.10;
+  box-shadow    : $card-shadow;
+  background    : $card-bg;
+
+  &.profile {
+    & .e-card-cover {
+      height  : $card-profile-height;
+      overflow: hidden;
+
+      & img {
+        height: auto;
+      }
+    }
+
+    & .e-card-photo {
+      border-radius: 50%;
+      width        : $card-profile-photo-width;
+      height       : $card-profile-photo-height;
+      margin       : $card-profile-photo-margin;
+      background   : $card-profile-photo-bg;
+
+      & img {
+        height       : 100%;
+        border       : solid 5px #fff;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+.card-body {
+  flex   : 1 1 auto;
+  padding: $card-body-padding;
+}
+
+.card-title {
+  font-size: $card-title-font-size;
+  color    : inherit;
+  padding  : 0;
+  margin   : 0;
+}
+
+.card-text {
+  color    : inherit;
+  font-size: $card-text-font-size;
+}
+
+.e-card-cover {
+  background: $background-default;
+  @extend %centered;
+}
+
+.e-cards-mansory {
+  @extend %centered;
+  @include tablet {
+    column-count: $card-mansory-column-count-tablet;
+    column-gap  : $card-mansory-column-gap;
+    orphans     : 1;
+    widows      : 1;
+    display     : block;
+  }
+  @include desktop {
+    column-count: $card-mansory-column-count-desktop;
+  }
+  @include desktop-plus {
+    column-count: $card-mansory-column-count-desktop-plus;
+  }
+
+  & .e-card {
+    display      : inline-block;
+    margin-bottom: 1rem;
+  }
+}

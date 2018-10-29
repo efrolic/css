@@ -1,0 +1,169 @@
+.eFade,
+.ePull,
+.eRight,
+.eSlide,
+.eUp {
+	@extend %eNimed;
+}
+@-webkit-keyframes eUp {
+	from {
+		opacity          : 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform        : translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity          : 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform        : translate3d(0, 0, 0);
+	}
+}
+@keyframes eUp {
+	from {
+		opacity          : 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform        : translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity          : 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform        : translate3d(0, 0, 0);
+	}
+}
+
+.eUp {
+	-webkit-animation-name: eUp;
+	animation-name        : eUp;
+}
+@-webkit-keyframes eRight {
+	from {
+		opacity          : 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform        : translate3d(100%, 0, 0);
+	}
+
+	to {
+		opacity          : 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform        : translate3d(0, 0, 0);
+	}
+}
+@keyframes eRight {
+	from {
+		opacity          : 0;
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform        : translate3d(100%, 0, 0);
+	}
+
+	to {
+		opacity          : 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform        : translate3d(0, 0, 0);
+	}
+}
+
+.eRight {
+	-webkit-animation-name: eRight;
+	animation-name        : eRight;
+}
+@-webkit-keyframes eSlide {
+	from {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform        : translate3d(-100%, 0, 0);
+		visibility       : visible;
+	}
+
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform        : translate3d(0, 0, 0);
+	}
+}
+@keyframes eSlide {
+	from {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform        : translate3d(-100%, 0, 0);
+		visibility       : visible;
+	}
+
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform        : translate3d(0, 0, 0);
+	}
+}
+
+.eSlide {
+	-webkit-animation-duration: 0.4s;
+	animation-duration        : 0.4s;
+	-webkit-animation-name    : eSlide;
+	animation-name            : eSlide;
+}
+@-webkit-keyframes eFade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+@keyframes eFade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.eFade {
+	-webkit-animation-name: eFade;
+	animation-name        : eFade;
+}
+@-webkit-keyframes ePull {
+	from {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform        : scale3d(1, 1, 1);
+	}
+
+	50% {
+		-webkit-transform: scale3d(1.05, 1.05, 1.05);
+		transform        : scale3d(1.05, 1.05, 1.05);
+	}
+
+	to {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform        : scale3d(1, 1, 1);
+	}
+}
+@keyframes ePull {
+	from {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform        : scale3d(1, 1, 1);
+	}
+
+	50% {
+		-webkit-transform: scale3d(1.05, 1.05, 1.05);
+		transform        : scale3d(1.05, 1.05, 1.05);
+	}
+
+	to {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform        : scale3d(1, 1, 1);
+	}
+}
+
+.ePull {
+	-webkit-animation-name: ePull;
+	animation-name        : ePull;
+}
+
+.e-waves-dark {
+	@extend %waves-dark;
+}
+
+.e-waves {
+	@extend %waves;
+	cursor: pointer;
+}

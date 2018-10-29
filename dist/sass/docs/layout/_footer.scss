@@ -1,0 +1,43 @@
+%footer {
+  background: rgba(0,0,0,0.050);
+  width     : 100%;
+  min-height: 4rem;
+  color     : rgba(0,0,0,0.5);
+}
+
+.e-footer {
+  @extend %centered;
+  @extend %footer;
+  justify-content: space-between;
+  padding        : 1rem 0 0;
+
+  & ol,
+  & ul {
+    padding-left : 0;
+    list-style   : none;
+    margin-top   : 0;
+    margin-bottom: 1rem;
+
+    & li {
+      padding      : 0.25rem 0.50rem;
+      border-radius: 0.25rem;
+
+      &:hover {
+        background: rgba(0,0,0,0.025);
+      }
+
+      & a {
+        color  : inherit;
+        display: block;
+      }
+    }
+  }
+}
+
+.e-footer-bar {
+  @extend %footer;
+  padding       : 0.5rem 1rem;
+  display       : flex;
+  flex-wrap     : wrap;
+  vertical-align: middle;
+}
