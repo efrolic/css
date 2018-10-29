@@ -69,6 +69,11 @@
   url: /lists
   bio: "The lists used to display related or listed content, the lists administer almost any content and conbinations."
 
+- name: Modal
+  category: Component
+  url: /modal
+  bio: "The classic superimposed windows, in which you can include any content you want. Simple and powerful."
+
 - name: Input
   category: Element
   url: /forms
