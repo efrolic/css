@@ -21,6 +21,14 @@ After installation, you can import the CSS file into your project using this sni
 import 'efrolic/dist/css/efrolic.min.css'
 ```
 
+## CSS file 50KB so far.
+
+eFrolic is a modern and lightweight CSS framework, so far only weighs 50KB minified and includes all the components and utilities of the framework.
+
+You can use that lightweight and very powerful file or use the Sass files to customize.
+
+There is no Javascript so it can be integrated into any environment, even without javascript many components look impressive and animated.
+
 ## Browser Support
 
 eFrolic uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (most) Flexbox features compatible with earlier browser versions. eFrolic is compatible with **recent** versions of:
