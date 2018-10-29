@@ -3,7 +3,7 @@
 It is a CSS framework, which without using javascript is interactive and animated. This framework is based on being simple and modern to develop web interfaces focused on mobile devices.
 
 
-<a href="http://efrolicss.com"><img src="http://efrolicss.com/assets/images/efrolic-social.png" alt="eFrolic / framework css" style="max-width:100%;" width="600" height="315"></a>
+<a href="http://efrolicss.com"><img src="http://efrolicss.com/assets/images/efrolic-social.png" alt="eFrolic / framework css" style="max-width:100%;"></a>
 
 ## Quick install
 
