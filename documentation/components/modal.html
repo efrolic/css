@@ -1,0 +1,92 @@
+---
+
+layout: default
+
+permalink: /modal
+
+category: components
+
+title: Modal
+
+description: "The classic superimposed windows, in which you can include any content you want. Simple and powerful."
+
+---
+
+<style>
+  .e-modal{
+  	z-index: 11000;
+  }
+</style>
+
+<h3 class="code-title">{{page.title}} <span class="e-tag static danger">Component</span></h3>
+<p class="look">{{page.description}}</p>
+<hr class="hr">
+<div class="container-white">
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Basic structure</h5>
+<p>This is the basic structure for building a modal window.</p>
+<button class="e-btn sky mb-3" onclick="launch()">Launch modal</button>
+{% highlight html %}
+<div class="e-modal">
+  <div class="e-modal-content eUp">
+    <header class="e-modal-header">
+      <p class="e-modal-title">Modal title</p>
+      <button type="button" class="e-delete">
+        <i aria-hidden="true">&times;</i>
+      </button>
+    </header>
+    <div class="e-modal-body">
+      <p>All the content goes here.</p>
+    </div>
+    <footer class="e-modal-footer">
+      <button class="e-btn inverted">Cancel</button>
+      <button class="e-btn danger">Save changes</button>
+    </footer>
+  </div>
+</div>
+{% endhighlight %}<br>
+<p>To activate the modal, just add the <strong class="code">.launch</strong> modifier on the <strong class="code">.e-modal</strong> container</p>
+
+<article class="e-note warning">
+  <div class="note-header" style="color:rgba(0,0,0,0.6) !important;">
+    Warning does not include javascript
+  </div>
+  <div class="note-body">
+    We do not include Javascript, you will have to create or investigate to add the class <strong class="code">.launch</strong>
+  </div>
+</article><br>
+<button class="e-btn sky" onclick="launch()">Launch modal</button>
+<div class="e-modal e-modal-e">
+  <div class="e-modal-content eUp">
+    <header class="e-modal-header">
+      <p class="e-modal-title">Modal title</p>
+      <button type="button" class="e-delete" onclick="launch()">
+        <i aria-hidden="true">&times;</i>
+      </button>
+    </header>
+    <div class="e-modal-body">
+      <p>All the content goes here.</p>
+    </div>
+    <footer class="e-modal-footer">
+      <button onclick="launch()" class="e-btn inverted">Cancel</button>
+      <button class="e-btn danger">Save changes</button>
+    </footer>
+  </div>
+</div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Change animations</h5>
+    <p>You can change the animations of the modal using one of the animations that we already include.</p>
+    <p class="link"> <a href="{{site.url}}/animations">See animations</a> </p>
+{% highlight html %}
+<div class="e-modal">
+                        <!-- Change -->
+  <div class="e-modal-content eUp">
+  <!-- ePull, eSlide, eRight, eFade -->
+  </div>
+
+</div>
+{% endhighlight %}
+  </div>
+</div>

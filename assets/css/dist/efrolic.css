@@ -735,7 +735,7 @@
   box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15) !important;
 }
 
-.eFade, .drop-items, .e-cap,
+.eFade, .e-cap, .e-modal, .drop-items,
 .ePull,
 .eRight,
 .eSlide, .e-sidenav, input#e-menu:checked ~ div.e-menu,
@@ -748,7 +748,7 @@ input#e-menu:checked ~ ul.e-menu,
   animation-fill-mode: both;
 }
 
-.infinite.eFade, .infinite.drop-items, .infinite.e-cap,
+.infinite.eFade, .infinite.e-cap, .infinite.e-modal, .infinite.drop-items,
 .infinite.ePull,
 .infinite.eRight,
 .infinite.eSlide, .infinite.e-sidenav, input#e-menu:checked ~ div.infinite.e-menu,
@@ -806,7 +806,7 @@ input#e-menu:checked ~ ul.infinite.e-menu,
 .e-footer, *.centered, *.between, *.align-start, *.align-end, .e-nav, .e-menu, .sidenav-brand, .e-dropdown, .e-buttons,
 .e-cards,
 .e-drops,
-.e-tags, .e-toolbar, .e-card-cover, .e-cards-mansory, .e-pagination, .e-page-content, .e-page-item, .e-control-helper {
+.e-tags, .e-toolbar, .e-card-cover, .e-cards-mansory, .e-pagination, .e-page-content, .e-page-item, .e-modal, .e-modal-header, .e-modal-footer, .e-control-helper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -890,6 +890,23 @@ input#e-menu:checked ~ ul.infinite.e-menu,
   padding: 15px 10px;
   background: rgba(255, 255, 255, 0.97);
   border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.e-cap, .e-modal {
+  -webkit-animation-duration: 0.4s !important;
+  animation-duration: 0.4s !important;
+}
+
+.e-cap, .e-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9000;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -1729,6 +1746,15 @@ h6 {
   color: inherit;
 }
 
+.cap-sidenav {
+  display: none;
+}
+
+.sidenav-hidden {
+  position: absolute;
+  background-color: transparent !important;
+}
+
 input#e-menu:checked ~ div.e-menu,
 input#e-menu:checked ~ nav.e-menu,
 input#e-menu:checked ~ ul.e-menu {
@@ -2552,30 +2578,51 @@ input#e-sidenav:checked ~ div.cap-sidenav {
   background-color: #ffdd57;
 }
 
-.e-cap {
-  -webkit-animation-duration: 0.4s !important;
-  animation-duration: 0.4s !important;
-}
-
-.e-cap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 9000;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.cap-sidenav {
+.e-modal {
   display: none;
 }
 
-.sidenav-hidden {
-  position: absolute;
-  background-color: transparent !important;
+.e-modal.launch {
+  display: flex;
+}
+
+.e-modal-content {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  position: relative;
+  flex-direction: column;
+  background: #ffffff;
+  max-width: 600px;
+  width: 92.5%;
+  overflow: hidden;
+  display: flex;
+  outline: 0;
+}
+
+.e-modal-header {
+  justify-content: space-between;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.06);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  padding: 0 1rem;
+}
+
+.e-modal-body {
+  position: relative;
+  min-height: 60px;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.e-modal-footer {
+  justify-content: flex-end;
+  border-top: solid 1px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+}
+
+.e-modal-title {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .e-control, .e-select:not([multiple]) {
@@ -3384,7 +3431,7 @@ input#e-menu:checked ~ ul.e-menu {
   }
 }
 
-.eFade, .drop-items, .e-cap {
+.eFade, .e-cap, .e-modal, .drop-items {
   -webkit-animation-name: eFade;
   animation-name: eFade;
 }

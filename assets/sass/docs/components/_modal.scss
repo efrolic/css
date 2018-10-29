@@ -1,27 +1,50 @@
-%e-cap-fade {
-  -webkit-animation-duration: 0.4s !important;
-  animation-duration        : 0.4s !important;
-}
-
-.e-cap {
-  @extend %e-cap-fade;
-  @extend .eFade;
-  position        : fixed;
-  top             : 0;
-  left            : 0;
-  bottom          : 0;
-  right           : 0;
-  width           : 100%;
-  height          : 100vh;
-  z-index         : 9000;
-  background-color: rgba(0,0,0,.4);
-}
-
-.cap-sidenav {
+.e-modal {
+  @extend %e-cap;
+  @extend %centered;
   display: none;
+
+  &.launch{
+    display: flex;
+  }
 }
 
-.sidenav-hidden {
-  position        : absolute;
-  background-color: transparent !important;
+.e-modal-content {
+  box-shadow      : 0 8px 17px 0 rgba(0,0,0,0.2);
+  border-radius   : $border-radius;
+  position        : relative;
+  flex-direction  : column;
+  background      : $white;
+  max-width       : 600px;
+  width           : 92.5%;
+  overflow        : hidden;
+  display         : flex;
+  outline         : 0;
+}
+
+.e-modal-header{
+  @extend %centered;
+  justify-content: space-between;
+  border-bottom: solid 1px rgba(0,0,0,0.060);
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  padding: 0 1rem;
+}
+
+.e-modal-body{
+  position: relative;
+  min-height: 60px;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.e-modal-footer{
+@extend %centered;
+justify-content: flex-end;
+border-top: solid 1px rgba(0,0,0,0.060);
+padding: 1rem;
+}
+
+.e-modal-title{
+  font-size: 1.25rem;
+  font-weight: 500;
 }
