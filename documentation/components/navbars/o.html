@@ -1,0 +1,56 @@
+---
+layout: base
+permalink: /navbars/o
+---
+
+
+<nav class="e-nav white px-3">
+  <img src="{{ site.url }}/assets/images/efrolic-brand.png" style="width:90px;height:auto;">
+  <label for="e-menu" class="e-btn small circle inverted no-desktop"><i class="fas fa-bars"></i></label>
+  <input type="checkbox" id="e-menu">
+  <div class="e-menu between">
+
+    <i class="e-distribution"></i>
+
+      <form style="width:100%;max-width:550px;">
+        <div class="e-form-group unified no-m">
+          <input type="search" placeholder="Search..." class="e-control small">
+          <button type="button" class="e-btn small inverted">Search</button>
+        </div>
+      </form>
+
+    <i class="e-distribution"></i>
+
+      <a class="e-btn circle small inverted"><i class="fas fa-video"></i></a>
+      <a class="e-btn circle small inverted"><i class="fas fa-th"></i></a>
+      <a class="e-btn circle small inverted"><i class="fas fa-camera"></i></a>
+      <a class="e-btn circle small inverted"><i class="fas fa-bell"></i></a>
+  </div>
+</nav>
+
+
+
+<br>
+<div class="e-col-8">
+{% highlight html %}
+<nav class="e-nav white px-3">
+  <img src="..." style="width:90px;height:auto;">
+  <label for="e-menu" class="e-btn small circle inverted no-desktop"><i class="fas fa-bars"></i></label>
+  <input type="checkbox" id="e-menu">
+  <div class="e-menu between">
+    <i class="e-distribution"></i>
+    <form style="width:100%;max-width:550px;">
+      <div class="e-form-group unified no-m">
+        <input type="search" placeholder="Search..." class="e-control small">
+        <button type="button" class="e-btn small inverted">Search</button>
+      </div>
+    </form>
+    <i class="e-distribution"></i>
+    <a class="e-btn circle small inverted"><i class="fas fa-video"></i></a>
+    <a class="e-btn circle small inverted"><i class="fas fa-th"></i></a>
+    <a class="e-btn circle small inverted"><i class="fas fa-camera"></i></a>
+    <a class="e-btn circle small inverted"><i class="fas fa-bell"></i></a>
+  </div>
+</nav>
+{% endhighlight %}
+</div>

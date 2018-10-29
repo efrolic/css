@@ -4,90 +4,144 @@ permalink: /sidenav/a
 title: Sidenav
 ---
 
-<nav class="e-nav dark fixed">
-  <label for="cap-sidenav" class="e-btn dark"><i class="fas fa-bars"></i></label>
-  <img src="https://bit.ly/2D7yayE" style="width:90px;height:auto;">
-  <i class="e-distribution"></i>
-  <a class="e-btn circle small dark no-mobile"><i class="fas fa-video"></i></a>
-  <a class="e-btn circle small dark no-mobile"><i class="fas fa-th"></i></a>
-  <a class="e-btn circle small dark no-mobile"><i class="fas fa-camera"></i></a>
-  <a class="e-btn circle small dark"><i class="fas fa-bell"></i></a>
+<nav class="e-nav white fixed px-3">
+  <label for="e-sidenav" class="e-btn small circle inverted mr-3"><i class="fas fa-bars"></i></label>
+  <img src="{{ site.url }}/assets/images/efrolic-brand.png" style="width:90px;height:auto;">
+  <label for="e-menu" class="e-btn small circle inverted no-desktop"><i class="fas fa-th"></i></label>
+  <input type="checkbox" id="e-menu">
+  <div class="e-menu between">
+
+    <i class="e-distribution"></i>
+
+      <form class="n" style="width:100%;max-width:550px;">
+        <div class="e-form-group unified no-m">
+          <input type="search" placeholder="Search..." class="e-control small">
+          <button type="button" class="e-btn small inverted px-1"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+
+    <i class="e-distribution"></i>
+
+      <a class="e-btn circle small inverted"><i class="fas fa-video"></i></a>
+      <a class="e-btn circle small inverted no-mobile"><i class="fas fa-th"></i></a>
+      <a class="e-btn circle small inverted"><i class="fas fa-camera"></i></a>
+      <a class="e-btn circle small inverted"><i class="fas fa-bell"></i></a>
+  </div>
 </nav>
 
 <!-- Sidenav -->
-<input type="checkbox" id="cap-sidenav">
+<input type="checkbox" id="e-sidenav">
 <div class="e-cap cap-sidenav">
-<div class="e-sidenav dark">
+<div class="e-sidenav">
+
   <div class="sidenav-brand">
-    <img src="https://bit.ly/2D7yayE">
+    <img src="{{ site.url }}/assets/images/efrolic-brand.png">
   </div>
 
   <p class="sidenav-label">Explore</p>
 
   <a class="sidenav-item">
-    Navigation 1
+    Accessibility
+  </a>
+  <a class="sidenav-item">
+    Arrows
+  </a>
+  <a class="sidenav-item">
+    Business
+  </a>
+  <a class="sidenav-item">
+    Communication
+  </a>
+  <a class="sidenav-item">
+    Design
   </a>
 
   <p class="sidenav-label">Settings</p>
 
   <a class="sidenav-item">
-    Navigation 1
+    Interfaces
   </a>
+  <a class="sidenav-item">
+    Logistics
+  </a>
+  <a class="sidenav-item">
+    Marketing
+  </a>
+  <a class="sidenav-item">
+    Payments
+  </a>
+
+  <p class="sidenav-label">Profile</p>
 
   <a class="sidenav-item">
-    Navigation 1
+    Status
   </a>
-
   <a class="sidenav-item">
-    Navigation 1
+    Medical
   </a>
-
+  <a class="sidenav-item">
+    Changes
+  </a>
+  <a class="sidenav-item">
+    Tables
+  </a>
+  <a class="sidenav-item">
+    Log in
+  </a>
 </div>
 <!-- Layer of the body to hide again -->
-<label for="cap-sidenav" class="e-cap cap-sidenav-hidden"></label>
+<label for="e-sidenav" class="e-cap sidenav-hidden"></label>
 </div>
 <!-- End Sidenav -->
-
-
-<div class="e-container">
-  <div class="e-section"> <br> </div>
-  <div class="e-section">
+<br><br>
+<div class="e-container mt-1">
+  <div class="e-box">
 {% highlight html %}
-<nav class="e-nav dark fixed">
-  <label for="cap-sidenav" class="e-btn dark"><i class="fas fa-bars"></i></label>
-  <img src="..." style="width:90px;height:auto;">
-  <i class="e-distribution"></i>
-  <a class="e-btn circle small dark no-mobile"><i class="fas fa-video"></i></a>
-  <a class="e-btn circle small dark no-mobile"><i class="fas fa-th"></i></a>
-  <a class="e-btn circle small dark no-mobile"><i class="fas fa-camera"></i></a>
-  <a class="e-btn circle small dark"><i class="fas fa-bell"></i></a>
+<nav class="e-nav white fixed px-3">
+  <label for="e-sidenav" class="e-btn small circle inverted mr-3"><i class="fas fa-bars"></i></label>
+  <img src="./image.png" style="width:90px;height:auto;">
+  <label for="e-menu" class="e-btn small circle inverted no-desktop"><i class="fas fa-th"></i></label>
+  <input type="checkbox" id="e-menu">
+  <div class="e-menu between">
+
+    <i class="e-distribution"></i>
+
+      <form style="width:100%;max-width:550px;">
+        <div class="e-form-group unified no-m">
+          <input type="search" placeholder="Search..." class="e-control small">
+          <button type="button" class="e-btn small inverted px-1"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+
+    <i class="e-distribution"></i>
+
+      <a class="e-btn circle small inverted"><i class="fas fa-video"></i></a>
+      <a class="e-btn circle small inverted no-mobile"><i class="fas fa-th"></i></a>
+      <a class="e-btn circle small inverted"><i class="fas fa-camera"></i></a>
+      <a class="e-btn circle small inverted"><i class="fas fa-bell"></i></a>
+  </div>
 </nav>
 
 <!-- Sidenav -->
-<input type="checkbox" id="cap-sidenav">
+<input type="checkbox" id="e-sidenav">
 <div class="e-cap cap-sidenav">
-  <div class="e-sidenav dark">
+<div class="e-sidenav">
 
-    <div class="sidenav-brand">
-      <img src="...">
-    </div>
-    <p class="sidenav-label">Explore</p>
-    <a class="sidenav-item">
-      Navigation 1
-    </a>
-    <p class="sidenav-label">Settings</p>
-    <a class="sidenav-item">
-      Navigation 1
-    </a>
-    <a class="sidenav-item">
-      Navigation 1
-    </a>
-    <a class="sidenav-item">
-      Navigation 1
-    </a>
+  <div class="sidenav-brand">
+    <img src="./image.png">
   </div>
-  <!-- Layer of the body to hide again -->
-  <label for="cap-sidenav" class="e-cap cap-sidenav-hidden"></label>
+
+  <p class="sidenav-label">Explore</p>
+
+  <a class="sidenav-item">
+    Accessibility
+  </a>
+  <a class="sidenav-item">
+    Arrows
+  </a>
+</div>
+<!-- Layer of the body to hide again -->
+<label for="e-sidenav" class="e-cap sidenav-hidden"></label>
 </div>
 {% endhighlight %}
   </div>

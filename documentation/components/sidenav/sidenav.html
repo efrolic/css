@@ -19,7 +19,79 @@ Recommended for projects with extensive navigation."
 <hr class="hr">
 <div class="container-white">
 <div class="e-section">
-<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Use</h5>
+<h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Basic structure</h5>
+<p>
+  This is the basic structure to build a navigation (e-sidenav),
+  it is important to follow this basic structure to activate and deactivate
+  the visibility of the element (e-sidenav).
+</p>
+{% highlight html %}
+<!-- Activate button -->
+<label for="e-sidenav" class="e-btn">Active</label>
 
+<!-- Sidenav -->
+<input type="checkbox" id="e-sidenav">
+<div class="e-cap cap-sidenav">
+  <div class="e-sidenav">
+
+    <div class="sidenav-brand">
+      <img src="./image.png">
+    </div>
+
+    <p class="sidenav-label">Label</p>
+
+    <a class="sidenav-item">Item one</a>
+
+  </div>
+  <!-- Layer of the body to hide again -->
+  <label for="e-sidenav" class="e-cap sidenav-hidden"></label>
 </div>
+<!-- End Sidenav -->
+{% endhighlight %}
+</div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+    <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Mixed Navbars</h5>
+    <p class="look">Use the <a href="{{site.url}}/colors">colors</a> to create your own navigation.</p>
+    <div class="e-cols">
+      <div class="e-col-6">
+        <img class="shadow-6" src="{{site.url}}/assets/images/b.png" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
+        <div class="e-col-6 centered">
+          <a href="{{site.url}}/sidenav/b" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+        </div><hr>
+      </div>
+      <div class="e-col-6">
+        <img class="shadow-6" src="{{site.url}}/assets/images/a.png" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
+        <div class="e-col-6 centered">
+          <a href="{{site.url}}/sidenav/a" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+        </div><hr>
+      </div>
+      <div class="e-col-6">
+        <img class="shadow-6" src="{{site.url}}/assets/images/c.png" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
+        <div class="e-col-6 centered">
+          <a href="{{site.url}}/sidenav/c" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+        </div><hr>
+      </div>
+      <div class="e-col-6">
+        <img class="shadow-6" src="{{site.url}}/assets/images/d.png" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
+        <div class="e-col-6 centered">
+          <a href="{{site.url}}/sidenav/d" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+        </div><hr>
+      </div>
+      <div class="e-col-6">
+        <img class="shadow-6" src="{{site.url}}/assets/images/e.png" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
+        <div class="e-col-6 centered">
+          <a href="{{site.url}}/sidenav/e" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+        </div><hr>
+      </div>
+      <div class="e-col-6">
+        <img class="shadow-6" src="{{site.url}}/assets/images/f.png" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
+        <div class="e-col-6 centered">
+          <a href="{{site.url}}/sidenav/f" target="_blank" class="e-btn anime primary">Live view and code <i class="fas fa-external-link-alt"></i></a>
+        </div><hr>
+      </div>
+    </div>
+  </div>
 </div>

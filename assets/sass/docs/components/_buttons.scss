@@ -100,6 +100,9 @@
       width     : $btn-circle-width;
       text-align: center;
     }
+    &.inverted{
+      text-shadow: none !important;
+    }
   }
 
   &.outlined {
@@ -132,5 +135,6 @@
   &:focus {
     box-shadow: 0 0 0 2.4px lighten($default,1.8%);
     outline   : none !important;
+    z-index: 100;
   }
 }

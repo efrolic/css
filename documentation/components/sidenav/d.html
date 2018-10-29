@@ -1,0 +1,123 @@
+---
+layout: base
+permalink: /sidenav/d
+title: Sidenav
+---
+
+<nav class="e-nav fixed purple">
+  <label for="e-sidenav" class="e-btn small circle purple mr-3"><i class="fas fa-bars"></i></label>
+  <img src="https://bit.ly/2D7yayE" style="width:90px;height:auto;">
+  <label for="e-menu" class="e-btn small circle purple no-desktop"><i class="fas fa-th"></i></label>
+  <input type="checkbox" id="e-menu">
+  <div class="e-menu">
+    <i class="e-distribution"></i>
+    <a class="e-menu-item">Home</a>
+    <a class="e-menu-item">About</a>
+    <a class="e-menu-item">Contact</a>
+  </div>
+</nav>
+
+<!-- Sidenav -->
+<input type="checkbox" id="e-sidenav">
+<div class="e-cap cap-sidenav">
+<div class="e-sidenav purple-gradient">
+
+  <div class="sidenav-brand">
+    <img src="https://bit.ly/2D7yayE">
+  </div>
+
+  <p class="sidenav-label">Explore</p>
+
+  <a class="sidenav-item">
+    Accessibility
+  </a>
+  <a class="sidenav-item">
+    Arrows
+  </a>
+  <a class="sidenav-item">
+    Business
+  </a>
+  <a class="sidenav-item">
+    Communication
+  </a>
+  <a class="sidenav-item">
+    Design
+  </a>
+
+  <p class="sidenav-label">Settings</p>
+
+  <a class="sidenav-item">
+    Interfaces
+  </a>
+  <a class="sidenav-item">
+    Logistics
+  </a>
+  <a class="sidenav-item">
+    Marketing
+  </a>
+  <a class="sidenav-item">
+    Payments
+  </a>
+
+  <p class="sidenav-label">Profile</p>
+
+  <a class="sidenav-item">
+    Status
+  </a>
+  <a class="sidenav-item">
+    Medical
+  </a>
+  <a class="sidenav-item">
+    Changes
+  </a>
+  <a class="sidenav-item">
+    Tables
+  </a>
+  <a class="sidenav-item">
+    Log in
+  </a>
+</div>
+<!-- Layer of the body to hide again -->
+<label for="e-sidenav" class="e-cap sidenav-hidden"></label>
+</div>
+<!-- End Sidenav -->
+<br><br>
+<div class="e-container mt-1">
+  <div class="e-box">
+{% highlight html %}
+<nav class="e-nav fixed purple">
+  <label for="e-sidenav" class="e-btn small circle purple mr-3"><i class="fas fa-bars"></i></label>
+  <img src="./image" style="width:90px;height:auto;">
+  <label for="e-menu" class="e-btn small circle purple no-desktop"><i class="fas fa-th"></i></label>
+  <input type="checkbox" id="e-menu">
+  <div class="e-menu">
+    <i class="e-distribution"></i>
+    <a class="e-menu-item">Home</a>
+    <a class="e-menu-item">About</a>
+  </div>
+</nav>
+
+<!-- Sidenav -->
+<input type="checkbox" id="e-sidenav">
+<div class="e-cap cap-sidenav">
+<div class="e-sidenav purple-gradient">
+
+  <div class="sidenav-brand">
+    <img src="./image.png">
+  </div>
+
+  <p class="sidenav-label">Explore</p>
+
+  <a class="sidenav-item">
+    Accessibility
+  </a>
+  <a class="sidenav-item">
+    Arrows
+  </a>
+</div>
+<!-- Layer of the body to hide again -->
+<label for="e-sidenav" class="e-cap sidenav-hidden"></label>
+</div>
+{% endhighlight %}
+  </div>
+</div>

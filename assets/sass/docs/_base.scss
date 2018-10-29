@@ -120,8 +120,10 @@ progress {
   vertical-align: baseline;
 }
 
-input#e-menu {
+input#e-menu,
+input#e-sidenav{
   display: none;
+  position: fixed;
 }
 
 .link {

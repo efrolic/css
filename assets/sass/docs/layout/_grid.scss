@@ -21,9 +21,10 @@
 }
 
 .e-box {
-  margin       : 0 auto;
+  margin       : 1rem auto;
   padding      : 1.25rem;
   overflow     : hidden;
+  background: $white;
   border-radius: $form-box-border-radius;
   border       : $form-box-border;
   @extend %shadow;
