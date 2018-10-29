@@ -9,7 +9,7 @@
     "responsive",
     "front-end"
   ],
-  "main": "efrolic.scss",
+  "main": "dist/",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "fsevents": "^1.2.4",
