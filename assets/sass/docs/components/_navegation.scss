@@ -108,8 +108,8 @@
     width     : 100%;
     @include desktop {
       width       : auto;
-      margin-left : 0.3rem;
-      margin-right: 0.3rem;
+      margin-left : $btn-margin;
+      margin-right: $btn-margin;
     }
 
     &:hover {
@@ -163,23 +163,23 @@
 .e-sidenav {
   position        : fixed;
   top             : 0;
-  height          : 100vh;
-  width           : 220px;
+  height          : $sidenav-height;
+  width           : $sidenav-width;
   padding         : 0;
   z-index         : 10000;
-  box-shadow      : 0 8px 17px 0 rgba(0,0,0,0.2);
-  background-color: $white;
+  box-shadow      : $sidenav-box-shadow;
+  background-color: $sidenav-bg;
   color           : $e-font-color;
   font-size       : 0.9rem;
   overflow-y      : auto;
   @extend .eSlide;
   @include desktop {
-    width: 15rem;
+    width: $sidenav-width + 1.25;
   }
 }
 
 .sidenav-brand {
-  padding: 1.25rem 3rem;
+  padding: $sidenav-brand-padding;
   @extend %centered;
 
   & img {
@@ -189,8 +189,8 @@
 }
 
 .sidenav-label {
-  margin-left   : 1.8rem;
-  font-size     : 0.75rem;
+  margin-left   : $sidenav-label-margin-left;
+  font-size     : $sidenav-label-font-size;
   letter-spacing: 0.3px;
   text-transform: uppercase;
   font-weight   : $font-weight + 300;
@@ -213,10 +213,10 @@
 }
 
 .sidenav-item {
-  padding       : 0.5em 1.75em 0.5em 2.1875rem;
+  padding       : $sidenav-item-padding;
   user-select   : none;
   letter-spacing: 0.3px;
-  font-size     : 0.875rem;
+  font-size     : $sidenav-item-font-size;
 
   &:hover {
     background: rgba(0,0,0,0.060);

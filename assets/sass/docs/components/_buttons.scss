@@ -3,7 +3,7 @@
 }
 
 .e-btn {
-  border         : solid 1px transparent;
+  border         : $btn-border;
   border-radius  : $border-radius;
   font-size      : $btn-font-size;
   padding        : $btn-padding;
@@ -12,8 +12,8 @@
   white-space    : nowrap;
   text-align     : center;
   font-weight    : $font-weight + 200;
-  letter-spacing : 0.4px;
-  margin         : 0.3rem;
+  letter-spacing : $btn-letter-spacing;
+  margin         : $btn-margin;
   text-decoration: none;
   line-height    : normal;
   @extend %background;
@@ -21,17 +21,17 @@
   @extend %shadow;
 
   &.float-left {
-    position: fixed;
-    bottom  : 30px;
-    left    : 30px;
-    z-index : 10000;
+    position: $btn-float-position;
+    bottom  : $btn-float-spacing;
+    left    : $btn-float-spacing;
+    z-index : $btn-float-z-index;
   }
 
   &.float-right {
-    position: fixed;
-    bottom  : 30px;
-    right   : 30px;
-    z-index : 10000 !important;
+    position: $btn-float-position;
+    bottom  : $btn-float-spacing;
+    right   : $btn-float-spacing;
+    z-index : $btn-float-z-index !important;
   }
 
   &.small {

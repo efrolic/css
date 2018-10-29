@@ -5,7 +5,7 @@
   @extend %background;
   white-space  : nowrap;
   @extend %centered;
-  margin       : 0.3rem;
+  margin       : $btn-margin;
   border-radius: $border-radius;
   font-size    : $dropdown-font-size;
   overflow     : visible;
@@ -20,7 +20,7 @@
   position     : absolute;
   min-width    : $drop-items-min-width;
   background   : $white !important;
-  z-index      : 10000;
+  z-index      : $drop-items-z-index;
   width        : 100% auto;
   margin       : 0;
   left         : 5px;
@@ -33,8 +33,8 @@
   & .drop-item {
     text-align   : left;
     overflow     : hidden;
-    padding      : 10px 15px;
-    background   : $white;
+    padding      : $drop-item-padding;
+    background   : $drop-item-bg;
     display      : block;
     position     : relative;
     margin       : 0;
@@ -66,13 +66,13 @@
    > span,
    > strong,
   > h1 {
-    padding: 10px 15px;
+    padding: $drop-item-padding;
     color  : $font-color !important;
   }
 }
 
 .drop-items:before {
-  background   : #fff;
+  background   : $white;
   content      : "";
   display      : block;
   height       : 16px;

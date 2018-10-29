@@ -15,15 +15,15 @@
   }
 
   &::-webkit-progress-value {
-    background-color: #1ebea4;
+    background-color: $progress-bg;
   }
 
   &::-moz-progress-bar {
-    background-color: #1ebea4;
+    background-color: $progress-bg;
   }
 
   &::-ms-fill {
-    background-color: #1ebea4;
+    background-color: $progress-bg;
     border          : none;
   }
   @each $name, $pair in $colors {

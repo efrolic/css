@@ -9,13 +9,13 @@
 }
 
 .e-modal-content {
-  box-shadow    : 0 8px 17px 0 rgba(0,0,0,0.2);
+  box-shadow    : $modal-content-box-shadow;
   border-radius : $border-radius;
   position      : relative;
   flex-direction: column;
   background    : $white;
-  max-width     : 600px;
-  width         : 92.5%;
+  width         : $modal-content-width;
+  max-width     : $modal-content-max-width;
   overflow      : hidden;
   display       : flex;
   outline       : 0;
@@ -24,27 +24,27 @@
 .e-modal-header {
   @extend %centered;
   justify-content        : space-between;
-  border-bottom          : solid 1px rgba(0,0,0,0.060);
+  border-bottom          : $modal-border;
   border-top-left-radius : $border-radius;
   border-top-right-radius: $border-radius;
-  padding                : 0 1rem;
+  padding                : 0 $modal-padding;
 }
 
 .e-modal-body {
   position  : relative;
   min-height: 60px;
   flex      : 1 1 auto;
-  padding   : 1rem;
+  padding   : $modal-padding;
 }
 
 .e-modal-footer {
   @extend %centered;
   justify-content: flex-end;
-  border-top     : solid 1px rgba(0,0,0,0.060);
-  padding        : 1rem;
+  border-top     : $modal-border;
+  padding        : $modal-padding;
 }
 
 .e-modal-title {
   font-size  : 1.25rem;
-  font-weight: 500;
+  font-weight: $font-weight + 100;
 }

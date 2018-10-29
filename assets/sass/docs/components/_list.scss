@@ -4,21 +4,22 @@
   padding       : 0;
   margin        : 0;
   border-radius : $border-radius;
-  border        : 1px solid rgba(0,0,0,.125);
+  border        : $list-border;
   text-align    : inherit;
 }
 
 .e-list-item {
   position        : relative;
   display         : block;
-  padding         : 0.6em 0.90em;
-  background-color: $white;
-  border          : none;
-  outline         : none;
-  border-top      : 1px solid rgba(0,0,0,.125);
-  border-bottom   : 1px solid rgba(0,0,0,.125);
   width           : 100%;
   color           : inherit;
+  border          : none;
+  outline         : none;
+  padding         : $list-item-padding;
+  background-color: $list-item-bg;
+  border-top      : $list-item-border;
+  border-bottom   : $list-item-border;
+
 
   &:first-child {
     border-top             : none;
