@@ -13,6 +13,14 @@ It is a CSS framework, which without using javascript is interactive and animate
 npm install efrolic
 ```
 
+### Import
+
+After installation, you can import the CSS file into your project using this snippet:
+
+```sh
+import 'efrolic/dist/css/efrolic.min.css'
+```
+
 ## Browser Support
 
 eFrolic uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (most) Flexbox features compatible with earlier browser versions. eFrolic is compatible with **recent** versions of:
