@@ -15,7 +15,7 @@ npm install efrolic
 
 ## Browser Support
 
-eFrolic uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (most) Flexbox features compatible with earlier browser versions. According to [Can I use](https://caniuse.com/#feat=flexbox), eFrolic is compatible with **recent** versions of:
+eFrolic uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (most) Flexbox features compatible with earlier browser versions. eFrolic is compatible with **recent** versions of:
 
 * Chrome
 * Edge
