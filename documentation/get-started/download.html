@@ -1,0 +1,47 @@
+---
+layout: default
+
+category: start
+
+permalink: /download
+
+title: Download
+
+description: "Download eFrolic to start using on your website.
+<br><br>
+There are two different ways. You can select the version you
+want according to your preferences and experience, to start using."
+---
+
+<h3 class="code-title">{{ page.title }} <span class="e-tag static danger">Get started</span></h3>
+  <p class="look">{{ page.description }}</p>
+<hr class="hr">
+<div class="container-white">
+  <div class="e-section">
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Compiled CSS</h5>
+  <p class="desc">This is the standard version that comes with the minified and unminified CSS file. Use this if you are not familiar with Sass.</p>
+  <a href="{{site.url}}{{site.files_css}}" class="e-btn {{ site.button }}">
+    <i class="fas fa-box"></i> Download
+  </a>
+</div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Sass files</h5>
+  <p class="desc">This version contains the CSS source files. You need a Sass compiler if you choose this option.</p>
+  <a href="{{site.url}}{{site.files_sass}}" class="e-btn {{ site.button }}">
+    <i class="fas fa-box"></i> Download
+  </a>
+</div>
+</div>
+
+<div class="container-white">
+  <div class="e-section">
+  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Package manager</h5>
+  <p class="desc">Install via NPM in applications powered with nodejs.</p>
+  <div class="e-alert">
+    npm install efrolic
+  </div>
+</div>
+</div>

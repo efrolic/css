@@ -21,7 +21,7 @@
 .note-header {
   padding        : 0.55em;
   color          : $white !important;
-  font-weight    : bold;
+  font-weight    : $font-weight + 300;
   display        : flex;
   justify-content: space-between;
   font-size      : 1.10rem;

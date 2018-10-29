@@ -11,7 +11,7 @@
   position       : relative;
   white-space    : nowrap;
   text-align     : center;
-  font-weight    : 600;
+  font-weight    : $font-weight + 200;
   letter-spacing : 0.4px;
   margin         : 0.3rem;
   text-decoration: none;
@@ -45,9 +45,9 @@
   }
 
   &.fullwidth {
-    width: 100%;
-    margin-left:0 !important;
-    margin-right:0 !important;
+    width       : 100%;
+    margin-left : 0 !important;
+    margin-right: 0 !important;
   }
 
   &.anime {
@@ -100,7 +100,8 @@
       width     : $btn-circle-width;
       text-align: center;
     }
-    &.inverted{
+
+    &.inverted {
       text-shadow: none !important;
     }
   }
@@ -135,7 +136,6 @@
   &:focus {
     box-shadow: 0 0 0 2.4px lighten($default,1.8%);
     outline   : none !important;
-    z-index: 100;
+    z-index   : 100;
   }
-
 }

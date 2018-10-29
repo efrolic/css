@@ -14,12 +14,12 @@ h6 {
   margin-bottom: 0.5rem;
   margin-top   : 0.5rem;
   line-height  : 1.2;
-  font-weight  : 700;
+  font-weight  : $font-weight + 300;
   color        : inherit;
 }
 
 strong {
-  font-weight: 900;
+  font-weight: $font-weight + 500;
 }
 
 h1 {
@@ -48,14 +48,14 @@ h6 {
 
 .e-title {
   font-size  : 2.7rem;
-  font-weight: 900;
+  font-weight: $font-weight + 500;
   line-height: 1.125;
   color      : inherit;
 }
 
 .e-subtitle {
   font-size  : 1.50rem;
-  font-weight: 600;
+  font-weight: $font-weight + 200;
   color      : inherit;
 }
 

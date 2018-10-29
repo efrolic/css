@@ -81,11 +81,12 @@
   }
   @each $name, $pair in $colors-gradient {
     $color: nth($pair, 1);
-    &.#{$name}{
-      background : $color;
+
+    &.#{$name} {
+      background: $color;
       @extend %place-color;
     }
-   }
+  }
   @each $name, $pair in $colors {
     $color: nth($pair, 1);
 

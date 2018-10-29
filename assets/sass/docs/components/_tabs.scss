@@ -27,7 +27,7 @@
       text-decoration    : none;
       color              : $primary;
       border-bottom-color: $primary;
-      font-weight        : bold;
+      font-weight        : $font-weight + 300;
     }
   }
 }

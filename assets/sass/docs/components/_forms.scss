@@ -22,7 +22,7 @@
 
   &:focus {
     outline     : none !important;
-    z-index: 100;
+    z-index     : 100;
     border-color: $control-border-color-focus;
     box-shadow  : 0 0 0 0.125em rgba($control-border-color-focus,.25);
   }
@@ -150,7 +150,7 @@ input[type="file"].e-control {
   background   : $white;
   border       : $control-border;
   color        : $control-helper-color;
-  font-weight  : 500;
+  font-weight  : $font-weight + 100;
   @extend %centered;
 }
 
@@ -263,6 +263,6 @@ input[type="file"].e-control {
 .marked {
   background    : $default !important;
   color         : $marked-color;
-  font-weight   : bold;
+  font-weight   : $font-weight + 300;
   letter-spacing: 0.2px;
 }

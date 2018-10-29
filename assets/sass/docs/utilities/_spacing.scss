@@ -1,32 +1,28 @@
 $gap: 1rem !default;
-$gaps: () !default;
-
-$gaps: map-merge(
-  (
-    3: $gap,
-    2: ($gap * 2),
-    1: ($gap * 3)
-  ),
-  $gaps
-);
-
-
+$gaps: ()
+!default;
+$gaps: map-merge((3: $gap, 2: ($gap * 2), 1: ($gap * 3)), $gaps);
 @each $prop, $letter in (margin: m, padding: p) {
   @each $gap, $length in $gaps {
+    .#{$letter}-#{$gap} {
+      #{$prop}: $length !important;
+    }
 
-    .#{$letter}-#{$gap} { #{$prop}: $length !important; }
     .#{$letter}t-#{$gap},
     .#{$letter}y-#{$gap} {
       #{$prop}-top: $length !important;
     }
+
     .#{$letter}r-#{$gap},
     .#{$letter}x-#{$gap} {
       #{$prop}-right: $length !important;
     }
+
     .#{$letter}b-#{$gap},
     .#{$letter}y-#{$gap} {
       #{$prop}-bottom: $length !important;
     }
+
     .#{$letter}l-#{$gap},
     .#{$letter}x-#{$gap} {
       #{$prop}-left: $length !important;
@@ -37,6 +33,7 @@ $gaps: map-merge(
 .m-auto {
   margin: 0 auto !important;
 }
+
 .no-m {
   margin: 0 !important;
 }

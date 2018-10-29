@@ -5,7 +5,7 @@
   color         : $e-font-color;
   font-size     : 80%;
   letter-spacing: 0.3px;
-  font-weight   : 700;
+  font-weight   : $font-weight + 300;
   text-align    : center;
   white-space   : nowrap;
   vertical-align: middle;

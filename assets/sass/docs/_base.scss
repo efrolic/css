@@ -16,7 +16,7 @@
 html {
   font-family             : $font-family;
   min-width               : 320px;
-  font-weight             : 400;
+  font-weight             : $font-weight;
   line-height             : $line-height;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust    : 100%;
@@ -34,12 +34,12 @@ body {
   }
 }
 
-img,
 audio,
+img,
 video {
   width    : 100%;
   max-width: 100%;
-  height: auto;
+  height   : auto;
 }
 
 a {
@@ -79,17 +79,14 @@ table {
   border-collapse: collapse;
 }
 
-
-iframe{
+iframe {
   border: 0;
 }
 
-
 td,
-th{
+th {
   padding: 0;
 }
-
 
 button,
 input,
@@ -121,8 +118,8 @@ progress {
 }
 
 input#e-menu,
-input#e-sidenav{
-  display: none;
+input#e-sidenav {
+  display : none;
   position: fixed;
 }
 

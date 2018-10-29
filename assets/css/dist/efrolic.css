@@ -116,7 +116,7 @@
 }
 
 .green-gradient[class*="e-"] {
-  background: linear-gradient(40deg, #00C9FF, #92FE9D);
+  background: linear-gradient(40deg, #00c9ff, #92fe9d);
 }
 
 .blue-gradient[class*="e-"] {
@@ -124,7 +124,7 @@
 }
 
 .inst-gradient[class*="e-"] {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
 }
 
 .success[class*="e-"] {
@@ -947,8 +947,8 @@ body {
   }
 }
 
-img,
 audio,
+img,
 video {
   width: 100%;
   max-width: 100%;
@@ -1729,9 +1729,9 @@ h6 {
 }
 
 .sidenav-item {
-  padding: 0.5em 1.75em .5em 2.1875rem;
+  padding: 0.5em 1.75em 0.5em 2.1875rem;
   user-select: none;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
   font-size: 0.875rem;
 }
 
@@ -1816,14 +1816,14 @@ input#e-sidenav:checked ~ div.cap-sidenav {
   border-bottom: solid rgba(0, 0, 0, 0.2);
   border-top: solid rgba(0, 0, 0, 0.1);
   border-top-width: 0.0625rem;
-  border-bottom-width: calc(.150rem + .0625rem);
+  border-bottom-width: calc(0.15rem + 0.0625rem);
   border-radius: 0.5rem;
   transition: border 0.1s ease-in;
   box-shadow: none;
 }
 
 .e-btn.anime:active, .e-btn.anime:focus {
-  border-top-width: calc(.150rem + .0625rem);
+  border-top-width: calc(0.15rem + 0.0625rem);
   border-bottom-width: 0.0625rem;
 }
 
@@ -1970,7 +1970,7 @@ input#e-sidenav:checked ~ div.cap-sidenav {
   margin-left: 0;
 }
 
-.drop-items > h1,
+.drop-items > p,
 .drop-items > h2,
 .drop-items > h3,
 .drop-items > h4,
@@ -1979,7 +1979,7 @@ input#e-sidenav:checked ~ div.cap-sidenav {
 .drop-items > i,
 .drop-items > span,
 .drop-items > strong,
-.drop-items > p {
+.drop-items > h1 {
   padding: 10px 15px;
   color: rgba(0, 0, 0, 0.6) !important;
 }
@@ -2204,7 +2204,7 @@ input#e-sidenav:checked ~ div.cap-sidenav {
   text-decoration: none;
   color: #1da1f2;
   border-bottom-color: #1da1f2;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .e-card {
@@ -2311,7 +2311,7 @@ input#e-sidenav:checked ~ div.cap-sidenav {
 .note-header {
   padding: 0.55em;
   color: #ffffff !important;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   justify-content: space-between;
   font-size: 1.10rem;
@@ -2627,7 +2627,7 @@ input#e-sidenav:checked ~ div.cap-sidenav {
 
 .e-control, .e-select:not([multiple]) {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  height: calc(2.420rem + 2px);
+  height: calc(2.42rem + 2px);
   padding: 0.375rem 0.75rem;
   border: solid 1px #e3e4e5;
   display: inline-flex;
@@ -2743,7 +2743,7 @@ input[type="file"].e-control {
 .e-label {
   display: block;
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: inherit;
   letter-spacing: 0.2px;
   opacity: 0.9;
@@ -2885,7 +2885,7 @@ input[type="file"].e-control {
 .marked {
   background: #f7f8f9 !important;
   color: rgba(0, 0, 0, 0.7);
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.2px;
 }
 
@@ -2902,7 +2902,7 @@ input[type="file"].e-control {
 .e-list-item {
   position: relative;
   display: block;
-  padding: .6em .90em;
+  padding: 0.6em 0.90em;
   background-color: #ffffff;
   border: none;
   outline: none;
@@ -2943,9 +2943,9 @@ input[type="file"].e-control {
   text-align: left;
 }
 
-.e-table th,
-.e-table td {
-  padding: .550rem;
+.e-table td,
+.e-table th {
+  padding: 0.550rem;
   vertical-align: top;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -2971,13 +2971,13 @@ input[type="file"].e-control {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.bordered th,
-.bordered td {
+.bordered td,
+.bordered th {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.bordered thead th,
-.bordered thead td {
+.bordered thead td,
+.bordered thead th {
   border-bottom-width: 2px;
 }
 
