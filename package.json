@@ -1,16 +1,16 @@
 {
   "name": "efrolic",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "It is a CSS framework, which without using javascript is interactive and animated. This framework is based on being simple and modern to develop web interfaces focused on mobile devices.",
   "keywords": [
-  "framework css",
-  "css",
-  "sass",
-  "responsive",
-  "front-end"
+    "framework",
+    "css",
+    "sass",
+    "responsive",
+    "front-end"
   ],
-  "main": "gulpfile.js",
-  "dependencies": {
+  "main": "efrolic.scss",
+  "devDependencies": {
     "browser-sync": "^2.26.3",
     "fsevents": "^1.2.4",
     "gulp": "^3.9.1",
@@ -20,7 +20,6 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

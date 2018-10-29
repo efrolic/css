@@ -16,3 +16,4 @@ Gemfile.lock
 index.html
 news.html
 search.json
+gulpfile.js
