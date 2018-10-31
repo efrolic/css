@@ -627,3 +627,18 @@ hr {
 	z-index: 1000;
 	border-top: solid 1px rgba(0,0,0,0.1);
 }
+
+.img-h{
+	border-radius: 10px;
+	overflow:hidden;
+	opacity: .9;
+	transition: box-shadow .3s, opacity .3s;
+}
+.img-h:hover{
+	box-shadow: 0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08)!important;
+	opacity: 1;
+}
+
+.e-nav-aside p:not(.label){
+	padding: 0 1rem;
+}

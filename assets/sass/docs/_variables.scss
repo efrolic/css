@@ -201,6 +201,7 @@ $modal-padding                           : 1rem !default;
 $modal-content-box-shadow                : 0 8px 17px 0 rgba(0,0,0,0.2) !default;
 $modal-content-width                     : 92.5% !default;
 $modal-content-max-width                 : 600px !default;
+$modal-content-max-height                : calc(100vh - 40px) !default;
 
 // Navegation styles * Nav *
 $navegation-enable-animation             : true !default;

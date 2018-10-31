@@ -902,8 +902,6 @@ input#e-menu:checked ~ ul.infinite.e-menu,
   left: 0;
   bottom: 0;
   right: 0;
-  width: 100%;
-  height: 100vh;
   z-index: 9000;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -2586,6 +2584,10 @@ input#e-sidenav:checked ~ div.cap-sidenav {
 }
 
 .e-modal-content {
+  overflow: hidden;
+  overflow-y: auto;
+  display: block;
+  outline: 0;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
   position: relative;
@@ -2593,9 +2595,7 @@ input#e-sidenav:checked ~ div.cap-sidenav {
   background: #ffffff;
   width: 92.5%;
   max-width: 600px;
-  overflow: hidden;
-  display: flex;
-  outline: 0;
+  max-height: calc(100vh - 40px);
 }
 
 .e-modal-header {
