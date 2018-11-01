@@ -1,89 +1,173 @@
 ---
-layout: default
-
+layout: base
 ---
-<style>
-.e-card h1,
-.e-card h2,
-.e-card h3,
-.e-card h4,
-.e-card h5,
-.e-card h6 {
-  color: #343a40;
+<style media="screen">
+  @media only screen and (min-width:1024px) {
+body {
+padding-top: 80px;
 }
-
-code {
-  font-size: 1rem;
+.bg {
+background: linear-gradient(rgba(247, 248, 249, .5), rgba(247, 248, 249,.5)),
+url(https://firebasestorage.googleapis.com/v0/b/efrolic-bf2a0.appspot.com/o/icons-background.svg?alt=media&token=60c717fe-dd46-4bbe-a9d2-3c454d0b73c0);
+background-size: cover;
+background-position: center;
 }
-
-.e-card.body p {
-  font-size: 1.12rem;
-  font-weight: normal;
-  font-family: inherit;
 }
-
 </style>
-<div class="e-card body profile e-md-height">
-  <div class="post-page e- centered">
-    {% if page.image %}
-    <img src="{{site.url}}{{page.image}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
-    {% endif %}
-  </div>
-  <div class="e-card-photo">
-    <img src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
-  </div>
-  <div class="card-body">
-    <div class="e-container">
-      <h3 class="e- size-3 text-dark"><i class="fas fa-hashtag text-danger"></i> {{page.title}} <span class="e-tag static">{{page.tag}}</span> </h3>
-      <div class="e-toolbar">
-        <div class="e-tags">
-          <span class="e-tag">{{ page.date | date_to_string }}</span>
-          <span class="e-tag {{page.color}}">{{ page.tag }}</span>
-        </div>
-        <div class="e-tags unified">
-          <i class="e-tag sky fab fa-twitter"></i>
-          <a href="{{ site.twitter }}" target="_blank" class="e-tag sky"> Twitter</a>
-
-        </div>
-        <div class="e-tags unified">
-          <i class="e-tag primary fab fa-facebook-f"></i>
-          <a href="{{ site.facebook }}" target="_blank" class="e-tag primary"> Facebook</a>
-        </div>
-      </div>
-      <hr class="hr">
-      {{ content }}
+{% include global/header.html %}
+<div class="e-container-fluid aside btn">
+  <div class="e-cols">
+    <div class="e-col-10 container-search">
+      <i class="fas fa-search search-icon"></i>
+      <input class="search" type="text" id="search-input" placeholder="Search components, utilities...">
+      <div class="results-container" id="results-container"></div>
     </div>
   </div>
-</div>
+  <div class="e-cols">
+    <div class="e-col-10">
 
-<div class="e-section between">
-  {% if page.previous.url %}
-  <h6><a href="{{page.previous.url}}"><i class="fas fa-arrow-left"></i> {{page.previous.title}}</a></h6>
-  {% endif %}
-  {% if page.next.url %}
-  <h6><a href="{{page.next.url}}">{{page.next.title}} <i class="fas fa-arrow-right"></i></a></h6>
-  {% endif %}
-</div>
+      <style>
+      .e-card h1,
+      .e-card h2,
+      .e-card h3,
+      .e-card h4,
+      .e-card h5,
+      .e-card h6 {
+        color: #343a40;
+      }
 
-<div class="e-section"> <br> </div>
-<div class="e-section">
-  <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Recent posts</h5>
-  <hr>
-  <div class="e-cards deck centered">
-    {% for post in site.posts limit: 4 %}
-    <div class="e-card profile" style="width:20rem;">
-      <div class="e-card-cover {{post.color}} centered">
-        <img src="{{site.url}}{{post.image}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}"/>
+      code {
+        font-size: 1rem;
+      }
+
+      .e-card.body p {
+        font-size: 1.12rem;
+        font-weight: normal;
+        font-family: inherit;
+      }
+
+      </style>
+      <div class="e-card body profile e-md-height">
+        <div class="post-page e- centered">
+          {% if page.image %}
+          <img src="{{site.url}}{{page.image}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
+          {% endif %}
+        </div>
+        <div class="e-card-photo">
+          <img src="{{site.url}}{{site.photo_profile}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}">
+        </div>
+        <div class="card-body">
+          <div class="e-container">
+            <h3 class="e- size-3 text-dark"><i class="fas fa-hashtag text-danger"></i> {{page.title}} <span class="e-tag static">{{page.tag}}</span> </h3>
+            <div class="e-toolbar">
+              <div class="e-tags">
+                <span class="e-tag">{{ page.date | date_to_string }}</span>
+                <span class="e-tag {{page.color}}">{{ page.tag }}</span>
+              </div>
+              <div class="e-tags unified">
+                <i class="e-tag sky fab fa-twitter"></i>
+                <a href="{{ site.twitter }}" target="_blank" class="e-tag sky"> Twitter</a>
+
+              </div>
+              <div class="e-tags unified">
+                <i class="e-tag primary fab fa-facebook-f"></i>
+                <a href="{{ site.facebook }}" target="_blank" class="e-tag primary"> Facebook</a>
+              </div>
+            </div>
+            <hr class="hr">
+            <div class="e-cols">
+              <div class="e-col align-start">
+              <div class="carboncontent no-m">
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7D5KQE&placement=efrolicsscom" id="_carbonads_js"></script>
+              </div>
+              </div>
+
+            </div>
+            {{ content }}
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <h6 class=""> <a href="{{site.url}}{{post.url}}"> {{post.title}}</a></h6>
-        <p class="card-text">{{post.short_description}}</p>
+
+      <div class="e-section between">
+        {% if page.previous.url %}
+        <h6><a href="{{page.previous.url}}"><i class="fas fa-arrow-left"></i> {{page.previous.title}}</a></h6>
+        {% endif %}
+        {% if page.next.url %}
+        <h6><a href="{{page.next.url}}">{{page.next.title}} <i class="fas fa-arrow-right"></i></a></h6>
+        {% endif %}
+      </div>
+
+      <div class="e-section"> <br> </div>
+      <div class="e-section">
+        <h5 class="code-title"><i class="fas fa-hashtag text-danger"></i> Recent posts</h5>
         <hr>
-        <div class="e-buttons align-end">
-          <a href="{{site.url}}{{post.url}}" class="e-btn plane inverted primary">Read more <i class="fas fa-arrow-right"></i></a>
+        <div class="e-cards deck centered">
+          {% for post in site.posts limit: 4 %}
+          <div class="e-card profile" style="width:20rem;">
+            <div class="e-card-cover {{post.color}} centered">
+              <img src="{{site.url}}{{post.image}}" alt="{{site.title}} | framework css {{ site.time | date: "%Y" }}"/>
+            </div>
+            <div class="card-body">
+              <h6 class=""> <a href="{{site.url}}{{post.url}}"> {{post.title}}</a></h6>
+              <p class="card-text">{{post.short_description}}</p>
+              <hr>
+              <div class="e-buttons align-end">
+                <a href="{{site.url}}{{post.url}}" class="e-btn plane inverted primary">Read more <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
         </div>
       </div>
+
     </div>
-    {% endfor %}
   </div>
 </div>
+
+{% include global/footer.html %}
+
+{% if page.form == 'form' %}
+<script src="{{site.url}}/assets/js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+
+   $('a[href*=#]').click(function() {
+
+   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+       && location.hostname == this.hostname) {
+
+           var $target = $(this.hash);
+
+           $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+           if ($target.length) {
+
+               var targetOffset = $target.offset().top;
+
+               var top = targetOffset - 85 + 'px';
+
+               $('html,body').animate({scrollTop: top}, 000);
+
+               return false;
+
+          }
+
+     }
+
+ });
+
+});
+</script>
+{% endif %}
+<script src="{{site.url}}/assets/js/search.js"></script>
+<script type="text/javascript">
+var sjs = SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  limit: ("5"),
+  searchResultTemplate: '<div class="search-container-item"><a href="{url}" class="content-search-title"><i class="fas fa-search text-success"></i>{title}&nbsp;&nbsp;<span class="code text-danger" style="font-size:12.3px;font-weight:bold;">{category}</span></a></div>',
+  noResultsText: '<p class="found"><i class="far fa-grin-beam-sweat text-danger"></i> No result found! <a style="font-size:13px;color:#1da1f2;" href="{{site.url}}/documentation">View docs.</a></p>',
+  json: '{{site.url}}/search.json'
+});
+
+</script>
