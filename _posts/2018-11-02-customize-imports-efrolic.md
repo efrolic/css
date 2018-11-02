@@ -27,7 +27,7 @@ To personalize eFrolic you must have knowledge of SASS and its configuration, on
 
 Once there you can locate the first import 'setting' this is required and can not be deleted.
 
-<img src="{{site.url}}/assets/images/post/cust.png" style="max-width:280px;">
+<img src="{{site.url}}/assets/images/post/cust.PNG" style="max-width:280px;">
 
 
 You can play with others import.
