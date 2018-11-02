@@ -186,7 +186,9 @@
 
 %e-cap {
   @extend %e-cap-fade;
-  @extend .eFade;
+  @if $cap-enable-animation {
+    @extend .eFade;
+  }
   position        : fixed;
   top             : 0;
   left            : 0;

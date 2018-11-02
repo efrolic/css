@@ -34,13 +34,19 @@
 
   &.no-desktop {
     @include desktop {
-      display: none;
+      display: none !important;
+    }
+  }
+
+  &.v-tablet {
+    @media only screen and (max-width: $breakpoint-tablet) {
+    display: none !important;
     }
   }
 
   &.no-mobile {
-    @media only screen and (max-width: 1024px) {
-      display: none;
+    @media only screen and (max-width: $breakpoint-desktop) {
+      display: none !important;
     }
   }
 

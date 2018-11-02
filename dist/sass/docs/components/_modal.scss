@@ -9,6 +9,10 @@
 }
 
 .e-modal-content {
+  overflow      : hidden;
+  overflow-y    : auto;
+  display       : block;
+  outline       : 0;
   box-shadow    : $modal-content-box-shadow;
   border-radius : $border-radius;
   position      : relative;
@@ -16,9 +20,7 @@
   background    : $white;
   width         : $modal-content-width;
   max-width     : $modal-content-max-width;
-  overflow      : hidden;
-  display       : flex;
-  outline       : 0;
+  max-height    : $modal-content-max-height; 
 }
 
 .e-modal-header {

@@ -3283,13 +3283,19 @@ input[type="file"].e-control {
 
 @media only screen and (min-width: 1024px) {
   *.no-desktop {
-    display: none;
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  *.v-tablet {
+    display: none !important;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   *.no-mobile {
-    display: none;
+    display: none !important;
   }
 }
 

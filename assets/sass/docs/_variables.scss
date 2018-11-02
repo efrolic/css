@@ -53,6 +53,14 @@ $colors-gradient: (
 
 @import "colors";
 
+
+// Enable animations
+$dropdown-enable-animation               : true !default;
+$navegation-enable-animation             : true !default;
+// Cap Modal / Sidenav
+$cap-enable-animation                    : true !default;
+
+
 // Body and default styles
 $font-family                             : "Nunito", sans-serif !default;
 $body-bg                                 : #fff !default;
@@ -120,7 +128,6 @@ $card-mansory-column-count-desktop-plus  : 4 !default;
 $card-mansory-column-gap                 : 1.25rem !default;
 
 // Dropdown styles
-$dropdown-enable-animation               : true !default;
 $dropdown-padding                        : 0.5rem 1.25rem !default;
 $dropdown-font-size                      : 0.9rem !default;
 
@@ -203,8 +210,9 @@ $modal-content-width                     : 92.5% !default;
 $modal-content-max-width                 : 600px !default;
 $modal-content-max-height                : calc(100vh - 40px) !default;
 
+
+
 // Navegation styles * Nav *
-$navegation-enable-animation             : true !default;
 $nav-min-height                          : 3.75rem !default;
 $nav-padding-desktop                     : 5% !default;
 $nav-border-bottom                       : solid 1px lighten(rgba(0, 0, 0, 0.1), 20%) !default;
