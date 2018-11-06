@@ -20,8 +20,8 @@ css_cdn: "https://unpkg.com/efrolic@0.2.8/dist/css/efrolic.min.css"
 css_github: "http://efrolicss.com/assets/css/dist/efrolic.min.css"
 fontawesome: "https://use.fontawesome.com/releases/v5.3.1/css/all.css"
 fontawesome_integrity: "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-files_css: "/assets/download/eFrolic.zip"
-files_sass: "/assets/download/eFrolic-Sass.zip"
+files_css: "/assets/download/eFrolic.rar"
+files_sass: "/assets/download/eFrolic-Sass.rar"
 
 # Config
 button: anime primary
