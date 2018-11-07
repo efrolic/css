@@ -6,7 +6,7 @@
 <p align="center">
 🔔 <strong>eFrolicss</strong> | CSS framework which without using JavaScript is interactive and animated. 
 </p>
-<p align="justify">
+<p align="center">
 This framework is based on being simple and modern to develop web interfaces focused on mobile devices. Built in flexbox bases.
 </p>
 <p align="center"> <strong>
