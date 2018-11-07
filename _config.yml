@@ -1,10 +1,11 @@
 # title del head
 title: "eFrolic"
-subtitle: "It is the party of developers, simple and modern."
+subtitle: "CSS framework which without using JavaScript is interactive and animated."
 
 # description
 description: "It is a CSS framework, which without using javascript is interactive and animated.
-This framework is based on being simple and modern to develop web interfaces focused on mobile devices."
+This CSS framework is based on being simple and modern in mobile first web development. Built on Flexbox bases,
+focused on responsive design."
 
 # Social
 photo_profile: "/assets/images/post/profile/profile-3.jpeg"

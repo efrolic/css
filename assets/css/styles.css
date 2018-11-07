@@ -183,6 +183,9 @@ pre{
 .code-title {
   color: rgb(29, 161, 242);
 }
+h1.code-title {
+  font-size: 1.75rem !important;
+}
 
 .btn p {
   text-align: justify
@@ -295,7 +298,12 @@ margin-bottom: 20px;
 }
 
 .info-frolic {
-  font-size: 20px
+  font-size: 1.15rem
+}
+
+.unselected {
+	pointer-events: none;
+	user-select: none;
 }
 
 @media only screen and (max-width: 1024px) {

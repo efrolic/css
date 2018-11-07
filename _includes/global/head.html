@@ -1,6 +1,6 @@
 <head>
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %} | {{site.subtitle}}</title>
+  <title>{% if page.title %}{{ page.title }} |{% endif %} {{site.title}} : {{site.subtitle}}</title>
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="152x152" href="{{site.url}}/assets/images/favicon/apple-touch-icon.png">
@@ -20,20 +20,19 @@
   <meta name="theme-color" content="rgb(29, 161, 242)">
   <meta name="msapplication-config" content="{{site.url}}/assets/images/favicon/browserconfig.xml">
   <meta name="author" content="Efrain Peralta">
-  <meta name="KEYWORDS" content="framework css 2018, framework css responsive, CSS, SASS, SCSS, framework mobile-first"/>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@e_frolic">
   <meta name="twitter:creator" content="@e_frolic">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %} | {{site.subtitle}}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} |{% endif %} {{site.title}} : {{site.subtitle}}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
   <meta name="twitter:image" content="{{site.url}}/assets/images/efrolic-social.png">
 
   <!-- Facebook -->
   <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %} | {{site.subtitle}}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} |{% endif %} {{site.title}} : {{site.subtitle}}" />
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
   <meta property="og:type" content="website">
   <meta property="og:image" content="{{site.url}}/assets/images/efrolic-social.png" />
