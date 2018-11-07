@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://efrolicss.com/</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/download</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/start</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/documentation</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/2018/11/02/official-launch-eFrolic/</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/documentation/get-started</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/documentation/layout</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/documentation/components</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/documentation/utilities</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/2018/11/02/customize-imports-efrolic/</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/news</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/colors</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/expo</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/approach</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/container</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/grid</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/media-object</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/footer</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/alerts</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/alerts-previews</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/breadcrumb</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/buttons</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/button-group</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/social-buttons</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/buttons-previews</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/cards</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/cards-previews</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/dropdown</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/forms</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/lists</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/modal</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/sidenav</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/notes</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/notes-previews</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/pagination</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/progress</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/tabs</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/tables</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/tags</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/animations</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/alignments</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/background</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/borders</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/clean</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/delete</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/shadows</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/spacing</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/sizing</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/text</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/typography</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/visibility</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/container-example</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/container-fluid-example</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/container-section-example</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/w</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/r</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/a</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/e</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/d</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/b</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/a0</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/k</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/p</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/c</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/f</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/g</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/o</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/j</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/m</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/q</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/i</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/l</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/h</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/n</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/s</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/u</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/v</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/t</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/x</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/y</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/face/z</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/buttons/demo-float</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/h</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/a</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/trans</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/c</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/d</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/e</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/f</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/g</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/i</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/j</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/k</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/l</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/b</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/o</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/m</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/navbars/n</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/sidenav/b</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/sidenav/a</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/sidenav/c</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/sidenav/d</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/sidenav/e</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://efrolicss.com/sidenav/f</loc>
+  <lastmod>2018-11-07T19:04:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
