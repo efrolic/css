@@ -4,7 +4,7 @@
   </a>
 </p>
 <p align="center">
-🔔 <strong>eFrolicss</strong> | CSS framework which without using JavaScript is interactive and animated. 
+🔔 <strong>eFrolicss</strong> | CSS framework which without using JavaScript is interactive and animated.
 </p>
 <p align="center">
 This framework is based on being simple and modern to develop web interfaces focused on mobile devices. Built in flexbox bases.
@@ -52,18 +52,18 @@ import 'efrolic/dist/css/efrolic.min.css'
 Copy-paste the stylesheet <code>&lt;link></code> into your <code>&lt;head></code> before all other stylesheets to load our CSS.
 
 ```bash
-<link rel="stylesheet" href="https://unpkg.com/efrolic@0.2.8/dist/css/efrolic.min.css">
+<link rel="stylesheet" href="https://unpkg.com/efrolic@0.2.9/dist/css/efrolic.min.css">
 ```
 
 #### Download
 
 **📌 Compiled CSS**
 
-<a href="https://efrolicss.com/assets/download/eFrolic.rar">Download 📉</a>
+<a href="https://efrolicss.com/assets/download/eFrolic.zip">Download 📉</a>
 
 **📌 Sass files**
 
-<a href="https://efrolicss.com/assets/download/eFrolic-Sass.rar">Download 📈</a>
+<a href="https://efrolicss.com/assets/download/eFrolic-Sass.zip">Download 📈</a>
 
 
 ### CSS file 50KB so far. 📦
