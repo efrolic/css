@@ -6,8 +6,12 @@
 <p align="center">
 🔔 <strong>eFrolicss</strong> | CSS framework which without using JavaScript is interactive and animated. 
 </p>
-<p align="center">
+<p align="justify">
+This framework is based on being simple and modern to develop web interfaces focused on mobile devices. Built in flexbox bases.
+</p>
+<p align="center"> <strong>
 <a href="https://efrolicss.com/start">Explore eFrolic docs</a>
+  </strong>
 </p>
 <p align="center">
 <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FEfraaX%2FeFrolic">
@@ -25,15 +29,9 @@
 <img src="https://img.shields.io/npm/dm/efrolic.svg">
 </p>
 
-
-
-<p align="justify">
-This framework is based on being simple and modern to develop web interfaces focused on mobile devices. Built in flexbox bases.
-</p>
-
 <a href="https://efrolicss.com"><img src="https://efrolicss.com/assets/images/efrolic-social.png" alt="eFrolic / framework css" style="max-width:100%;"></a>
 
-## Quick install 🚀
+## Quick start 🚀
 
 #### NPM ⚙️
 
@@ -49,6 +47,25 @@ After installation, you can import the CSS file into your project using this sni
 import 'efrolic/dist/css/efrolic.min.css'
 ```
 
+#### CDN 🛬
+
+Copy-paste the stylesheet <code>&lt;link></code> into your <code>&lt;head></code> before all other stylesheets to load our CSS.
+
+```bash
+<link rel="stylesheet" href="https://unpkg.com/efrolic@0.2.8/dist/css/efrolic.min.css">
+```
+
+#### Download
+
+**📌 Compiled CSS**
+
+<a href="https://efrolicss.com/assets/download/eFrolic.rar">Download 📉</a>
+
+**📌 Sass files**
+
+<a href="https://efrolicss.com/assets/download/eFrolic-Sass.rar">Download 📈</a>
+
+
 ### CSS file 50KB so far. 📦
 
 **eFrolic** is a modern and lightweight CSS framework, so far only weighs 50KB minified and includes all the components and utilities of the framework.
@@ -59,7 +76,7 @@ There is no Javascript so it can be integrated into any environment, even withou
 
 ### Browser Support 🌐
 
-eFrolic uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (most) Flexbox features compatible with earlier browser versions. eFrolic is compatible with **recent** versions of:
+eFrolic is compatible with **recent** versions of:
 
 * Chrome ✔️
 * Edge ✔️
