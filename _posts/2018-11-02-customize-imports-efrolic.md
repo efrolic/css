@@ -54,7 +54,7 @@ To import only one of these, disable one of the following variables:
 
 /* Enable animations */
 $dropdown-enable-animation               : true !default;
-$navegation-enable-animation             : true !default;
+$navigation-enable-animation             : true !default;
 /* Cap Modal / Sidenav */
 $cap-enable-animation                    : true !default;
 
@@ -62,7 +62,7 @@ $cap-enable-animation                    : true !default;
 
 /* disable animations */
 $dropdown-enable-animation               : false !default;
-$navegation-enable-animation             : false !default;
+$navigation-enable-animation             : false !default;
 /* Cap Modal / Sidenav */
 $cap-enable-animation                    : false !default;
 
