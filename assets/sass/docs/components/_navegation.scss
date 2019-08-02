@@ -247,7 +247,7 @@ input#e-menu:checked ~ div.e-menu,
 input#e-menu:checked ~ nav.e-menu,
 input#e-menu:checked ~ ul.e-menu {
   display: flex;
-  @if $navegation-enable-animation {
+  @if $navigation-enable-animation {
     @extend .eSlide;
   }
 }
