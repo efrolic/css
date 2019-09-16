@@ -25,12 +25,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EfraaX/eFrolic.git"
+    "url": "git+https://github.com/Efraa/eFrolic.git"
   },
   "author": "eFrolic",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EfraaX/eFrolic/issues"
+    "url": "https://github.com/Efraa/eFrolic/issues"
   },
-  "homepage": "http://efrolicss.com"
+  "homepage": "http://efrolicss.com",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@Efraa"
+  }
 }
