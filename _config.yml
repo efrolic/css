@@ -10,15 +10,14 @@ focused on responsive design."
 # Social
 photo_profile: "/assets/images/post/profile/profile-3.jpeg"
 twitter: "https://twitter.com/e_frolic"
-github: "https://github.com/EfraaX/eFrolic"
-github_me: "https://github.com/EfraaX"
+github: "https://github.com/Efraa/eFrolic"
+github_me: "https://github.com/Efraa"
 facebook: "https://www.facebook.com/Efrolicss-954443128098679/"
 donate: "https://www.paypal.me/efraperalta"
 
-
 # CSS
 css_cdn: "https://unpkg.com/efrolic@0.2.9/dist/css/efrolic.min.css"
-css_github: "https://efrolicss.com/assets/css/dist/efrolic.min.css"
+css_github: "https://efraa.github.io/eFrolic/assets/css/dist/efrolic.min.css"
 fontawesome: "https://use.fontawesome.com/releases/v5.3.1/css/all.css"
 fontawesome_integrity: "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 files_css: "/assets/download/eFrolic.zip"
@@ -40,6 +39,6 @@ ref: hello
 # Build settings
 version: "V0.2.9"
 markdown: kramdown
-url: "https://efrolicss.com"
+url: "https://efraa.github.io/eFrolic"
 permalink: pretty
 exclude: ['node_modules', 'gulpfile.js', 'package-lock.json', 'Gemfile', 'Gemfile.lock', 'feed.xml']

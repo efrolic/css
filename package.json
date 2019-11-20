@@ -1,6 +1,6 @@
 {
   "name": "efrolic",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "description": "It is a CSS framework, which without using javascript is interactive and animated. This framework is based on being simple and modern to develop web interfaces focused on mobile devices.",
   "keywords": [
     "framework",
@@ -32,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/Efraa/eFrolic/issues"
   },
-  "homepage": "http://efrolicss.com",
+  "homepage": "https://efraa.github.io/eFrolic/",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@Efraa"
   }

@@ -14,11 +14,11 @@ This framework is based on being simple and modern to develop web interfaces foc
   </strong>
 </p>
 <p align="center">
-<a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FEfraaX%2FeFrolic">
-<img src="https://img.shields.io/twitter/url/https/github.com/EfraaX/eFrolic.svg?style=social" alt="eFrolic / framework css">
+<a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FEfraa%2FeFrolic">
+<img src="https://img.shields.io/twitter/url/https/github.com/Efraa/eFrolic.svg?style=social" alt="eFrolic / framework css">
 </a>
-<a href="https://github.com/EfraaX/eFrolic/blob/master/LICENSE">
-<img src="https://img.shields.io/github/license/EfraaX/eFrolic.svg" alt="eFrolic / framework css">
+<a href="https://github.com/Efraa/eFrolic/blob/master/LICENSE">
+<img src="https://img.shields.io/github/license/Efraa/eFrolic.svg" alt="eFrolic / framework css">
 </a>
 <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
 <a href="https://github.com/awesome-css-group/awesome-css">
@@ -86,4 +86,4 @@ eFrolic is compatible with **recent** versions of:
 
 ### 📢 Copyright and license:
 
-Code copyright 2018  [**eFrolic**](https://efrolicss.com) . Code released under the MIT license. ™️
+Code copyright 2019  [**eFrolic**](https://efrolicss.com) . Code released under the MIT license. ™️
