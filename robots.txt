@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap:https://efraa.github.io/efrolic/sitemap.xml
+Sitemap:https://efraa.github.io/eFrolic/sitemap.xml

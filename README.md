@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://efraa.github.io/efrolic/">
-    <img src="https://efraa.github.io/efrolic/assets/images/efrolic-logo.png" width="100">
+  <a href="https://efraa.github.io/eFrolic/">
+    <img src="https://efraa.github.io/eFrolic/assets/images/efrolic-logo.png" width="100">
   </a>
 </p>
 <p align="center">
@@ -10,7 +10,7 @@
 This framework is based on being simple and modern to develop web interfaces focused on mobile devices. Built in flexbox bases.
 </p>
 <p align="center"> <strong>
-<a href="https://efraa.github.io/efrolic/start">Explore eFrolic docs</a>
+<a href="https://efraa.github.io/eFrolic/start">Explore eFrolic docs</a>
   </strong>
 </p>
 <p align="center">
@@ -29,7 +29,7 @@ This framework is based on being simple and modern to develop web interfaces foc
 <img src="https://img.shields.io/npm/dm/efrolic.svg">
 </p>
 
-<a href="https://efraa.github.io/efrolic/"><img src="https://efraa.github.io/efrolic/assets/images/efrolic-social.png" alt="eFrolic / framework css" style="max-width:100%;"></a>
+<a href="https://efraa.github.io/eFrolic/"><img src="https://efraa.github.io/eFrolic/assets/images/efrolic-social.png" alt="eFrolic / framework css" style="max-width:100%;"></a>
 
 ## Quick start 🚀
 
@@ -59,11 +59,11 @@ Copy-paste the stylesheet <code>&lt;link></code> into your <code>&lt;head></code
 
 **📌 Compiled CSS**
 
-<a href="https://efraa.github.io/efrolic/assets/download/eFrolic.zip">Download 📉</a>
+<a href="https://efraa.github.io/eFrolic/assets/download/eFrolic.zip">Download 📉</a>
 
 **📌 Sass files**
 
-<a href="https://efraa.github.io/efrolic/assets/download/eFrolic-Sass.zip">Download 📈</a>
+<a href="https://efraa.github.io/eFrolic/assets/download/eFrolic-Sass.zip">Download 📈</a>
 
 
 ### CSS file 50KB so far. 📦
@@ -86,4 +86,4 @@ eFrolic is compatible with **recent** versions of:
 
 ### 📢 Copyright and license:
 
-Code copyright 2019  [**eFrolic**](https://efraa.github.io/efrolic/) . Code released under the MIT license. ™️
+Code copyright 2019  [**eFrolic**](https://efraa.github.io/eFrolic/) . Code released under the MIT license. ™️
