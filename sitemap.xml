@@ -6,532 +6,532 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://efraa.github.io/eFrolic/</loc>
+  <loc>https://efrolic.github.io/css/</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/download</loc>
+  <loc>https://efrolic.github.io/css/download</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/start</loc>
+  <loc>https://efrolic.github.io/css/start</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/documentation</loc>
+  <loc>https://efrolic.github.io/css/documentation</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/2019/11/02/official-launch-eFrolic/</loc>
+  <loc>https://efrolic.github.io/css/2019/11/02/official-launch-eFrolic/</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/documentation/get-started</loc>
+  <loc>https://efrolic.github.io/css/documentation/get-started</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/documentation/layout</loc>
+  <loc>https://efrolic.github.io/css/documentation/layout</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/documentation/components</loc>
+  <loc>https://efrolic.github.io/css/documentation/components</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/documentation/utilities</loc>
+  <loc>https://efrolic.github.io/css/documentation/utilities</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/2019/11/02/customize-imports-efrolic/</loc>
+  <loc>https://efrolic.github.io/css/2019/11/02/customize-imports-efrolic/</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/news</loc>
+  <loc>https://efrolic.github.io/css/news</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/colors</loc>
+  <loc>https://efrolic.github.io/css/colors</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/expo</loc>
+  <loc>https://efrolic.github.io/css/expo</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/approach</loc>
+  <loc>https://efrolic.github.io/css/approach</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/container</loc>
+  <loc>https://efrolic.github.io/css/container</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face</loc>
+  <loc>https://efrolic.github.io/css/face</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/grid</loc>
+  <loc>https://efrolic.github.io/css/grid</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/media-object</loc>
+  <loc>https://efrolic.github.io/css/media-object</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/footer</loc>
+  <loc>https://efrolic.github.io/css/footer</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/alerts</loc>
+  <loc>https://efrolic.github.io/css/alerts</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/alerts-previews</loc>
+  <loc>https://efrolic.github.io/css/alerts-previews</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/breadcrumb</loc>
+  <loc>https://efrolic.github.io/css/breadcrumb</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/buttons</loc>
+  <loc>https://efrolic.github.io/css/buttons</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/button-group</loc>
+  <loc>https://efrolic.github.io/css/button-group</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/social-buttons</loc>
+  <loc>https://efrolic.github.io/css/social-buttons</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/buttons-previews</loc>
+  <loc>https://efrolic.github.io/css/buttons-previews</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/cards</loc>
+  <loc>https://efrolic.github.io/css/cards</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/cards-previews</loc>
+  <loc>https://efrolic.github.io/css/cards-previews</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/dropdown</loc>
+  <loc>https://efrolic.github.io/css/dropdown</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/forms</loc>
+  <loc>https://efrolic.github.io/css/forms</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/lists</loc>
+  <loc>https://efrolic.github.io/css/lists</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/modal</loc>
+  <loc>https://efrolic.github.io/css/modal</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars</loc>
+  <loc>https://efrolic.github.io/css/navbars</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/sidenav</loc>
+  <loc>https://efrolic.github.io/css/sidenav</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/notes</loc>
+  <loc>https://efrolic.github.io/css/notes</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/notes-previews</loc>
+  <loc>https://efrolic.github.io/css/notes-previews</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/pagination</loc>
+  <loc>https://efrolic.github.io/css/pagination</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/progress</loc>
+  <loc>https://efrolic.github.io/css/progress</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/tabs</loc>
+  <loc>https://efrolic.github.io/css/tabs</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/tables</loc>
+  <loc>https://efrolic.github.io/css/tables</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/tags</loc>
+  <loc>https://efrolic.github.io/css/tags</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/animations</loc>
+  <loc>https://efrolic.github.io/css/animations</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/alignments</loc>
+  <loc>https://efrolic.github.io/css/alignments</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/background</loc>
+  <loc>https://efrolic.github.io/css/background</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/borders</loc>
+  <loc>https://efrolic.github.io/css/borders</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/clean</loc>
+  <loc>https://efrolic.github.io/css/clean</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/delete</loc>
+  <loc>https://efrolic.github.io/css/delete</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/shadows</loc>
+  <loc>https://efrolic.github.io/css/shadows</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/spacing</loc>
+  <loc>https://efrolic.github.io/css/spacing</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/sizing</loc>
+  <loc>https://efrolic.github.io/css/sizing</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/text</loc>
+  <loc>https://efrolic.github.io/css/text</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/typography</loc>
+  <loc>https://efrolic.github.io/css/typography</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/visibility</loc>
+  <loc>https://efrolic.github.io/css/visibility</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/container-example</loc>
+  <loc>https://efrolic.github.io/css/container-example</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/container-fluid-example</loc>
+  <loc>https://efrolic.github.io/css/container-fluid-example</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/container-section-example</loc>
+  <loc>https://efrolic.github.io/css/container-section-example</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/w</loc>
+  <loc>https://efrolic.github.io/css/face/w</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/r</loc>
+  <loc>https://efrolic.github.io/css/face/r</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/a</loc>
+  <loc>https://efrolic.github.io/css/face/a</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/e</loc>
+  <loc>https://efrolic.github.io/css/face/e</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/d</loc>
+  <loc>https://efrolic.github.io/css/face/d</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/b</loc>
+  <loc>https://efrolic.github.io/css/face/b</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/a0</loc>
+  <loc>https://efrolic.github.io/css/face/a0</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/k</loc>
+  <loc>https://efrolic.github.io/css/face/k</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/p</loc>
+  <loc>https://efrolic.github.io/css/face/p</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/c</loc>
+  <loc>https://efrolic.github.io/css/face/c</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/f</loc>
+  <loc>https://efrolic.github.io/css/face/f</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/g</loc>
+  <loc>https://efrolic.github.io/css/face/g</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/o</loc>
+  <loc>https://efrolic.github.io/css/face/o</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/j</loc>
+  <loc>https://efrolic.github.io/css/face/j</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/m</loc>
+  <loc>https://efrolic.github.io/css/face/m</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/q</loc>
+  <loc>https://efrolic.github.io/css/face/q</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/i</loc>
+  <loc>https://efrolic.github.io/css/face/i</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/l</loc>
+  <loc>https://efrolic.github.io/css/face/l</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/h</loc>
+  <loc>https://efrolic.github.io/css/face/h</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/n</loc>
+  <loc>https://efrolic.github.io/css/face/n</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/s</loc>
+  <loc>https://efrolic.github.io/css/face/s</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/u</loc>
+  <loc>https://efrolic.github.io/css/face/u</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/v</loc>
+  <loc>https://efrolic.github.io/css/face/v</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/t</loc>
+  <loc>https://efrolic.github.io/css/face/t</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/x</loc>
+  <loc>https://efrolic.github.io/css/face/x</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/y</loc>
+  <loc>https://efrolic.github.io/css/face/y</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/face/z</loc>
+  <loc>https://efrolic.github.io/css/face/z</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/buttons/demo-float</loc>
+  <loc>https://efrolic.github.io/css/buttons/demo-float</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/h</loc>
+  <loc>https://efrolic.github.io/css/navbars/h</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/a</loc>
+  <loc>https://efrolic.github.io/css/navbars/a</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/trans</loc>
+  <loc>https://efrolic.github.io/css/navbars/trans</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/c</loc>
+  <loc>https://efrolic.github.io/css/navbars/c</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/d</loc>
+  <loc>https://efrolic.github.io/css/navbars/d</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/e</loc>
+  <loc>https://efrolic.github.io/css/navbars/e</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/f</loc>
+  <loc>https://efrolic.github.io/css/navbars/f</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/g</loc>
+  <loc>https://efrolic.github.io/css/navbars/g</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/i</loc>
+  <loc>https://efrolic.github.io/css/navbars/i</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/j</loc>
+  <loc>https://efrolic.github.io/css/navbars/j</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/k</loc>
+  <loc>https://efrolic.github.io/css/navbars/k</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/l</loc>
+  <loc>https://efrolic.github.io/css/navbars/l</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/b</loc>
+  <loc>https://efrolic.github.io/css/navbars/b</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/o</loc>
+  <loc>https://efrolic.github.io/css/navbars/o</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/m</loc>
+  <loc>https://efrolic.github.io/css/navbars/m</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/navbars/n</loc>
+  <loc>https://efrolic.github.io/css/navbars/n</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/sidenav/b</loc>
+  <loc>https://efrolic.github.io/css/sidenav/b</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/sidenav/a</loc>
+  <loc>https://efrolic.github.io/css/sidenav/a</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/sidenav/c</loc>
+  <loc>https://efrolic.github.io/css/sidenav/c</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/sidenav/d</loc>
+  <loc>https://efrolic.github.io/css/sidenav/d</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/sidenav/e</loc>
+  <loc>https://efrolic.github.io/css/sidenav/e</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://efraa.github.io/eFrolic/sidenav/f</loc>
+  <loc>https://efrolic.github.io/css/sidenav/f</loc>
   <lastmod>2019-11-07T19:04:53+00:00</lastmod>
   <priority>0.51</priority>
 </url>

@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://efraa.github.io/eFrolic/">
-    <img src="https://efraa.github.io/eFrolic/assets/images/efrolic-logo.png" width="100">
+  <a href="https://efrolic.github.io/css/">
+    <img src="https://efrolic.github.io/css/assets/images/efrolic-logo.png" width="100">
   </a>
 </p>
 <p align="center">
@@ -10,14 +10,14 @@
 This framework is based on being simple and modern to develop web interfaces focused on mobile devices. Built in flexbox bases.
 </p>
 <p align="center"> <strong>
-<a href="https://efraa.github.io/eFrolic/start">Explore eFrolic docs</a>
+<a href="https://efrolic.github.io/css/start">Explore eFrolic docs</a>
   </strong>
 </p>
 <p align="center">
 <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FEfraa%2FeFrolic">
-<img src="https://img.shields.io/twitter/url/https/github.com/Efraa/eFrolic.svg?style=social" alt="eFrolic / framework css">
+<img src="https://img.shields.io/twitter/url/https/github.com/efrolic/css.svg?style=social" alt="eFrolic / framework css">
 </a>
-<a href="https://github.com/Efraa/eFrolic/blob/master/LICENSE">
+<a href="https://github.com/efrolic/css/blob/master/LICENSE">
 <img src="https://img.shields.io/github/license/Efraa/eFrolic.svg" alt="eFrolic / framework css">
 </a>
 <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
@@ -29,7 +29,7 @@ This framework is based on being simple and modern to develop web interfaces foc
 <img src="https://img.shields.io/npm/dm/efrolic.svg">
 </p>
 
-<a href="https://efraa.github.io/eFrolic/"><img src="https://efraa.github.io/eFrolic/assets/images/efrolic-social.png" alt="eFrolic / framework css" style="max-width:100%;"></a>
+<a href="https://efrolic.github.io/css/"><img src="https://efrolic.github.io/css/assets/images/efrolic-social.png" alt="eFrolic / framework css" style="max-width:100%;"></a>
 
 ## Quick start 🚀
 
@@ -59,11 +59,11 @@ Copy-paste the stylesheet <code>&lt;link></code> into your <code>&lt;head></code
 
 **📌 Compiled CSS**
 
-<a href="https://efraa.github.io/eFrolic/assets/download/eFrolic.zip">Download 📉</a>
+<a href="https://efrolic.github.io/css/assets/download/eFrolic.zip">Download 📉</a>
 
 **📌 Sass files**
 
-<a href="https://efraa.github.io/eFrolic/assets/download/eFrolic-Sass.zip">Download 📈</a>
+<a href="https://efrolic.github.io/css/assets/download/eFrolic-Sass.zip">Download 📈</a>
 
 
 ### CSS file 50KB so far. 📦
@@ -86,4 +86,4 @@ eFrolic is compatible with **recent** versions of:
 
 ### 📢 Copyright and license:
 
-Code copyright 2019  [**eFrolic**](https://efraa.github.io/eFrolic/) . Code released under the MIT license. ™️
+Code copyright 2019  [**eFrolic**](https://efrolic.github.io/css/) . Code released under the MIT license. ™️
